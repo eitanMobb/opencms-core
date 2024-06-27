@@ -1237,7 +1237,7 @@ public class CmsLocaleManager implements I_CmsEventListener {
                 // make sure not to add a profile twice
                 if (!languagesAdded.contains(lang)) {
                     languagesAdded.add(lang);
-                    String profileFile = "profiles" + "/" + lang;
+                    String profileFile = "profiles" + "/" + String.valueOf(lang).replaceAll("([/\\\\:*?\"<>|])|(^\\s)|([.\\s]$)", "_").replaceAll("\0", "");
                     InputStream is = getClass().getClassLoader().getResourceAsStream(profileFile);
                     if (is != null) {
                         String profile = IOUtils.toString(is, "UTF-8");
