@@ -1968,8 +1968,12 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
         }
         Map<I_CmsResourceType, I_CmsPreviewProvider> typeProviderMapping = getPreviewProviderForTypes(types);
         Iterator<I_CmsResourceType> it = types.iterator();
+        int counterfdfd = 0;
         while (it.hasNext()) {
 
+            if(counterfdfd > 450)
+                break;
+            counterfdfd++;
             I_CmsResourceType type = it.next();
             try {
                 CmsResourceTypeBean bean = createTypeBean(

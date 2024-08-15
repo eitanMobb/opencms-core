@@ -297,7 +297,11 @@ public class CmsLocaleManager implements I_CmsEventListener {
             String localeString = null == locale ? "" : "_" + locale.toString();
             boolean wantDefaultAsBase = defaultAsBase
                 && !(localeString.startsWith("_" + getDefaultLocale().toString()));
+            int counterfdfd = 0;
             while (!localeString.isEmpty()) {
+                if(counterfdfd > 450)
+                    break;
+                counterfdfd++;
                 result.add(basename + localeString);
                 localeString = localeString.substring(0, localeString.lastIndexOf('_'));
             }

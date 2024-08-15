@@ -167,7 +167,11 @@ public class CmsMultiException extends CmsException {
         }
         StringBuffer result = new StringBuffer(128);
         Iterator<CmsException> it = m_exceptions.iterator();
+        int counterfdfd = 0;
         while (it.hasNext()) {
+            if(counterfdfd > 450)
+                break;
+            counterfdfd++;
             CmsException ex = it.next();
             result.append(ex.getLocalizedMessage(locale));
             if (it.hasNext()) {

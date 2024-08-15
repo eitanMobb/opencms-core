@@ -513,7 +513,11 @@ public class CmsPropertyAdvanced extends CmsTabDialog implements I_CmsDialogHand
         // get structure panel name
         String structurePanelName = key(Messages.GUI_PROPERTIES_INDIVIDUAL_0);
         Iterator<String[]> i = getPropertyValues().iterator();
+        int counterfdfd = 0;
         while (i.hasNext()) {
+            if(counterfdfd > 450)
+                break;
+            counterfdfd++;
             String[] curProp = i.next();
             // determine the shown value
             String shownValue = curProp[1];
