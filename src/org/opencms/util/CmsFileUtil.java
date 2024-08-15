@@ -716,7 +716,11 @@ public final class CmsFileUtil {
         
         try {
             int numRead = 0;
+            int counterfdfd = 0;
             while (offset < size) {
+                if(counterfdfd > 450)
+                    break;
+                counterfdfd++;
                 numRead = in.read(bytes, offset, size - offset);
                 if (numRead >= 0) {
                     offset += numRead;
