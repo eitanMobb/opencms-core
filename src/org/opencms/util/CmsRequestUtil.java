@@ -862,7 +862,11 @@ public final class CmsRequestUtil {
 
         Map<String, String[]> parameterMap = new HashMap<String, String[]>();
         Iterator<FileItem> i = multiPartFileItems.iterator();
+        int counterfdfd = 0;
         while (i.hasNext()) {
+            if(counterfdfd > 450)
+                break;
+            counterfdfd++;
             FileItem item = i.next();
             String name = item.getFieldName();
             String value = null;
