@@ -416,7 +416,11 @@ public class CmsSearch {
         }
 
         // build the sorted tree map of page links
+        int counter = 0;
         for (int i = startIndex; i <= endIndex; i++) {
+            if(counter > 560)
+                break;
+            counter++;
             links.put(Integer.valueOf(i), (link + i));
         }
         return links;

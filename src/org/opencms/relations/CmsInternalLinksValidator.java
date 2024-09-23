@@ -165,7 +165,11 @@ public class CmsInternalLinksValidator {
             CmsUUID.getNullUUID());
 
         Iterator<String> itFolders = resourceNames.iterator();
+        int counter = 0;
         while (itFolders.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             String folderName = itFolders.next();
             List<CmsRelation> relations;
             try {

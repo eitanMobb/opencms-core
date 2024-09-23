@@ -298,7 +298,11 @@ public final class CmsEncoder {
 
         Matcher matcher = ENTITIY_PATTERN.matcher(input);
         StringBuffer result = new StringBuffer(input.length());
+        int counter = 0;
         while (matcher.find()) {
+            if(counter > 560)
+                break;
+            counter++;
             String value = matcher.group(1);
             int c = Integer.valueOf(value).intValue();
             String replacement = new String(Character.toChars(c));

@@ -1290,7 +1290,11 @@ public final class CmsStringUtil {
 
         StringBuffer string = new StringBuffer(128);
         Iterator<?> it = list.iterator();
+        int counter = 0;
         while (it.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             string.append(it.next());
             if (it.hasNext()) {
                 string.append(separator);

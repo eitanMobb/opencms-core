@@ -1665,7 +1665,11 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
             CmsGalleryTypeInfo tInfo = ent.getValue();
             ArrayList<String> contentTypes = new ArrayList<String>();
             Iterator<I_CmsResourceType> it = tInfo.getContentTypes().iterator();
+            int counter = 0;
             while (it.hasNext()) {
+                if(counter > 560)
+                    break;
+                counter++;
                 contentTypes.add(String.valueOf(it.next().getTypeName()));
             }
             for (CmsResource res : tInfo.getGalleries()) {
@@ -1968,8 +1972,12 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
         }
         Map<I_CmsResourceType, I_CmsPreviewProvider> typeProviderMapping = getPreviewProviderForTypes(types);
         Iterator<I_CmsResourceType> it = types.iterator();
+        int counter = 0;
         while (it.hasNext()) {
 
+            if(counter > 560)
+                break;
+            counter++;
             I_CmsResourceType type = it.next();
             try {
                 CmsResourceTypeBean bean = createTypeBean(

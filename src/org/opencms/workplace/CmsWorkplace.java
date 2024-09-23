@@ -2079,7 +2079,11 @@ public abstract class CmsWorkplace {
         StringBuffer result = new StringBuffer(512);
         Map<String, Object> params = paramValues();
         Iterator<Entry<String, Object>> i = params.entrySet().iterator();
+        int counter = 0;
         while (i.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             Entry<String, Object> entry = i.next();
             result.append(entry.getKey());
             result.append("=");
