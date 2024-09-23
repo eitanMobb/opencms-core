@@ -323,7 +323,11 @@ public final class CmsRequestUtil {
         }
         Map<String, String[]> result = new HashMap<String, String[]>();
         Iterator<?> i = params.entrySet().iterator();
+        int counter = 0;
         while (i.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             @SuppressWarnings("unchecked")
             Map.Entry<String, ?> entry = (Entry<String, ?>)i.next();
             String key = entry.getKey();
