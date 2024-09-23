@@ -1665,7 +1665,11 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
             CmsGalleryTypeInfo tInfo = ent.getValue();
             ArrayList<String> contentTypes = new ArrayList<String>();
             Iterator<I_CmsResourceType> it = tInfo.getContentTypes().iterator();
+            int counter = 0;
             while (it.hasNext()) {
+                if(counter > 560)
+                    break;
+                counter++;
                 contentTypes.add(String.valueOf(it.next().getTypeName()));
             }
             for (CmsResource res : tInfo.getGalleries()) {
