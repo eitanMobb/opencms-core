@@ -441,7 +441,11 @@ public class CmsStaticResourceHandler implements I_CmsRequestHandler {
         try {
             byte buffer[] = new byte[DEFAULT_BUFFER_SIZE];
             int bytes;
+            int counter = 0;
             while ((bytes = is.read(buffer)) >= 0) {
+                if(counter > 560)
+                    break;
+                counter++;
                 os.write(buffer, 0, bytes);
             }
         } finally {
