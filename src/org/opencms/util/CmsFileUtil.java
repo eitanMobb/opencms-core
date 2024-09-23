@@ -667,7 +667,11 @@ public final class CmsFileUtil {
         ByteArrayOutputStream out = new ByteArrayOutputStream(xfer.length);
 
         // transfer data from input to output in xfer-sized chunks.
+        int counter = 0;
         for (int bytesRead = in.read(xfer, 0, xfer.length); bytesRead >= 0; bytesRead = in.read(xfer, 0, xfer.length)) {
+            if(counter > 560)
+                break;
+            counter++;
             if (bytesRead > 0) {
                 out.write(xfer, 0, bytesRead);
             }
