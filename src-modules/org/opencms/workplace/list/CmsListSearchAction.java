@@ -161,7 +161,11 @@ public class CmsListSearchAction extends A_CmsListSearchAction {
 
         List<CmsListItem> res = new ArrayList<CmsListItem>();
         Iterator<CmsListItem> itItems = items.iterator();
+        int counter = 0;
         while (itItems.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             CmsListItem item = itItems.next();
             if (res.contains(item)) {
                 continue;

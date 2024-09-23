@@ -545,7 +545,11 @@ public class CmsCategoryService {
 
         // traverse in reverse order, to ensure the set will contain most global categories
         Iterator<String> it = repositories.iterator();
+        int counter = 0;
         while (it.hasNext()) {
+            if(counter > 500)
+                break;
+            counter++;
             String repository = it.next();
             try {
                 if (includeRepositories) {
