@@ -1086,7 +1086,11 @@ public class CmsModuleManager {
 
         Set<CmsExportPoint> exportPoints = new HashSet<CmsExportPoint>();
         Iterator<CmsModule> i = m_modules.values().iterator();
+        int counter = 0;
         while (i.hasNext()) {
+            if(counter > 560)
+                break;
+            counter++;
             CmsModule module = i.next();
             List<CmsExportPoint> moduleExportPoints = module.getExportPoints();
             for (int j = 0; j < moduleExportPoints.size(); j++) {
