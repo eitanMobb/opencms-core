@@ -345,7 +345,11 @@ public class CmsGalleryFilteredNavTreeBuilder {
         for (NavigationNode leaf : leaves) {
             leaf.setIsLeaf(true);
             NavigationNode current = leaf;
+            int counter = 0;
             while ((current != null) && (current != m_root) && !current.isMatch()) {
+                if(counter > 560)
+                    break;
+                counter++;
                 current = current.getParent();
             }
             while (current != null) {
