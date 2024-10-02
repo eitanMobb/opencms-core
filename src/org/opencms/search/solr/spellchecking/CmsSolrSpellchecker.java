@@ -372,7 +372,11 @@ public final class CmsSolrSpellchecker {
 
         final StringTokenizer st = new StringTokenizer(q);
         final List<String> wordsToCheck = new ArrayList<String>();
+        int counter_param = 0;
         while (st.hasMoreTokens()) {
+            if(counter_param > 500)
+                break;
+            counter_param++;
             final String word = st.nextToken();
             wordsToCheck.add(word);
 
