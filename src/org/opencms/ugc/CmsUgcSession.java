@@ -558,7 +558,11 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
                 if (i > 0) {
                     currentPath = CmsStringUtil.joinPaths(currentPath, pathElements[i]);
                 }
+                int counter_param = 0;
                 while (!content.hasValue(currentPath, locale)) {
+                    if(counter_param > 500)
+                        break;
+                    counter_param++;
                     content.addValue(m_cms, currentPath, locale, CmsXmlUtils.getXpathIndexInt(currentPath) - 1);
                 }
             }
