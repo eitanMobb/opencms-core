@@ -67,6 +67,7 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Maps;
+import java.util.regex.Pattern;
 
 /**
  * This is the internal cache class used for storing configuration data. It is not public because it is only meant
@@ -331,7 +332,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                         + " config resources of type: "
                         + m_configType.getTypeName()
                         + " from the "
-                        + (m_cms.getRequestContext().getCurrentProject().isOnlineProject() ? "online" : "offline")
+                        + Pattern.quote((m_cms.getRequestContext().getCurrentProject().isOnlineProject() ? "online" : "offline"))
                         + " project.");
                 if (OpenCms.getResourceManager().hasResourceType(TYPE_SITEMAP_MASTER_CONFIG)) {
                     List<CmsResource> masterCandidates = m_cms.readResources(
