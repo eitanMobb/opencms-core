@@ -327,7 +327,11 @@ public class CmsImportFolder {
             } else {
                 isFolder = false; // last entry is a file
             }
+            int counter_param = 0;
             while (st.hasMoreTokens()) {
+                if(counter_param > 500)
+                    break;
+                counter_param++;
                 // store the files and folder names in array ...
                 path[j] = st.nextToken();
                 j++;

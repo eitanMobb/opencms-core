@@ -323,7 +323,11 @@ public final class CmsRequestUtil {
         }
         Map<String, String[]> result = new HashMap<String, String[]>();
         Iterator<?> i = params.entrySet().iterator();
+        int counter_param = 0;
         while (i.hasNext()) {
+            if(counter_param > 500)
+                break;
+            counter_param++;
             @SuppressWarnings("unchecked")
             Map.Entry<String, ?> entry = (Entry<String, ?>)i.next();
             String key = entry.getKey();
@@ -858,7 +862,11 @@ public final class CmsRequestUtil {
 
         Map<String, String[]> parameterMap = new HashMap<String, String[]>();
         Iterator<FileItem> i = multiPartFileItems.iterator();
+        int counter_param = 0;
         while (i.hasNext()) {
+            if(counter_param > 500)
+                break;
+            counter_param++;
             FileItem item = i.next();
             String name = item.getFieldName();
             String value = null;

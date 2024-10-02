@@ -95,7 +95,11 @@ public abstract class A_CmsClientMessageBundle implements I_CmsClientMessageBund
         try {
             ResourceBundle resourceBundle = CmsResourceBundleLoader.getBundle(getBundleName(), locale);
             Enumeration<String> bundleKeys = resourceBundle.getKeys();
+            int counter_param = 0;
             while (bundleKeys.hasMoreElements()) {
+                if(counter_param > 500)
+                    break;
+                counter_param++;
                 String bundleKey = bundleKeys.nextElement();
                 String value = resourceBundle.getString(bundleKey);
                 if (value.startsWith(IMPORT_PREFIX)) {
