@@ -221,7 +221,11 @@ public class CmsResourceLinkRelationList extends A_CmsListExplorerDialog {
         List<CmsListItem> newItems = new ArrayList<CmsListItem>();
         List<CmsListItem> items = super.getListItems();
         Iterator<CmsListItem> itItems = items.iterator();
+        int counter_param = 0;
         while (itItems.hasNext()) {
+            if(counter_param > 500)
+                break;
+            counter_param++;
             CmsListItem item = itItems.next();
             CmsResource resource = getResourceUtil(item).getResource();
 

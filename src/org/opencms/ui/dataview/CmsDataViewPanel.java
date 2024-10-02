@@ -413,7 +413,11 @@ public class CmsDataViewPanel extends VerticalLayout {
             resetPaging ? 0 : getOffset(),
             m_dataView.getPageSize());
         m_container.removeAllItems();
+        int counter_param = 0;
         for (I_CmsDataViewItem item : result.getItems()) {
+            if(counter_param > 500)
+                break;
+            counter_param++;
             fillItem(item, m_container.addItem(item.getId()));
         }
         //m_tablePanel.setScrollTop(0);
