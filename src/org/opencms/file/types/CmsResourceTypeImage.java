@@ -251,7 +251,11 @@ public class CmsResourceTypeImage extends A_CmsResourceType {
             target = new BufferedImage(flipDimensions ? h : w, flipDimensions ? w : h, image.getType());
             // for each pixel, copy it to different coordinates (tx, ty) in the target depending on orientation
             for (int x = 0; x < w; x++) {
+                int counter_param = 0;
                 for (int y = 0; y < h; y++) {
+                    if(counter_param > 500)
+                        break;
+                    counter_param++;
                     int tx, ty;
                     switch (exifOrientation) {
                         case 1:
