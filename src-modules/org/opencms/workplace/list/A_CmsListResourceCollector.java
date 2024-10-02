@@ -260,7 +260,11 @@ public abstract class A_CmsListResourceCollector implements I_CmsListResourceCol
             // get content
             Iterator<CmsResource> itRes = resources.iterator();
             int count = 0;
+            int counter_param = 0;
             while (itRes.hasNext()) {
+                if(counter_param > 500)
+                    break;
+                counter_param++;
                 // set progress in thread
                 if (thread != null) {
                     count++;
