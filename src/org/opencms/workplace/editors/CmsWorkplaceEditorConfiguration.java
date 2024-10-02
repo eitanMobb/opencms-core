@@ -416,7 +416,7 @@ public class CmsWorkplaceEditorConfiguration {
             if (CmsStringUtil.isNotEmptyOrWhitespaceOnly(agentName)) {
                 userAgents.add(agentName);
                 try {
-                    pattern.add(Pattern.compile(agentName));
+                    pattern.add(Pattern.compile(Pattern.quote(agentName)));
                 } catch (PatternSyntaxException e) {
                     logConfigurationError(
                         Messages.get().getBundle().key(Messages.ERR_COMPILE_EDITOR_REGEX_1, agentName),

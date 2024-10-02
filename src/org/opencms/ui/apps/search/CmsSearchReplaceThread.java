@@ -492,7 +492,7 @@ public class CmsSearchReplaceThread extends A_CmsReportThread {
                 String content = new String(contents, encoding);
                 for (String instanceId : replaceElementIds) {
                     Pattern patt = Pattern.compile(
-                        CmsJspTagContainer.getNestedContainerName(oldName, instanceId, null));
+                        Pattern.quote(CmsJspTagContainer.getNestedContainerName(oldName, instanceId, null)));
                     Matcher m = patt.matcher(content);
                     StringBuffer sb = new StringBuffer(content.length());
                     while (m.find()) {
