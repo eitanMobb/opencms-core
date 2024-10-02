@@ -334,8 +334,12 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
 
         CmsMacroResolver macroResolver = new CmsMacroResolver();
         macroResolver.setKeepEmptyMacros(true);
+        int counter_param = 0;
         for (String key : keyValue.keySet()) {
 
+            if(counter_param > 500)
+                break;
+            counter_param++;
             macroResolver.addMacro(key, keyValue.get(key));
         }
 
