@@ -65,6 +65,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
+import java.util.Objects;
 
 /**
  * Utility to login users to the OpenCms workplace.<p>
@@ -407,9 +408,9 @@ public class CmsLoginHelper extends CmsJspLoginBean {
                 }
             }
         }
-        String requestedResource = CmsRequestUtil.getNotEmptyParameter(
+        String requestedResource = Objects.requireNonNull(CmsRequestUtil.getNotEmptyParameter(
             request,
-            CmsWorkplaceManager.PARAM_LOGIN_REQUESTED_RESOURCE);
+            CmsWorkplaceManager.PARAM_LOGIN_REQUESTED_RESOURCE));
         boolean validRequestedResource = false;
         if (!CmsStringUtil.isEmptyOrWhitespaceOnly(requestedResource)) {
             String encryptedRequestedResource = request.getParameter(
