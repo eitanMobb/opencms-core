@@ -984,7 +984,7 @@ public class CmsExport {
                 org.opencms.db.Messages.ERR_GET_PARENT_GROUP_1,
                 group.getName());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
             }
 
             throw new CmsImportExportException(message, e);
