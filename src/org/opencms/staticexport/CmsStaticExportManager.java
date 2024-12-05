@@ -1626,7 +1626,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 // resource not found
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName}),
+                        String.valueOf(Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName})).replace("\n", "").replace("\r", ""),
                         t);
                 }
             }
