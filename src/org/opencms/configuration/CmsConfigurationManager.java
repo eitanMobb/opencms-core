@@ -150,9 +150,9 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         if (!m_baseFolder.exists()) {
             if (LOG.isErrorEnabled()) {
                 LOG.error(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_INVALID_CONFIG_BASE_FOLDER_1,
-                        m_baseFolder.getAbsolutePath()));
+                        m_baseFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
             }
         }
         m_backupFolder = new File(m_baseFolder.getAbsolutePath() + File.separatorChar + "backup");
