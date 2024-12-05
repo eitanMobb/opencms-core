@@ -593,7 +593,7 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
             //Now retrieve the cookies. The jsessionid is here
             cookies.append(urlcon.getHeaderField(HEADER_FIELD_SET_COOKIE));
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_STATICEXPORT_COOKIES_1, cookies));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_STATICEXPORT_COOKIES_1, cookies)).replace("\n", "").replace("\r", ""));
             }
         }
         urlcon.disconnect();
