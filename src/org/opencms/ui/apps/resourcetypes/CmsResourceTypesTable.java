@@ -177,7 +177,7 @@ public class CmsResourceTypesTable extends Table {
                                     // re-initialize the workplace
                                     OpenCms.getWorkplaceManager().initialize(m_cms);
                                 } catch (CmsException e) {
-                                    LOG.error("Unable to delete resource type", e);
+                                    LOG.error("Unable to delete resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
                                 }
                                 window.close();
                                 m_app.reload();
