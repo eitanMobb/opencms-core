@@ -344,7 +344,7 @@ public final class CmsUUID extends Object implements Cloneable, Comparable<CmsUU
         if (o instanceof String) {
             // this UUID has been serialized using the new method
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_READ_UUID_1, o));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_READ_UUID_1, o)).replace("\n", "").replace("\r", ""));
             }
             m_uuid = new UUID((String)o);
         }
