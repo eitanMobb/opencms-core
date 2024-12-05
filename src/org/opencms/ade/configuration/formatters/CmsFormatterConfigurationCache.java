@@ -281,7 +281,7 @@ public class CmsFormatterConfigurationCache implements I_CmsGlobalConfigurationC
             CmsResourceFilter filterFunction = CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(typeFunction);
             formatterResources.addAll(m_cms.readResources("/", filterFunction));
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
         Map<CmsUUID, I_CmsFormatterBean> newFormatters = Maps.newHashMap();
         for (CmsResource formatterResource : formatterResources) {
