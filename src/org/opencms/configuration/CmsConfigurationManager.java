@@ -586,7 +586,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         try {
             CmsFileUtil.copy(fromName, toName);
         } catch (IOException e) {
-            LOG.error(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_FAILURE_1, toName), e);
+            LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_FAILURE_1, toName)).replace("\n", "").replace("\r", ""), e);
         }
     }
 
