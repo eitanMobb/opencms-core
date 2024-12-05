@@ -425,12 +425,12 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
 
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_TAGREPLACE_PROPERTY_WRITE_3,
                             new Object[] {
                                 m_markerProperty.getName(),
                                 m_markerProperty.getResourceValue(),
-                                resource.getRootPath()}));
+                                resource.getRootPath()})).replace("\n", "").replace("\r", ""));
                 }
                 getCms().writePropertyObject(
                     getCms().getRequestContext().removeSiteRoot(resource.getRootPath()),
