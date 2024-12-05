@@ -339,7 +339,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
             LOG.debug(
                 Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOAD_FILE_OK_1, resource.getRootPath()));
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_UNMARSHAL_1, resource.getRootPath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_UNMARSHAL_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
         }
 
         CmsXmlContent xmlcontent = CmsXmlContentFactory.unmarshal(getCms(), file);
