@@ -135,7 +135,7 @@ public class OpenCmsUrlServletFilter implements Filter {
             loggingInfo.put("request_url", url);
         }
         try (CloseableThreadContext.Instance threadContext = CloseableThreadContext.putAll(loggingInfo)) {
-            LOG.info("Updating log context: " + loggingInfo);
+            LOG.info("Updating log context: " + String.valueOf(loggingInfo).replace("\n", "").replace("\r", ""));
             if (m_isInitialized || tryToInitialize()) {
                 if (request instanceof HttpServletRequest) {
                     HttpServletRequest req = (HttpServletRequest)request;
