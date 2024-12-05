@@ -531,7 +531,7 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
             exportUrlStr = manager.getExportUrl() + manager.getRfsPrefix(vfsName) + rfsName;
         }
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_SENDING_REQUEST_2, rfsName, exportUrlStr));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SENDING_REQUEST_2, rfsName, exportUrlStr)).replace("\n", "").replace("\r", ""));
         }
         // setup the connection and request the resource
         URL exportUrl = new URL(exportUrlStr);
