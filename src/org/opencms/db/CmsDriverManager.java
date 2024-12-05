@@ -6504,9 +6504,9 @@ public final class CmsDriverManager implements I_CmsEventListener {
                     // remove files that are not locked for publishing
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.RPT_PUBLISH_REMOVED_RESOURCE_1,
-                                dbc.removeSiteRoot(resource.getRootPath())));
+                                dbc.removeSiteRoot(resource.getRootPath()))).replace("\n", "").replace("\r", ""));
                     }
                     publishList.remove(resource);
                     continue;
