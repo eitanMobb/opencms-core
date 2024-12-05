@@ -1228,7 +1228,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
             } else {
                 CmsMessageContainer message = Messages.get().container(Messages.ERR_NO_GROUP_WITH_ID_1, groupId);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
