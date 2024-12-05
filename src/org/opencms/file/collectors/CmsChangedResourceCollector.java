@@ -189,7 +189,7 @@ public class CmsChangedResourceCollector extends A_CmsResourceCollector {
                 LOG.error(
                     Messages.get().getBundle().key(
                         Messages.ERR_COLLECTOR_PARAM_INVALID_1,
-                        PARAM_KEY_DATEFROM + "=" + params.get(PARAM_KEY_DATEFROM)));
+                        String.valueOf(PARAM_KEY_DATEFROM).replace("\n", "").replace("\r", "") + "=" + String.valueOf(params.get(PARAM_KEY_DATEFROM)).replace("\n", "").replace("\r", "")));
                 throw e;
             }
         }
