@@ -746,7 +746,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_APPENDING_RESOURCE_TO_MANIFEST_1,
                 resource.getRootPath());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
             }
 
             throw new CmsImportExportException(message, e);
