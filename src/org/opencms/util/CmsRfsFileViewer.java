@@ -698,7 +698,7 @@ public class CmsRfsFileViewer implements Cloneable {
                 // we start with window 0
                 m_windowPos = availWindows - 1;
             } catch (IOException ioex) {
-                LOG.error("Unable to scroll file " + m_filePath + " to end. Ensure that it exists. ");
+                LOG.error("Unable to scroll file " + String.valueOf(m_filePath).replace("\n", "").replace("\r", "") + " to end. Ensure that it exists. ");
             } finally {
                 if (reader != null) {
                     try {
