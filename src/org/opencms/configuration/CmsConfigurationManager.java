@@ -490,7 +490,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         String transformationPath = getTransformationPath();
         boolean result = (transformationPath != null) && new File(transformationPath).exists();
         if (result) {
-            CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_ENABLED_1, transformationPath));
+            CmsLog.INIT.info(String.valueOf(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_ENABLED_1, transformationPath)).replace("\n", "").replace("\r", ""));
         } else {
             CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_DISABLED_0));
         }
