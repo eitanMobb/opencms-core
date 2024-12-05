@@ -475,7 +475,7 @@ public class CmsSearchIndex extends A_CmsSearchIndex {
             try {
                 m_luceneRAMBufferSizeMB = Double.valueOf(value);
             } catch (NumberFormatException e) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_INVALID_PARAM_3, value, key, getName()));
+                LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INVALID_PARAM_3, value, key, getName())).replace("\n", "").replace("\r", ""));
             }
         }
     }
