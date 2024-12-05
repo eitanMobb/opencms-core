@@ -316,7 +316,7 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
                 replacePath(sourceModulePath, targetModulePath, allContainerPages);
             }
         } catch (Throwable e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             getReport().addError(e);
         } finally {
             cms.getRequestContext().setCurrentProject(currentProject);
