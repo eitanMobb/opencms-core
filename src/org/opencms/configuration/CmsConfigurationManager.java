@@ -169,7 +169,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
             LOG.debug(
                 Messages.get().getBundle().key(Messages.LOG_CONFIG_BASE_FOLDER_1, m_baseFolder.getAbsolutePath()));
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_CONFIG_BKP_FOLDER_1, m_backupFolder.getAbsolutePath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_CONFIG_BKP_FOLDER_1, m_backupFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
         }
         cacheDtdSystemId(this);
         m_configurations = new ArrayList<I_CmsXmlConfiguration>();
