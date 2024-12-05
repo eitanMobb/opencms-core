@@ -311,7 +311,7 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
                                 cms.getRequestContext().getCurrentUser().getName(),
                                 cms.getRequestContext().getSiteRoot());
                             if (LOG.isDebugEnabled()) {
-                                LOG.debug(message, e);
+                                LOG.debug(String.valueOf(message).replace("\n", "").replace("\r", ""), e);
                             } else {
                                 LOG.info(message);
                             }
