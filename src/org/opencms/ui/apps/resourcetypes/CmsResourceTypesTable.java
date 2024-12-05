@@ -270,7 +270,7 @@ public class CmsResourceTypesTable extends Table {
                     Messages.GUI_RESOURCETYPE_APP_TABLE_NOT_AVAILABLE_CORE_0)
                 : CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE;
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type by name", e);
+                LOG.error("Unable to read resource type by name", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
             return CmsMenuItemVisibilityMode.VISIBILITY_INACTIVE;
         }
