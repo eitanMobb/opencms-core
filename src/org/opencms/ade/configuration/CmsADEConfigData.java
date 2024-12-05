@@ -2103,7 +2103,7 @@ public class CmsADEConfigData {
                         + getBasePath()
                         + "': found "
                         + labels;
-                    LOG.warn(message);
+                    LOG.warn(String.valueOf(message).replace("\n", "").replace("\r", ""));
                     OpenCmsServlet.withRequestCache(
                         rc -> rc.addLog(REQUEST_LOG_CHANNEL, "warn", REQ_LOG_PREFIX + message));
                 }
