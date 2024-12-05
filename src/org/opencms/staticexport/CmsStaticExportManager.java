@@ -630,7 +630,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
         }
         boolean exportWithResponse = true;
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_SE_RESOURCE_START_1, data));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SE_RESOURCE_START_1, data)).replace("\n", "").replace("\r", ""));
         }
 
         CmsFile file = exportCms.readFile(OpenCms.initResource(exportCms, vfsName, req, wrapRes));
