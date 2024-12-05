@@ -818,7 +818,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                     }
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         return Collections.unmodifiableMap(result);
