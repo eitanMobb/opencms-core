@@ -193,7 +193,7 @@ public class CmsResourceTypesTable extends Table {
                 }
 
             } catch (CmsException e) {
-                LOG.error("Unable to delete resource type", e);
+                LOG.error("Unable to delete resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
 
