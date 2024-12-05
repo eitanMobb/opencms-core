@@ -1533,7 +1533,7 @@ public abstract class CmsWorkplace {
             value = decodeParamValue(name, value);
             try {
                 if (LOG.isDebugEnabled() && (value != null)) {
-                    LOG.debug(Messages.get().getBundle().key(Messages.LOG_SET_PARAM_2, m.getName(), value));
+                    LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SET_PARAM_2, m.getName(), value)).replace("\n", "").replace("\r", ""));
                 }
                 m.invoke(this, new Object[] {value});
             } catch (InvocationTargetException ite) {
