@@ -3476,10 +3476,10 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                 m_solrConfig.getSolrFile().toPath());
             if (CmsLog.INIT.isInfoEnabled()) {
                 CmsLog.INIT.info(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.INIT_SOLR_CORE_CONTAINER_CREATED_2,
                         m_solrConfig.getHome(),
-                        m_solrConfig.getSolrFile().getName()));
+                        m_solrConfig.getSolrFile().getName())).replace("\n", "").replace("\r", ""));
             }
         } catch (Exception e) {
             LOG.error(
