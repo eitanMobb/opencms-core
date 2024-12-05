@@ -990,7 +990,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     val = defaultValue;
                 }
                 if (val == null) {
-                    LOG.warn("Parameter not defined: " + remaining);
+                    LOG.warn(String.valueOf("Parameter not defined: " + remaining).replace("\n", "").replace("\r", ""));
                 }
                 return val;
 
