@@ -139,7 +139,7 @@ public class CmsLogReport extends A_CmsReport {
             message.append(t.getMessage());
             m_buffer.append(message);
             addError(message.toString());
-            CmsLog.getLog(m_channel).info(m_buffer.toString(), t);
+            CmsLog.getLog(m_channel).info(m_buffer.toString(), String.valueOf(t).replace("\n", "").replace("\r", ""));
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());
