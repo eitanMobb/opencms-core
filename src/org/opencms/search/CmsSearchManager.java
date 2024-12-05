@@ -1376,7 +1376,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             }
                         }
                     } catch (Throwable t) {
-                        LOG.warn("Could not read type for name \"" + resourceType + "\".", t);
+                        LOG.warn("Could not read type for name \"" + resourceType + "\".", String.valueOf(t).replace("\n", "").replace("\r", ""));
                     }
                     if (!hasGlobalMatch) {
                         result.add(
