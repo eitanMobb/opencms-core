@@ -1274,7 +1274,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                     org.opencms.db.Messages.ERR_UNKNOWN_GROUP_1,
                     groupFqn);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key(), new Exception());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), new Exception());
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
