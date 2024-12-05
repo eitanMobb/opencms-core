@@ -1181,11 +1181,11 @@ public abstract class A_CmsResourceType implements I_CmsResourceType {
                 if (LOG.isDebugEnabled()) {
                     // log stack trace in debug level only
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_PROCESS_COPY_RESOURCES_3,
                             resourcename,
                             oriCopyResource,
-                            target),
+                            target)).replace("\n", "").replace("\r", ""),
                         e);
                 } else {
                     LOG.error(

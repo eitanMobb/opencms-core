@@ -166,7 +166,7 @@ public class CmsContainerConfigurationCache implements I_CmsGlobalConfigurationC
                     true);
                 m_state = new CmsContainerConfigurationCacheState(load(resources).values());
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         Runnable updateAction = new Runnable() {

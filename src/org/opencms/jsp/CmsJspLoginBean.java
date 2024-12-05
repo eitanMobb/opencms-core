@@ -151,13 +151,13 @@ public class CmsJspLoginBean extends CmsJspActionElement {
                     endTime = OpenCms.getLoginManager().getLoginMessage().getTimeEnd();
                 }
                 LOG.info(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_LOGIN_FAILED_WITH_MESSAGE_4,
                         new Object[] {
                             userName,
                             requestContext.addSiteRoot(requestContext.getUri()),
                             requestContext.getRemoteAddress(),
-                            new Date(endTime)}));
+                            new Date(endTime)})).replace("\n", "").replace("\r", ""));
 
             } else {
 

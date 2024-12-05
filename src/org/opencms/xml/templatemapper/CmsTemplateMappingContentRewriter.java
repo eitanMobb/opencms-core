@@ -233,7 +233,7 @@ public class CmsTemplateMappingContentRewriter extends A_CmsReportThread {
             CmsResourceFilter filter = CmsResourceFilter.IGNORE_EXPIRATION.addRequireType(type);
             return cms.readResources(folder, filter);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             getReport().println(e);
             return Collections.emptyList();
         }

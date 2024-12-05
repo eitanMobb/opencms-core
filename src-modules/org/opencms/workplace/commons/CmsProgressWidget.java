@@ -673,7 +673,7 @@ public class CmsProgressWidget {
         if (m_threads.get(getKey()) != null) {
             if (abortExisting) {
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(Messages.get().getBundle().key(Messages.LOG_PROGRESS_INTERRUPT_THREAD_1, getKey()));
+                    LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_PROGRESS_INTERRUPT_THREAD_1, getKey())).replace("\n", "").replace("\r", ""));
                 }
                 Thread thread = m_threads.get(getKey());
                 thread.interrupt();

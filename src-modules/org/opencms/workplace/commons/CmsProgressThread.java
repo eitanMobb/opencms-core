@@ -212,7 +212,7 @@ public class CmsProgressThread extends A_CmsProgressThread {
 
         try {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_PROGRESS_START_THREAD_1, getKey()));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_PROGRESS_START_THREAD_1, getKey())).replace("\n", "").replace("\r", ""));
             }
             m_starttime = System.currentTimeMillis();
 

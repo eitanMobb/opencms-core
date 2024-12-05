@@ -171,7 +171,7 @@ public final class CmsLog {
                 INIT = LogFactory.getLog("org.opencms.init");
                 INIT.info(". Log4j config file    : " + path);
                 INIT.debug(". m_logFileRfsPath    : " + m_logFileRfsPath);
-                INIT.debug(". m_logFileRfsFolder  : " + m_logFileRfsFolder);
+                INIT.debug(String.valueOf(". m_logFileRfsFolder  : " + m_logFileRfsFolder).replace("\n", "").replace("\r", ""));
             } else {
                 System.err.println("'log4j2.xml' not found. (Default location: WEB-INF/classes/log4j2.xml)");
             }

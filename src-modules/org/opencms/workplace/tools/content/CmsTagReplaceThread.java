@@ -284,9 +284,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                 // locked by another user:
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_TAGREPLACE_RESOURCE_SKIPPED_1,
-                            resource.getRootPath()));
+                            resource.getRootPath())).replace("\n", "").replace("\r", ""));
                     LOG.debug(Messages.get().getBundle().key(Messages.RPT_TAGREPLACE_SKIP_REASON_LOCKED_0));
                 }
                 report.print(
@@ -303,9 +303,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                         I_CmsReport.FORMAT_WARNING);
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_TAGREPLACE_RESOURCE_SKIPPED_1,
-                                resource.getRootPath()));
+                                resource.getRootPath())).replace("\n", "").replace("\r", ""));
                         LOG.debug(Messages.get().getBundle().key(Messages.RPT_TAGREPLACE_SKIP_REASON_ERR_LOCK_0));
                     }
                 }
@@ -330,7 +330,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOAD_FILE_1, resource.getRootPath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOAD_FILE_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
         }
 
         CmsFile file = getCms().readFile(resource);
@@ -397,7 +397,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
 
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_1, resource.getRootPath()));
+                    String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
             }
             byte[] content = xmlcontent.marshal();
             if (LOG.isDebugEnabled()) {
@@ -425,12 +425,12 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
 
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_TAGREPLACE_PROPERTY_WRITE_3,
                             new Object[] {
                                 m_markerProperty.getName(),
                                 m_markerProperty.getResourceValue(),
-                                resource.getRootPath()}));
+                                resource.getRootPath()})).replace("\n", "").replace("\r", ""));
                 }
                 getCms().writePropertyObject(
                     getCms().getRequestContext().removeSiteRoot(resource.getRootPath()),

@@ -226,7 +226,7 @@ public class CmsResourceTypeXmlPage extends A_CmsResourceTypeLinkParseable {
         } catch (CmsXmlException e) {
             if (LOG.isErrorEnabled()) {
                 LOG.error(
-                    Messages.get().getBundle().key(Messages.ERR_PROCESS_HTML_CONTENT_1, cms.getSitePath(file)),
+                    String.valueOf(Messages.get().getBundle().key(Messages.ERR_PROCESS_HTML_CONTENT_1, cms.getSitePath(file))).replace("\n", "").replace("\r", ""),
                     e);
             }
 

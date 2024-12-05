@@ -169,7 +169,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
             LOG.debug(
                 Messages.get().getBundle().key(Messages.LOG_CONFIG_BASE_FOLDER_1, m_baseFolder.getAbsolutePath()));
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_CONFIG_BKP_FOLDER_1, m_backupFolder.getAbsolutePath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_CONFIG_BKP_FOLDER_1, m_backupFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
         }
         cacheDtdSystemId(this);
         m_configurations = new ArrayList<I_CmsXmlConfiguration>();
@@ -339,7 +339,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
 
         // does not need to be initialized
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this)).replace("\n", "").replace("\r", ""));
         }
     }
 
@@ -553,7 +553,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
                 LOG.debug("");
                 LOG.debug(
                     "=================== Transformation result for config file '" + config.getXmlFileName() + "':");
-                LOG.debug(transformedConfigStr);
+                LOG.debug(String.valueOf(transformedConfigStr).replace("\n", "").replace("\r", ""));
             }
             return new InputSource(new ByteArrayInputStream(transformedConfigStr.getBytes("UTF-8")));
         } finally {
@@ -637,7 +637,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
 
         // generate the file URL for the XML input
         URL fileUrl = new URL(url, configuration.getXmlFileName());
-        CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_LOAD_CONFIG_XMLFILE_1, fileUrl));
+        CmsLog.INIT.info(String.valueOf(Messages.get().getBundle().key(Messages.INIT_LOAD_CONFIG_XMLFILE_1, fileUrl)).replace("\n", "").replace("\r", ""));
         // Check transformation rule here so we have the XML file / XSLT file log output together
         boolean hasTransformation = hasTransformation();
 

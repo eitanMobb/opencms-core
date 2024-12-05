@@ -287,7 +287,7 @@ implements I_CmsPasswordHandler, I_CmsPasswordSecurityEvaluator, I_CmsPasswordGe
         if (LOG.isDebugEnabled()) {
             CmsMessageContainer message = Messages.get().container(Messages.LOG_INIT_CONFIG_CALLED_1, this);
             LOG.debug(message.key());
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIG_CALLED_1, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIG_CALLED_1, this)).replace("\n", "").replace("\r", ""));
         }
         m_configuration = CmsParameterConfiguration.unmodifiableVersion(m_configuration);
 

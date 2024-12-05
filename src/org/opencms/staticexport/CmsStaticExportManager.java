@@ -630,7 +630,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
         }
         boolean exportWithResponse = true;
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_SE_RESOURCE_START_1, data));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SE_RESOURCE_START_1, data)).replace("\n", "").replace("\r", ""));
         }
 
         CmsFile file = exportCms.readFile(OpenCms.initResource(exportCms, vfsName, req, wrapRes));
@@ -1626,7 +1626,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 // resource not found
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName}),
+                        String.valueOf(Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName})).replace("\n", "").replace("\r", ""),
                         t);
                 }
             }
@@ -2984,10 +2984,10 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 exportFile.setLastModified((dateLastModified.longValue() / 1000) * 1000);
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_SET_LAST_MODIFIED_2,
                             exportFile.getName(),
-                            Long.valueOf((dateLastModified.longValue() / 1000) * 1000)));
+                            Long.valueOf((dateLastModified.longValue() / 1000) * 1000))).replace("\n", "").replace("\r", ""));
                 }
             }
         } else {

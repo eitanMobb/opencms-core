@@ -218,12 +218,12 @@ public class CmsSolrConfiguration {
                 CmsConfigurationException ex = new CmsConfigurationException(
                     Messages.get().container(Messages.LOG_SOLR_ERR_CONFIG_XML_NOT_FOUND_1, getSolrConfigFile()),
                     e);
-                LOG.error(ex.getLocalizedMessage(), ex);
+                LOG.error(ex.getLocalizedMessage(), String.valueOf(ex).replace("\n", "").replace("\r", ""));
             } catch (Exception e) {
                 CmsConfigurationException ex = new CmsConfigurationException(
                     Messages.get().container(Messages.LOG_SOLR_ERR_CONFIG_XML_NOT_READABLE_1, getSolrConfigFile()),
                     e);
-                LOG.error(ex.getLocalizedMessage(), ex);
+                LOG.error(ex.getLocalizedMessage(), String.valueOf(ex).replace("\n", "").replace("\r", ""));
             }
         }
         return m_solrConfig;

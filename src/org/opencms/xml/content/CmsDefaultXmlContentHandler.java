@@ -1052,7 +1052,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 String stringValue = value.getStringValue(cms);
                 if (stringValue.contains("%")) {
                     LOG.debug(
-                        content.getFile().getRootPath()
+                        String.valueOf(content.getFile().getRootPath()).replace("\n", "").replace("\r", "")
                             + ": Didn't apply reverse availability mapping because of macro value "
                             + stringValue);
                     return false;

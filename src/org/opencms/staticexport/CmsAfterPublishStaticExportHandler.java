@@ -531,7 +531,7 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
             exportUrlStr = manager.getExportUrl() + manager.getRfsPrefix(vfsName) + rfsName;
         }
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_SENDING_REQUEST_2, rfsName, exportUrlStr));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SENDING_REQUEST_2, rfsName, exportUrlStr)).replace("\n", "").replace("\r", ""));
         }
         // setup the connection and request the resource
         URL exportUrl = new URL(exportUrlStr);
@@ -575,10 +575,10 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
         urlcon.setIfModifiedSince(dateLastModified);
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_IF_MODIFIED_SINCE_SET_2,
                     exportFile.getName(),
-                    Long.valueOf((dateLastModified / 1000) * 1000)));
+                    Long.valueOf((dateLastModified / 1000) * 1000))).replace("\n", "").replace("\r", ""));
         }
         if (cookies.length() > 0) {
             // set the cookies, included the session id to keep the same session
@@ -593,7 +593,7 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
             //Now retrieve the cookies. The jsessionid is here
             cookies.append(urlcon.getHeaderField(HEADER_FIELD_SET_COOKIE));
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_STATICEXPORT_COOKIES_1, cookies));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_STATICEXPORT_COOKIES_1, cookies)).replace("\n", "").replace("\r", ""));
             }
         }
         urlcon.disconnect();

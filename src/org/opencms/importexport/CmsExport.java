@@ -216,7 +216,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,
                 getExportFileName());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), se);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), se);
             }
 
             throw new CmsImportExportException(message, se);
@@ -1197,7 +1197,7 @@ public class CmsExport {
                 project.getName(),
                 project.getUuid());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), exc);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), exc);
             }
 
             throw new CmsImportExportException(message, exc);

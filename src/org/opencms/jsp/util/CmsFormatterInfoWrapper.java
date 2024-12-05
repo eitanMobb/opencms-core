@@ -106,7 +106,7 @@ public class CmsFormatterInfoWrapper implements I_CmsFormatterInfo {
 
                 }
             } catch (Exception e) {
-                CmsJspStandardContextBean.LOG.warn(e.getLocalizedMessage(), e);
+                CmsJspStandardContextBean.LOG.warn(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         resolver.setCmsObject(cms);

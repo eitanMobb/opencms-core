@@ -177,7 +177,7 @@ public class CmsResourceTypesTable extends Table {
                                     // re-initialize the workplace
                                     OpenCms.getWorkplaceManager().initialize(m_cms);
                                 } catch (CmsException e) {
-                                    LOG.error("Unable to delete resource type", e);
+                                    LOG.error("Unable to delete resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
                                 }
                                 window.close();
                                 m_app.reload();
@@ -193,7 +193,7 @@ public class CmsResourceTypesTable extends Table {
                 }
 
             } catch (CmsException e) {
-                LOG.error("Unable to delete resource type", e);
+                LOG.error("Unable to delete resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
 
@@ -221,7 +221,7 @@ public class CmsResourceTypesTable extends Table {
                 }
                 return CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE;
             } catch (CmsException e) {
-                LOG.error("Unable to read resourcetype", e);
+                LOG.error("Unable to read resourcetype", String.valueOf(e).replace("\n", "").replace("\r", ""));
                 return CmsMenuItemVisibilityMode.VISIBILITY_INACTIVE;
             }
         }
@@ -295,7 +295,7 @@ public class CmsResourceTypesTable extends Table {
                     CmsVaadinUtils.getMessageText(Messages.GUI_RESOURCETYPE_MOVE_WINDOW_CAPTION_1, moduleName));
                 A_CmsUI.get().addWindow(window);
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type by name", e);
+                LOG.error("Unable to read resource type by name", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
 
@@ -327,7 +327,7 @@ public class CmsResourceTypesTable extends Table {
                 }
                 return CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE;
             } catch (CmsException e) {
-                LOG.error("Unable to read resourcetype", e);
+                LOG.error("Unable to read resourcetype", String.valueOf(e).replace("\n", "").replace("\r", ""));
                 return CmsMenuItemVisibilityMode.VISIBILITY_INACTIVE;
             }
         }

@@ -1141,7 +1141,7 @@ public final class CmsJspStandardContextBean {
         // if baseValue is still null, then resolveMacros will just return null
         String result = resolver.resolveMacros(baseValue);
 
-        LOG.debug("Final value for upload folder : " + result);
+        LOG.debug(String.valueOf("Final value for upload folder : " + result).replace("\n", "").replace("\r", ""));
         return result;
     }
 
@@ -2236,7 +2236,7 @@ public final class CmsJspStandardContextBean {
             I_CmsResourceType type = OpenCms.getResourceManager().getResourceType(typeName);
             return new CmsResourceTypeInfoWrapper(this, m_cms, m_config, type);
         } catch (CmsLoaderException e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             return null;
         }
     }

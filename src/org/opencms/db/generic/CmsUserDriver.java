@@ -1228,7 +1228,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
             } else {
                 CmsMessageContainer message = Messages.get().container(Messages.ERR_NO_GROUP_WITH_ID_1, groupId);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
@@ -1528,9 +1528,9 @@ public class CmsUserDriver implements I_CmsUserDriver {
                         if (value != null) {
                             try {
                                 LOG.debug(
-                                    Messages.get().getBundle().key(
+                                    String.valueOf(Messages.get().getBundle().key(
                                         Messages.LOG_DBG_READUSERINFO_VALUE_1,
-                                        new String(value)));
+                                        new String(value))).replace("\n", "").replace("\r", ""));
                             } catch (Exception e) {
                                 // noop
                             }
@@ -2757,7 +2757,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_2, role.getRoleName(), groupName));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_2, role.getRoleName(), groupName)).replace("\n", "").replace("\r", ""));
         }
 
         CmsGroup group = readGroup(dbc, groupName);
@@ -2765,7 +2765,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
             CmsGroup roleGroup = readGroup(dbc, role.getGroupName());
 
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_1, roleGroup));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_1, roleGroup)).replace("\n", "").replace("\r", ""));
             }
 
             // copy all users from the group to the role

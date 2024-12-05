@@ -1547,10 +1547,10 @@ public final class CmsSiteManagerImpl implements I_CmsEventListener {
         if (LOG.isDebugEnabled()) {
             String requestServer = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort();
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_MATCHING_REQUEST_TO_SITE_2,
                     requestServer,
-                    site.toString()));
+                    site.toString())).replace("\n", "").replace("\r", ""));
         }
         return site;
     }

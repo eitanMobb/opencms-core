@@ -71,7 +71,7 @@ public class CmsUgcUploadHelper {
             Map<String, I_CmsFormDataItem> itemMap = Maps.newHashMap();
             LOG.debug(formDataId + ": Processing file items");
             for (FileItem item : items) {
-                LOG.debug(formDataId + ": " + item.toString());
+                LOG.debug(String.valueOf(formDataId).replace("\n", "").replace("\r", "") + ": " + item.toString());
                 if (!item.isFormField() && CmsStringUtil.isEmptyOrWhitespaceOnly(item.getName())) {
                     LOG.debug(formDataId + ": skipping previous file field because it is empty");
                 } else {

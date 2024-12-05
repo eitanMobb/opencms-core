@@ -257,7 +257,7 @@ public class CmsComponentState {
                     m_resourceType = type;
                 }
             } catch (CmsLoaderException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
             String dateFrom = A_CmsWorkplaceApp.getParamFromState(state, DATE_FROM);
             if (dateFrom != null) {

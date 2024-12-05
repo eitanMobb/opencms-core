@@ -209,7 +209,7 @@ public abstract class A_CmsResourceCollector implements I_CmsResourceCollector {
                 return new CmsDefaultPostCreateHandler();
             }
         } catch (Exception e) {
-            LOG.error("Problem using post-create handler: '" + className + "'," + e.getLocalizedMessage(), e);
+            LOG.error("Problem using post-create handler: '" + String.valueOf(className).replace("\n", "").replace("\r", "") + "'," + e.getLocalizedMessage(), e);
             return new CmsDefaultPostCreateHandler();
         }
     }

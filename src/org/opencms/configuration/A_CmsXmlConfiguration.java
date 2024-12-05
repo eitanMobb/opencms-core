@@ -59,7 +59,7 @@ public abstract class A_CmsXmlConfiguration implements I_CmsXmlConfiguration {
 
         // simple default configuration does not support parameters
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_ADD_CONFIG_PARAM_3, paramName, paramValue, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_ADD_CONFIG_PARAM_3, paramName, paramValue, this)).replace("\n", "").replace("\r", ""));
         }
     }
 

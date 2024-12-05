@@ -539,7 +539,7 @@ public class CmsXmlSitemapGenerator {
                 I_CmsResourceType resType = resMan.getResourceType(typeName);
                 resTypes.add(resType);
             } catch (CmsLoaderException e) {
-                LOG.warn("Invalid resource type name" + typeName + "! " + e.getLocalizedMessage(), e);
+                LOG.warn("Invalid resource type name" + typeName + "! " + e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         return resTypes;

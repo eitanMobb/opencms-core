@@ -581,7 +581,7 @@ public class CmsVfsDriver implements I_CmsDriver, I_CmsVfsDriver {
                     Messages.get().getBundle().key(
                         Messages.LOG_CREATE_RELATION_2,
                         String.valueOf(projectId),
-                        relation));
+                        relation).replace("\n", "").replace("\r", ""));
             }
             stmt.executeUpdate();
         } catch (SQLException e) {
@@ -612,7 +612,7 @@ public class CmsVfsDriver implements I_CmsDriver, I_CmsVfsDriver {
                         Messages.get().getBundle().key(
                             Messages.LOG_CREATE_RELATION_2,
                             String.valueOf(projectId),
-                            relation));
+                            relation).replace("\n", "").replace("\r", ""));
                 }
                 stmt.executeUpdate();
             } catch (SQLException e) {

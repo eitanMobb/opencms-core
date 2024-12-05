@@ -285,7 +285,7 @@ implements I_CmsWorkplaceApp, ViewChangeListener, I_CmsWindowCloseListener, I_Cm
             }
 
         } catch (Exception e) {
-            LOG.error("Error initializing the editor.", e);
+            LOG.error("Error initializing the editor.", String.valueOf(e).replace("\n", "").replace("\r", ""));
             CmsErrorDialog.showErrorDialog(e, new Runnable() {
 
                 public void run() {
