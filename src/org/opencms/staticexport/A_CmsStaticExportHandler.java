@@ -366,7 +366,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                 // get the link name for the published file
                 String rfsName = OpenCms.getStaticExportManager().getRfsName(cms, vfsName);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(Messages.get().getBundle().key(Messages.LOG_CHECKING_STATIC_EXPORT_2, vfsName, rfsName));
+                    LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_CHECKING_STATIC_EXPORT_2, vfsName, rfsName)).replace("\n", "").replace("\r", ""));
                 }
                 if (rfsName.startsWith(OpenCms.getStaticExportManager().getRfsPrefix(vfsName))
                     && (!scrubbedFiles.contains(rfsName))
