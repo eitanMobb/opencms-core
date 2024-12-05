@@ -360,7 +360,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                 }
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         CmsLog.INIT.info(
