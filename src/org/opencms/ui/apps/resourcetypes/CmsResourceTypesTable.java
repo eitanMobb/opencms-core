@@ -730,7 +730,7 @@ public class CmsResourceTypesTable extends Table {
             window.setCaption(CmsVaadinUtils.getMessageText(Messages.GUI_RESOURCETYPE_EDIT_WINDOW_CAPTION_0));
             A_CmsUI.get().addWindow(window);
         } catch (CmsLoaderException e) {
-            LOG.error("Unable to read resource type by name", e);
+            LOG.error("Unable to read resource type by name", String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
     }
 
