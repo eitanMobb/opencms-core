@@ -1132,7 +1132,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             String.valueOf(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData())).replace("\n", "").replace("\r", ""),
                             e);
                     } else if (LOG.isErrorEnabled()) {
-                        LOG.error(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData()));
+                        LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData())).replace("\n", "").replace("\r", ""));
                     }
                 }
                 break;
