@@ -222,7 +222,7 @@ public class CmsImageScaler {
         } catch (Exception e) {
             // nothing we can do about this, keep the original properties
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_EXTRACT_IMAGE_SIZE_1, rootPath), e);
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_EXTRACT_IMAGE_SIZE_1, rootPath)).replace("\n", "").replace("\r", ""), e);
             }
             // set height / width to default of -1
             init();
