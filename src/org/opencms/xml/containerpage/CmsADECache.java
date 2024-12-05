@@ -264,9 +264,9 @@ public final class CmsADECache extends CmsVfsCache {
                 m_containerPagesOffline.put(key, containerPage);
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_CACHE_SET_OFFLINE_2,
-                            new Object[] {key, containerPage}));
+                            new Object[] {key, containerPage})).replace("\n", "").replace("\r", ""));
                 }
             }
         } finally {
