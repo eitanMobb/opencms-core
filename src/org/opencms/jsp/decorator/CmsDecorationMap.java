@@ -257,10 +257,10 @@ public class CmsDecorationMap implements Comparable<CmsDecorationMap> {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_DECORATION_MAP_FILL_MAP_SPLIT_LIST_2,
                     res.getName(),
-                    entries));
+                    entries)).replace("\n", "").replace("\r", ""));
         }
         Iterator<String> i = entries.iterator();
         while (i.hasNext()) {
