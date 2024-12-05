@@ -198,7 +198,7 @@ public class CmsRemoteShell extends UnicastRemoteObject implements I_CmsRemoteSh
      */
     public CmsShellCommandResult executeCommand(String cmd, List<String> params) {
 
-        LOG.debug(m_id + " executing " + cmd + " " + params);
+        LOG.debug(m_id + " executing " + String.valueOf(cmd).replace("\n", "").replace("\r", "") + " " + String.valueOf(params).replace("\n", "").replace("\r", ""));
         CmsShellCommandResult result = new CmsShellCommandResult();
         m_baos.reset();
         boolean hasError = false;
