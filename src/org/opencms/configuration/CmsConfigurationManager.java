@@ -521,7 +521,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         PrintStream oldErr = System.err;
         System.setErr(new PrintStream(errBaos));
         try {
-            LOG.info("Transforming '" + configPath + "' with transformation '" + transformPath + "'");
+            LOG.info("Transforming '" + configPath + "' with transformation '" + String.valueOf(transformPath).replace("\n", "").replace("\r", "") + "'");
             Transformer transformer = factory.newTransformer(new StreamSource(new File(transformPath)));
             transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
             transformer.setParameter("file", config.getXmlFileName());
