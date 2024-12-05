@@ -704,7 +704,7 @@ public class CmsRfsFileViewer implements Cloneable {
                     try {
                         reader.close();
                     } catch (Throwable f) {
-                        LOG.info("Unable to close reader of file " + m_filePath, f);
+                        LOG.info(String.valueOf("Unable to close reader of file " + m_filePath).replace("\n", "").replace("\r", ""), f);
                     }
                 }
             }
