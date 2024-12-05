@@ -527,7 +527,7 @@ public abstract class A_CmsImport implements I_CmsImport {
                                 Messages.ERR_IMPORTEXPORT_LINK_CONVERSION_FAILED_2,
                                 key,
                                 link),
-                            e);
+                            String.valueOf(e).replace("\n", "").replace("\r", ""));
                     }
                 }
             }
