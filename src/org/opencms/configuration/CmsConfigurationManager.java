@@ -580,7 +580,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
             + configuration.getXmlFileName();
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_2, fromName, toName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_2, fromName, toName)).replace("\n", "").replace("\r", ""));
         }
 
         try {
