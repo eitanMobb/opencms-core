@@ -256,10 +256,10 @@ public class CmsVfsIndexer implements I_CmsIndexer {
                 } catch (CmsException e) {
                     if (LOG.isWarnEnabled()) {
                         LOG.warn(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_UNABLE_TO_READ_RESOURCE_2,
                                 res.getRootPath(),
-                                m_index.getName()),
+                                m_index.getName())).replace("\n", "").replace("\r", ""),
                             e);
                     }
                 }
