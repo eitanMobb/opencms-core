@@ -869,10 +869,10 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     } catch (CmsException e) {
                         if (LOG.isWarnEnabled()) {
                             LOG.warn(
-                                Messages.get().getBundle().key(
+                                String.valueOf(Messages.get().getBundle().key(
                                     Messages.LOG_PROPERTY_READING_FAILED_2,
                                     macro,
-                                    controller.getCurrentRequest().getElementUri()),
+                                    controller.getCurrentRequest().getElementUri())).replace("\n", "").replace("\r", ""),
                                 e);
                         }
                     }
