@@ -95,7 +95,7 @@ public class CmsShellLogReport extends CmsShellReport {
 
         super.println(container);
         m_line += container.key();
-        LOG.info(m_line);
+        LOG.info(String.valueOf(m_line).replace("\n", "").replace("\r", ""));
         m_line = "";
     }
 

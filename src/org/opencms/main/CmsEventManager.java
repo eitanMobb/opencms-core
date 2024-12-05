@@ -218,11 +218,11 @@ public class CmsEventManager {
                 // loop through all registered event listeners
                 for (int i = 0; i < list.length; i++) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_EVENT_START_LISTENER_3,
                             list[i],
                             Integer.valueOf(i),
-                            event.toString()));
+                            event.toString())).replace("\n", "").replace("\r", ""));
                     try {
                         // fire the event
                         list[i].cmsEvent(event);

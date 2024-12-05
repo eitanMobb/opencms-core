@@ -246,7 +246,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOCK_RESOURCE_1, resource.getRootPath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOCK_RESOURCE_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
         }
         try {
             // checking the lock:
@@ -267,9 +267,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                 if (!myLock) {
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_TAGREPLACE_LOCK_RESOURCE_1,
-                                resource.getRootPath()));
+                                resource.getRootPath())).replace("\n", "").replace("\r", ""));
                     }
                     // obtaining the lock:
                     getCms().lockResource(getCms().getRequestContext().removeSiteRoot(resource.getRootPath()));
@@ -339,7 +339,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
             LOG.debug(
                 Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_LOAD_FILE_OK_1, resource.getRootPath()));
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_UNMARSHAL_1, resource.getRootPath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_UNMARSHAL_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
         }
 
         CmsXmlContent xmlcontent = CmsXmlContentFactory.unmarshal(getCms(), file);
@@ -402,7 +402,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
             byte[] content = xmlcontent.marshal();
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_OK_1, resource.getRootPath()));
+                    String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_OK_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
             }
 
             // write back the modified xmlcontent:

@@ -1064,9 +1064,9 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                         content.getValue(mappedElement, locale).setStringValue(cms, "");
                     } else {
                         LOG.warn(
-                            content.getFile().getRootPath()
+                            String.valueOf(content.getFile().getRootPath()).replace("\n", "").replace("\r", "")
                                 + ": Could not apply reverse availability mapping because the field "
-                                + mappedElement
+                                + String.valueOf(mappedElement).replace("\n", "").replace("\r", "")
                                 + " is neither optional nor of type OpenCmsString.");
                     }
                 } else {

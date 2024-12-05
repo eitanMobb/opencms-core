@@ -281,7 +281,7 @@ public class CmsMacroFormatterResolver {
                     formatterId = res.getStructureId();
                 }
             } catch (CmsException e) {
-                LOG.error("Failed to read formatter configuration.", e);
+                LOG.error("Failed to read formatter configuration.", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         if (formatterId != null) {

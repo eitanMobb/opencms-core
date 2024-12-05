@@ -904,7 +904,7 @@ public class CmsSessionManager {
         if (LOG.isDebugEnabled()) {
             LOG.debug(tid + Messages.get().getBundle().key(Messages.LOG_SESSION_CREATED_1, event.getSession().getId()));
             if (request != null) {
-                LOG.debug(tid + "Session created in request: " + request.getRequestURL());
+                LOG.debug(String.valueOf(tid).replace("\n", "").replace("\r", "") + "Session created in request: " + request.getRequestURL());
             }
             StringWriter sw = new StringWriter();
             new Throwable("").printStackTrace(new PrintWriter(sw));

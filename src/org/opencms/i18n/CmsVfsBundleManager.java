@@ -284,7 +284,7 @@ public class CmsVfsBundleManager implements I_CmsEventListener {
         if (logToErrorChannel) {
             LOG.error(e.getLocalizedMessage(), e);
         } else {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
         // if an error was logged make sure that the flag to schedule a reload is reset
         setReloadScheduled(false);

@@ -689,7 +689,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
         if (isSitemapConfiguration(rootPath, type)) {
             m_workQueue.add(structureId);
         } else if (isModuleConfiguration(rootPath, type)) {
-            LOG.info("Changed module configuration file " + rootPath + "(" + structureId + ")");
+            LOG.info("Changed module configuration file " + rootPath + "(" + String.valueOf(structureId).replace("\n", "").replace("\r", "") + ")");
             m_workQueue.add(ID_UPDATE_MODULES);
         } else if (isElementView(type)) {
             m_workQueue.add(ID_UPDATE_ELEMENT_VIEWS);
@@ -818,7 +818,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                     }
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         return Collections.unmodifiableMap(result);

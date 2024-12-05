@@ -284,7 +284,7 @@ public class CmsAddDialogTypeHelper {
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         Set<String> creatableTypes = new HashSet<String>();

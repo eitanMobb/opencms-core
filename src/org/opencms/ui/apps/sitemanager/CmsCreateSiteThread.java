@@ -386,7 +386,7 @@ public class CmsCreateSiteThread extends A_CmsReportThread {
                 file.setContents(con.marshal());
                 m_cms.writeFile(file);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
     }

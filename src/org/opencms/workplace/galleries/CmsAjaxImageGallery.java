@@ -202,7 +202,7 @@ public class CmsAjaxImageGallery extends A_CmsAjaxGallery {
                 }
             } catch (CmsLoaderException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                 }
             }
             m_defaultScaleParams = new CmsImageScaler(m_galleryTypeParams);

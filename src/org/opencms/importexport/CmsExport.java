@@ -227,7 +227,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,
                 getExportFileName());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), ioe);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), ioe);
             }
 
             throw new CmsImportExportException(message, ioe);
@@ -984,7 +984,7 @@ public class CmsExport {
                 org.opencms.db.Messages.ERR_GET_PARENT_GROUP_1,
                 group.getName());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
             }
 
             throw new CmsImportExportException(message, e);

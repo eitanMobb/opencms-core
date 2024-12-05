@@ -170,7 +170,7 @@ public final class CmsLog {
                 // can't localize this message since this would end in an endless logger init loop
                 INIT = LogFactory.getLog("org.opencms.init");
                 INIT.info(". Log4j config file    : " + path);
-                INIT.debug(". m_logFileRfsPath    : " + m_logFileRfsPath);
+                INIT.debug(String.valueOf(". m_logFileRfsPath    : " + m_logFileRfsPath).replace("\n", "").replace("\r", ""));
                 INIT.debug(". m_logFileRfsFolder  : " + m_logFileRfsFolder);
             } else {
                 System.err.println("'log4j2.xml' not found. (Default location: WEB-INF/classes/log4j2.xml)");

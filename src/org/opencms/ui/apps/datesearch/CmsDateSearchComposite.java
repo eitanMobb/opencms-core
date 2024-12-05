@@ -695,7 +695,7 @@ public class CmsDateSearchComposite implements I_ResourcePropertyProvider, I_Cms
                 I_CmsResourceType resourceType = OpenCms.getResourceManager().getResourceType(typeName);
                 result.add(resourceType);
             } catch (CmsLoaderException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         return result;

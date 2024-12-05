@@ -130,7 +130,7 @@ public class CmsUserLog {
      */
     public static void logSecondFactorInfoModified(CmsRequestContext requestContext, String name) {
 
-        LOG.info("second factor information modified: " + formatUser(name) + " " + context(requestContext));
+        LOG.info(String.valueOf("second factor information modified: " + formatUser(name) + " " + context(requestContext)).replace("\n", "").replace("\r", ""));
     }
 
     /**

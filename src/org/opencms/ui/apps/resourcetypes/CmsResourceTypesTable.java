@@ -270,7 +270,7 @@ public class CmsResourceTypesTable extends Table {
                     Messages.GUI_RESOURCETYPE_APP_TABLE_NOT_AVAILABLE_CORE_0)
                 : CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE;
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type by name", e);
+                LOG.error("Unable to read resource type by name", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
             return CmsMenuItemVisibilityMode.VISIBILITY_INACTIVE;
         }
@@ -360,7 +360,7 @@ public class CmsResourceTypesTable extends Table {
                 }
 
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type", e);
+                LOG.error("Unable to read resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
             } catch (CmsException e) {
                 LOG.error("Unable to read schema file", e);
             }
@@ -730,7 +730,7 @@ public class CmsResourceTypesTable extends Table {
             window.setCaption(CmsVaadinUtils.getMessageText(Messages.GUI_RESOURCETYPE_EDIT_WINDOW_CAPTION_0));
             A_CmsUI.get().addWindow(window);
         } catch (CmsLoaderException e) {
-            LOG.error("Unable to read resource type by name", e);
+            LOG.error("Unable to read resource type by name", String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
     }
 

@@ -716,9 +716,9 @@ public class CmsScheduledJobInfo implements I_CmsConfigurationParameterHandler, 
         // simple default configuration does not need to be initialized
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                org.opencms.configuration.Messages.get().getBundle().key(
+                String.valueOf(org.opencms.configuration.Messages.get().getBundle().key(
                     org.opencms.configuration.Messages.LOG_INIT_CONFIGURATION_1,
-                    this));
+                    this)).replace("\n", "").replace("\r", ""));
         }
         setFrozen(true);
     }

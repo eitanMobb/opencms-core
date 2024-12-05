@@ -844,7 +844,7 @@ public class CmsLocaleManager implements I_CmsEventListener {
         try {
             defaultNames = cms.readPropertyObject(resource, CmsPropertyDefinition.PROPERTY_LOCALE, true).getValue();
         } catch (CmsException e) {
-            LOG.warn(Messages.get().getBundle().key(Messages.ERR_READ_ENCODING_PROP_1, cms.getSitePath(resource)), e);
+            LOG.warn(String.valueOf(Messages.get().getBundle().key(Messages.ERR_READ_ENCODING_PROP_1, cms.getSitePath(resource))).replace("\n", "").replace("\r", ""), e);
         }
         return getDefaultLocales(defaultNames);
     }

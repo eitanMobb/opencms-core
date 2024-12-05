@@ -437,7 +437,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                         OpenCms.getStaticExportManager().getExportPath(vfsName)
                             + rfsName.substring(OpenCms.getStaticExportManager().getRfsPrefix(vfsName).length()));
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.LOG_EXPORT_RFSNAME_1, rfsName));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_EXPORT_RFSNAME_1, rfsName)).replace("\n", "").replace("\r", ""));
                     }
                     // purge related files
                     List<File> relFilesToPurge = getRelatedFilesToPurge(rfsExportFileName, vfsName);

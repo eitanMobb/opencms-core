@@ -824,7 +824,7 @@ public class CmsNewResourceTypeDialog extends CmsBasicDialog {
                 new CmsLogReport(m_cms.getRequestContext().getLocale(), getClass()));
             OpenCms.getPublishManager().waitWhileRunning();
         } catch (Exception e) {
-            LOG.error("Unable to create resource type", e);
+            LOG.error("Unable to create resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
         } finally {
             m_cms.getRequestContext().setCurrentProject(currentProject);
         }

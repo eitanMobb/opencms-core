@@ -150,18 +150,18 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         if (!m_baseFolder.exists()) {
             if (LOG.isErrorEnabled()) {
                 LOG.error(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_INVALID_CONFIG_BASE_FOLDER_1,
-                        m_baseFolder.getAbsolutePath()));
+                        m_baseFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
             }
         }
         m_backupFolder = new File(m_baseFolder.getAbsolutePath() + File.separatorChar + "backup");
         if (!m_backupFolder.exists()) {
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_CREATE_CONFIG_BKP_FOLDER_1,
-                        m_backupFolder.getAbsolutePath()));
+                        m_backupFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
             }
             m_backupFolder.mkdirs();
         }
@@ -580,7 +580,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
             + configuration.getXmlFileName();
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_2, fromName, toName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_CREATE_CONFIG_BKP_2, fromName, toName)).replace("\n", "").replace("\r", ""));
         }
 
         try {
