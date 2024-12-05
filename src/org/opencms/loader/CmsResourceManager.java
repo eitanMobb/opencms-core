@@ -1212,7 +1212,7 @@ public class CmsResourceManager {
             } catch (Exception e) {
                 // should never happen because we already checked with hasResourceType, still have to
                 // catch it so the compiler is happy
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                 return false;
             }
         } else {
