@@ -183,7 +183,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     @Override
     public void log(String msg) {
-        LOG.info(msg);
+        LOG.info(String.valueOf(msg).replace("\n", "").replace("\r", ""));
     }
 
     /**
