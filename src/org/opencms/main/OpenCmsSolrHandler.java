@@ -297,7 +297,7 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 String indexName = context.m_params.get(PARAM_CORE) != null
                 ? context.m_params.get(PARAM_CORE)[0]
                 : (context.m_params.get(PARAM_INDEX) != null ? context.m_params.get(PARAM_INDEX)[0] : null);
-                LOG.info(Messages.get().getBundle().key(Messages.GUI_SOLR_INDEX_NOT_FOUND_1, indexName));
+                LOG.info(String.valueOf(Messages.get().getBundle().key(Messages.GUI_SOLR_INDEX_NOT_FOUND_1, indexName)).replace("\n", "").replace("\r", ""));
             }
         }
 
