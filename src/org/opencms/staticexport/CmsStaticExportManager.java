@@ -2551,9 +2551,9 @@ public class CmsStaticExportManager implements I_CmsEventListener {
             } catch (CmsVfsResourceNotFoundException e) {
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_NO_INTERNAL_VFS_RESOURCE_FOUND_1,
-                            new String[] {rfsName}));
+                            new String[] {rfsName})).replace("\n", "").replace("\r", ""));
                 }
             } catch (CmsException e) {
                 // ignore, resource does not exist
