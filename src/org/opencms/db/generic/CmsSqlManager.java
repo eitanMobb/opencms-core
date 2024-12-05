@@ -387,7 +387,7 @@ public class CmsSqlManager extends org.opencms.db.CmsSqlManager {
         String value = m_queries.get(queryKey);
         if (value == null) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_QUERY_NOT_FOUND_1, queryKey));
+                LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_QUERY_NOT_FOUND_1, queryKey)).replace("\n", "").replace("\r", ""));
             }
         }
         return value;
