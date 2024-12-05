@@ -669,7 +669,7 @@ public class CmsWorkplaceSettings {
     public void setLastUsedGallery(String galleryKey, String gallerypath) {
 
         m_lastUsedGalleries.put(galleryKey, gallerypath);
-        LOG.info("user=" + m_user.getName() + ": setLastUsedGallery " + galleryKey + " -> " + gallerypath);
+        LOG.info("user=" + m_user.getName() + ": setLastUsedGallery " + String.valueOf(galleryKey).replace("\n", "").replace("\r", "") + " -> " + gallerypath);
     }
 
     /**
