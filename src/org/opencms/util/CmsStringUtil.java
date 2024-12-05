@@ -813,7 +813,7 @@ public final class CmsStringUtil {
             result = Integer.valueOf(value).intValue();
         } catch (Exception e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_PARSE_INT_2, value, key));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_PARSE_INT_2, value, key)).replace("\n", "").replace("\r", ""));
             }
             result = defaultValue;
         }
