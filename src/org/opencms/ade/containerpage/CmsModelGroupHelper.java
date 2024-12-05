@@ -268,7 +268,7 @@ public class CmsModelGroupHelper {
                     }
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                 e.printStackTrace(response.getWriter());
             }
         }
