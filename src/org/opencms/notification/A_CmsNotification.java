@@ -162,7 +162,7 @@ public abstract class A_CmsNotification extends CmsHtmlMail {
             }
 
             if (LOG.isInfoEnabled()) {
-                LOG.info(Messages.get().getBundle().key(Messages.LOG_NOTIFICATION_SEND_1, m_receiver.getEmail()));
+                LOG.info(String.valueOf(Messages.get().getBundle().key(Messages.LOG_NOTIFICATION_SEND_1, m_receiver.getEmail())).replace("\n", "").replace("\r", ""));
             }
 
             // read resource with subject, header and footer

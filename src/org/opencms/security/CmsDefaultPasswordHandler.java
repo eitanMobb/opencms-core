@@ -286,7 +286,7 @@ implements I_CmsPasswordHandler, I_CmsPasswordSecurityEvaluator, I_CmsPasswordGe
         // simple default configuration does not need to be initialized
         if (LOG.isDebugEnabled()) {
             CmsMessageContainer message = Messages.get().container(Messages.LOG_INIT_CONFIG_CALLED_1, this);
-            LOG.debug(message.key());
+            LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
             LOG.debug(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIG_CALLED_1, this));
         }
         m_configuration = CmsParameterConfiguration.unmodifiableVersion(m_configuration);

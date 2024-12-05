@@ -87,12 +87,12 @@ public final class CmsInputWidgetPlaintext extends CmsInputWidget {
                 } catch (ParserException e) {
                     if (LOG.isErrorEnabled()) {
                         LOG.error(
-                            Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_PLAINTEXT_EXTRACT_HTML_1, value));
+                            String.valueOf(Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_PLAINTEXT_EXTRACT_HTML_1, value)).replace("\n", "").replace("\r", ""));
                     }
                 } catch (UnsupportedEncodingException e) {
                     if (LOG.isErrorEnabled()) {
                         LOG.error(
-                            Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_PLAINTEXT_EXTRACT_HTML_1, value));
+                            String.valueOf(Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_PLAINTEXT_EXTRACT_HTML_1, value)).replace("\n", "").replace("\r", ""));
                     }
                 }
             } else {

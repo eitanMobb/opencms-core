@@ -201,7 +201,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     public void logError(Throwable t) {
 
-        LOG.error(t.getLocalizedMessage(), t);
+        LOG.error(t.getLocalizedMessage(), String.valueOf(t).replace("\n", "").replace("\r", ""));
     }
 
     /**

@@ -183,7 +183,7 @@ public class CmsUgcEditService extends CmsGwtService implements I_CmsUgcEditServ
                             String sitePath = session.getCmsObject().getSitePath(createdResource);
                             result.put(fieldName, sitePath);
                         } else {
-                            LOG.debug(formDataId + ": requested upload for field " + fieldName + " which was empty.");
+                            LOG.debug(formDataId + ": requested upload for field " + String.valueOf(fieldName).replace("\n", "").replace("\r", "") + " which was empty.");
                         }
                     }
                 }

@@ -181,11 +181,11 @@ public class CmsResourceTranslator {
                         // first pattern matched, return the result
                         if (LOG.isDebugEnabled()) {
                             LOG.debug(
-                                Messages.get().getBundle().key(
+                                String.valueOf(Messages.get().getBundle().key(
                                     Messages.LOG_TRANSLATION_MATCH_3,
                                     Integer.valueOf(i),
                                     resourceName,
-                                    result));
+                                    result)).replace("\n", "").replace("\r", ""));
                         }
                         // Return first match result
                         return result.toString();
@@ -200,7 +200,7 @@ public class CmsResourceTranslator {
 
         // the pattern matched, return the result
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_TRANSLATION_MATCH_2, resourceName, current));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_TRANSLATION_MATCH_2, resourceName, current)).replace("\n", "").replace("\r", ""));
         }
         // return last translation (or original if no matching translation found)
         return current;

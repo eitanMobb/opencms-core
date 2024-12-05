@@ -1129,10 +1129,10 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     }
                     if (LOG.isDebugEnabled()) {
                         LOG.error(
-                            Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData()),
+                            String.valueOf(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData())).replace("\n", "").replace("\r", ""),
                             e);
                     } else if (LOG.isErrorEnabled()) {
-                        LOG.error(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData()));
+                        LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.ERR_EVENT_REINDEX_FAILED_1, event.getData())).replace("\n", "").replace("\r", ""));
                     }
                 }
                 break;
@@ -1376,7 +1376,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             }
                         }
                     } catch (Throwable t) {
-                        LOG.warn("Could not read type for name \"" + resourceType + "\".", t);
+                        LOG.warn("Could not read type for name \"" + resourceType + "\".", String.valueOf(t).replace("\n", "").replace("\r", ""));
                     }
                     if (!hasGlobalMatch) {
                         result.add(

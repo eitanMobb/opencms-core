@@ -354,7 +354,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
 
         long timer = System.currentTimeMillis();
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_SCRUB_EXPORT_START_RESOURCE_1, res.getRootPath()));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SCRUB_EXPORT_START_RESOURCE_1, res.getRootPath())).replace("\n", "").replace("\r", ""));
         }
         try {
             // ensure all siblings are scrubbed if the resource has one
@@ -472,10 +472,10 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
         }
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_SCRUB_EXPORT_FINISH_RESOURCE_2,
                     res.getRootPath(),
-                    (System.currentTimeMillis() - timer) + ""));
+                    (System.currentTimeMillis() - timer) + "")).replace("\n", "").replace("\r", ""));
         }
     }
 

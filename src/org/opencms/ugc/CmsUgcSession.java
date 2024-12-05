@@ -719,9 +719,9 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
                 }
                 LOG.info(
                     "Deleting project for timed out form session: "
-                        + getProject().getName()
+                        + String.valueOf(getProject().getName()).replace("\n", "").replace("\r", "")
                         + " ["
-                        + getProject().getUuid()
+                        + String.valueOf(getProject().getUuid()).replace("\n", "").replace("\r", "")
                         + "]");
                 cms.deleteProject(projectId);
 

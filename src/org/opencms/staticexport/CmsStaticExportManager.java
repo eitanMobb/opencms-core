@@ -595,7 +595,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
         }
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_STATIC_EXPORT_SITE_ROOT_2, siteRoot, vfsName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_STATIC_EXPORT_SITE_ROOT_2, siteRoot, vfsName)).replace("\n", "").replace("\r", ""));
         }
 
         boolean usesSecureSite = (req != null) && OpenCms.getSiteManager().usesSecureSite(req);
@@ -2551,15 +2551,15 @@ public class CmsStaticExportManager implements I_CmsEventListener {
             } catch (CmsVfsResourceNotFoundException e) {
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_NO_INTERNAL_VFS_RESOURCE_FOUND_1,
-                            new String[] {rfsName}));
+                            new String[] {rfsName})).replace("\n", "").replace("\r", ""));
                 }
             } catch (CmsException e) {
                 // ignore, resource does not exist
                 if (LOG.isWarnEnabled()) {
                     LOG.warn(
-                        Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName}),
+                        String.valueOf(Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName})).replace("\n", "").replace("\r", ""),
                         e);
                 }
             }

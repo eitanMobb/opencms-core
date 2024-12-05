@@ -1123,12 +1123,12 @@ public class CmsImageScaler {
                     setFilters(v);
                 } else {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v)).replace("\n", "").replace("\r", ""));
                     }
                 }
             } else {
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v));
+                    LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v)).replace("\n", "").replace("\r", ""));
                 }
             }
         }
@@ -1182,7 +1182,7 @@ public class CmsImageScaler {
         if (imageType == null) {
             // unknown type, unable to scale the image
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString()));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString())).replace("\n", "").replace("\r", ""));
             }
             return result;
         }

@@ -572,9 +572,9 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                         if (LOG.isErrorEnabled()) {
                             LOG.error(
                                 "Failed to add INDEX_CONTENT relation from resource "
-                                    + file.getRootPath()
+                                    + String.valueOf(file.getRootPath()).replace("\n", "").replace("\r", "")
                                     + " to linked resource "
-                                    + stringValue
+                                    + String.valueOf(stringValue).replace("\n", "").replace("\r", "")
                                     + ".",
                                 t);
                         }

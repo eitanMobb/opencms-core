@@ -642,7 +642,7 @@ public abstract class A_CmsResourceType implements I_CmsResourceType {
 
         // final since subclasses should NOT implement this, but rather the version with 3 String parameters (see below)
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this)).replace("\n", "").replace("\r", ""));
         }
     }
 

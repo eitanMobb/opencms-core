@@ -381,7 +381,7 @@ public class CmsModuleImportExportRepository {
         }
         Collections.sort(entries);
         String inputString = CmsStringUtil.listAsString(entries, "\n") + "\nMETA:" + module.getObjectCreateTime();
-        LOG.debug("Computing module hash from base string:\n" + inputString);
+        LOG.debug(String.valueOf("Computing module hash from base string:\n" + inputString).replace("\n", "").replace("\r", ""));
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
             md5.update(inputString.getBytes("UTF-8"));

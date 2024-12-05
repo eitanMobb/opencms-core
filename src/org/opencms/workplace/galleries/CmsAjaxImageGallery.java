@@ -168,7 +168,7 @@ public class CmsAjaxImageGallery extends A_CmsAjaxGallery {
         } catch (CmsLoaderException e) {
             // resource type not found, log error
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         return m_galleryTypeId;

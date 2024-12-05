@@ -250,7 +250,7 @@ public class CmsSiteDetailDialog extends CmsWidgetDialog {
                         file.setContents(con.marshal());
                         cms.writeFile(file);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                     }
                 }
             }

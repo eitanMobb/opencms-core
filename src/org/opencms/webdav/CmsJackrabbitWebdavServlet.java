@@ -214,7 +214,7 @@ public class CmsJackrabbitWebdavServlet extends AbstractWebdavServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        LOG.debug("WEBDAV: " + request.getMethod() + " " + request.getRequestURI());
+        LOG.debug("WEBDAV: " + String.valueOf(request.getMethod()).replace("\n", "").replace("\r", "") + " " + request.getRequestURI());
         //printHeaderInfo(request);
         if (Boolean.parseBoolean(m_repository.getConfiguration().getString("failOnRangeHeader", "false"))) {
             // The MacOS WebDav client uses range requests and seems to assume they work even if the server sends a HTTP status of 200

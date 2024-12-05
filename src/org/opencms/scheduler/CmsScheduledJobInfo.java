@@ -450,11 +450,11 @@ public class CmsScheduledJobInfo implements I_CmsConfigurationParameterHandler, 
         m_parameters.put(paramName, paramValue);
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                org.opencms.configuration.Messages.get().getBundle().key(
+                String.valueOf(org.opencms.configuration.Messages.get().getBundle().key(
                     org.opencms.configuration.Messages.LOG_ADD_CONFIG_PARAM_3,
                     paramName,
                     paramValue,
-                    this));
+                    this)).replace("\n", "").replace("\r", ""));
         }
     }
 

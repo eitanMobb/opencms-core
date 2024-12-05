@@ -397,7 +397,7 @@ public class CmsResourceTypesTable extends Table {
                 }
 
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type", e);
+                LOG.error("Unable to read resource type", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
             return CmsMenuItemVisibilityMode.VISIBILITY_INVISIBLE;
         }

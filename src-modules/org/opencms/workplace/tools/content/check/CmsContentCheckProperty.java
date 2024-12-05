@@ -286,9 +286,9 @@ public class CmsContentCheckProperty extends A_CmsContentCheck {
             CmsFile file = m_cms.readFile(res);
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_DEBUG_PROPERTY_CONFIG_FILE_1,
-                        new String(file.getContents())));
+                        new String(file.getContents()))).replace("\n", "").replace("\r", ""));
             }
             CmsXmlContent configuration = CmsXmlContentFactory.unmarshal(m_cms, file);
 

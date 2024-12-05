@@ -307,7 +307,7 @@ public class CmsSolrIndex extends CmsSearchIndex {
                         CmsException ex = new CmsException(
                             Messages.get().container(Messages.LOG_SOLR_ERR_POST_PROCESSOR_NOT_EXIST_1, value),
                             e);
-                        LOG.error(ex.getMessage(), ex);
+                        LOG.error(ex.getMessage(), String.valueOf(ex).replace("\n", "").replace("\r", ""));
                     }
                 }
                 break;

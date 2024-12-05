@@ -122,7 +122,7 @@ public class CmsLogReport extends A_CmsReport {
     public synchronized void println() {
 
         if (CmsLog.getLog(m_channel).isInfoEnabled()) {
-            CmsLog.getLog(m_channel).info(m_buffer.toString());
+            CmsLog.getLog(m_channel).info(String.valueOf(m_buffer.toString()).replace("\n", "").replace("\r", ""));
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());
@@ -139,7 +139,7 @@ public class CmsLogReport extends A_CmsReport {
             message.append(t.getMessage());
             m_buffer.append(message);
             addError(message.toString());
-            CmsLog.getLog(m_channel).info(m_buffer.toString(), t);
+            CmsLog.getLog(m_channel).info(m_buffer.toString(), String.valueOf(t).replace("\n", "").replace("\r", ""));
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());

@@ -290,7 +290,7 @@ public class CmsSolrConfiguration {
                         Messages.LOG_SOLR_ERR_SCHEMA_XML_NOT_FOUND_1,
                         getSolrSchemaFile().getPath()),
                     e);
-                LOG.error(ex.getLocalizedMessage(), ex);
+                LOG.error(ex.getLocalizedMessage(), String.valueOf(ex).replace("\n", "").replace("\r", ""));
             }
         }
         return m_schema;

@@ -869,10 +869,10 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     } catch (CmsException e) {
                         if (LOG.isWarnEnabled()) {
                             LOG.warn(
-                                Messages.get().getBundle().key(
+                                String.valueOf(Messages.get().getBundle().key(
                                     Messages.LOG_PROPERTY_READING_FAILED_2,
                                     macro,
-                                    controller.getCurrentRequest().getElementUri()),
+                                    controller.getCurrentRequest().getElementUri())).replace("\n", "").replace("\r", ""),
                                 e);
                         }
                     }
@@ -903,7 +903,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                             Messages.LOG_PROPERTY_READING_FAILED_2,
                             macro,
                             m_cms.getRequestContext().getUri());
-                        LOG.warn(message.key(), e);
+                        LOG.warn(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
                     }
                 }
                 return null;
@@ -990,7 +990,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     val = defaultValue;
                 }
                 if (val == null) {
-                    LOG.warn("Parameter not defined: " + remaining);
+                    LOG.warn(String.valueOf("Parameter not defined: " + remaining).replace("\n", "").replace("\r", ""));
                 }
                 return val;
 
@@ -1015,7 +1015,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                 CmsADEConfigData config = OpenCms.getADEManager().lookupConfigurationWithCache(m_cms, adeContext);
                 String val = config.getAttribute(key, defaultValue);
                 if (val == null) {
-                    LOG.warn("Sitemap attribute not defined: " + key);
+                    LOG.warn(String.valueOf("Sitemap attribute not defined: " + key).replace("\n", "").replace("\r", ""));
                 }
                 return val;
 
@@ -1223,7 +1223,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                         "Terminated macro resolution after 1000 iterations. Last substitution is \""
                             + lastResult
                             + "\" to \""
-                            + result
+                            + String.valueOf(result).replace("\n", "").replace("\r", "")
                             + "\".");
                 }
             } while (!result.equals(lastResult) && (count < 1000));

@@ -104,7 +104,7 @@ public class CmsXmlContentErrorHandler {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_XMLCONTENT_VALIDATION_WARN_2, value.getPath(), message));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_XMLCONTENT_VALIDATION_WARN_2, value.getPath(), message)).replace("\n", "").replace("\r", ""));
         }
     }
 

@@ -1274,7 +1274,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                     org.opencms.db.Messages.ERR_UNKNOWN_GROUP_1,
                     groupFqn);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key(), new Exception());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), new Exception());
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
@@ -1428,7 +1428,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                     org.opencms.db.Messages.ERR_UNKNOWN_USER_1,
                     userFqn);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
@@ -1479,7 +1479,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                     org.opencms.db.Messages.ERR_UNKNOWN_USER_1,
                     userFqn);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
@@ -2512,7 +2512,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
         CmsUUID userId = new CmsUUID(res.getString(m_sqlManager.readQuery("C_USERS_USER_ID_0")));
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_DBG_CREATE_USER_1, userName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_CREATE_USER_1, userName)).replace("\n", "").replace("\r", ""));
         }
 
         return new CmsUser(

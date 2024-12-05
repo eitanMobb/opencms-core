@@ -181,7 +181,7 @@ public class CmsParameterEscaper {
         if (m_exceptions.contains(name)) {
             return value;
         }
-        LOG.info("Escaping parameter '" + name + "' with value '" + value + "'");
+        LOG.info("Escaping parameter '" + name + "' with value '" + String.valueOf(value).replace("\n", "").replace("\r", "") + "'");
         if (m_cleanHtml.contains(name)) {
             return filterAntiSamy(name, value);
         }

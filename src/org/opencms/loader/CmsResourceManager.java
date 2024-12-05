@@ -682,7 +682,7 @@ public class CmsResourceManager {
         }
 
         if (CmsLog.INIT.isDebugEnabled()) {
-            CmsLog.INIT.debug(Messages.get().getBundle().key(Messages.INIT_GET_RESTYPE_2, typeName, suffix));
+            CmsLog.INIT.debug(String.valueOf(Messages.get().getBundle().key(Messages.INIT_GET_RESTYPE_2, typeName, suffix)).replace("\n", "").replace("\r", ""));
         }
         // look up and return the resource type
         return getResourceType(typeName);

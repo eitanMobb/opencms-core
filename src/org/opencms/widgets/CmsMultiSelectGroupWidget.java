@@ -508,7 +508,7 @@ public class CmsMultiSelectGroupWidget extends CmsSelectGroupWidget {
                 m_groupFilter = Pattern.compile(filter);
             } catch (PatternSyntaxException e) {
                 // log pattern syntax errors
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_SELECTGROUP_PATTERN_1, filter));
+                LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_ERR_WIDGET_SELECTGROUP_PATTERN_1, filter)).replace("\n", "").replace("\r", ""));
             }
         }
         // get the OU to read the groups from

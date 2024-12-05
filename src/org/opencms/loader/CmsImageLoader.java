@@ -345,9 +345,9 @@ public class CmsImageLoader extends CmsDumpLoader implements I_CmsEventListener 
         // output setup information
         if (CmsLog.INIT.isInfoEnabled()) {
             CmsLog.INIT.info(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.INIT_IMAGE_REPOSITORY_PATH_1,
-                    m_vfsDiskCache.getRepositoryPath()));
+                    m_vfsDiskCache.getRepositoryPath())).replace("\n", "").replace("\r", ""));
             CmsLog.INIT.info(
                 Messages.get().getBundle().key(Messages.INIT_IMAGE_SCALING_ENABLED_1, Boolean.valueOf(m_enabled)));
         }

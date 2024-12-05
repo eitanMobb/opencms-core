@@ -318,7 +318,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_ADDING_CHILD_RESOURCES_1,
                 folderName);
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
             }
 
             throw new CmsImportExportException(message, e);

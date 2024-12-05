@@ -143,7 +143,7 @@ public class CmsNewResourceTypeDialog extends CmsBasicDialog {
 
                 }
             } catch (CmsException e) {
-                LOG.error("Unable to read resource", e);
+                LOG.error("Unable to read resource", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
 
         }

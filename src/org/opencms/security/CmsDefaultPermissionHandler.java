@@ -208,13 +208,13 @@ public class CmsDefaultPermissionHandler implements I_CmsPermissionHandler {
             result = I_CmsPermissionHandler.PERM_DENIED;
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_NO_PERMISSION_RESOURCE_USER_4,
                         new Object[] {
                             dbc.getRequestContext().removeSiteRoot(resource.getRootPath()),
                             dbc.currentUser().getName(),
                             requiredPermissions.getPermissionString(),
-                            permissions.getPermissionString()}));
+                            permissions.getPermissionString()})).replace("\n", "").replace("\r", ""));
             }
         }
         if (dbc.getProjectId().isNullUUID() && permissions.isCacheable()) {

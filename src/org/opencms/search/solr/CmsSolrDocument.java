@@ -251,7 +251,7 @@ public class CmsSolrDocument implements I_CmsSearchDocument {
                         multi = f.multiValued();
                     }
                 } catch (@SuppressWarnings("unused") SolrException e) {
-                    LOG.warn(Messages.get().getBundle().key(Messages.LOG_SOLR_FIELD_NOT_FOUND_1, field.toString()));
+                    LOG.warn(String.valueOf(Messages.get().getBundle().key(Messages.LOG_SOLR_FIELD_NOT_FOUND_1, field.toString())).replace("\n", "").replace("\r", ""));
                 }
                 if (multi) {
                     splitedValues = CmsStringUtil.splitAsList(value.toString(), "\n");

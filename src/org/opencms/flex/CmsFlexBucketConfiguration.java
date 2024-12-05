@@ -285,7 +285,7 @@ public class CmsFlexBucketConfiguration {
             bucketNames.addAll(getBucketsForPath(path));
         }
         if (LOG.isDebugEnabled()) {
-            LOG.debug("Determined bucket set " + bucketNames.toString() + " for path set " + paths);
+            LOG.debug("Determined bucket set " + String.valueOf(bucketNames.toString()).replace("\n", "").replace("\r", "") + " for path set " + String.valueOf(paths).replace("\n", "").replace("\r", ""));
         }
         return new BucketSet(bucketNames);
     }

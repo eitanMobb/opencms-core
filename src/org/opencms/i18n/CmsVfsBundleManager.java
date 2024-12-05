@@ -282,7 +282,7 @@ public class CmsVfsBundleManager implements I_CmsEventListener {
     protected void logError(Exception e, boolean logToErrorChannel) {
 
         if (logToErrorChannel) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         } else {
             LOG.info(e.getLocalizedMessage(), e);
         }

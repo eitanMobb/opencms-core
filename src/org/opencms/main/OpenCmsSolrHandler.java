@@ -184,7 +184,7 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 }
             } catch (Exception e) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                 }
                 res.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
             }
@@ -254,14 +254,14 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 context.m_params.put(CommonParams.WT, new String[] {origWtValue});
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        "Called Solr handler with multiple 'wt' params. Keeping only the value '" + origWtValue + "'.");
+                        "Called Solr handler with multiple 'wt' params. Keeping only the value '" + String.valueOf(origWtValue).replace("\n", "").replace("\r", "") + "'.");
                 }
             }
             if (!m_allowedWriteTo.contains(origWtValue)) {
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
                         "Called Solr handler with forbidden 'wt' parameter value '"
-                            + origWtValue
+                            + String.valueOf(origWtValue).replace("\n", "").replace("\r", "")
                             + "'. The value is removed.");
                 }
                 context.m_params.remove(CommonParams.WT);
@@ -274,14 +274,14 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 context.m_params.put(CommonParams.QT, new String[] {origQtValue});
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        "Called Solr handler with multiple 'qt' params. Keeping only the value '" + origQtValue + "'.");
+                        "Called Solr handler with multiple 'qt' params. Keeping only the value '" + String.valueOf(origQtValue).replace("\n", "").replace("\r", "") + "'.");
                 }
             }
             if ((origQtValue != null) && origQtValue.startsWith("/")) {
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
                         "Called Solr handler with forbidden 'qt' parameter value '"
-                            + origQtValue
+                            + String.valueOf(origQtValue).replace("\n", "").replace("\r", "")
                             + "'. The value is removed.");
                 }
                 context.m_params.remove(CommonParams.QT);
@@ -297,7 +297,7 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 String indexName = context.m_params.get(PARAM_CORE) != null
                 ? context.m_params.get(PARAM_CORE)[0]
                 : (context.m_params.get(PARAM_INDEX) != null ? context.m_params.get(PARAM_INDEX)[0] : null);
-                LOG.info(Messages.get().getBundle().key(Messages.GUI_SOLR_INDEX_NOT_FOUND_1, indexName));
+                LOG.info(String.valueOf(Messages.get().getBundle().key(Messages.GUI_SOLR_INDEX_NOT_FOUND_1, indexName)).replace("\n", "").replace("\r", ""));
             }
         }
 
