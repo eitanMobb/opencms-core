@@ -303,7 +303,7 @@ public class CmsWorkplaceEditorConfiguration {
             boolean matches = getBrowserPattern().get(i).matcher(currentBrowser.trim()).matches();
             if (matches) {
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(Messages.get().getBundle().key(Messages.LOG_BROWSER_MATCHES_CONFIG_1, currentBrowser));
+                    LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_BROWSER_MATCHES_CONFIG_1, currentBrowser)).replace("\n", "").replace("\r", ""));
                 }
                 return true;
             }
