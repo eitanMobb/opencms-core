@@ -1528,9 +1528,9 @@ public class CmsUserDriver implements I_CmsUserDriver {
                         if (value != null) {
                             try {
                                 LOG.debug(
-                                    Messages.get().getBundle().key(
+                                    String.valueOf(Messages.get().getBundle().key(
                                         Messages.LOG_DBG_READUSERINFO_VALUE_1,
-                                        new String(value)));
+                                        new String(value))).replace("\n", "").replace("\r", ""));
                             } catch (Exception e) {
                                 // noop
                             }
