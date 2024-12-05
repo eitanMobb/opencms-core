@@ -1428,7 +1428,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                     org.opencms.db.Messages.ERR_UNKNOWN_USER_1,
                     userFqn);
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(message.key());
+                    LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
                 }
                 throw new CmsDbEntryNotFoundException(message);
             }
