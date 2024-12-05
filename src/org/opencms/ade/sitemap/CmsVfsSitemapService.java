@@ -2670,7 +2670,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                 I_CmsResourceType resourceType = OpenCms.getResourceManager().getResourceType(typeName);
                 result.add(createResourceTypeInfo(resourceType, modelResource));
             } catch (CmsLoaderException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         }
         for (CmsFunctionReference functionRef : functionReferences) {
