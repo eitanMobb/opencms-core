@@ -373,7 +373,7 @@ public class CmsLocaleManager implements I_CmsEventListener {
             }
         } catch (CmsException e) {
             if (LOG.isInfoEnabled()) {
-                LOG.info(Messages.get().getBundle().key(Messages.ERR_READ_ENCODING_PROP_1, res.getRootPath()), e);
+                LOG.info(String.valueOf(Messages.get().getBundle().key(Messages.ERR_READ_ENCODING_PROP_1, res.getRootPath())).replace("\n", "").replace("\r", ""), e);
             }
         }
         if (encoding == null) {
