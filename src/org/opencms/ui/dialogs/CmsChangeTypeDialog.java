@@ -133,7 +133,7 @@ public class CmsChangeTypeDialog extends CmsNewDialog {
                         typeName).isFolder() == isFolder;
                     return !identicalTypeGroup;
                 } catch (Exception e) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
                     return false;
                 }
             }
