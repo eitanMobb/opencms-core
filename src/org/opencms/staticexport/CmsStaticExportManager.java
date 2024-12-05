@@ -595,7 +595,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
         }
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_STATIC_EXPORT_SITE_ROOT_2, siteRoot, vfsName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_STATIC_EXPORT_SITE_ROOT_2, siteRoot, vfsName)).replace("\n", "").replace("\r", ""));
         }
 
         boolean usesSecureSite = (req != null) && OpenCms.getSiteManager().usesSecureSite(req);
