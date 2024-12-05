@@ -73,7 +73,7 @@ public class CmsUgcUploadHelper {
             for (FileItem item : items) {
                 LOG.debug(formDataId + ": " + item.toString());
                 if (!item.isFormField() && CmsStringUtil.isEmptyOrWhitespaceOnly(item.getName())) {
-                    LOG.debug(formDataId + ": skipping previous file field because it is empty");
+                    LOG.debug(String.valueOf(formDataId).replace("\n", "").replace("\r", "") + ": skipping previous file field because it is empty");
                 } else {
                     itemMap.put(item.getFieldName(), new CmsUgcDataItem(item));
                 }
