@@ -339,7 +339,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
 
         // does not need to be initialized
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INIT_CONFIGURATION_1, this)).replace("\n", "").replace("\r", ""));
         }
     }
 
