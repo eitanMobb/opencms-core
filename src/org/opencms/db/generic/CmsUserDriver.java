@@ -1524,7 +1524,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
                 try {
 
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.LOG_DBG_READUSERINFO_2, key, type));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_READUSERINFO_2, key, type)).replace("\n", "").replace("\r", ""));
                         if (value != null) {
                             try {
                                 LOG.debug(
