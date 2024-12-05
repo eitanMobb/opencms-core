@@ -1336,7 +1336,7 @@ public class CmsImageScaler {
         } catch (Exception e) {
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString()),
+                    String.valueOf(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString())).replace("\n", "").replace("\r", ""),
                     e);
             }
         }
