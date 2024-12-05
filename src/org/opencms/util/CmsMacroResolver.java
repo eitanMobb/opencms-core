@@ -1015,7 +1015,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                 CmsADEConfigData config = OpenCms.getADEManager().lookupConfigurationWithCache(m_cms, adeContext);
                 String val = config.getAttribute(key, defaultValue);
                 if (val == null) {
-                    LOG.warn("Sitemap attribute not defined: " + key);
+                    LOG.warn(String.valueOf("Sitemap attribute not defined: " + key).replace("\n", "").replace("\r", ""));
                 }
                 return val;
 
