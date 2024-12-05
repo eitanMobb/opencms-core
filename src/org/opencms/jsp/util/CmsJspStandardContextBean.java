@@ -2236,7 +2236,7 @@ public final class CmsJspStandardContextBean {
             I_CmsResourceType type = OpenCms.getResourceManager().getResourceType(typeName);
             return new CmsResourceTypeInfoWrapper(this, m_cms, m_config, type);
         } catch (CmsLoaderException e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             return null;
         }
     }
