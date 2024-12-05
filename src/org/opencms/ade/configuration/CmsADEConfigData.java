@@ -492,7 +492,7 @@ public class CmsADEConfigData {
 
         if (systemSettingPrefixes.contains(name) || name.startsWith(CmsContainerElement.SYSTEM_SETTING_PREFIX)) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug("System setting prefix used: " + name, new Exception());
+                LOG.debug(String.valueOf("System setting prefix used: " + name).replace("\n", "").replace("\r", ""), new Exception());
             }
             return null;
         }
