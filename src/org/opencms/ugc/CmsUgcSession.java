@@ -310,7 +310,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
             m_editResource = m_cms.createResource(getNewContentName(), type);
             return m_editResource;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             throw new CmsUgcException(e, CmsUgcConstants.ErrorCode.errMisc, e.getLocalizedMessage());
         }
     }
