@@ -1672,7 +1672,7 @@ public class CmsHtmlImport {
                 } catch (Exception ex) {
                     String name = (entry != null ? entry.getName() : "");
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(Messages.get().getBundle().key(Messages.ERR_ZIPFILE_UNZIP_1, name), ex);
+                        LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.ERR_ZIPFILE_UNZIP_1, name)).replace("\n", "").replace("\r", ""), ex);
                     }
                     m_report.println(
                         Messages.get().container(Messages.ERR_ZIPFILE_UNZIP_1, name),
