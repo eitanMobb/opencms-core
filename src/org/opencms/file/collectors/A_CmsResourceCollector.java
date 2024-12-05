@@ -205,7 +205,7 @@ public abstract class A_CmsResourceCollector implements I_CmsResourceCollector {
                 I_CmsCollectorPostCreateHandler handler = (I_CmsCollectorPostCreateHandler)handlerClass.newInstance();
                 return handler;
             } else {
-                LOG.error("Post-create handler class does not implement I_CmsPostCreateHandler: '" + className + "'");
+                LOG.error("Post-create handler class does not implement I_CmsPostCreateHandler: '" + String.valueOf(className).replace("\n", "").replace("\r", "") + "'");
                 return new CmsDefaultPostCreateHandler();
             }
         } catch (Exception e) {
