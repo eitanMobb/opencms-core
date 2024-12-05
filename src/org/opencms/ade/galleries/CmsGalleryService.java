@@ -993,7 +993,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                     boolean disablePreview = false;
                     GalleryTabId startTab = null;
                     if (CmsStringUtil.isNotEmptyOrWhitespaceOnly(currentelement)) {
-                        log("looking up:" + currentelement);
+                        log(String.valueOf("looking up:" + currentelement).replace("\n", "").replace("\r", ""));
                         // removing the servlet context if present
                         currentelement = CmsLinkManager.removeOpenCmsContext(currentelement);
                         // get search results given resource path
