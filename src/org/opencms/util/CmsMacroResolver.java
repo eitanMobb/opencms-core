@@ -903,7 +903,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                             Messages.LOG_PROPERTY_READING_FAILED_2,
                             macro,
                             m_cms.getRequestContext().getUri());
-                        LOG.warn(message.key(), e);
+                        LOG.warn(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), e);
                     }
                 }
                 return null;
