@@ -79,10 +79,10 @@ public class CmsDigesterResourceTypeCreationFactory extends AbstractObjectCreati
             type = new CmsResourceTypeUnknown();
             // write an error to the log
             LOG.error(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.ERR_UNKNOWN_RESTYPE_CLASS_2,
                     className,
-                    type.getClass().getName()),
+                    type.getClass().getName())).replace("\n", "").replace("\r", ""),
                 e);
         }
         return type;
