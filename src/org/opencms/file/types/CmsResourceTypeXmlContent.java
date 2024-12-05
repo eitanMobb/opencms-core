@@ -496,9 +496,9 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
         } catch (CmsException e) {
             if (LOG.isErrorEnabled()) {
                 LOG.error(
-                    org.opencms.db.Messages.get().getBundle().key(
+                    String.valueOf(org.opencms.db.Messages.get().getBundle().key(
                         org.opencms.db.Messages.ERR_READ_RESOURCE_1,
-                        cms.getSitePath(file)),
+                        cms.getSitePath(file))).replace("\n", "").replace("\r", ""),
                     e);
             }
             return Collections.emptyList();
