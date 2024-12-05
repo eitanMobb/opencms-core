@@ -267,9 +267,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                 if (!myLock) {
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_TAGREPLACE_LOCK_RESOURCE_1,
-                                resource.getRootPath()));
+                                resource.getRootPath())).replace("\n", "").replace("\r", ""));
                     }
                     // obtaining the lock:
                     getCms().lockResource(getCms().getRequestContext().removeSiteRoot(resource.getRootPath()));
