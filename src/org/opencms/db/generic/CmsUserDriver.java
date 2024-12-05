@@ -2765,7 +2765,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
             CmsGroup roleGroup = readGroup(dbc, role.getGroupName());
 
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_1, roleGroup));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_1, roleGroup)).replace("\n", "").replace("\r", ""));
             }
 
             // copy all users from the group to the role
