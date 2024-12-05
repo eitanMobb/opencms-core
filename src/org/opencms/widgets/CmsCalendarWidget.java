@@ -485,7 +485,7 @@ public class CmsCalendarWidget extends A_CmsWidget implements I_CmsADEWidget {
                     } catch (ParseException e) {
                         // TODO: Better exception handling
                         if (LOG.isWarnEnabled()) {
-                            LOG.warn(Messages.get().getBundle().key(Messages.ERR_PARSE_DATETIME_1, dateTimeValue), e);
+                            LOG.warn(String.valueOf(Messages.get().getBundle().key(Messages.ERR_PARSE_DATETIME_1, dateTimeValue)).replace("\n", "").replace("\r", ""), e);
                         }
                     }
                 } else {
