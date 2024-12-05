@@ -242,7 +242,7 @@ public class CmsProgressThread extends A_CmsProgressThread {
         } finally {
             m_finishtime = System.currentTimeMillis();
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.LOG_PROGRESS_FINISHED_THREAD_1, getKey()));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_PROGRESS_FINISHED_THREAD_1, getKey())).replace("\n", "").replace("\r", ""));
             }
         }
 
