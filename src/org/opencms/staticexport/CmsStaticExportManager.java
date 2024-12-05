@@ -2984,10 +2984,10 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 exportFile.setLastModified((dateLastModified.longValue() / 1000) * 1000);
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_SET_LAST_MODIFIED_2,
                             exportFile.getName(),
-                            Long.valueOf((dateLastModified.longValue() / 1000) * 1000)));
+                            Long.valueOf((dateLastModified.longValue() / 1000) * 1000))).replace("\n", "").replace("\r", ""));
                 }
             }
         } else {
