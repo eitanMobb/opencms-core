@@ -1197,7 +1197,7 @@ public class CmsExport {
                 project.getName(),
                 project.getUuid());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), exc);
+                LOG.debug(String.valueOf(message.key()).replace("\n", "").replace("\r", ""), exc);
             }
 
             throw new CmsImportExportException(message, exc);
