@@ -479,7 +479,7 @@ public abstract class A_CmsResourceType implements I_CmsResourceType {
     public CmsParameterConfiguration getConfiguration() {
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_GET_CONFIGURATION_1, this));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_GET_CONFIGURATION_1, this)).replace("\n", "").replace("\r", ""));
         }
 
         return m_configuration;
