@@ -464,7 +464,7 @@ public class CmsSearchIndex extends A_CmsSearchIndex {
             }
             if (m_maxHits < (MAX_HITS_DEFAULT / 100)) {
                 m_maxHits = MAX_HITS_DEFAULT;
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_INVALID_PARAM_3, value, key, getName()));
+                LOG.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_INVALID_PARAM_3, value, key, getName())).replace("\n", "").replace("\r", ""));
             }
         } else if (TIME_RANGE.equals(key)) {
             m_checkTimeRange = Boolean.valueOf(value).booleanValue();
