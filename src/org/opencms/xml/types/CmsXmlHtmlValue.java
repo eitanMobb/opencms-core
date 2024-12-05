@@ -327,7 +327,7 @@ public class CmsXmlHtmlValue extends A_CmsXmlContentValue implements I_CmsJsonFo
                 context = "(file=" + m_document.getFile().getRootPath() + ")";
             }
             LOG.warn("HTML cleanup produced invalid null characters in output. " + context);
-            LOG.debug("HTML cleanup output = " + jtidyOutput);
+            LOG.debug(String.valueOf("HTML cleanup output = " + jtidyOutput).replace("\n", "").replace("\r", ""));
         }
         return outputWithoutNullChars;
     }
