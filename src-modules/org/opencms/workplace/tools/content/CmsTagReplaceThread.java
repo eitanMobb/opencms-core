@@ -275,9 +275,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                     getCms().lockResource(getCms().getRequestContext().removeSiteRoot(resource.getRootPath()));
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_TAGREPLACE_LOCK_RESOURCE_OK_1,
-                                resource.getRootPath()));
+                                resource.getRootPath())).replace("\n", "").replace("\r", ""));
                     }
                 }
             } else {
