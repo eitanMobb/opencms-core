@@ -575,10 +575,10 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
         urlcon.setIfModifiedSince(dateLastModified);
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_IF_MODIFIED_SINCE_SET_2,
                     exportFile.getName(),
-                    Long.valueOf((dateLastModified / 1000) * 1000)));
+                    Long.valueOf((dateLastModified / 1000) * 1000))).replace("\n", "").replace("\r", ""));
         }
         if (cookies.length() > 0) {
             // set the cookies, included the session id to keep the same session
