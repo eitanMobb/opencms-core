@@ -2757,7 +2757,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_2, role.getRoleName(), groupName));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_UPDATE_ROLEGROUP_2, role.getRoleName(), groupName)).replace("\n", "").replace("\r", ""));
         }
 
         CmsGroup group = readGroup(dbc, groupName);
