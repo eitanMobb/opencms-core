@@ -154,7 +154,7 @@ public class CmsRemoteShell extends UnicastRemoteObject implements I_CmsRemoteSh
                     Class<?> commandsCls = Class.forName(className);
                     if (I_CmsShellCommands.class.isAssignableFrom(commandsCls)) {
                         additionalCommands.add((I_CmsShellCommands) commandsCls.getDeclaredConstructor().newInstance());
-                        LOG.info("Class " + className + " has been loaded and added to additional commands.");
+                        LOG.info("Class " + String.valueOf(className).replace("\n", "").replace("\r", "") + " has been loaded and added to additional commands.");
                     } else {
                         LOG.error("Error: Class " + className + " does not implement I_CmsShellCommands");
                     }
