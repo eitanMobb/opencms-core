@@ -333,7 +333,7 @@ public class CmsJspTagEdit extends CmsJspScopedVarBodyTagSuport {
             try {
                 resType = OpenCms.getResourceManager().getResourceType(createType);
             } catch (CmsLoaderException e) {
-                LOG.error("Could not read resource type '" + createType + "' for resource creation.", e);
+                LOG.error("Could not read resource type '" + createType + "' for resource creation.", String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
         } else if (resource != null) {
             resType = OpenCms.getResourceManager().getResourceType(resource);
