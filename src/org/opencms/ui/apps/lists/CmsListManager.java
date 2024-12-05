@@ -1650,7 +1650,7 @@ I_CmsCachableApp, I_CmsResultFacetsManager {
             m_overviewTable.fillTable(cms, resources);
         } catch (Exception e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
     }
 
