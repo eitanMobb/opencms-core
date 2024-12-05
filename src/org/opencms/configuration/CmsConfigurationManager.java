@@ -353,7 +353,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
 
         URL baseUrl = m_baseFolder.toURI().toURL();
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_BASE_URL_1, baseUrl));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_BASE_URL_1, baseUrl)).replace("\n", "").replace("\r", ""));
         }
 
         // first load the base configuration
