@@ -523,10 +523,10 @@ public abstract class A_CmsImport implements I_CmsImport {
 
                     if (LOG.isErrorEnabled()) {
                         LOG.error(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.ERR_IMPORTEXPORT_LINK_CONVERSION_FAILED_2,
                                 key,
-                                link),
+                                link)).replace("\n", "").replace("\r", ""),
                             e);
                     }
                 }

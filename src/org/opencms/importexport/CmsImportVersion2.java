@@ -667,7 +667,7 @@ public class CmsImportVersion2 extends A_CmsImport {
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_IMPORTING_RESOURCES_0);
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(message.key(), String.valueOf(e).replace("\n", "").replace("\r", ""));
             }
 
             throw new CmsImportExportException(message, e);

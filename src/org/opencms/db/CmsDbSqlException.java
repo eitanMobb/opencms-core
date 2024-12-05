@@ -73,7 +73,7 @@ public class CmsDbSqlException extends CmsDbException {
         super(container, cause);
         // log all sql exceptions
         if (LOG.isWarnEnabled()) {
-            LOG.warn(container.key(), this);
+            LOG.warn(container.key(), String.valueOf(this).replace("\n", "").replace("\r", ""));
         }
     }
 

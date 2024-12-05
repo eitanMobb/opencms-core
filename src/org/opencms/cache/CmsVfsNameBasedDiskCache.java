@@ -95,7 +95,7 @@ public class CmsVfsNameBasedDiskCache {
             }
         } catch (IOException e) {
             // unable to read content
-            LOG.debug("Unable to read file " + rfsName, e);
+            LOG.debug(String.valueOf("Unable to read file " + rfsName).replace("\n", "").replace("\r", ""), e);
         }
         return null;
     }

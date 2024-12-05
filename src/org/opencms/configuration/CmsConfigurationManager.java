@@ -167,7 +167,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         }
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_CONFIG_BASE_FOLDER_1, m_baseFolder.getAbsolutePath()));
+                String.valueOf(Messages.get().getBundle().key(Messages.LOG_CONFIG_BASE_FOLDER_1, m_baseFolder.getAbsolutePath())).replace("\n", "").replace("\r", ""));
             LOG.debug(
                 Messages.get().getBundle().key(Messages.LOG_CONFIG_BKP_FOLDER_1, m_backupFolder.getAbsolutePath()));
         }
@@ -490,7 +490,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
         String transformationPath = getTransformationPath();
         boolean result = (transformationPath != null) && new File(transformationPath).exists();
         if (result) {
-            CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_ENABLED_1, transformationPath));
+            CmsLog.INIT.info(String.valueOf(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_ENABLED_1, transformationPath)).replace("\n", "").replace("\r", ""));
         } else {
             CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_XSLT_CONFIG_DISABLED_0));
         }

@@ -252,7 +252,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                     galleryTypeName,
                     jsp.info("opencms.request.element.uri"));
             }
-            LOG.error(message.key());
+            LOG.error(String.valueOf(message.key()).replace("\n", "").replace("\r", ""));
             throw new CmsRuntimeException(message);
         }
 
