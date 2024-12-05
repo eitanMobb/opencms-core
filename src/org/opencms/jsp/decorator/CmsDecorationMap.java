@@ -281,10 +281,10 @@ public class CmsDecorationMap implements Comparable<CmsDecorationMap> {
                             decMap.put(key, decObj);
                             if (LOG.isDebugEnabled()) {
                                 LOG.debug(
-                                    Messages.get().getBundle().key(
+                                    String.valueOf(Messages.get().getBundle().key(
                                         Messages.LOG_DECORATION_MAP_ADD_DECORATION_OBJECT_2,
                                         decObj,
-                                        key));
+                                        key)).replace("\n", "").replace("\r", ""));
                             }
                         }
                     }
