@@ -348,7 +348,7 @@ public class CmsRelationSystemValidator {
                 CmsResource offlineResource = fileLookup.get(link);
                 if (offlineResource.getState().isDeleted()) {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.LOG_LINK_VALIDATION_RESOURCEDELETED_1, link));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_LINK_VALIDATION_RESOURCEDELETED_1, link)).replace("\n", "").replace("\r", ""));
                     }
                     isValidLink = false;
                 }
