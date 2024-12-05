@@ -137,11 +137,11 @@ public class CmsJspLoginBean extends CmsJspActionElement {
 
                 // the requested user does not exist in the database
                 LOG.warn(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_LOGIN_FAILED_NO_USER_3,
                         userName,
                         requestContext.addSiteRoot(requestContext.getUri()),
-                        requestContext.getRemoteAddress()));
+                        requestContext.getRemoteAddress())).replace("\n", "").replace("\r", ""));
 
             } else if (org.opencms.security.Messages.ERR_LOGIN_FAILED_WITH_MESSAGE_1 == currentLoginException.getMessageContainer().getKey()) {
 
