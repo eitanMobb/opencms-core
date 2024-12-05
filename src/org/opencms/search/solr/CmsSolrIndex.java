@@ -644,7 +644,7 @@ public class CmsSolrIndex extends CmsSearchIndex {
         try {
             OpenCms.getSearchManager().registerSolrIndex(this);
         } catch (CmsConfigurationException ex) {
-            LOG.error(ex.getMessage(), ex);
+            LOG.error(ex.getMessage(), String.valueOf(ex).replace("\n", "").replace("\r", ""));
             setEnabled(false);
         }
     }
