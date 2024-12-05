@@ -2512,7 +2512,7 @@ public class CmsUserDriver implements I_CmsUserDriver {
         CmsUUID userId = new CmsUUID(res.getString(m_sqlManager.readQuery("C_USERS_USER_ID_0")));
 
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_DBG_CREATE_USER_1, userName));
+            LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_DBG_CREATE_USER_1, userName)).replace("\n", "").replace("\r", ""));
         }
 
         return new CmsUser(
