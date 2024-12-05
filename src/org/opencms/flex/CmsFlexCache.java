@@ -1121,11 +1121,11 @@ public class CmsFlexCache extends Object implements I_CmsEventListener {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(
+                String.valueOf(Messages.get().getBundle().key(
                     Messages.LOG_FLEXCACHE_ADDED_ENTRY_FOR_RESOURCE_WITH_VARIATION_3,
                     Integer.valueOf(m_size),
                     key.getResource(),
-                    variation));
+                    variation)).replace("\n", "").replace("\r", ""));
             LOG.debug(Messages.get().getBundle().key(Messages.LOG_FLEXCACHE_ADDED_ENTRY_1, theCacheEntry.toString()));
         }
     }
