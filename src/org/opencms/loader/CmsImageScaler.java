@@ -1123,7 +1123,7 @@ public class CmsImageScaler {
                     setFilters(v);
                 } else {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_INVALID_IMAGE_SCALE_PARAMS_2, k, v)).replace("\n", "").replace("\r", ""));
                     }
                 }
             } else {
