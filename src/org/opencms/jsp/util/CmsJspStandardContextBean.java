@@ -1141,7 +1141,7 @@ public final class CmsJspStandardContextBean {
         // if baseValue is still null, then resolveMacros will just return null
         String result = resolver.resolveMacros(baseValue);
 
-        LOG.debug("Final value for upload folder : " + result);
+        LOG.debug(String.valueOf("Final value for upload folder : " + result).replace("\n", "").replace("\r", ""));
         return result;
     }
 
