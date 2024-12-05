@@ -553,7 +553,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
                 LOG.debug("");
                 LOG.debug(
                     "=================== Transformation result for config file '" + config.getXmlFileName() + "':");
-                LOG.debug(transformedConfigStr);
+                LOG.debug(String.valueOf(transformedConfigStr).replace("\n", "").replace("\r", ""));
             }
             return new InputSource(new ByteArrayInputStream(transformedConfigStr.getBytes("UTF-8")));
         } finally {
