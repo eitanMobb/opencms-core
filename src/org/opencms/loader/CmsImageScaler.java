@@ -1182,7 +1182,7 @@ public class CmsImageScaler {
         if (imageType == null) {
             // unknown type, unable to scale the image
             if (LOG.isDebugEnabled()) {
-                LOG.debug(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString()));
+                LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.ERR_UNABLE_TO_SCALE_IMAGE_2, rootPath, toString())).replace("\n", "").replace("\r", ""));
             }
             return result;
         }
