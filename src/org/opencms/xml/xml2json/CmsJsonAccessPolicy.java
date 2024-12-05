@@ -237,7 +237,7 @@ public class CmsJsonAccessPolicy {
 
         boolean result = (m_propertyFilter == null) || m_propertyFilter.matcher(property).matches();
         if (!result) {
-            LOG.info("Filtered property " + property + " because it does not match the JSON property filter.");
+            LOG.info("Filtered property " + String.valueOf(property).replace("\n", "").replace("\r", "") + " because it does not match the JSON property filter.");
         }
         return result;
     }
