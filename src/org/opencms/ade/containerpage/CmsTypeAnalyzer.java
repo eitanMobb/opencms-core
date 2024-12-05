@@ -707,7 +707,7 @@ public class CmsTypeAnalyzer {
             String label = OpenCms.getWorkplaceManager().getMessages(m_locale).key(key);
             m_state.m_types.put(type, new TypeBean(type, label, count));
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
 
     }
