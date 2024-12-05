@@ -738,10 +738,10 @@ public class CmsFlexCache extends Object implements I_CmsEventListener {
             // This is a cachable result
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_FLEXCACHE_ADD_ENTRY_WITH_VARIATION_2,
                         key.getResource(),
-                        variation));
+                        variation)).replace("\n", "").replace("\r", ""));
             }
             put(key, entry, variation);
             if (m_bucketConfiguration != null) {
