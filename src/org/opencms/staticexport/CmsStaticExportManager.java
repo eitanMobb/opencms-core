@@ -2559,7 +2559,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 // ignore, resource does not exist
                 if (LOG.isWarnEnabled()) {
                     LOG.warn(
-                        Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName}),
+                        String.valueOf(Messages.get().getBundle().key(Messages.ERR_EXPORT_FILE_FAILED_1, new String[] {rfsName})).replace("\n", "").replace("\r", ""),
                         e);
                 }
             }
