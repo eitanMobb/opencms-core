@@ -197,11 +197,11 @@ public class CmsEventManager {
                         String key = i.next();
                         Object value = event.getData().get(key);
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_EVENT_VALUE_3,
                                 key,
                                 value,
-                                event.toString()));
+                                event.toString())).replace("\n", "").replace("\r", ""));
                     }
                 } else {
                     LOG.debug(Messages.get().getBundle().key(Messages.LOG_DEBUG_NO_EVENT_VALUE_1, event.toString()));
