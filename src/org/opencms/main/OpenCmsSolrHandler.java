@@ -281,7 +281,7 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
                         "Called Solr handler with forbidden 'qt' parameter value '"
-                            + origQtValue
+                            + String.valueOf(origQtValue).replace("\n", "").replace("\r", "")
                             + "'. The value is removed.");
                 }
                 context.m_params.remove(CommonParams.QT);
