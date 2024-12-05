@@ -402,7 +402,7 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
             byte[] content = xmlcontent.marshal();
             if (LOG.isDebugEnabled()) {
                 LOG.debug(
-                    Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_OK_1, resource.getRootPath()));
+                    String.valueOf(Messages.get().getBundle().key(Messages.LOG_DEBUG_TAGREPLACE_MARSHAL_OK_1, resource.getRootPath())).replace("\n", "").replace("\r", ""));
             }
 
             // write back the modified xmlcontent:
