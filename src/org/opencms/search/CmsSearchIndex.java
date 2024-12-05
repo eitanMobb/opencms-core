@@ -449,10 +449,10 @@ public class CmsSearchIndex extends A_CmsSearchIndex {
             } else if (m_priority > Thread.MAX_PRIORITY) {
                 m_priority = Thread.MAX_PRIORITY;
                 LOG.debug(
-                    Messages.get().getBundle().key(
+                    String.valueOf(Messages.get().getBundle().key(
                         Messages.LOG_SEARCH_PRIORITY_TOO_HIGH_2,
                         value,
-                        Integer.valueOf(Thread.MAX_PRIORITY)));
+                        Integer.valueOf(Thread.MAX_PRIORITY))).replace("\n", "").replace("\r", ""));
             }
         }
 
