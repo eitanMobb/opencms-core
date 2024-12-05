@@ -303,9 +303,9 @@ public class CmsTagReplaceThread extends A_CmsReportThread {
                         I_CmsReport.FORMAT_WARNING);
                     if (LOG.isDebugEnabled()) {
                         LOG.debug(
-                            Messages.get().getBundle().key(
+                            String.valueOf(Messages.get().getBundle().key(
                                 Messages.LOG_DEBUG_TAGREPLACE_RESOURCE_SKIPPED_1,
-                                resource.getRootPath()));
+                                resource.getRootPath())).replace("\n", "").replace("\r", ""));
                         LOG.debug(Messages.get().getBundle().key(Messages.RPT_TAGREPLACE_SKIP_REASON_ERR_LOCK_0));
                     }
                 }
