@@ -149,7 +149,7 @@ public class CmsRepositoryManager {
                 try {
                     nameClazz = Class.forName(className);
                 } catch (ClassNotFoundException e) {
-                    log.error(Messages.get().getBundle().key(Messages.LOG_WRAPPER_CLASS_NOT_FOUND_1, className), e);
+                    log.error(String.valueOf(Messages.get().getBundle().key(Messages.LOG_WRAPPER_CLASS_NOT_FOUND_1, className)).replace("\n", "").replace("\r", ""), e);
                     wrapperObjects.clear();
                     break;
                 }
