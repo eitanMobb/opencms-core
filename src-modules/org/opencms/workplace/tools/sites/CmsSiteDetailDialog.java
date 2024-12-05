@@ -777,7 +777,7 @@ public class CmsSiteDetailDialog extends CmsWidgetDialog {
             }
 
         } catch (CmsException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error(e.getMessage(), String.valueOf(e).replace("\n", "").replace("\r", ""));
         }
         return new CmsComboWidget(options);
     }
