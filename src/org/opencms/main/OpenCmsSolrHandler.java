@@ -254,7 +254,7 @@ public class OpenCmsSolrHandler extends HttpServlet implements I_CmsRequestHandl
                 context.m_params.put(CommonParams.WT, new String[] {origWtValue});
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        "Called Solr handler with multiple 'wt' params. Keeping only the value '" + origWtValue + "'.");
+                        "Called Solr handler with multiple 'wt' params. Keeping only the value '" + String.valueOf(origWtValue).replace("\n", "").replace("\r", "") + "'.");
                 }
             }
             if (!m_allowedWriteTo.contains(origWtValue)) {
