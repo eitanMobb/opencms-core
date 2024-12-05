@@ -235,11 +235,11 @@ public class CmsEventManager {
                             t);
                     }
                     LOG.debug(
-                        Messages.get().getBundle().key(
+                        String.valueOf(Messages.get().getBundle().key(
                             Messages.LOG_DEBUG_EVENT_END_LISTENER_3,
                             list[i],
                             Integer.valueOf(i),
-                            event.toString()));
+                            event.toString())).replace("\n", "").replace("\r", ""));
                 }
             } else {
                 LOG.debug(Messages.get().getBundle().key(Messages.LOG_DEBUG_EVENT_NO_LISTENER_1, event.toString()));
