@@ -431,7 +431,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                     // add index_export.html or the index.html to the folder name
                     rfsName = OpenCms.getStaticExportManager().addDefaultFileNameToFolder(rfsName, res.isFolder());
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(Messages.get().getBundle().key(Messages.LOG_RFSNAME_1, rfsName));
+                        LOG.debug(String.valueOf(Messages.get().getBundle().key(Messages.LOG_RFSNAME_1, rfsName)).replace("\n", "").replace("\r", ""));
                     }
                     String rfsExportFileName = CmsFileUtil.normalizePath(
                         OpenCms.getStaticExportManager().getExportPath(vfsName)
