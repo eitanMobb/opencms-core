@@ -525,7 +525,7 @@ public class CmsADEConfigData {
                 + "' at '"
                 + getBasePath()
                 + "', trying inactive formatters";
-            LOG.warn(message1);
+            LOG.warn(String.valueOf(message1).replace("\n", "").replace("\r", ""));
             OpenCmsServlet.withRequestCache(rc -> rc.addLog(REQUEST_LOG_CHANNEL, "warn", REQ_LOG_PREFIX + message1));
         }
 
