@@ -1223,7 +1223,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                         "Terminated macro resolution after 1000 iterations. Last substitution is \""
                             + lastResult
                             + "\" to \""
-                            + result
+                            + String.valueOf(result).replace("\n", "").replace("\r", "")
                             + "\".");
                 }
             } while (!result.equals(lastResult) && (count < 1000));
