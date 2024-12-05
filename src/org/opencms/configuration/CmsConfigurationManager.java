@@ -637,7 +637,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
 
         // generate the file URL for the XML input
         URL fileUrl = new URL(url, configuration.getXmlFileName());
-        CmsLog.INIT.info(Messages.get().getBundle().key(Messages.INIT_LOAD_CONFIG_XMLFILE_1, fileUrl));
+        CmsLog.INIT.info(String.valueOf(Messages.get().getBundle().key(Messages.INIT_LOAD_CONFIG_XMLFILE_1, fileUrl)).replace("\n", "").replace("\r", ""));
         // Check transformation rule here so we have the XML file / XSLT file log output together
         boolean hasTransformation = hasTransformation();
 
