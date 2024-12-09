@@ -2098,7 +2098,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                 }
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-bc741d01085196ed0730557a828f7661", e);
         }
 
         info.setNavPos(navpos);
