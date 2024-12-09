@@ -1424,7 +1424,7 @@ public final class CmsJspStandardContextBean {
                                 element.initResource(m_cms);
                                 containerElements.add(new CmsContainerElementWrapper(element));
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-1d54c92d04b4f2e0af5c2be7127f503d");
                             }
                         }
                     }
