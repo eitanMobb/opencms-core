@@ -396,7 +396,7 @@ public class CmsCategoryWidget extends A_CmsWidget implements I_CmsADEWidget {
                 } catch (CmsException ex) {
                     // should never happen
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(ex.getLocalizedMessage(), ex);
+                        LOG.error("Unexpected error: mobb-078a07ce49b4d845bc6cb24a4ac82cab", ex);
                     }
                 }
             }

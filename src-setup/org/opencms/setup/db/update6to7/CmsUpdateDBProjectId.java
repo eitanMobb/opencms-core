@@ -218,7 +218,7 @@ public class CmsUpdateDBProjectId extends A_CmsUpdateDBPart {
      */
     protected void addUUIDColumnToTable(CmsSetupDb dbCon, String tablename, String column) throws SQLException {
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-105b3a55b5c0a6033dc38d57afda83ae");
         if (!dbCon.hasTableOrColumn(tablename, column)) {
             String query = readQuery(QUERY_ADD_TEMP_UUID_COLUMN); // Get the query
             // if the table is not one of the ONLINE or OFFLINE resources add the new column in the first position

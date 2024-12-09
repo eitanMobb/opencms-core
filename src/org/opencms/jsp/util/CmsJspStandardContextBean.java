@@ -2886,7 +2886,7 @@ public final class CmsJspStandardContextBean {
                     formatter = formatters.getDefaultSchemaFormatter(container.getType(), width);
                 } catch (CmsException e1) {
                     if (LOG.isWarnEnabled()) {
-                        LOG.warn(e1.getLocalizedMessage(), e1);
+                        LOG.warn("Unexpected error: mobb-d06ab025d9a71c1029b88a216d4a3650", e1);
                     }
                 }
             }

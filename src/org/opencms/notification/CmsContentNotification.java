@@ -323,7 +323,7 @@ public class CmsContentNotification extends A_CmsNotification {
             buf.append("</a>]");
         } catch (CmsException e) {
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-4f4462a94ff1e93355b0b99efa264710", e);
             }
         }
         buf.append("</td>");

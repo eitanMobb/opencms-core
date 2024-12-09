@@ -366,7 +366,7 @@ public class CmsJsonResourceHandler implements I_CmsResourceInit, I_CmsNeedsAdmi
             writer.write(output);
             writer.flush();
         } catch (IOException ioe) {
-            LOG.error(ioe.getLocalizedMessage(), ioe);
+            LOG.error(ioe.getLocalizedMessage(), "Unexpected error: mobb-0f700820053b8c8304d9f22bf3c7b8aa");
         }
         CmsResourceInitException ex = new CmsResourceInitException(CmsJsonResourceHandler.class);
         ex.setClearErrors(true);

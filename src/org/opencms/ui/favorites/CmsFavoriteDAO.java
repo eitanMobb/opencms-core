@@ -166,7 +166,7 @@ public class CmsFavoriteDAO {
             user.setAdditionalInfo(ADDINFO_KEY, data);
             m_cms.writeUser(user);
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8d3964dcc5b9463d6efb4b4d702b02a2", e);
         }
 
     }

@@ -655,7 +655,7 @@ public class CmsCategoryService {
             } catch (CmsException e) {
                 // source does not match the filter
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-5c2a0dec2c6a52c875f71f02b38ef28c", e);
                 }
             }
         }

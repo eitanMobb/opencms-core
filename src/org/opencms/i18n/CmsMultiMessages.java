@@ -274,7 +274,7 @@ public class CmsMultiMessages extends CmsMessages {
                 } catch (CmsMessageException e) {
                     // can usually be ignored
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getMessage(), e);
+                        LOG.debug("Unexpected error: mobb-e1493e81a0bc83d9265f3be504344c17", e);
                     }
                 }
             }

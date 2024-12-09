@@ -107,7 +107,7 @@ public final class CmsQuickLaunchProvider {
             try {
                 currentPage = cms.readResource(params.getPageId(), CmsResourceFilter.ONLY_VISIBLE_NO_DELETED);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-8a0ddceb7cc60c00300a5fdc447590b8");
             }
         }
         CmsQuickLaunchLocationCache locationCache = CmsQuickLaunchLocationCache.getLocationCache(session);

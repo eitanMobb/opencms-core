@@ -157,7 +157,7 @@ public class CmsGalleryOptimizeDialog extends CmsBasicDialog {
                     notification.show(Page.getCurrent());
                     CmsAppWorkplaceUi.get().enableGlobalShortcuts();
                 } catch (CmsException | InterruptedException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-f580eddc651fefa54fb64fa61a0c876d", e);
                     Notification notification = new Notification(
                         "",
                         e.getLocalizedMessage(),

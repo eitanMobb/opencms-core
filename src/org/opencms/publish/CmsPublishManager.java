@@ -560,7 +560,7 @@ public class CmsPublishManager {
                 try {
                     m_securityManager.updateLog();
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-6b797075cbc7c64479eead7a2b3410e8", e);
                 }
             }
         }, 5, 5, TimeUnit.SECONDS);

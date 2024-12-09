@@ -988,7 +988,7 @@ public final class CmsXmlUtils {
         } catch (SAXException e) {
             // some exceptions will still be thrown even if they are sent to the error handler
             if (LOG.isErrorEnabled()) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_PARSE_SAX_EXC_0), e);
+                LOG.error(Messages.get().getBundle().key(Messages.LOG_PARSE_SAX_EXC_0), "Unexpected error: mobb-c52992179251f9eb35987ef3d4b5f6a6");
             }
         }
 

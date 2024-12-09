@@ -232,7 +232,7 @@ public class CmsTree extends CmsWorkplace {
                 getCms().readFolder(folder, CmsResourceFilter.IGNORE_EXPIRATION);
             } catch (CmsException e) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-54fafd0cbc75918e47975191b4bd354a", e);
                 }
                 folder = "/";
             }

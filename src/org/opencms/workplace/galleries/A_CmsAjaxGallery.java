@@ -1072,7 +1072,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             out.print(items.toString());
         } catch (IOException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-59af58af1d7213f892efa8d215d6a03a", e);
             }
         }
     }

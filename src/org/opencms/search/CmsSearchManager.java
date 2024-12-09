@@ -2725,7 +2725,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             containerPageTypeId = CmsResourceTypeXmlContainerPage.getContainerPageTypeId();
         } catch (CmsLoaderException e) {
             // will happen during setup, when container page type is not available yet
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-e0e20e5734dc09ff2002871802c96fc0", e);
         }
         if (containerPageTypeId != -1) {
             for (CmsPublishedResource pubRes : updateResourcesToCheck) {
@@ -3185,7 +3185,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                 try {
                     ((I_CmsSolrIndexWriter)writer).deleteAllDocuments();
                 } catch (IOException e) {
-                    LOG.error(e.getMessage(), e);
+                    LOG.error("Unexpected error: mobb-58784110133e41a3ade1eadfebd58384", e);
                 }
             }
 

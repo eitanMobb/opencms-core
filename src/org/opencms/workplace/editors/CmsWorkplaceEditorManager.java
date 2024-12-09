@@ -156,7 +156,7 @@ public class CmsWorkplaceEditorManager {
                 // we want a stack trace
                 throw new Exception();
             } catch (Exception e) {
-                LOG.error("Can't check widget availability because resource is null!", e);
+                LOG.error("Can't check widget availability because resource is null!", "Unexpected error: mobb-cb3d0af4aade8a3d5e0e3365cb9b750c");
             }
         } else {
             try {
@@ -263,7 +263,7 @@ public class CmsWorkplaceEditorManager {
             } catch (CmsVfsResourceNotFoundException e) {
                 return null;
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b6bd0034c1414a1e1382faf7cf5dd6b5", e);
                 return null;
             }
         }

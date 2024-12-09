@@ -324,7 +324,7 @@ public final class CmsTemplateMapper {
                     }
                 }
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-d0673f8b7f148e66ec64a5699da94a93", e);
             }
         }
         CmsUUID mappedFormatterJspId = config.getMappedFormatterJspId(formatterId);
