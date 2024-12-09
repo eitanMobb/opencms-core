@@ -990,7 +990,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     val = defaultValue;
                 }
                 if (val == null) {
-                    LOG.warn("Parameter not defined: " + remaining);
+                    LOG.warn("Unexpected error: mobb-4168eabb9315b4db79623e0b46f46fcd");
                 }
                 return val;
 
