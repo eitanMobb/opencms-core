@@ -288,7 +288,7 @@ public class CmsResourceTable extends CustomComponent {
                     }
                 }
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-b157e3b39538b6440eed5397e1d1bc1c", e);
             }
             return null;
         }

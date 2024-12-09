@@ -174,7 +174,7 @@ public class CmsJsonResourceHandler implements I_CmsResourceInit, I_CmsNeedsAdmi
                 try {
                     return OpenCms.initCmsObject(OpenCms.getDefaultUsers().getUserGuest());
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-b041c5fe1fa5128df9be417198c9461b", e);
                     return null;
                 }
             } else {

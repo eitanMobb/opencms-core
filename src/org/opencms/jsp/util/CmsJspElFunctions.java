@@ -787,7 +787,7 @@ public final class CmsJspElFunctions {
                     String.valueOf(input),
                     OpenCms.getSystemInfo().getDefaultEncoding());
             } catch (org.htmlparser.util.ParserException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-6ed2b48b926109087b20f8e51647b490");
                 return "";
             } catch (UnsupportedEncodingException e) {
                 LOG.error(e.getLocalizedMessage(), e);

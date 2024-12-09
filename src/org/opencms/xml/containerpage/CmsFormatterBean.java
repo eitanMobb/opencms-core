@@ -854,7 +854,7 @@ public class CmsFormatterBean implements I_CmsFormatterBean, Cloneable {
                 return Optional.of(clonedBean);
 
             } catch (CloneNotSupportedException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-a6c8cd4e2148ca8ee2c2c7b386476cf8", e);
                 return Optional.empty();
             }
         }
