@@ -331,7 +331,7 @@ public class CmsFileHistoryPanel extends VerticalLayout {
             notification.setDelayMsec(Notification.DELAY_FOREVER);
             notification.show(A_CmsUI.get().getPage());
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2bb934f608183dea5bb37dd80cb9918d", e);
             CmsErrorDialog.showErrorDialog(e);
         }
 
