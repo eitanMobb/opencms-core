@@ -245,7 +245,7 @@ public class CmsOrgUnitWidget extends A_CmsSelectWidget implements I_CmsADEWidge
                 orgUnits.addAll(OpenCms.getOrgUnitManager().getOrganizationalUnits(cms, "", true));
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-ed8b56de761fb149bd15764cf6179674");
         }
 
         List<CmsSelectWidgetOption> result = new ArrayList<>();
