@@ -99,7 +99,7 @@ public class CmsPublishBrokenRelationsCollector extends A_CmsListResourceCollect
                     resources.add(cms.readResource(resName, CmsResourceFilter.ALL));
                 } catch (CmsException e) {
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-935b06e8afb1f1e6a850df6f31095fb1", e);
                     }
                 }
             }
