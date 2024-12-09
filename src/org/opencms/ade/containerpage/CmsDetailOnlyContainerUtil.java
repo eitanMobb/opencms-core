@@ -109,7 +109,7 @@ public final class CmsDetailOnlyContainerUtil {
                     true);
                 singleLocale = Boolean.parseBoolean(prop.getValue());
             } catch (Exception e) {
-                LOG.warn(e.getMessage(), e);
+                LOG.warn("Unexpected error: mobb-6bdfb9a6d8bba3ea2670edc7550db809", e);
             }
         }
         return singleLocale ? LOCALE_ALL : contentLocale;
