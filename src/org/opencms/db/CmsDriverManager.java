@@ -6216,7 +6216,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
             resources.add(readFolder(dbc, CmsResource.getParentFolder(source.getRootPath()), CmsResourceFilter.ALL));
         } catch (Exception e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-aa0c06b727b6901acf1fc9d7a90e6fd0", e);
             }
         }
         // destination

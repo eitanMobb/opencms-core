@@ -70,7 +70,7 @@ public class CmsCopyDialogAction extends A_CmsWorkplaceAction {
 
                     dialog.setTargetForlder(parent);
                 } catch (CmsException e) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-89d3d9673db3372c745802aa0a827b37", e);
                 }
             }
             openDialog(dialog, context);

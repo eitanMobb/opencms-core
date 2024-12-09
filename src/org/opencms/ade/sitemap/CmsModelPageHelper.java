@@ -586,7 +586,7 @@ public class CmsModelPageHelper {
         try {
             m_cms.unlockResource(resource);
         } catch (Exception unlockError) {
-            LOG.debug(unlockError.getLocalizedMessage(), unlockError);
+            LOG.debug("Unexpected error: mobb-75cbc3f55bbe979c7ba0e5d5aea8dd0d", unlockError);
         }
     }
 

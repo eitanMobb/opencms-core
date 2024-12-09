@@ -1893,7 +1893,7 @@ public final class CmsJspStandardContextBean {
                 }
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-1b2d34201d17e595b62fb7603e595d38", e);
         }
         return m_pageResource;
     }
