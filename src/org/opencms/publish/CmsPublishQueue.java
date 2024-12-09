@@ -136,7 +136,7 @@ public class CmsPublishQueue {
                 m_publishEngine.getDriverManager().createPublishJob(dbc, publishJob);
             } catch (CmsException e) {
                 dbc.rollback();
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-8ef162e669bcd52bfc6fa3bef53e99bf");
                 throw e;
             } finally {
                 dbc.clear();
