@@ -86,7 +86,7 @@ public class CmsXmlInheritGroupContainerHandler extends CmsDefaultXmlContentHand
                 return result.getElements(false);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-e52dcef2ca9184a28013eb622bd13dcc");
         }
         return Collections.emptyList();
     }
