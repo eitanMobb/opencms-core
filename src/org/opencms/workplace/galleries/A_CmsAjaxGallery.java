@@ -318,7 +318,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                     CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(galleryTypeId));
             } catch (CmsException e) {
                 // error reading resources with filter
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-c49e3e2cf8f1366e335214420b1e3a19", e);
             }
 
             if ((systemGalleries != null) && (systemGalleries.size() > 0)) {
