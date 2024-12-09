@@ -125,7 +125,7 @@ public class CmsTextDiff implements I_CmsDiffProvider {
                     // set the content to null, so the content dialog will not be shown
                     originalSource = null;
                     copySource = null;
-                    LOG.error(e.getMessage(), e);
+                    LOG.error("Unexpected error: mobb-0610230ad7f7d15c3c7b92a4e6f98525", e);
                 }
             } else if ((type instanceof CmsResourceTypePlain)
                 || (type instanceof CmsResourceTypeJsp)

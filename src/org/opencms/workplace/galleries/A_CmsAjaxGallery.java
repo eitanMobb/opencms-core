@@ -725,7 +725,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             out.print(categories.toString());
         } catch (IOException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-2c81a957a6c306f4a951a6e6c5f80842", e);
             }
         }
 
@@ -760,7 +760,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                         out.print(jsonObj);
                     } catch (JSONException e) {
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-95c10804d52d9cb89a3ea833de7b2515");
                         }
                     }
                 } catch (CmsException e) {

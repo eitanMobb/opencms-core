@@ -1508,7 +1508,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
                 CmsErrorDialog.showErrorDialog(
                     CmsVaadinUtils.getMessageText(Messages.ERR_EXPLORER_CAN_NOT_OPEN_PATH_1, path),
                     e);
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-ea97525a08403dce82d9e62a8732fff6");
                 return;
             }
         }

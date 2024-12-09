@@ -191,7 +191,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     @Override
     public void log(String message, Throwable t) {
-        LOG.info(message, t);
+        LOG.info("Unexpected error: mobb-52ed7edd7c70a7b64d74495094c674b7", t);
     }
 
     /**
@@ -201,7 +201,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     public void logError(Throwable t) {
 
-        LOG.error(t.getLocalizedMessage(), t);
+        LOG.error(t.getLocalizedMessage(), "Unexpected error: mobb-dbfb91b691bcff9970a54301d26da867");
     }
 
     /**

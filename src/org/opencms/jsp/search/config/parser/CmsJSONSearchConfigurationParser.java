@@ -630,7 +630,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
                     String solrQuery = parseOptionalStringValue(currentParam, JSON_KEY_ADDITIONAL_PARAMETERS_SOLRQUERY);
                     result.put(param, solrQuery);
                 } catch (JSONException e) {
-                    LOG.error(Messages.get().getBundle().key(Messages.ERR_ADDITIONAL_PARAMETER_CONFIG_WRONG_0), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.ERR_ADDITIONAL_PARAMETER_CONFIG_WRONG_0), "Unexpected error: mobb-4c0368c42f96f823ac5fe1c67cf889df");
                     continue;
                 }
             }

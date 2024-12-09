@@ -566,7 +566,7 @@ public class CmsADEConfigCacheState {
                 return detailPageIds.contains(parent.getStructureId());
 
             } catch (Exception e) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-07076ccac5613236896bfa3e40218b5c", e);
                 return false;
             }
         } else if (resource.isFolder()) {

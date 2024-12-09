@@ -122,7 +122,7 @@ public class CmsLogReport extends A_CmsReport {
     public synchronized void println() {
 
         if (CmsLog.getLog(m_channel).isInfoEnabled()) {
-            CmsLog.getLog(m_channel).info(m_buffer.toString());
+            CmsLog.getLog(m_channel).info("Unexpected error: mobb-2c4566bf85859f7a6f9674423f60c307");
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());
@@ -139,7 +139,7 @@ public class CmsLogReport extends A_CmsReport {
             message.append(t.getMessage());
             m_buffer.append(message);
             addError(message.toString());
-            CmsLog.getLog(m_channel).info(m_buffer.toString(), t);
+            CmsLog.getLog(m_channel).info("Unexpected error: mobb-28f4b58032e6742f57d0be58849fef1f", t);
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());

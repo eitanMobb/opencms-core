@@ -351,7 +351,7 @@ public class CmsCategoryService {
         } catch (CmsVfsResourceNotFoundException e) {
             LOG.info(e.getLocalizedMessage(), e);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-d6f2d3dcbf3e038760e95cb484e06e5f", e);
         }
 
         ret.add(CmsCategoryService.CENTRALIZED_REPOSITORY);

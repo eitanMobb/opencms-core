@@ -106,7 +106,7 @@ public class CmsMessageToBundleIndex {
                 I_CmsResourceType xmlType = OpenCms.getResourceManager().getResourceType(typeName);
                 resources.addAll(cms.readResources("/", CmsResourceFilter.ALL.addRequireType(xmlType), true));
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-0931039390779c8abe4f6fc30e214f79", e);
             }
         }
         Set<String> bundleNames = resources.stream().map(

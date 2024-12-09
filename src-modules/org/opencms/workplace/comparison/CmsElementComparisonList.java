@@ -224,7 +224,7 @@ public class CmsElementComparisonList extends A_CmsListDialog {
             try {
                 getToolManager().jspForwardTool(this, "/history/comparison/difference", params);
             } catch (Exception e) {
-                LOG.debug(e.getMessage(), e);
+                LOG.debug("Unexpected error: mobb-e31df73dd4847f4cf0dd4d0776ee5ee5", e);
             }
 
         }

@@ -3052,7 +3052,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
             m_editHandler = (I_CmsEditHandler)Class.forName(editHandlerClass).newInstance();
             m_editHandler.setParameters(params);
         } catch (Exception e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-45511ab50744714cba0078f146fa632b", e);
         }
     }
 
