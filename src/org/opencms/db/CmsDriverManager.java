@@ -4870,7 +4870,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                 return m_monitor.getResourceOuCache().get(new ResourceOUCacheKey(this, dbc)).getResourceOrgUnits(
                     resource.getRootPath());
             } catch (ExecutionException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b2b785d33942b45d9009b7e5d556f030", e);
             }
         }
         List<CmsOrganizationalUnit> result = getVfsDriver(dbc).getResourceOus(
