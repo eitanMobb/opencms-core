@@ -556,7 +556,7 @@ public class CmsLocaleGroupService {
             try {
                 defaultfile = m_cms.readDefaultFile("" + res.getStructureId());
             } catch (CmsSecurityException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-9fbff050e73ae168cfa4ccc2690f86d7");
                 return null;
             } catch (CmsException e) {
                 LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-64cb055878c4a0edc8f5adf6b2400ee3");
