@@ -458,7 +458,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                 || CmsFormatterConfigurationCache.TYPE_FLEX_FORMATTER.equals(resType.getTypeName()))
                 && CmsResource.getParentFolder(rootPath).endsWith("/.content/.formatters");
         } catch (Exception e) {
-            LOG.debug(e.getMessage(), e);
+            LOG.debug("Unexpected error: mobb-46b98f766922953f18ffaff01ade3702", e);
         }
         return result;
     }
