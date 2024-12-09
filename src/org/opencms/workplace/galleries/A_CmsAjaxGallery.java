@@ -950,7 +950,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                 }
             } catch (CmsException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-a0e3ff2f966134ab8144b207e1c10db4", e);
                 }
             }
             jsonObj.put("editable", editable);
