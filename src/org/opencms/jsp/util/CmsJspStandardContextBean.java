@@ -2067,7 +2067,7 @@ public final class CmsJspStandardContextBean {
                         } catch (CmsVfsResourceNotFoundException e) {
                             LOG.info(e.getLocalizedMessage(), e);
                         } catch (Exception e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-297351c0e4f02df42e4c9642e0690351", e);
                         }
                     }
                     return CmsJspObjectValueWrapper.createWrapper(cms, result);
