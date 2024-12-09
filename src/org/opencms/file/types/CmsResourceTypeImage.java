@@ -786,7 +786,7 @@ public class CmsResourceTypeImage extends A_CmsResourceType {
 
             }
         } catch (Exception e) {
-            LOG.error("Error while trying to determine size of SVG: " + e.getLocalizedMessage(), e);
+            LOG.error("Error while trying to determine size of SVG: " + e.getLocalizedMessage(), "Unexpected error: mobb-2b63316120738c72b96fbf7b05337c83");
         }
         return newProps;
     }
