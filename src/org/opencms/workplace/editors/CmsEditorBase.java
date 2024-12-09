@@ -101,7 +101,7 @@ public class CmsEditorBase extends CmsDialog {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-07543603adafb63c17d0a5876fc72966", e);
             }
         }
 
