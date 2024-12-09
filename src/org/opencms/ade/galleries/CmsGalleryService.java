@@ -2089,7 +2089,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
             bean.setChildren(childBeans);
 
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a1396f2e5a3524d1d8ab27b9a8694f01", e);
         }
         return bean;
     }
