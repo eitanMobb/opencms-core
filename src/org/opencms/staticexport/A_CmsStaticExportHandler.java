@@ -611,7 +611,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                 }
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-7158bd2ac5ca541ec844ca0cf1bf1fb9", e);
         }
         return files;
 
