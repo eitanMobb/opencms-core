@@ -866,7 +866,7 @@ public abstract class CmsWorkplace {
             } catch (CmsException e) {
                 // can usually be ignored
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-4b594453b5d86d0da40132d327c83b3c");
                 }
                 user = cms.getRequestContext().getCurrentUser();
             }
