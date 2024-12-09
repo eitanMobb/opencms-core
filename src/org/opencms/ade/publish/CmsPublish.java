@@ -266,7 +266,7 @@ public class CmsPublish {
                             } catch (CmsException e) {
                                 CmsPublishResource pubRes = relationToBean(relation);
                                 related.add(pubRes);
-                                LOG.warn(e.getLocalizedMessage(), e);
+                                LOG.warn("Unexpected error: mobb-a328dd45d92f75b99b4d8be37085b8b4", e);
                             }
                         }
                         CmsPublishResourceInfo info = new CmsPublishResourceInfo(
