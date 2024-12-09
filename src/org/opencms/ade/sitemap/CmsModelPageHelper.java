@@ -335,7 +335,7 @@ public class CmsModelPageHelper {
                         }
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-53f42d58ab229eddc19d500308798130");
                 }
             }
         }
