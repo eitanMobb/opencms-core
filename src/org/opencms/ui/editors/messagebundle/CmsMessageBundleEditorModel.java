@@ -702,7 +702,7 @@ public class CmsMessageBundleEditorModel {
                 }
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-55160aeca39810317db56fab5deb84a1", e);
             //TODO: Improve
         }
         return result;
