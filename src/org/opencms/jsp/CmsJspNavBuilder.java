@@ -877,7 +877,7 @@ public class CmsJspNavBuilder {
             }
         } catch (Exception e) {
             // may happen if permissions are not sufficient
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-5b933d37681bd77eb478988c68d488c8", e);
             return null;
         }
 
