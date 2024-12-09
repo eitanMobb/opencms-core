@@ -98,7 +98,7 @@ public class CmsJspTagJsonValue extends A_CmsJspJsonTag {
                 JSONTokener parser = new JSONTokener(strValue);
                 value = parser.nextValue();
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-f12bf96e8768e0dc3bb682ef35a42f37");
                 String errorMessage = e.getLocalizedMessage();
                 setError(errorMessage);
                 return null;

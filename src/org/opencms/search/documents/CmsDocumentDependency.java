@@ -277,7 +277,7 @@ public final class CmsDocumentDependency {
                 }
             } catch (Exception ex) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(ex.getLocalizedMessage(), ex);
+                    LOG.error("Unexpected error: mobb-a5b3bea45aff339a7b61956114a3db9d", ex);
                 }
             }
         }

@@ -1293,7 +1293,7 @@ public abstract class A_CmsResourceType implements I_CmsResourceType {
                         links = linkParseable.parseLinks(cms, cms.readFile(undoneResource2));
                     } catch (CmsException e) {
                         if (LOG.isWarnEnabled()) {
-                            LOG.warn(e.getLocalizedMessage(), e);
+                            LOG.warn("Unexpected error: mobb-2953914da8c24103b166e5742eeaa972", e);
                         }
                     } catch (CmsRuntimeException e) {
                         if (LOG.isWarnEnabled()) {

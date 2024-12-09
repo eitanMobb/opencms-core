@@ -753,7 +753,7 @@ public class CmsTree extends CmsWorkplace {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-d4945a231914cf7e4c06b5796f3dcd49", e);
             }
         }
         return "";

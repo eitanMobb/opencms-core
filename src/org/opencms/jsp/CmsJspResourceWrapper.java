@@ -1019,7 +1019,7 @@ public class CmsJspResourceWrapper extends CmsResource {
                 }
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-208391d40385834dff249603d3305d7f", e);
         }
         return result;
     }

@@ -128,7 +128,7 @@ public class CmsJspTagContentShow extends TagSupport {
                     // read the element from the content
                     content = xmlContent.getStringValue(cms, element, locale);
                 } catch (Exception e) {
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_ERR_CONTENT_SHOW_1, element), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.LOG_ERR_CONTENT_SHOW_1, element), "Unexpected error: mobb-1e4d87d70afa0824a17ef730608d861a");
                     content = null;
                 }
             } else {
