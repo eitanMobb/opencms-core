@@ -1299,7 +1299,7 @@ public final class CmsJspStandardContextBean {
             }
             return bundleIndex.getBundlePathForKey(messageKey);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-af2b76f4b5da3ce2034f0b8b7e2fcc98");
             return null;
         }
     }
