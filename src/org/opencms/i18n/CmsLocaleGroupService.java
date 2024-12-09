@@ -431,7 +431,7 @@ public class CmsLocaleGroupService {
                     return ancestorRes;
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-c56020d1dfad513a281f561e30da12d1", e);
             }
         }
         // there is at least one ancestor: the site root
