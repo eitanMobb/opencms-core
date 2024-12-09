@@ -216,7 +216,7 @@ public class CmsXmlSitemapActionElement extends CmsJspActionElement {
                     buffer.append("\n");
                 }
             } catch (CmsException e) {
-                LOG.error("Error while generating robots.txt : " + e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-45d52844790aefaea658683d966a4391", e);
             }
         }
         buffer.append("\n");
