@@ -2881,7 +2881,7 @@ public final class CmsJspStandardContextBean {
                     try {
                         width = Integer.parseInt(container.getWidth());
                     } catch (Exception e) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-54509ef1565ea8e1a732e83e272ef952", e);
                     }
                     formatter = formatters.getDefaultSchemaFormatter(container.getType(), width);
                 } catch (CmsException e1) {
