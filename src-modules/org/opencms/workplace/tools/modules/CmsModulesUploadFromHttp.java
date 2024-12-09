@@ -166,7 +166,7 @@ public class CmsModulesUploadFromHttp extends A_CmsImportFromHttp {
             if (exception != null) {
                 // log it
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(exception.getLocalizedMessage(getLocale()), exception);
+                    LOG.error(exception.getLocalizedMessage(getLocale()), "Unexpected error: mobb-93504cc59636be0ad415f47017f277a8");
                 }
                 // then throw to avoid blank page telling nothing due to missing forward
                 throw new CmsRuntimeException(exception.getMessageContainer(), exception);
