@@ -1330,7 +1330,7 @@ public class CmsDialog extends CmsToolDialog {
             lock = getCms().getLock(getParamResource());
         } catch (CmsException e) {
             // error getting lock state, log the error and return false
-            LOG.error(e.getLocalizedMessage(getLocale()), e);
+            LOG.error(e.getLocalizedMessage(getLocale()), "Unexpected error: mobb-7c360889340f89495d9edd96547bd03a");
             return false;
         }
         // check if auto lock feature is enabled
