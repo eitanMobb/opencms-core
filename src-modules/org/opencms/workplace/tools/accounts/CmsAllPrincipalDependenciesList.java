@@ -397,7 +397,7 @@ public class CmsAllPrincipalDependenciesList extends A_CmsListDialog {
             }
             return result;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a8dc38858055f723556a3e9d2f58bdb5", e);
             throw e;
         }
     }
