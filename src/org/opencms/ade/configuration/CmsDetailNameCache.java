@@ -268,7 +268,7 @@ public class CmsDetailNameCache implements I_CmsGlobalConfigurationCache {
             }
             m_detailIdCache = newMap;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-c1473a6738f29eaa53ffec71ac9f1d26", e);
         }
     }
 }
