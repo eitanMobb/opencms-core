@@ -258,7 +258,7 @@ public class CmsMultiMessages extends CmsMessages {
                     noCache = true;
                 } catch (CmsMessageException e) {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getMessage(), e);
+                        LOG.debug("Unexpected error: mobb-32e2318e64c563fd1d20603ae95b7de3", e);
                     }
                 }
             }
