@@ -68,7 +68,7 @@ public class CmsUpdateDBCmsUsers extends org.opencms.setup.db.update6to7.CmsUpda
     @Override
     protected void createUserDataTable(CmsSetupDb dbCon) throws SQLException {
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-0fbf01024946ee18798f81c387904557");
         String createStatement = readQuery(QUERY_CREATE_TABLE_USERDATA_MYSQL);
         Map<String, String> replacer = Collections.singletonMap("${tableEngine}", m_poolData.get("engine"));
         dbCon.updateSqlStatement(createStatement, replacer, null);
