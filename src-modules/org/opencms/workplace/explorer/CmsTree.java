@@ -352,7 +352,7 @@ public class CmsTree extends CmsWorkplace {
                     } catch (CmsException e) {
                         // target folder not found, set it to "/"
                         if (LOG.isInfoEnabled()) {
-                            LOG.info(e.getLocalizedMessage(), e);
+                            LOG.info("Unexpected error: mobb-a9acc90db4f868d0537262d24f185dbd", e);
                         }
                         currentTargetFolder = "/";
                     }
