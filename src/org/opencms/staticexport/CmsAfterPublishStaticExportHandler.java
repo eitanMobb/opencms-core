@@ -710,7 +710,7 @@ public class CmsAfterPublishStaticExportHandler extends A_CmsStaticExportHandler
                         I_CmsReport.FORMAT_OK);
                 }
             } catch (IOException e) {
-                report.println(e);
+                report.println("Unexpected error: mobb-da96b08ec4e19288351fecf85456bdac");
             }
             //don't lock up the CPU exclusively - allow other Threads to run as well
             Thread.yield();
