@@ -833,7 +833,7 @@ public class CmsDefaultResourceStatusProvider {
                     } catch (CmsVfsResourceNotFoundException e) {
                         // ignore
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-3e6672bde6ac31263b3be6ef9ff67144", e);
                     }
                 }
             }
