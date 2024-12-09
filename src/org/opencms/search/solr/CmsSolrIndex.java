@@ -568,7 +568,7 @@ public class CmsSolrIndex extends CmsSearchIndex {
             }
         } catch (Exception e) {
             // ignore and assume that the document could not be found
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-02a13f221cd3334db01da80e9287270a", e);
         }
         return null;
     }
