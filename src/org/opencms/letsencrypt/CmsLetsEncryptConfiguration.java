@@ -174,7 +174,7 @@ public class CmsLetsEncryptConfiguration implements I_CmsConfigurationParameterH
             String portStr = m_config.get(ATTR_PORT);
             return Integer.valueOf(portStr).intValue();
         } catch (Exception e) {
-            LOG.error("Error getting letsencrypt port: " + e.getLocalizedMessage(), e);
+            LOG.error("Error getting letsencrypt port: " + e.getLocalizedMessage(), "Unexpected error: mobb-8fe84c4fe4920bf6f3db5221ebc1d9fb");
             return -1;
         }
     }
