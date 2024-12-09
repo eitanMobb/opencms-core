@@ -1253,7 +1253,7 @@ public final class CmsResourceUtil {
             } catch (Exception e1) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-3ecec022d4bb8df9966fd2b07aba1311", e);
                 }
             } finally {
                 getCms().getRequestContext().setSiteRoot(storedSiteRoot);
