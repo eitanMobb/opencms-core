@@ -888,7 +888,7 @@ public class CmsPreferences extends CmsTabDialog {
                 } catch (CmsLoaderException e) {
                     // resource type not found, log error
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-f377eb619772ed41ebcd39e170acfdcd", e);
                     }
                     continue;
                 }
