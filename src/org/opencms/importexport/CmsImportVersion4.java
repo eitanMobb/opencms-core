@@ -256,7 +256,7 @@ public class CmsImportVersion4 extends A_CmsImport {
                     LOG.warn(Messages.get().getBundle().key(Messages.LOG_IMPORTEXPORT_REWRITING_1, res.getRootPath()));
                 }
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-267fef1a01dbaf9ce87817cd1e3f9594");
                 }
             }
             i++;
