@@ -77,7 +77,7 @@ public class CmsRelationPublishValidator {
             m_brokenRelations = OpenCms.getPublishManager().validateRelations(m_cms, publishList, null);
         } catch (Exception e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-faf424f1c32a523727747d6bcf555198", e);
         }
     }
 
