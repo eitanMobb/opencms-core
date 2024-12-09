@@ -201,7 +201,7 @@ public class CmsExtendedPublishResourceFormatter extends CmsDefaultPublishResour
         try {
             return m_workflowProjectStatus.get(projectId).booleanValue();
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0dd3542cbff789eab0f14524bb56a288", e);
             return false;
         }
     }
