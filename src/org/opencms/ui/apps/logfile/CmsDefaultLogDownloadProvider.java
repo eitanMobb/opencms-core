@@ -117,7 +117,7 @@ public class CmsDefaultLogDownloadProvider implements I_CmsLogDownloadProvider {
                 try {
                     fos.close();
                 } catch (Exception e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-4cf97a815d86043f6f394f68621d2c25", e);
                 }
             }
         }
