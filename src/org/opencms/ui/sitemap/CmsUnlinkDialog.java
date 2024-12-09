@@ -107,7 +107,7 @@ public class CmsUnlinkDialog extends CmsBasicDialog {
                 }
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-fea1e4a0c5ed0dbfd00efe131a5dafbf");
         }
         CmsResource rightResource = m_otherResource;
         CmsResourceInfo left = new CmsResourceInfo(leftResource);
