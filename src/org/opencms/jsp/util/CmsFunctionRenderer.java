@@ -170,7 +170,7 @@ public class CmsFunctionRenderer {
                 resource = cms.readResource(path);
                 CmsVfsMemoryObjectCache.getVfsMemoryObjectCache().putCachedObject(cms, path, resource);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-ed77f28e7b83a41639aa26655ed55188", e);
             }
         }
         return resource;
