@@ -741,7 +741,7 @@ public class CmsEditModuleForm extends CmsBasicDialog {
             }
             return resField;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-51f7208319bb238b3a48f2b993b6914f", e);
             return null;
         }
     }
