@@ -220,7 +220,7 @@ public class CmsUploadBean extends CmsJspBean {
             return generateResponse(Boolean.FALSE, e.getMessage(), formatStackTrace(e));
         } catch (Throwable e) {
             // an unexpected error occurred while parsing the request, create a non-specific error message
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-7f963651399c5345d93a9d46f1fa141f", e);
             String message = m_bundle.key(org.opencms.ade.upload.Messages.ERR_UPLOAD_UNEXPECTED_0);
             return generateResponse(Boolean.FALSE, message, formatStackTrace(e));
         } finally {
