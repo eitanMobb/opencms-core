@@ -151,7 +151,7 @@ public class CmsResourceTypeStatsView extends VerticalLayout {
                     m_results.setVisible(true);
                     results.setVerticalLayout(m_resLayout, false);
                 } catch (CmsException e) {
-                    LOG.error("Unable to read resource tree", e);
+                    LOG.error("Unable to read resource tree", "Unexpected error: mobb-54fbf3f37ef05f786e0489a0eeba0c8d");
                 }
             }
         });
