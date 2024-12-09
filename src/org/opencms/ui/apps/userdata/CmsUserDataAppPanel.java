@@ -313,7 +313,7 @@ public class CmsUserDataAppPanel extends VerticalLayout {
             try {
                 userObj = cms.readUser(user);
             } catch (Exception e) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-e5560dd0e8866576c3a257880d95a17c", e);
                 m_user.setComponentError(
                     new UserError(
                         CmsVaadinUtils.getMessageText(org.opencms.ui.apps.Messages.GUI_USERDATA_USER_NOT_FOUND_0)));
