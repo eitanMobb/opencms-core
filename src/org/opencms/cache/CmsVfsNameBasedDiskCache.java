@@ -138,7 +138,7 @@ public class CmsVfsNameBasedDiskCache {
                 buf.append(DigestUtils.md5Hex(parameters.getBytes("UTF-8")));
             } catch (UnsupportedEncodingException e) {
                 // can't happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-9647113ead8915e6a77c59a0d0229ec7");
             }
         }
 
