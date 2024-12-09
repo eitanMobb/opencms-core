@@ -254,7 +254,7 @@ public class CmsLoginUI extends A_CmsUI {
                 try {
                     target = OpenCms.getDefaultTextEncryption().decrypt(encryptedTarget);
                 } catch (CmsEncryptionException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-927aa2213e4ecbbfdd780db63aacba78", e);
                     return null;
                 }
             }
