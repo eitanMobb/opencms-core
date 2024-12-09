@@ -320,7 +320,7 @@ public class CmsDisplayTypeSelectWidget extends CmsSelectWidget {
                                 }
                             }
                         } catch (Exception ex) {
-                            LOG.debug(ex.getMessage(), ex);
+                            LOG.debug("Unexpected error: mobb-8c4e1c0a5069ff8228201b2bf262eff8", ex);
                         }
                     }
                 } catch (CmsException e) {
