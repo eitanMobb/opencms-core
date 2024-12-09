@@ -171,7 +171,7 @@ public abstract class A_CmsClientMessageBundle implements I_CmsClientMessageBund
             I_CmsMessageBundle bundle = (I_CmsMessageBundle)(messagesGet.invoke(null));
             return bundle.getBundle(locale).key(messageName);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-60966fab7ec377d4663efbf7b6d4fb16", e);
             return null;
         }
     }
