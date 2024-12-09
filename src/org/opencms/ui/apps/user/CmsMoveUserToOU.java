@@ -158,7 +158,7 @@ public class CmsMoveUserToOU extends CmsBasicDialog {
             m_ou.select("");
             m_ou.setNullSelectionAllowed(false);
         } catch (CmsException e) {
-            LOG.error("Cannot read user with id " + userID, e);
+            LOG.error("Cannot read user with id " + userID, "Unexpected error: mobb-9d8772f8366222be5a516d1441e39fa6");
         }
 
         m_ou.addValidator(new OUValidator());
