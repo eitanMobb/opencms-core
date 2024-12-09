@@ -3582,7 +3582,7 @@ public final class CmsSecurityManager {
         } catch (Exception exc) {
             CmsMessageContainer message = Messages.get().container(Messages.LOG_ERR_DRIVER_MANAGER_START_0);
             if (LOG.isFatalEnabled()) {
-                LOG.fatal(message.key(), exc);
+                LOG.fatal(message.key(), "Unexpected error: mobb-10c4cb63a6da6ccea029395b74975a4d");
             }
             throw new CmsInitException(message, exc);
         }
