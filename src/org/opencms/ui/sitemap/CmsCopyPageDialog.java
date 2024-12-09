@@ -169,7 +169,7 @@ public class CmsCopyPageDialog extends CmsBasicDialog {
                 try {
                     return cms.readResource(path, CmsResourceFilter.IGNORE_EXPIRATION);
                 } catch (Exception e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-f41ee042f84dfa3d47d1186ce032c6a3", e);
                     return null;
                 }
             } else {
