@@ -68,7 +68,7 @@ public class CmsTemplateMapperAction extends A_CmsWorkplaceAction {
                 new CmsTemplateMappingContentRewriter(context.getCms(), context.getResources().get(0)));
         } catch (CmsException e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e9d13681c178acd2c87550b66eae210a", e);
         }
     }
 
