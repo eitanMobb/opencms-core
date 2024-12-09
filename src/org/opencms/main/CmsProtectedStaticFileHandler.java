@@ -310,7 +310,7 @@ implements I_CmsResourceInit, I_CmsConfigurationParameterHandler, I_CmsNeedsAdmi
         } catch (CmsVfsResourceNotFoundException e) {
             status = HttpServletResponse.SC_NOT_FOUND;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-26062706a629a0e8785d59315924c762", e);
             status = HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
         }
         try {
