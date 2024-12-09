@@ -767,7 +767,7 @@ public class CmsTypeAnalyzer {
                 checkFunction(groupResource, element);
                 addEntry(element.getTypeName(), groupResource.getStructureId(), UNKNOWN_FORMATTER);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-8e3696e65d32839538548764b1825701", e);
             }
         }
 
