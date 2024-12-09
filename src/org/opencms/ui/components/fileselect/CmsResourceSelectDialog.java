@@ -310,7 +310,7 @@ public class CmsResourceSelectDialog extends CustomComponent {
                             idsToOpen.add(parentFolder.getStructureId());
                             currentFolder = parentFolder;
                         } catch (CmsException | NullPointerException e) {
-                            LOG.info(e.getLocalizedMessage(), e);
+                            LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-f7af421ac471fd8f458c7b3af048693f");
                             break;
                         }
                     } while (!parentFolder.getStructureId().equals(m_root.getStructureId()));
