@@ -1594,7 +1594,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             m_fileTree.markAsDirtyRecursive();
         } catch (CmsException e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-6e54b3c044f867bbf4f3a4246393548b", e);
         }
     }
 
