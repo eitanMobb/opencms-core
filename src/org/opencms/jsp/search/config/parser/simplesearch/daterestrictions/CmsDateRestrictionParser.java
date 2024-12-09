@@ -123,7 +123,7 @@ public class CmsDateRestrictionParser {
         try {
             return new Date(Long.parseLong(dateStr));
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage() + " date = " + dateStr, e);
+            LOG.info("Unexpected error: mobb-3ca45344efad7cec5da237d0ade0cf8c", e);
             return null;
         }
     }
