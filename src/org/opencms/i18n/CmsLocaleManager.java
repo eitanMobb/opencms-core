@@ -328,7 +328,7 @@ public class CmsLocaleManager implements I_CmsEventListener {
         try {
             defaultNames = cms.readPropertyObject(res, CmsPropertyDefinition.PROPERTY_LOCALE, true).getValue();
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-e0721fa998f998aa9495e8cd9e05e17b", e);
         }
         if (defaultNames != null) {
             defaultLocales = localeManager.getAvailableLocales(defaultNames);
