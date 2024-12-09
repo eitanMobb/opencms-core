@@ -272,7 +272,7 @@ public class CmsDefaultDetailPageHandler implements I_CmsDetailPageHandler {
         } catch (CmsVfsResourceNotFoundException e) {
             LOG.info(e.getLocalizedMessage(), e);
         } catch (Exception e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-6125abb010776bd47e69ca8b7a288582");
         }
         DetailPageConfigData context = lookupDetailPageConfigData(manager, cms, contentRootPath, originPath, resType);
         List<CmsDetailPageInfo> relevantPages = context.getDetailPages();
