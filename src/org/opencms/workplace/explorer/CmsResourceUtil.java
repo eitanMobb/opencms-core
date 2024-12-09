@@ -1494,7 +1494,7 @@ public final class CmsResourceUtil {
             try {
                 m_projectResources = getCms().readProjectResources(getReferenceProject());
             } catch (Throwable e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-4e3f7e6e6f3da4f640ecf60fed3bc204");
                 // use an empty list (all resources are "outside")
                 m_projectResources = new ArrayList<String>();
             }
