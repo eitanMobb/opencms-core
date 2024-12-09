@@ -288,7 +288,7 @@ public class CmsContainerConfigurationCache implements I_CmsGlobalConfigurationC
             } catch (CmsVfsResourceNotFoundException e) {
                 LOG.debug(e.getLocalizedMessage(), e);
             } catch (Throwable e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b985aeada90075cb8cbaea69fc486592", e);
             }
             // if the group couldn't be read or parsed for some reason, the map value is null
             result.put(resource.getStructureId(), parsedGroup);
