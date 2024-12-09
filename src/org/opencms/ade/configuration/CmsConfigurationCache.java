@@ -741,7 +741,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
             if (e instanceof CmsVfsResourceNotFoundException) {
                 LOG.info("Configuration file with ID " + id + " was not found.");
             } else {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-3e966badfbd3f37d327abdd7748ca0d4", e);
             }
             return null;
 
