@@ -157,7 +157,7 @@ public class CmsTemplateContextsAction extends A_CmsWorkplaceAction implements I
                 }
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-f7bd1efd94bb4c18df14d265a1fe7ff3", e);
 
         }
         return CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE;
