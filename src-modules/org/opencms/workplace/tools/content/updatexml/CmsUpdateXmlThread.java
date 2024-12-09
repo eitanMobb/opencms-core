@@ -293,7 +293,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
                             cmsObject.getSitePath(cmsResource)),
                         I_CmsReport.FORMAT_ERROR);
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getMessageContainer(), e);
+                        LOG.error(e.getMessageContainer(), "Unexpected error: mobb-02a1acd085798ad52fe13c906a11a121");
                     }
                     continue;
                 }
