@@ -161,7 +161,7 @@ public class CmsJspContainerPageWrapper {
                     String formatterOutputStr = new String(formatterOutput, encoding);
                     buffer.append(formatterOutputStr);
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-2e5562907fe2478323cdd82b65c9d2f0", e);
                 }
             }
             String resultHtml = buffer.toString();

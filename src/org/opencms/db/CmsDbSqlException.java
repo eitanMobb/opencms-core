@@ -73,7 +73,7 @@ public class CmsDbSqlException extends CmsDbException {
         super(container, cause);
         // log all sql exceptions
         if (LOG.isWarnEnabled()) {
-            LOG.warn(container.key(), this);
+            LOG.warn(container.key(), "Unexpected error: mobb-61034bf5edf8ff70bdf4ae38bf7c57eb");
         }
     }
 

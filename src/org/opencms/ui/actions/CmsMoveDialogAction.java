@@ -77,7 +77,7 @@ public class CmsMoveDialogAction extends A_CmsWorkplaceAction implements I_CmsAD
 
                     dialog.setTargetForlder(parent);
                 } catch (CmsException e) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-f1e88f7ee8a5f680b66b85ce1cd1f852", e);
                 }
             }
             openDialog(dialog, context);

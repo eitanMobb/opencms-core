@@ -688,7 +688,7 @@ implements Receiver, I_CmsPasswordFetcher {
                 exportUsers = CmsImportExportUserDialog.addExportUsersFromRoles(m_cms, m_ou, roles, exportUsers);
             }
         } catch (CmsException e) {
-            LOG.error("Unable to get export user list.", e);
+            LOG.error("Unable to get export user list.", "Unexpected error: mobb-a5584a1735f992c5574782ced19af153");
         }
         return exportUsers;
     }

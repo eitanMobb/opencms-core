@@ -817,7 +817,7 @@ public class CmsDateSearchComposite implements I_ResourcePropertyProvider, I_Cms
                     m_filterComponent.m_dateTo.setValue(null);
                     m_filterComponent.m_availabilitySelector.reset();
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-44032d6c53429603c459c93efb43cc07", e);
                 }
             }
         });

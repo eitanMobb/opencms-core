@@ -109,7 +109,7 @@ public class CmsSitemapTreeDataProvider {
             }
             m_foldersWithNoChildFolders = foldersWithNoChildFolders;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-62afebb0e8cc698904dc938f07dc2ef0", e);
         }
     }
 
