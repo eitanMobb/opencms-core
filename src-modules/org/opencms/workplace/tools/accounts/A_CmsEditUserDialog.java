@@ -989,7 +989,7 @@ public abstract class A_CmsEditUserDialog extends CmsWidgetDialog {
 
         } catch (CmsException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-387b8026e4382f160b071ea5ad844981", e);
             }
         }
 
