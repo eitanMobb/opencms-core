@@ -535,7 +535,7 @@ public class CmsImportVersion3 extends A_CmsImport {
             }
         } catch (Exception exc) {
             // an error while importing the file
-            m_report.println(exc);
+            m_report.println("Unexpected error: mobb-d2cc8ccd60d53fa902d54e3f0b164cd6");
             m_report.addError(exc);
 
             try {
