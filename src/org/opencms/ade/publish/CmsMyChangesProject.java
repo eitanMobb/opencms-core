@@ -94,7 +94,7 @@ public class CmsMyChangesProject implements I_CmsVirtualProject {
         try {
             return Lists.newArrayList(OpenCms.getPublishManager().getUsersPubList(cms));
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-78716f5fc63af4d302d1e521c7d6a0c9", e);
             return Lists.newArrayList();
         }
     }
