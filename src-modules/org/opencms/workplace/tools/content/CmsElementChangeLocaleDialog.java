@@ -179,7 +179,7 @@ public class CmsElementChangeLocaleDialog extends CmsWidgetDialog {
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-9a4a6a625c03e5a64a355c8d0d204a09", e);
             }
         }
         if (templates != null) {

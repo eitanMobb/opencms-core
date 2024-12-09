@@ -146,7 +146,7 @@ public class CmsProjectsTable extends Table {
                                 A_CmsUI.getCmsObject().deleteProject(projectId);
                                 CmsAppWorkplaceUi.get().reload();
                             } catch (CmsException e) {
-                                LOG.error("Error deleting project " + projectId, e);
+                                LOG.error("Error deleting project " + projectId, "Unexpected error: mobb-081032965e7b47edb44365353377c7a8");
                                 displayException(e);
                             }
                         }

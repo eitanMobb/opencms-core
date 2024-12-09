@@ -160,7 +160,7 @@ public class CmsSecondFactorSetupDialog extends CmsBasicDialog {
         try {
             m_continuation.continueLogin(m_context);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-90b87b8381bf8bcad6bb300edf23854a", e);
         }
 
     }

@@ -178,7 +178,7 @@ public class CmsDialogMultiPropertyEdit extends CmsDialog {
                     } catch (CmsException e) {
                         // log, should never happen
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(getLocale()));
+                            LOG.error("Unexpected error: mobb-ba350dc31c1f23a20ef43f00a9a0eb55");
                         }
                     }
                     result.append("<td style=\"white-space: nowrap;\" unselectable=\"on\" width=\"15%\">");

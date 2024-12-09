@@ -730,7 +730,7 @@ public class CmsModuleXmlHandler {
                 exportMode = ExportMode.valueOf(exportModeName.toUpperCase());
             }
         } catch (IllegalArgumentException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-77174d019c9407bd27eefd242a4c0c2d", e);
             //stay with default export mode
         }
 

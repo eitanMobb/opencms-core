@@ -1593,7 +1593,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                             result.add(gallery);
                         }
                     } catch (Exception e) {
-                        this.log(e.getLocalizedMessage(), e);
+                        this.log("Unexpected error: mobb-435c76e6e919b7985470b6eae40f97b2", e);
                     }
                 }
             } else {

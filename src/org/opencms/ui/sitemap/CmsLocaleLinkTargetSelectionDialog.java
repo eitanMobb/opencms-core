@@ -183,7 +183,7 @@ public class CmsLocaleLinkTargetSelectionDialog extends CmsResourceSelectDialog 
             service.attachLocaleGroupIndirect(source, target);
             m_context.finish(Arrays.asList(source.getStructureId()));
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e514cc9aeadecfa7fa4cc0fa41b6fbf5", e);
             m_context.error(e);
         }
     }

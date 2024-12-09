@@ -695,7 +695,7 @@ public class CmsDateSearchComposite implements I_ResourcePropertyProvider, I_Cms
                 I_CmsResourceType resourceType = OpenCms.getResourceManager().getResourceType(typeName);
                 result.add(resourceType);
             } catch (CmsLoaderException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-74734be1ae70569a309821849a9e5b38", e);
             }
         }
         return result;
@@ -817,7 +817,7 @@ public class CmsDateSearchComposite implements I_ResourcePropertyProvider, I_Cms
                     m_filterComponent.m_dateTo.setValue(null);
                     m_filterComponent.m_availabilitySelector.reset();
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-61f93db9d2e568dcdf3d248bf13db30d");
                 }
             }
         });

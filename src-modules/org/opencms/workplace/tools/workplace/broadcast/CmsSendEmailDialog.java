@@ -217,7 +217,7 @@ public class CmsSendEmailDialog extends A_CmsMessageDialog {
                         }
                     }
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-0030e1bc1ea75deab79e592bde7f63e3", e);
                 }
             }
         }

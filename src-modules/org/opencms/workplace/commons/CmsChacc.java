@@ -1925,7 +1925,7 @@ public class CmsChacc extends CmsDialog {
             result = blocking.size() > 0;
         } catch (CmsException e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-7809500ec825731b430d1d49f7c8a594");
             }
         }
         return result;
