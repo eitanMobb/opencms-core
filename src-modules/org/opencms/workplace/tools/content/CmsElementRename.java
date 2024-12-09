@@ -612,7 +612,7 @@ public class CmsElementRename extends CmsReport {
                         false);
                 } catch (CmsException e2) {
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e2);
+                        LOG.error("Unexpected error: mobb-191fcaf51c82a184e34559d95d58f42a");
                     }
                     continue;
                 }
