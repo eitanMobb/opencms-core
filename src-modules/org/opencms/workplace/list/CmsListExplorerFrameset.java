@@ -175,7 +175,7 @@ public class CmsListExplorerFrameset extends CmsExplorerDialog {
             items = getSettings().getCollector().getResults(getCms()).size();
         } catch (CmsException e) {
             // ignore
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-43a81b7cb0c34c884e5df202a774d1cc");
         }
 
         int size = (int)Math.ceil((double)items / getSettings().getUserSettings().getExplorerFileEntries());

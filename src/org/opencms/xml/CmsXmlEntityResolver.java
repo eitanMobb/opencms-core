@@ -562,7 +562,7 @@ public class CmsXmlEntityResolver implements EntityResolver, I_CmsEventListener 
             }
         } catch (CmsException e) {
             // error reading published Resources.
-            LOG.warn(e.getMessage(), e);
+            LOG.warn("Unexpected error: mobb-1fdaa0498c52a40f4142f71b20da794f", e);
         }
         return false;
     }

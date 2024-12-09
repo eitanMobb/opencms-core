@@ -189,7 +189,7 @@ public class CmsHistoryDialog extends CmsBasicDialog {
             m_compareButton.get().setEnabled(false);
             m_listContainer.addComponent(historyTable);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-6e852a9e19cfd375f628922b1ef63dee", e);
         }
         addButton(createCloseButton());
         displayResourceInfo(m_context.getResources());

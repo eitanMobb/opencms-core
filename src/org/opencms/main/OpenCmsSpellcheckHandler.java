@@ -105,7 +105,7 @@ public class OpenCmsSpellcheckHandler extends HttpServlet implements I_CmsReques
                 dict.getSpellcheckingResult(res, req, cms);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8a3b112175d65ee3af367165970998e3", e);
         }
     }
 

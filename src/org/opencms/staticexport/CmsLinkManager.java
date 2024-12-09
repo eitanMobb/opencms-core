@@ -177,7 +177,7 @@ public class CmsLinkManager {
                     }
                 }
             } catch (CmsException e) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-365b624d4cb0c11e618390c69902e910", e);
             }
             if (parentRootPath != null) {
                 return OpenCms.getADEManager().getSubSiteRoot(cms, parentRootPath);

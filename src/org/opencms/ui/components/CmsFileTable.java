@@ -1167,7 +1167,7 @@ public class CmsFileTable extends CmsResourceTable {
             }
             LOG.debug("Failed to update file table item, removing it from view.", e);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-fce19ed3d8279fc6df251041838e40b1", e);
         }
     }
 

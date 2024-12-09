@@ -2489,7 +2489,7 @@ public abstract class CmsWorkplace {
                 }
             } catch (CmsException e1) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e1.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-40ef2b229429df00b5486fd4a99a3d09");
                 }
             }
         }

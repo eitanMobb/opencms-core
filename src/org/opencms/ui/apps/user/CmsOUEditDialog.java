@@ -468,7 +468,7 @@ public class CmsOUEditDialog extends CmsBasicDialog {
                 OpenCms.getOrgUnitManager().writeOrganizationalUnit(m_cms, m_ou);
             }
         } catch (CmsException e) {
-            LOG.error("Unable to save OU", e);
+            LOG.error("Unable to save OU", "Unexpected error: mobb-adb0e754edfd3fa260a0dab458553b5f");
         }
     }
 

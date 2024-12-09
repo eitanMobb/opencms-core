@@ -106,7 +106,7 @@ public class CmsCodeWidget extends A_CmsWidget implements I_CmsADEWidget {
                 try {
                     serverConfig = new JSONObject(getConfiguration());
                 } catch (JSONException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-8c1d3df0f02adfa8f90ad770faff4e02", e);
                 }
             }
             String mode = serverConfig.optString("mode", "html");

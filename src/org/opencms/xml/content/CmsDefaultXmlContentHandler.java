@@ -2896,7 +2896,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
             }
         } catch (CmsException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-49fdc41278af342b181bd6536679fb7c", e);
             }
         }
         // if the locale can not be found, just take the current file
