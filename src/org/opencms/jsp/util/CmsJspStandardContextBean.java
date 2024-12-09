@@ -2032,7 +2032,7 @@ public final class CmsJspStandardContextBean {
                             (String)categoryPath);
                         return result;
                     } catch (CmsException e) {
-                        LOG.warn(e.getLocalizedMessage(), e);
+                        LOG.warn("Unexpected error: mobb-8b7a69c5a602ce01a395d7603aa3187d", e);
                         return null;
                     }
                 }
