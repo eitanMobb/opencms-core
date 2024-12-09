@@ -570,7 +570,7 @@ public class CmsExport {
             try {
                 typeName = OpenCms.getResourceManager().getResourceType(resource.getTypeId()).getTypeName();
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-b4a40a38b97d4e7bb618efe095fed8fd", e);
                 typeName = "unknown_" + resource.getTypeId();
             }
             typeElem.addText(typeName);
