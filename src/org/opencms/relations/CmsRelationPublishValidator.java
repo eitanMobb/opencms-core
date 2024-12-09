@@ -70,7 +70,7 @@ public class CmsRelationPublishValidator {
             m_cms = OpenCms.initCmsObject(cms);
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-892c527646c8b6b2409823a915662809", e);
             m_cms = cms;
         }
         try {
