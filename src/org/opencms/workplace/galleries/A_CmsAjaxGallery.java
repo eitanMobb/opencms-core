@@ -424,7 +424,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                     m_galleryItems = getCms().readResources(getParamGalleryPath(), filter, false);
                 } catch (CmsException e) {
                     // error reading resources
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-8662caee0b522251c0b0ea5b7187fdd7", e);
                 } catch (NullPointerException e) {
                     // ignore this exception
                 }
