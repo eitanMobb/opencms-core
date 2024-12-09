@@ -505,7 +505,7 @@ public class CmsLoginUI extends A_CmsUI {
                 LOG.info("Invalid authorization token: " + authToken + " / " + validationResult);
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-32de95eba95023de88f5029887f68e77", e);
         }
     }
 
