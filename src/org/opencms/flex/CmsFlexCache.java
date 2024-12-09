@@ -398,7 +398,7 @@ public class CmsFlexCache extends Object implements I_CmsEventListener {
                         }
 
                     } catch (CmsException e1) {
-                        LOG.error(e1.getLocalizedMessage(), e1);
+                        LOG.error(e1.getLocalizedMessage(), "Unexpected error: mobb-8e5cde425f689dd4ada0b4f2f8143c9d");
                         clear();
                     }
                 }
