@@ -368,7 +368,7 @@ public class CmsAvailability extends CmsMultiDialog {
             }
         } catch (CmsException e) {
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-15bf95d10fe1e94f25ed7f5286e65008", e);
             }
         }
         return result.toString();
