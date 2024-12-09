@@ -817,7 +817,7 @@ public class CmsModuleUpdater {
             try {
                 cms.deleteRelationsFromResource(importResource, relFilter);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-e930f432500ddd1daefec7dc085c0315", e);
                 m_report.println(e);
             }
 
