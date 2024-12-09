@@ -91,7 +91,7 @@ public class CmsExternalLinksValidatorThread extends A_CmsReportThread {
         } catch (Throwable e) {
             getReport().println(e);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage());
+                LOG.error("Unexpected error: mobb-7d69bc34d026a44bdbf6e5733d570f5f");
             }
         }
     }
