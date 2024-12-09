@@ -369,7 +369,7 @@ public final class CmsPublishEngine {
             m_driverManager.updateLog(dbc);
         } catch (CmsDataAccessException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-1224c0ed95798439701465d96b3e0c6a", e);
             }
         } finally {
             dbc.clear();
