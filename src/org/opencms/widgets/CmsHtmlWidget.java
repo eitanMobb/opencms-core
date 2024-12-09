@@ -244,7 +244,7 @@ public class CmsHtmlWidget extends A_CmsHtmlWidget implements I_CmsADEWidget {
                     result.put("directOptions", replacedOptions);
                 } catch (Exception e) {
                     LOG.error(
-                        "Error processing editor options from " + editorOptions + ": " + e.getLocalizedMessage(),
+                        "Unexpected error: mobb-7aeb5fd541d372ec108fcaf9eab9e5d5",
                         e);
                 }
             }
