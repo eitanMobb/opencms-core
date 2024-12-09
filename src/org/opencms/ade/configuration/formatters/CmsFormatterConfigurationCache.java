@@ -267,7 +267,7 @@ public class CmsFormatterConfigurationCache implements I_CmsGlobalConfigurationC
             CmsResourceFilter filter = CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(type);
             formatterResources.addAll(m_cms.readResources("/", filter));
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-fd4d172b1e755059965f45438287b770", e);
         }
         try {
             I_CmsResourceType type = OpenCms.getResourceManager().getResourceType(TYPE_MACRO_FORMATTER);

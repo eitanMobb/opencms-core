@@ -119,7 +119,7 @@ public class CmsJspTagUgc extends TagSupport {
                     m_var == null ? DEFAULT_SESSION_ID_ATTR : m_var,
                     ugcsession.getId().toString());
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-78d27f750e0fd23156d83a76bc4dcb91");
                 pageContext.setAttribute(
                     m_error == null ? DEFAULT_ERROR_MESSAGE_ATTR : m_error,
                     e.getLocalizedMessage());

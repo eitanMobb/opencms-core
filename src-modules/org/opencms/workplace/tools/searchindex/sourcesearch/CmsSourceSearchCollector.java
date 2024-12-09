@@ -101,7 +101,7 @@ public class CmsSourceSearchCollector extends A_CmsListResourceCollector {
             } catch (CmsException e) {
                 // should never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-fb668bcf29027b1dca412afbcb38528b", e);
                 }
             }
         }
