@@ -380,7 +380,7 @@ public class CmsSiteManager extends A_CmsWorkplaceApp implements I_CmsCRUDApp<Cm
         try {
             OpenCms.getSiteManager().updateSite(m_rootCms, getElement(element.getSiteRoot()), element);
         } catch (CmsException e) {
-            LOG.error("Unabel to update site", e);
+            LOG.error("Unabel to update site", "Unexpected error: mobb-b526a34c6a517a9425d67ef094e0d8ff");
         }
         //updateInfo();
         //m_sitesTable.loadSites();
