@@ -506,7 +506,7 @@ public class CmsSitemapTreeController {
                     try {
                         cms.unlockResource(fileToModify2);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-fc7665aef4d5c1928dba8a22becb7d35", e);
                         CmsErrorDialog.showErrorDialog(e);
                     }
                 }
