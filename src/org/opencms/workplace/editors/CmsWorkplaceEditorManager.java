@@ -123,7 +123,7 @@ public class CmsWorkplaceEditorManager {
             } catch (CmsException e) {
                 // no configuration file present, ignore this folder
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-342ab9044419cb0c1d31ef0448ffb23d");
                 }
                 continue;
             }
