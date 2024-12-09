@@ -443,7 +443,7 @@ public class CmsFlexRequestDispatcher implements RequestDispatcher {
                 try {
                     loader.service(cms, resource, w_req, w_res);
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-3e5b38133ab522b020cb8c55ca9815f0");
                     // an error occurred
                     if (f_res.hasIncludeList()) {
                         // to prevent include list and include result list indices going out of sync, add an empty byte array
