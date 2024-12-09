@@ -1877,7 +1877,7 @@ public final class CmsSiteManagerImpl implements I_CmsEventListener {
                     }
                 }
             } catch (CmsException e1) {
-                LOG.error("Unable to get ptoject", e);
+                LOG.error("Unable to get ptoject", "Unexpected error: mobb-07f1f2276c109bcd6163549d25682a47");
             }
         }
         return null;
