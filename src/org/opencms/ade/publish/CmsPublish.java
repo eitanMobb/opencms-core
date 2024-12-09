@@ -281,7 +281,7 @@ public class CmsPublish {
                 }
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-68b8bcbe84865696cdbd5a95573a139a", e);
             }
         }
 
