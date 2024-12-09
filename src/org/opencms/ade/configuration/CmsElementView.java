@@ -283,7 +283,7 @@ public class CmsElementView {
             }
 
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-d9f66a540269e5624202eea21e63d418", e);
         }
         return false;
     }
