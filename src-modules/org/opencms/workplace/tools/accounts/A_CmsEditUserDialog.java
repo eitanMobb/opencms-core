@@ -1022,7 +1022,7 @@ public abstract class A_CmsEditUserDialog extends CmsWidgetDialog {
                         role.getDisplayName(getCms(), getLocale())));
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-d756d3b8d4e76c814235b162ae4717f0");
         }
         return roleOptions;
     }
