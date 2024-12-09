@@ -349,10 +349,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                             siteConfigurations.put(candidate.getStructureId(), data);
                         } catch (Exception e) {
                             LOG.error(
-                                "Error processing sitemap configuration "
-                                    + candidate.getRootPath()
-                                    + ": "
-                                    + e.getLocalizedMessage(),
+                                "Unexpected error: mobb-55bd068feed1550dce353d27043abccc",
                                 e);
                         }
 
