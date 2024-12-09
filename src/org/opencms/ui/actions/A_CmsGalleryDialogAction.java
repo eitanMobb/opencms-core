@@ -108,7 +108,7 @@ public abstract class A_CmsGalleryDialogAction extends A_CmsWorkplaceAction {
         try {
             parentGallery = cms.readResource(parentFolder);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-96c74b7f2d27b0bbb16bba1b91a9bb68");
         }
         return parentGallery;
     }
