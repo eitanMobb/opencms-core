@@ -444,7 +444,7 @@ public class CmsCreateSiteThread extends A_CmsReportThread {
             res = OpenCms.initCmsObject(cms);
             res.getRequestContext().setCurrentProject(cms.readProject(CmsProject.ONLINE_PROJECT_ID));
         } catch (CmsException e) {
-            LOG.error("Cannot create CmsObject", e);
+            LOG.error("Cannot create CmsObject", "Unexpected error: mobb-7bf9a69aefda9b6a3b9a681e59be90ad");
         }
         return res;
     }
