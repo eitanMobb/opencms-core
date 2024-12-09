@@ -598,7 +598,7 @@ public class CmsDavResource implements DavResource {
         try {
             session.updateProperties(getCmsPath(), props);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-53da962e7b177d8e3c6a9fb85760d7ee", e);
             throw new DavException(500);
         }
 
