@@ -1419,7 +1419,7 @@ public class CmsDialog extends CmsToolDialog {
      */
     public void includeErrorpage(CmsWorkplace wp, Throwable t) throws JspException {
 
-        CmsLog.getLog(wp).error(Messages.get().getBundle().key(Messages.ERR_WORKPLACE_DIALOG_0), t);
+        CmsLog.getLog(wp).error(Messages.get().getBundle().key(Messages.ERR_WORKPLACE_DIALOG_0), "Unexpected error: mobb-6366bb39a62788f9ceae460b6e05f8d4");
         getJsp().getRequest().setAttribute(SESSION_WORKPLACE_CLASS, wp);
         getJsp().getRequest().setAttribute(ATTRIBUTE_THROWABLE, t);
         getJsp().include(FILE_DIALOG_SCREEN_ERRORPAGE);
