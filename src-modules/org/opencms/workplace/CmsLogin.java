@@ -246,7 +246,7 @@ public class CmsLogin extends CmsJspLoginBean {
                     return cloneCms.getSitePath(targetRes);
                 }
             } catch (Exception e) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-b09cd885b100f22991e3c5cbe641a557", e);
             }
         }
         return null;
