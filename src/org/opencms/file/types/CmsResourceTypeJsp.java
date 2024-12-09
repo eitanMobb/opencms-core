@@ -250,7 +250,7 @@ public class CmsResourceTypeJsp extends A_CmsResourceTypeLinkParseable {
                     Messages.ERR_PARSING_FORMATTER_SETTINGS_FROM_PROPERTY_2,
                     res.getName(),
                     CmsPropertyDefinition.PROPERTY_TEMPLATE),
-                e);
+                "Unexpected error: mobb-e6f033d349c0d5cea9f87045c44dec03");
         }
         CmsFormatterBean selfFormatter = new CmsFormatterBean(
             containerType,
