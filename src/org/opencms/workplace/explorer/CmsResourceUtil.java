@@ -1008,7 +1008,7 @@ public final class CmsResourceUtil {
                 sResult = CmsGallerySearch.searchById(m_cms, m_resource.getStructureId(), locale);
                 m_searchResultMap.put(locale, sResult);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-15ece3727471d35f8caf4450835346e0", e);
             }
         }
         return m_searchResultMap.get(locale);
