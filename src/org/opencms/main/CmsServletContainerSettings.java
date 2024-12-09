@@ -252,7 +252,7 @@ public class CmsServletContainerSettings {
                         webApplicationContext = pathTokens[pathTokens.length - 1];
                     }
                 } catch (MalformedURLException e) {
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_INIT_CONTEXTNAME_0), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.LOG_INIT_CONTEXTNAME_0), "Unexpected error: mobb-669d823757f6a4683f5190ffeb13b73b");
                 }
 
             }
