@@ -4799,7 +4799,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
             Object messageKeyHandler = Class.forName(className).getConstructor(String.class).newInstance(configuration);
             m_messageKeyHandler = (CmsMultiMessages.I_KeyFallbackHandler)messageKeyHandler;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-ad56acbe67be9cebe719aa2c1179f72e");
         }
     }
 
