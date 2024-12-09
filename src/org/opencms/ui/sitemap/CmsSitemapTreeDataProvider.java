@@ -160,7 +160,7 @@ public class CmsSitemapTreeDataProvider {
                         data.initialize(m_cms);
                         result.add(data);
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage());
+                        LOG.error("Unexpected error: mobb-3a071f1032b01ba92542e6402fb74cb5");
                     }
                 }
             }
