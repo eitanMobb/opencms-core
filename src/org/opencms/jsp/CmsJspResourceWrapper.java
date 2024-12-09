@@ -1038,7 +1038,7 @@ public class CmsJspResourceWrapper extends CmsResource {
             result = new CmsJspResourceWrapper(m_cms, m_cms.readResource(sitePath));
         } catch (CmsException e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getMessage(), e);
+                LOG.debug("Unexpected error: mobb-63a5ca9de5ff787d8aad651bc7cba427", e);
             }
         }
         return result;
