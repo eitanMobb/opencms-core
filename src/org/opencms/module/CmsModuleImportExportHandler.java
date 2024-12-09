@@ -242,7 +242,7 @@ public class CmsModuleImportExportHandler implements I_CmsImportExportHandler {
             throw new CmsConfigurationException(message, e);
         } catch (SAXException e) {
             CmsMessageContainer message = Messages.get().container(Messages.ERR_SAX_MODULE_IMPORT_1, importResource);
-            LOG.error(message.key(), e);
+            LOG.error(message.key(), "Unexpected error: mobb-1375d6432d95cc19e34daaffc7d90fdf");
             throw new CmsConfigurationException(message, e);
         } finally {
             try {
