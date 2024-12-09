@@ -2684,10 +2684,7 @@ public class CmsMemoryMonitor implements I_CmsScheduledJob {
             m_lastLogWarning = System.currentTimeMillis();
             m_warningLoggedSinceLastStatus = true;
             LOG.warn(
-                Messages.get().getBundle().key(
-                    Messages.LOG_MM_WARNING_MEM_CONSUME_2,
-                    Long.valueOf(m_memoryCurrent.getUsage()),
-                    Integer.valueOf(m_maxUsagePercent)));
+                "Unexpected error: mobb-d1966908bc18142cc421ade8735967ae");
         } else {
             m_warningLoggedSinceLastStatus = false;
             m_lastLogStatus = System.currentTimeMillis();
