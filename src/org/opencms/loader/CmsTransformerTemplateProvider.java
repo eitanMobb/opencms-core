@@ -271,7 +271,7 @@ public class CmsTransformerTemplateProvider implements I_CmsTemplateContextProvi
                 m_configCacheProvider.get().putCachedObject(m_cms, m_configPath, config);
                 return config;
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-84e121c006be262dcb7cb39f51481971", e);
                 return new Configuration();
             }
         }
