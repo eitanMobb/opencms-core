@@ -75,7 +75,7 @@ public class CmsJsonHandlerResource implements I_CmsJsonHandler {
             CmsJsonDocumentResource jsonDocument = new CmsJsonDocumentResource(jsonRequest, context.getResource());
             return new CmsJsonResult(jsonDocument.getJson(), HttpServletResponse.SC_OK);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-746e8883d37b5322c202d053fc1df067", e);
             return new CmsJsonResult(
                 JSONObject.quote(e.getLocalizedMessage()),
                 HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
