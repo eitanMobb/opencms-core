@@ -220,7 +220,7 @@ public class CmsRelationDeleteValidator {
                     } catch (CmsException e) {
                         // should never happen
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-493cab2b752824ff4b96c70645f8f88f", e);
                         }
                     }
                 }
