@@ -458,7 +458,7 @@ public final class CmsVaadinUtils {
             }
         } catch (CmsException e) {
             // should usually never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-002b6e8179c11b7297d40842bb513be9");
             allProjects = Collections.emptyList();
         }
         return allProjects;
