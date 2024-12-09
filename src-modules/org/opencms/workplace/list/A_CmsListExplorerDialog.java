@@ -237,7 +237,7 @@ public abstract class A_CmsListExplorerDialog extends A_CmsListDialog {
                 m_resourceUtil.setReferenceProject(getProject());
             } catch (CmsException ex) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(ex.getLocalizedMessage(), ex);
+                    LOG.error("Unexpected error: mobb-426559d886227f86e29ddf3feff96d5a", ex);
                 }
             }
         }
