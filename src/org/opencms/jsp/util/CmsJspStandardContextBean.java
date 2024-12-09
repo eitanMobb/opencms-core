@@ -891,7 +891,7 @@ public final class CmsJspStandardContextBean {
                 cms.getRequestContext().setForceAbsoluteLinks(originalForceAbsoluteLinks);
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-221ffc17a89a51f056d4f16b4719e400", e);
             return "[Error reading detail page for type =" + type + "=]";
         }
     }
