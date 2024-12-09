@@ -791,7 +791,7 @@ public class CmsVfsService extends CmsGwtService implements I_CmsVfsService {
             } catch (CmsVfsResourceNotFoundException e) {
                 LOG.info(e.getLocalizedMessage(), e);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-b8938f3c6a33568f2d0a196eec835aef");
             }
         } else {
             for (I_CmsHistoryResource historyRes : versions) {
