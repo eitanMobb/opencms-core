@@ -193,7 +193,7 @@ public class CmsCurrentPageProject implements I_CmsVirtualProject {
                                 }
                                 result.addAll(publishListProvider.getPublishResources(cmsObject, autoBean.as()));
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-ea4b607175a61735562d9afbd2a5acf3", e);
                             }
                         }
                     }
