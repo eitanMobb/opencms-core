@@ -207,7 +207,7 @@ public abstract class A_CmsNotification extends CmsHtmlMail {
             } catch (CmsVfsResourceNotFoundException e) {
                 LOG.debug(e.getLocalizedMessage(), e);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-763a888e90afff9ef958a10d3d7ec24a");
             }
 
             StringBuffer msg = new StringBuffer();
