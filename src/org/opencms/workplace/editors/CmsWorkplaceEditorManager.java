@@ -156,7 +156,7 @@ public class CmsWorkplaceEditorManager {
                 // we want a stack trace
                 throw new Exception();
             } catch (Exception e) {
-                LOG.error("Can't check widget availability because resource is null!", e);
+                LOG.error("Can't check widget availability because resource is null!", "Unexpected error: mobb-cb3d0af4aade8a3d5e0e3365cb9b750c");
             }
         } else {
             try {
