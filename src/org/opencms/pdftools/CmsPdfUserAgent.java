@@ -203,7 +203,7 @@ public class CmsPdfUserAgent extends NaiveUserAgent {
             CmsFile file = m_rootCms.readFile(path);
             return file.getContents();
         } catch (Exception e) {
-            LOG.error("Problem with reading CSS " + uriWithParams + ": " + e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-c4133463f915a737a8b2b04a1b70047f", e);
             return null;
         }
     }
