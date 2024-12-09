@@ -118,7 +118,7 @@ public class CmsEditFavoriteDialog extends CmsBasicDialog {
             CmsVaadinUtils.closeWindow(CmsEditFavoriteDialog.this);
 
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-aa5a513912bb87fc02973b68aaeaf78c", e);
             CmsErrorDialog.showErrorDialog(e);
         }
     }
