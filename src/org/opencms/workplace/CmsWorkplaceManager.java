@@ -492,7 +492,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
         } catch (Exception e) {
             LOG.error(
                 Messages.get().getBundle().key(Messages.LOG_INVALID_EDITOR_CSSHANDLER_1, editorCssHandlerClassName),
-                e);
+                "Unexpected error: mobb-83b122246c20f35b29e8e65a4f5140c1");
         }
     }
 
