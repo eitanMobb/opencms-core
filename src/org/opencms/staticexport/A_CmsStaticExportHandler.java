@@ -299,7 +299,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
         } catch (CmsException e) {
             // ignore, nothing to do about this
             if (LOG.isWarnEnabled()) {
-                LOG.warn(Messages.get().getBundle().key(Messages.LOG_FETCHING_SIBLINGS_FAILED_1, resPath), e);
+                LOG.warn(Messages.get().getBundle().key(Messages.LOG_FETCHING_SIBLINGS_FAILED_1, resPath), "Unexpected error: mobb-7ab823707be01657063c71856e18b14b");
             }
         }
         if (!siblings.contains(resPath)) {
