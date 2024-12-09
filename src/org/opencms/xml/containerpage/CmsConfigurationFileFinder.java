@@ -95,7 +95,7 @@ public class CmsConfigurationFileFinder {
                 }
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d09e974ad9acfbfbe89270edd5b6be88", e);
             }
         }
 
