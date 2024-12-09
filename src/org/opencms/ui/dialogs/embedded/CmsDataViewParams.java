@@ -83,7 +83,7 @@ public class CmsDataViewParams {
                 m_viewArg = json.optString(CmsDataViewConstants.CONFIG_VIEW_ARG);
                 m_multiSelect = json.optString(CmsDataViewConstants.CONFIG_MULTI_SELECT);
             } catch (JSONException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-7f8eb1d78f4d3eb8c626cfcfa72d3d9d", e);
             }
         }
     }
