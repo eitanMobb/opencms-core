@@ -117,7 +117,7 @@ public class CmsGlobalForm extends CmsBasicDialog {
         try {
             m_cms = OpenCms.initCmsObject(A_CmsUI.getCmsObject());
         } catch (CmsException e) {
-            LOG.error("Error on cloning CmsObject", e);
+            LOG.error("Error on cloning CmsObject", "Unexpected error: mobb-d404074bfdc4b5ae61ae3968f154b765");
         }
         CmsVaadinUtils.readAndLocalizeDesign(this, CmsVaadinUtils.getWpMessagesForCurrentLocale(), null);
 
