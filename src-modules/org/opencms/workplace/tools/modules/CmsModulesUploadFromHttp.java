@@ -105,7 +105,7 @@ public class CmsModulesUploadFromHttp extends A_CmsImportFromHttp {
         } catch (CmsException e) {
             // error copying the file to the OpenCms server
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(getLocale()), e);
+                LOG.error("Unexpected error: mobb-b9140dc3473760f11bb8e38a247c544c", e);
             }
             setException(e);
             return;
