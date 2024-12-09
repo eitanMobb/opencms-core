@@ -3217,7 +3217,7 @@ public class CmsProjectDriver implements I_CmsDriver, I_CmsProjectDriver {
                     Messages.get().getBundle().key(
                         Messages.LOG_ERROR_RESETTING_RESOURCE_STATE_1,
                         resource.getRootPath()),
-                    e);
+                    "Unexpected error: mobb-a4fc3ede3f0ac3f7fec7fc181f91683f");
             }
             throw e;
         }
