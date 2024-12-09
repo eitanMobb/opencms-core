@@ -377,7 +377,7 @@ public final class CmsSearchUtil {
             try {
                 return CmsHtmlExtractor.extractText(value, CmsEncoder.ENCODING_UTF_8);
             } catch (ParserException | UnsupportedEncodingException e) {
-                LOG.warn("Could not strip HTML from property value. Returning the original value.", e);
+                LOG.warn("Could not strip HTML from property value. Returning the original value.", "Unexpected error: mobb-ff34b893f49498eeacab9c3b1ab57c16");
             }
         }
         return value;
