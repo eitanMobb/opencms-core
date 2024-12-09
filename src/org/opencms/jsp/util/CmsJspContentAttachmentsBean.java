@@ -249,7 +249,7 @@ public class CmsJspContentAttachmentsBean {
                                     "Could not initialize resource with site path \""
                                         + element.getSitePath()
                                         + "\" to determine the container elements type.",
-                                    e);
+                                    "Unexpected error: mobb-c099f4216ae44327b5b08f919079c6df");
                             }
                         }
                     }
