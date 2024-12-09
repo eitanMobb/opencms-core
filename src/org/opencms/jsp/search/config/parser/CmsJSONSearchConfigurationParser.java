@@ -426,7 +426,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
         } catch (JSONException e) {
             if (null == m_baseConfig) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_FACET_CONFIG_0), e);
+                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_FACET_CONFIG_0), "Unexpected error: mobb-1e2c88fc07e67ac4a3d113ce73ae8059");
                 }
             } else {
                 facetConfigs = m_baseConfig.getFieldFacetConfigs();
