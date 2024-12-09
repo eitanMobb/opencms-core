@@ -103,7 +103,7 @@ public class CmsXmlSitemapActionElement extends CmsJspActionElement {
         } catch (Exception e) {
             LOG.error(
                 "Could not create configured sitemap generator " + className + ", using the default class instead",
-                e);
+                "Unexpected error: mobb-99e77fe2dbea38efb5a3ddde678ff4aa");
             return new CmsXmlSitemapGenerator(folderRootPath);
         }
     }
