@@ -651,7 +651,7 @@ public class CmsElementRename extends CmsReport {
                     false).getValue(null);
             } catch (CmsException e) {
                 if (LOG.isWarnEnabled()) {
-                    LOG.warn(e.getLocalizedMessage());
+                    LOG.warn("Unexpected error: mobb-a589106229308b91d761783f952bf33f");
                 }
             }
             if (elements != null) {
