@@ -1756,7 +1756,7 @@ public class CmsDialog extends CmsToolDialog {
             } catch (CmsException e) {
                 // can usually be ignored
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-b8ac3867fde865ee648161a6bb1ddf0f", e);
                 }
                 currentFolder = "/";
             }
