@@ -353,7 +353,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                                     + candidate.getRootPath()
                                     + ": "
                                     + e.getLocalizedMessage(),
-                                e);
+                                "Unexpected error: mobb-5e5d43fa855e959b5a4318b70da8aeb5");
                         }
 
                     }
