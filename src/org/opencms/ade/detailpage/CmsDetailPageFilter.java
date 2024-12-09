@@ -86,7 +86,7 @@ public class CmsDetailPageFilter {
             m_resource = resource;
         } catch (CmsException e) {
             // shouldn't happen - initCmsObject doesn't *actually* throw exceptions
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2cab960332f060828cf3bbb0932cc06b", e);
         }
 
     }
