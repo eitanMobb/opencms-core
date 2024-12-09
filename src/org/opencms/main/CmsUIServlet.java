@@ -186,7 +186,7 @@ public class CmsUIServlet extends VaadinServlet implements SystemMessagesProvide
                             + "="
                             + OpenCms.getDefaultTextEncryption().encrypt(requestedUri);
                     } catch (CmsEncryptionException e) {
-                        LOG.warn(e.getLocalizedMessage(), e);
+                        LOG.warn("Unexpected error: mobb-1b07511c7bf7e40d9354fb0612e74380", e);
                     }
                 }
                 OpenCms.getAuthorizationHandler().requestAuthorization(
