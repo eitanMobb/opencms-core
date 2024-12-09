@@ -295,7 +295,7 @@ public class CmsUpdateBean extends CmsSetupBean {
             try {
                 m_cms.lockResourceTemporary("/shared");
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-51c7f2d7faa57189664c69fbd575487c", e);
             }
             try {
                 m_cms.chacc("/shared", "group", "Users", "+v+w+r+i");
