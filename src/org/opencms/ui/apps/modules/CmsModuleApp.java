@@ -378,7 +378,7 @@ public class CmsModuleApp extends A_CmsAttributeAwareApp implements I_CmsCachabl
                         OpenCms.getImportExportManager().exportData(cms, handler, getReport());
                     } catch (Exception e) {
                         getReport().println(e);
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-8f80499918fdffadf09b4af658b1681d", e);
                     }
 
                 }

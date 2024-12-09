@@ -192,7 +192,7 @@ public final class CmsEncoder {
                 builder.setUserInfo(uriWithCorrectedHost.getUserInfo());
                 uriString = builder.build().toASCIIString();
             } catch (URISyntaxException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-123ff94f8f9d15127e68a689605c490a");
             }
         }
         return uriString;

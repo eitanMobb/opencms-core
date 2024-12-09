@@ -727,7 +727,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
 
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-b33ec861a4458537754d3f2481e5f4b6");
         }
     }
 

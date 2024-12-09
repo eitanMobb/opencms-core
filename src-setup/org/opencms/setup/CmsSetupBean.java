@@ -2453,7 +2453,7 @@ public class CmsSetupBean implements I_CmsShellCommands {
                     stream.close();
                 } catch (IOException e) {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-45798ad47638eda2041499bd53b92283", e);
                     }
                 }
             }

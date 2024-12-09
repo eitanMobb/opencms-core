@@ -372,7 +372,7 @@ public class CmsXmlFileTransformer {
             doc2.normalizeDocument();
             return doc1.isEqualNode(doc2);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-601bb7f4efac2789188b4a6780a593be", e);
             m_report.println(e);
             return false;
         }

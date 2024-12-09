@@ -75,7 +75,7 @@ public class CmsUgcSessionSecurityUtil {
                     throw new CmsUgcException(CmsUgcConstants.ErrorCode.errMaxContentsExceeded, message);
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-3b3fc5b176f35edb715cad260d5b4dcb", e);
                 throw new CmsUgcException(e);
             }
         }

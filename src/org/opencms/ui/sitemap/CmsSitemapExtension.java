@@ -331,7 +331,7 @@ public class CmsSitemapExtension extends AbstractExtension implements I_CmsSitem
             String title = CmsVaadinUtils.getMessageText(Messages.GUI_COPYPAGE_DIALOG_TITLE_0);
             context.start(title, dialog);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-f5de7c73bb977fa05b0a597345450ec0", e);
             CmsErrorDialog.showErrorDialog(e);
         }
     }

@@ -504,7 +504,7 @@ public class CmsPrincipalSelectDialog extends CmsBasicDialog {
             m_table.updateContainer(data);
             m_tableFilter.setValue("");
         } catch (CmsException e) {
-            LOG.error("Can't read principals", e);
+            LOG.error("Can't read principals", "Unexpected error: mobb-7a40177fa92857e99a2f27d14fafa1bc");
         }
     }
 

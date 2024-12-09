@@ -222,7 +222,7 @@ public class CmsJspTagNavigation extends CmsJspScopedVarBodyTagSuport {
         try {
             m_locale = LocaleUtils.toLocale(locale);
         } catch (IllegalArgumentException e) {
-            LOG.error(Messages.get().getBundle().key(Messages.ERR_TAG_INVALID_LOCALE_1, "cms:navigation"), e);
+            LOG.error(Messages.get().getBundle().key(Messages.ERR_TAG_INVALID_LOCALE_1, "cms:navigation"), "Unexpected error: mobb-138591e5b97f068e38ef7d7e6b345f07");
             m_locale = null;
         }
     }

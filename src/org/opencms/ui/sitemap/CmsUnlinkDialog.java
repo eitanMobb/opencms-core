@@ -165,7 +165,7 @@ public class CmsUnlinkDialog extends CmsBasicDialog {
             groupService.detachLocaleGroup(res1, res2);
             m_context.finish(Arrays.asList(m_context.getResources().get(0).getStructureId()));
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage());
+            LOG.error("Unexpected error: mobb-31824473a628d4cb706f06ad696e8145");
             m_context.error(e);
         }
 

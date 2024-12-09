@@ -640,7 +640,7 @@ public final class CmsPublishEngine {
             unlockPublishList(publishJob);
         } catch (Throwable t) {
             // log failure, most likely a database problem
-            LOG.error(t.getLocalizedMessage(), t);
+            LOG.error("Unexpected error: mobb-15891f28d4a26d2fa262cad7a3adf190", t);
         }
 
         // trigger the old event mechanism
@@ -692,7 +692,7 @@ public final class CmsPublishEngine {
             m_publishHistory.add(publishJob);
         } catch (Throwable t) {
             // log failure, most likely a database problem
-            LOG.error(t.getLocalizedMessage(), t);
+            LOG.error("Unexpected error: mobb-84e0b0bf60738689922db61b561f634f", t);
         }
         if (Thread.currentThread() == m_currentPublishThread) {
             // wipe the dead thread, only if this thread has not been abandoned

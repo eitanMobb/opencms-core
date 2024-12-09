@@ -281,7 +281,7 @@ public class CmsFormatterConfigurationCache implements I_CmsGlobalConfigurationC
             CmsResourceFilter filterFunction = CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(typeFunction);
             formatterResources.addAll(m_cms.readResources("/", filterFunction));
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-b6789fe12ca7aa202581607c022e98c3", e);
         }
         Map<CmsUUID, I_CmsFormatterBean> newFormatters = Maps.newHashMap();
         for (CmsResource formatterResource : formatterResources) {

@@ -2022,7 +2022,7 @@ public class CmsImportVersion10 implements I_CmsImport {
 
             } catch (CmsException e) {
                 getReport().addError(e);
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-278eced965ec758bcc4ab7779fbcbb22");
                 continue;
             }
         }

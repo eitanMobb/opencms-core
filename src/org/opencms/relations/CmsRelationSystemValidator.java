@@ -191,7 +191,7 @@ public class CmsRelationSystemValidator {
                 project = m_driverManager.readProject(dbc, CmsProject.ONLINE_PROJECT_ID);
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-60fee27a9000c6c8e6c090edd9aaf2be");
             }
         }
 

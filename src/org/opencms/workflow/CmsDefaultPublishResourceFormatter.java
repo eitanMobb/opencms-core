@@ -151,7 +151,7 @@ public class CmsDefaultPublishResourceFormatter implements I_CmsPublishResourceF
                 } catch (Exception e) {
                     // error reading the resource list, should usually never happen
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-51894854c58362ef6dc60ef72bbc9401", e);
                     }
                 }
             }
@@ -408,7 +408,7 @@ public class CmsDefaultPublishResourceFormatter implements I_CmsPublishResourceF
                     }
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-fab2b1b35b7ab1a4fa58c991a5cebdf2", e);
             }
             warnings.put(resource.getStructureId(), info);
         }

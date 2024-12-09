@@ -296,7 +296,7 @@ public class CmsGalleryNameMacroResolver extends CmsMacroResolver {
             }
             return result;
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-f9d2e7b28ca4f6bb1191fe1691f1da90", e);
             return "";
         }
     }

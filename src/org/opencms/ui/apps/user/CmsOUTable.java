@@ -591,7 +591,7 @@ public class CmsOUTable extends Table implements I_CmsFilterableTable {
                         }
                     }
                 } catch (CmsException e) {
-                    LOG.error("unable to read resources.", e);
+                    LOG.error("unable to read resources.", "Unexpected error: mobb-ed60c7ff52cfbbeb8cd564da095c2a34");
                 }
                 return out;
             }

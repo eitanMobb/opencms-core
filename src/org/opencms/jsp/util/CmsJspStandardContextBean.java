@@ -686,7 +686,7 @@ public final class CmsJspStandardContextBean {
                     }
 
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-bb54153a45a27d9694433b59f47f42d1", e);
                 }
                 if (result == null) {
                     result = mapping.m_defaultValue;

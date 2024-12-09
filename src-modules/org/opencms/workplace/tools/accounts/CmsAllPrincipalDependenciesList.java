@@ -469,7 +469,7 @@ public class CmsAllPrincipalDependenciesList extends A_CmsListDialog {
                     }
                 } catch (IOException e) {
                     // should never happen, log anyway
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-3dd6f5a1317f8338b9717cc071df07c0");
                 }
                 return sw.getBuffer().toString();
             }

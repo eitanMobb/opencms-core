@@ -396,7 +396,7 @@ public class CmsResourceWrapperPropertyFile extends A_CmsResourceWrapper {
         } catch (CmsVfsResourceNotFoundException e) {
             return null;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e7bb7659003f02fce1fbdcc9f1c05958", e);
             return null;
         }
     }

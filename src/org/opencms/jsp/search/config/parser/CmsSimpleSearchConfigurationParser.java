@@ -639,7 +639,7 @@ public class CmsSimpleSearchConfigurationParser extends CmsJSONSearchConfigurati
                         m_cms.getRequestContext().addSiteRoot(path)).getPath();
                     categoryVals.add("\"" + path + "\"");
                 } catch (CmsException e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-d5cfa5a1cb03f2cea2e58e8a8aa968b0", e);
                 }
             }
             if (!categoryVals.isEmpty()) {

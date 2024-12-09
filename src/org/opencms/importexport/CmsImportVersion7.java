@@ -2108,7 +2108,7 @@ public class CmsImportVersion7 implements I_CmsImport {
             m_userInfos.put(infoName, CmsDataTypeUtil.dataImport(infoValue, infoType));
         } catch (Throwable e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-db832b7885be5884edb26bd77913af0c", e);
             }
         }
     }
@@ -3338,7 +3338,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                 return true;
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-e04e1925b39e7d521494750782d85303");
         }
         return false;
 

@@ -1294,7 +1294,7 @@ public class CmsExport {
                     // serialize the user info and write it into a file
                     entryNode.addCDATA(CmsDataTypeUtil.dataExport(value));
                 } catch (IOException ioe) {
-                    getReport().println(ioe);
+                    getReport().println("Unexpected error: mobb-caa337bb117373582e576b8c9a9e3763");
                     if (LOG.isErrorEnabled()) {
                         LOG.error(
                             Messages.get().getBundle().key(

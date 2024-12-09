@@ -556,7 +556,7 @@ public class CmsPropertyCustom extends CmsPropertyAdvanced {
             } catch (Exception e) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-95e54dc7a283d088d03cb52107e0a7b5");
                 }
             }
         } else if (DIALOG_SAVE_EDIT.equals(getParamAction())) {
@@ -621,7 +621,7 @@ public class CmsPropertyCustom extends CmsPropertyAdvanced {
                                 return false;
                             }
                         } catch (CmsException e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-cbb5dfa31c696944e4059b1b03fbe6ec", e);
                         }
                     }
                 }

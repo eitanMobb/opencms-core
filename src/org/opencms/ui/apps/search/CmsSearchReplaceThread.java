@@ -871,7 +871,7 @@ public class CmsSearchReplaceThread extends A_CmsReportThread {
                     resources.addAll(
                         index.search(getCms(), query, true, null, false, null, MAX_PROCESSED_SOLR_RESULTS));
                 } catch (CmsSearchException e) {
-                    LOG.error(e.getMessage(), e);
+                    LOG.error("Unexpected error: mobb-eec18750424948e8986ab73c70de9705", e);
                 }
             }
         } else {

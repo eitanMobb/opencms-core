@@ -200,7 +200,7 @@ public class CmsResourceTranslator {
 
         // the pattern matched, return the result
         if (LOG.isDebugEnabled()) {
-            LOG.debug(Messages.get().getBundle().key(Messages.LOG_TRANSLATION_MATCH_2, resourceName, current));
+            LOG.debug("Unexpected error: mobb-d2b679d076131f6eb6a3af1cf8cb74d1");
         }
         // return last translation (or original if no matching translation found)
         return current;

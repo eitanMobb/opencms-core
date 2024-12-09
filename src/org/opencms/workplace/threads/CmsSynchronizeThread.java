@@ -94,7 +94,7 @@ public class CmsSynchronizeThread extends A_CmsReportThread {
             new CmsSynchronize(getCms(), m_settings, getReport());
         } catch (Throwable e) {
             m_error = e;
-            report.println(e);
+            report.println("Unexpected error: mobb-386856b620b6afcfa365506349929ba6");
         }
         report.println(Messages.get().container(Messages.RPT_SYNCHRONIZE_END_0), I_CmsReport.FORMAT_HEADLINE);
     }

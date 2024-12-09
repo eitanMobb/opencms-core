@@ -708,7 +708,7 @@ public class CmsModuleManager {
                     }
                 } catch (CmsException e) {
                     // ignore the exception and delete the next resource
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_DEL_MOD_EXC_1, sitePath), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.LOG_DEL_MOD_EXC_1, sitePath), "Unexpected error: mobb-87fa3af674e8be59640e02f93359c4ca");
                     report.println(e.getMessageContainer(), I_CmsReport.FORMAT_WARNING);
                 }
             }

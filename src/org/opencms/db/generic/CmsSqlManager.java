@@ -102,7 +102,7 @@ public class CmsSqlManager extends org.opencms.db.CmsSqlManager {
             Object objectInstance = Class.forName(classname).newInstance();
             sqlManager = (org.opencms.db.generic.CmsSqlManager)objectInstance;
         } catch (Throwable t) {
-            LOG.error(Messages.get().getBundle().key(Messages.LOG_SQL_MANAGER_INIT_FAILED_1, classname), t);
+            LOG.error(Messages.get().getBundle().key(Messages.LOG_SQL_MANAGER_INIT_FAILED_1, classname), "Unexpected error: mobb-6a66747a3469c89eeb95107594d9f3d5");
             sqlManager = null;
         }
 

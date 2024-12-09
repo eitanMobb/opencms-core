@@ -3077,7 +3077,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 handler.setScope(scope);
                 m_editorChangeHandlers.add(handler);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-3fca7b71d4c96212c5a37fe1927a7369", e);
             }
         }
     }

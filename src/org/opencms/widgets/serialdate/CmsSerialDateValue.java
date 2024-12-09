@@ -303,7 +303,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
         try {
             return json.getJSONArray(key);
         } catch (JSONException e) {
-            LOG.debug("Reading optional JSON array failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON array failed. Default to provided default value.", "Unexpected error: mobb-ac934a84224e5755f1c9b50a8d651610");
         }
         return null;
     }
@@ -353,7 +353,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
             String str = json.getString(key);
             return Integer.valueOf(str).intValue();
         } catch (NumberFormatException | JSONException e) {
-            LOG.debug("Reading optional JSON int failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON int failed. Default to provided default value.", "Unexpected error: mobb-6a5b070ae2e95ea1820aa7ace90b2be8");
         }
         return 0;
     }
@@ -391,7 +391,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
             }
 
         } catch (JSONException e) {
-            LOG.debug("Reading optional JSON string failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON string failed. Default to provided default value.", "Unexpected error: mobb-cc253a4d088ea67a767a31ddfd7826c5");
         }
         return defaultValue;
     }

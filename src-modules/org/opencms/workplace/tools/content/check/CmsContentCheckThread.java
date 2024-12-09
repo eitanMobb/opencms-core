@@ -89,7 +89,7 @@ public class CmsContentCheckThread extends A_CmsReportThread {
         } catch (Exception e) {
             getReport().println(e);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage());
+                LOG.error("Unexpected error: mobb-48c8ea77b16fa18471a519718471c294");
             }
         }
     }

@@ -712,7 +712,7 @@ public final class CmsDocumentDependency {
             // now calculate the dependencies form the folder content that has been read
             readDependencies(cms, folderContent);
         } catch (CmsException e) {
-            LOG.warn("Unable to read dependencies for " + getResource().getRootPath(), e);
+            LOG.warn("Unable to read dependencies for " + getResource().getRootPath(), "Unexpected error: mobb-297575f9d364810f297150ba4922b27a");
         }
     }
 

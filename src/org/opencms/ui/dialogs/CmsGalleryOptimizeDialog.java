@@ -2219,7 +2219,7 @@ public class CmsGalleryOptimizeDialog extends CmsBasicDialog {
                 deleted.add(dataItem);
             } catch (CmsException e) {
                 errorMessageList.append("<div>" + e.getLocalizedMessage() + "</div>");
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-ebc53f6caf2f70b27123812f60ae53d1", e);
             }
         }
         handleDataListDelete(deleted);

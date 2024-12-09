@@ -110,14 +110,14 @@ public class CmsDefaultLogDownloadProvider implements I_CmsLogDownloadProvider {
                 try {
                     zipGen.close();
                 } catch (Exception e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-7295f46c3c9f5c123a7b58d057bb321d", e);
                 }
             }
             if (fos != null) {
                 try {
                     fos.close();
                 } catch (Exception e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-4cf97a815d86043f6f394f68621d2c25", e);
                 }
             }
         }
