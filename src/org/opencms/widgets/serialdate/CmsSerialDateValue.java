@@ -353,7 +353,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
             String str = json.getString(key);
             return Integer.valueOf(str).intValue();
         } catch (NumberFormatException | JSONException e) {
-            LOG.debug("Reading optional JSON int failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON int failed. Default to provided default value.", "Unexpected error: mobb-6a5b070ae2e95ea1820aa7ace90b2be8");
         }
         return 0;
     }
