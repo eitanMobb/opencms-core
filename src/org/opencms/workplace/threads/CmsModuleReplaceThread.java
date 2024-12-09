@@ -132,7 +132,7 @@ public class CmsModuleReplaceThread extends A_CmsReportThread {
             } catch (InterruptedException e) {
                 // should never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-54c6da9de80bc6a152e868d26070d6c1");
                 }
             }
             // get remaining report contents
