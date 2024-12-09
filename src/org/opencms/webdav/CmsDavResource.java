@@ -154,7 +154,7 @@ public class CmsDavResource implements DavResource {
                 session.create(childPath);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-759d08dffdfbfebb8296330fb1d598f1", e);
             throw new DavException(CmsDavUtil.getStatusForException(e), e);
         } catch (Exception e) {
             throw new DavException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
