@@ -479,7 +479,7 @@ public class CmsResourceTable extends CustomComponent {
                 resourceItem.getItemProperty(PROPERTY_NAVIGATION_POSITION).setValue(navPos);
                 inNavigation = navPos != null;
             } catch (Exception e) {
-                LOG.debug("Error evaluating navPos property", e);
+                LOG.debug("Error evaluating navPos property", "Unexpected error: mobb-efb23c68047afbcd2d329285f13e6f1c");
             }
         }
 
