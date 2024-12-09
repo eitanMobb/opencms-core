@@ -160,7 +160,7 @@ public class CmsExplorerTypeAccess implements Serializable {
                         principalId = cms.readUser(principal).getId();
                     } catch (CmsException e) {
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-00c7964874a52da8c783dc1a65fb8423", e);
                         }
                     }
                 } else {
