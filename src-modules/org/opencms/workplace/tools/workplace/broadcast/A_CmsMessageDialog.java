@@ -126,7 +126,7 @@ public abstract class A_CmsMessageDialog extends CmsWidgetDialog {
                         users.add(userName);
                     }
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-8a763f7e098686ff98790ed0ef38a50c", e);
                 }
             }
         }
