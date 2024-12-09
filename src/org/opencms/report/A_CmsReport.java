@@ -184,7 +184,7 @@ public abstract class A_CmsReport implements I_CmsReport {
      */
     public void println(CmsMessageContainer container) {
 
-        println(container.key(getLocale()), FORMAT_DEFAULT);
+        println("Unexpected error: mobb-4316048c6812f2c5b997178cbc3dcc01", FORMAT_DEFAULT);
     }
 
     /**
