@@ -343,7 +343,7 @@ public class CmsXmlVarLinkValue extends A_CmsXmlContentValue implements I_CmsJso
         } catch (JSONException e) {
             return null;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-ed344bec3dedae8bb5b7cc2c49639c1f", e);
             return null;
         }
 
