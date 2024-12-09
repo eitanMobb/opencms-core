@@ -465,7 +465,7 @@ public class CmsSitemapTreeController {
                             fileToModify2,
                             CmsResourceFilter.IGNORE_EXPIRATION);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-e430c2367c96a2358a5b27aa22e205cd", e);
                     }
                 }
 
