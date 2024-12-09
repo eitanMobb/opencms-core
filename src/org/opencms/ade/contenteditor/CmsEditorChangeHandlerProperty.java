@@ -82,7 +82,7 @@ public class CmsEditorChangeHandlerProperty extends A_CmsXmlContentEditorChangeH
                                 }
                             }
                         } catch (CmsException e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-c338f2b3b3139265e8e43eadf4c1521f");
                         }
                     }
                 }

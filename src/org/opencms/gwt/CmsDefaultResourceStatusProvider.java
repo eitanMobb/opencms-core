@@ -639,7 +639,7 @@ public class CmsDefaultResourceStatusProvider {
                     result.add(relationBean);
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-49dd46644feb33e0ed50680fa2e85c8d", e);
             }
         }
         return result;

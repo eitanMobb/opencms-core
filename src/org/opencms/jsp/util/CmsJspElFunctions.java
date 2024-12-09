@@ -790,7 +790,7 @@ public final class CmsJspElFunctions {
                 LOG.error(e.getLocalizedMessage(), e);
                 return "";
             } catch (UnsupportedEncodingException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-f3eea761c34e68602058513a3c4ff281");
                 return "";
             }
         }

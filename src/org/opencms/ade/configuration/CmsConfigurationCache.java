@@ -528,7 +528,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                     }
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-96aefe39d217281f409c205a1a692463", e);
             }
             Collections.sort(views, new CmsElementView.ElementViewComparator());
             Map<CmsUUID, CmsElementView> elementViews = new LinkedHashMap<CmsUUID, CmsElementView>();

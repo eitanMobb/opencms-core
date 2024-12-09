@@ -171,7 +171,7 @@ public class CmsUpdateDBProjectId extends org.opencms.setup.db.update6to7.CmsUpd
     @Override
     protected boolean needsUpdating(CmsSetupDb dbCon, String tablename) throws SQLException {
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-e5ffd810dd53cb312c926c0e0ce3a2c0");
         boolean result = true;
 
         String query = readQuery(QUERY_DESCRIBE_TABLE);

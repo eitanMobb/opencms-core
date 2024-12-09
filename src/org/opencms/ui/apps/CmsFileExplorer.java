@@ -1594,7 +1594,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             m_fileTree.markAsDirtyRecursive();
         } catch (CmsException e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-b73343f5ba8319db93e4fdcc57ae6b81");
         }
     }
 
@@ -1643,7 +1643,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
                     CmsErrorDialog.showErrorDialog(
                         CmsVaadinUtils.getMessageText(Messages.ERR_EXPLORER_CAN_NOT_READ_RESOURCE_1, parentId),
                         e);
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-381607710c74915fd73b0ec3af3498ae", e);
                 }
             }
         }

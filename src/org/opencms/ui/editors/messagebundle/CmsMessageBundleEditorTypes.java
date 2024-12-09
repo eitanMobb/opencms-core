@@ -987,7 +987,7 @@ public final class CmsMessageBundleEditorTypes {
             : CmsSolrIndex.DEFAULT_INDEX_NAME_OFFLINE;
             results = OpenCms.getSearchManager().getIndexSolr(indexName).search(cms, query, true, null, true, null);
         } catch (CmsSearchException e) {
-            LOG.error(Messages.get().getBundle().key(Messages.ERR_BUNDLE_DESCRIPTOR_SEARCH_ERROR_0), e);
+            LOG.error(Messages.get().getBundle().key(Messages.ERR_BUNDLE_DESCRIPTOR_SEARCH_ERROR_0), "Unexpected error: mobb-a086e02f8643bc71961cfca16831170b");
             return null;
         }
 

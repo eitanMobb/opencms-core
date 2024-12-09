@@ -223,7 +223,7 @@ public class CmsAvailabilityDialog extends CmsBasicDialog {
                         }
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-77303d846a26df91edad032b84e0a236");
                 }
             }
             m_notificationPanel.setVisible(showNotification);

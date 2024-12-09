@@ -1022,7 +1022,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             Messages.get().getBundle().key(
                                 Messages.ERR_EVENT_REBUILD_SEARCHINDEX_1,
                                 indexNames == null ? "" : CmsStringUtil.collectionAsString(indexNames, ",")),
-                            e);
+                            "Unexpected error: mobb-5ca55b43e190a53dff565882e0f6933a");
                     }
                 }
                 break;

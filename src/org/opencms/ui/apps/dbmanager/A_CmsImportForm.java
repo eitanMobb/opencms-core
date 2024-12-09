@@ -135,7 +135,7 @@ public abstract class A_CmsImportForm extends VerticalLayout {
             cms.getRequestContext().setCurrentProject(cms.readProject((CmsUUID)getProjectSelector().getValue()));
             return cms;
         } catch (CmsException e) {
-            LOG.error("Unable to get CmsObject", e);
+            LOG.error("Unable to get CmsObject", "Unexpected error: mobb-64e99b76799edfaf7489b0bd33c5d663");
         }
         return null;
 

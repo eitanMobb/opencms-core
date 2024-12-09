@@ -101,7 +101,7 @@ public class CmsXmlContentRepairThread extends A_CmsReportThread {
                 I_CmsReport.FORMAT_ERROR);
             getReport().println(f);
             if (LOG.isErrorEnabled()) {
-                LOG.error(f);
+                LOG.error("Unexpected error: mobb-dabe0f0d5f9573ef5d9459e4258c338e");
             }
         }
 

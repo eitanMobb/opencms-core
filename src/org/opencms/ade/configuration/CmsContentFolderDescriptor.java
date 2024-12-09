@@ -147,7 +147,7 @@ public class CmsContentFolderDescriptor {
                     m_folder.getStructureId(),
                     cms.getRequestContext().getCurrentProject().isOnlineProject());
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d244dfa70ccee0efa80edd991bc0a1c2", e);
                 return m_folder.getRootPath();
             }
         } else if (m_basePath != null) {
