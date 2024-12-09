@@ -101,7 +101,7 @@ public class CmsCurrentPageProject implements I_CmsVirtualProject {
             }
             bean.setDefaultGroupName(Messages.get().getBundle(locale).key(Messages.GUI_PAGE_1, rawName));
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-3b2698a64896eb4e4e3d6f107b50e00a", e);
         }
         return bean;
     }
