@@ -80,7 +80,7 @@ public class CmsMessageToBundleIndex {
                     }
                 }
             } catch (MissingResourceException e) {
-                LOG.debug("missing resource for " + bundleName + ":" + e.getMessage(), e);
+                LOG.debug("Unexpected error: mobb-a1d3bf72141574b04b6012b5cf2b4f6d", e);
             }
         }
     }
