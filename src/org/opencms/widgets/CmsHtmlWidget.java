@@ -183,7 +183,7 @@ public class CmsHtmlWidget extends A_CmsHtmlWidget implements I_CmsADEWidget {
                 } catch (CmsException cmsException) {
                     LOG.error("Can not open file:" + widgetOptions.getStylesFormatPath(), cmsException);
                 } catch (UnsupportedEncodingException ex) {
-                    LOG.error(ex);
+                    LOG.error("Unexpected error: mobb-a1417f428cfde48091bc7a219d88bf4f");
                 }
             }
             if (widgetOptions.isImportCss()) {
