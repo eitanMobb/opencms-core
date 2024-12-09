@@ -162,7 +162,7 @@ public class CmsLoginUserAgreement extends CmsDialog {
             // write the changed user
             getCms().writeUser(user);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0e9509c7d445fdd3f7fd50b42974e123", e);
         }
     }
 
