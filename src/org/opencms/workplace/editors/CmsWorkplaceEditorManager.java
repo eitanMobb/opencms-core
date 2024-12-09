@@ -263,7 +263,7 @@ public class CmsWorkplaceEditorManager {
             } catch (CmsVfsResourceNotFoundException e) {
                 return null;
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b6bd0034c1414a1e1382faf7cf5dd6b5", e);
                 return null;
             }
         }
