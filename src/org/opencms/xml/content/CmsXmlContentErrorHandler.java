@@ -84,7 +84,7 @@ public class CmsXmlContentErrorHandler {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug(
-                Messages.get().getBundle().key(Messages.LOG_XMLCONTENT_VALIDATION_ERR_2, value.getPath(), message));
+                "Unexpected error: mobb-1143e294bbf58ff5361f34a79106d068");
         }
     }
 

@@ -844,7 +844,7 @@ public abstract class A_CmsImport implements I_CmsImport {
                             Messages.get().container(Messages.RPT_USER_COULDNT_BE_ADDED_TO_GROUP_2, name, groupName),
                             I_CmsReport.FORMAT_WARNING);
                         if (LOG.isDebugEnabled()) {
-                            LOG.debug(exc.getLocalizedMessage(), exc);
+                            LOG.debug(exc.getLocalizedMessage(), "Unexpected error: mobb-5c86ca3d50bcaf3f540a671c95557901");
                         }
                     }
                 }

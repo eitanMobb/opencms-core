@@ -1351,7 +1351,7 @@ public class CmsUpdateBean extends CmsSetupBean {
                                 try {
                                     fileInput.close();
                                 } catch (IOException e) {
-                                    LOG.warn(e.getMessage(), e);
+                                    LOG.warn("Unexpected error: mobb-32a3735ebdfbf31922e1ee2d8269f26a", e);
                                 }
                             }
                         }

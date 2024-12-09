@@ -69,7 +69,7 @@ public class CmsNewsletterDistributor {
                 mail.addTo(recipient.getEmail(), recipient.getFullName());
                 mail.send();
             } catch (Exception e) {
-                LOG.error(e.getMessage(), e);
+                LOG.error("Unexpected error: mobb-9b02f4aaddb989d6f44c19bc566eab0b", e);
             }
         }
     }

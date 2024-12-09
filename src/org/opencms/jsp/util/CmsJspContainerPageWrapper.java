@@ -130,7 +130,7 @@ public class CmsJspContainerPageWrapper {
             try {
                 containerWidth = Integer.parseInt(container.getWidth());
             } catch (Exception e) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-489e1ce55c1219a7e95a4fb9acc97099");
             }
             CmsADEConfigData adeConfig = context.getSitemapConfigInternal();
             StringBuilder buffer = new StringBuilder();

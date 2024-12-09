@@ -185,7 +185,7 @@ public class CmsLinkManager {
                 return OpenCms.getADEManager().getSubSiteRoot(cms, rootPath);
             }
         } catch (URISyntaxException  e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-5b1413530e412c40e1c5e3895adb630e");
             return null;
         }
 
@@ -509,7 +509,7 @@ public class CmsLinkManager {
             // if something wrong
             permalink = e.getLocalizedMessage();
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-74896250934017d3bb4bf053b3dc217c");
             }
         }
         return permalink;

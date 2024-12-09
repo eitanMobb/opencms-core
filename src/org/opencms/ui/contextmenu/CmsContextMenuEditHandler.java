@@ -155,7 +155,7 @@ public class CmsContextMenuEditHandler implements I_CmsFilePropertyEditHandler {
             }
             m_context.finish(Collections.singletonList(m_editId));
         } catch (CmsException e) {
-            LOG.error("Exception while saving changed " + m_editProperty + " to resource " + m_editId, e);
+            LOG.error("Exception while saving changed " + m_editProperty + " to resource " + m_editId, "Unexpected error: mobb-b14ca63dd8418093842b64a3b483a196");
             m_context.error(e);
         }
 

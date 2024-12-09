@@ -214,7 +214,7 @@ public class CmsXmlContainerPage extends CmsXmlContent {
                 addLocale(cms, locale);
             } catch (CmsXmlException e) {
                 // this can not happen since the locale does not exist
-                LOG.error(e.getMessage(), e);
+                LOG.error(e.getMessage(), "Unexpected error: mobb-b99828b0380d3628dead5d26e55b7e0b");
             }
         }
     }

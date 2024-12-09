@@ -400,7 +400,7 @@ public class CmsResourceSelectDialog extends CustomComponent {
             m_siteRoot = site;
             updateRoot(rootCms, siteRootResource);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8f2b3d428a1a210089115ba96afacdb4", e);
         }
     }
 

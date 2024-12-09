@@ -752,7 +752,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
                 cms.deleteProject(projectId);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-3262872156239f459577b6ebdc3e11d7", e);
         }
     }
 

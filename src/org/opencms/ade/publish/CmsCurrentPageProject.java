@@ -212,7 +212,7 @@ public class CmsCurrentPageProject implements I_CmsVirtualProject {
                                 }
                             } catch (Exception e) {
                                 LOG.error(
-                                    "Error processing collector item " + token + ": " + e.getLocalizedMessage(),
+                                    "Unexpected error: mobb-064e5a92926deb194d4aeb83390eeb68",
                                     e);
                             }
                         }

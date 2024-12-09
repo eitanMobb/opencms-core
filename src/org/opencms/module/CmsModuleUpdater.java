@@ -354,7 +354,7 @@ public class CmsModuleUpdater {
                             CmsResource res = cms.readResource(resData.getResource().getStructureId());
                             cms.chtype(res, OpenCms.getResourceManager().getResourceType(resData.getTypeName()));
                         } catch (Exception e) {
-                            m_report.println(e);
+                            m_report.println("Unexpected error: mobb-17a77b6338050575843e532ef8d75b3b");
                         }
                     }
                 }

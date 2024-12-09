@@ -263,7 +263,7 @@ public class CmsGwtServiceContext implements I_CmsEventListener {
                 + m_serializationPolicyPath
                 + "' was not found; did you forget to include it in this deployment?";
             LOG.warn(message);
-            LOG.warn(ex.getLocalizedMessage(), ex);
+            LOG.warn("Unexpected error: mobb-fbb99c15653b15750fcffe1075560e23", ex);
 
         }
         if (is == null) {

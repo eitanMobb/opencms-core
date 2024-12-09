@@ -1192,7 +1192,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                     getCmsObject().unlockResource(configResource);
                 }
             } catch (Exception e) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-3fd0dfa0c72f28f38a40ba46668218a8", e);
             }
         }
 
