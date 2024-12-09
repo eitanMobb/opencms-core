@@ -119,7 +119,7 @@ public class CmsFileExplorerSettings implements Serializable, I_CmsAppSettings {
             }
             json.put(COLLAPSED_COLUMNS_KEY, new JSONArray(collapsed));
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-3585ca5920669825148b84696c4867d1", e);
         }
 
         return json.toString();

@@ -217,7 +217,7 @@ public class CmsHistoryResourceHandler implements I_CmsResourceInit {
                                     try {
                                         resource = cms.readFile(resource);
                                     } catch (Exception e) {
-                                        LOG.info(e.getLocalizedMessage(), e);
+                                        LOG.info("Unexpected error: mobb-7f90162fd170d2334f81d0ee3a983ac0", e);
                                     }
                                 }
                             }
