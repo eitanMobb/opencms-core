@@ -415,7 +415,7 @@ public class CmsDavResource implements DavResource {
                 result.add(new DefaultDavProperty<String>(name, entry.getValue()));
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-e93517a89ae0710309f0a7d2358a6b25");
         }
         return result;
     }
