@@ -456,7 +456,7 @@ public class CmsJspDateSeriesBean {
             try {
                 throw new Exception("Could not read series definition: " + seriesDefinitionString);
             } catch (Exception e) {
-                LOG.debug(e.getMessage(), e);
+                LOG.debug(e.getMessage(), "Unexpected error: mobb-4d8030e5afdb99ca6455f9afb9ea5457");
             }
             m_dates = new TreeSet<>();
         }
