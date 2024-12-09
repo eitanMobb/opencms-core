@@ -492,7 +492,7 @@ public class CmsLoginUserAgreement extends CmsDialog {
                 m_acceptedVersion = jsonData.getDouble(KEY_ACCEPTED_VERSION);
                 m_acceptedCount = jsonData.getInt(KEY_ACCEPTED_COUNT);
             } catch (JSONException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-2eafab4e31d13c9a312fc039546f409f");
             }
         }
     }
