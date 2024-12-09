@@ -541,7 +541,7 @@ public class CmsModelPageHelper {
             } catch (CmsVfsResourceNotFoundException e) {
                 continue;
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-f462e669cd2a4d2eff3c747ad73488bc", e);
                 continue;
             }
         }
