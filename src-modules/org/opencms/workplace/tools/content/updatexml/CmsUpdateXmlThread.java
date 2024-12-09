@@ -222,7 +222,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
             m_errorUpdate += 1;
             report.println(Messages.get().container(Messages.RPT_UPDATEXML_SEARCH_ERROR_0), I_CmsReport.FORMAT_ERROR);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getMessageContainer(), e);
+                LOG.error(e.getMessageContainer(), "Unexpected error: mobb-3a90c2f520e205dcd89737f01b7080c2");
             }
             report.println(Messages.get().container(Messages.RPT_UPDATEXML_END_UPDATE_0), I_CmsReport.FORMAT_NOTE);
             return;
