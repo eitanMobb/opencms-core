@@ -722,7 +722,7 @@ public class CmsLock extends CmsMultiDialog implements I_CmsDialogHandler {
                 } catch (CmsException e) {
                     // error reading a resource, should usually never happen
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(getLocale()), e);
+                        LOG.error("Unexpected error: mobb-b1a844417e6a819f56cd9ea005587b99", e);
                     }
                 }
                 if (Boolean.valueOf(getParamIncluderelated()).booleanValue()) {
