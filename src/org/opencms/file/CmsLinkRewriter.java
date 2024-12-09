@@ -252,7 +252,7 @@ public class CmsLinkRewriter {
                         }
                         m_cms.writeFile(file);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-8971facb4558a14f6e00f55dd71f2cfc");
                     }
                 }
             }
