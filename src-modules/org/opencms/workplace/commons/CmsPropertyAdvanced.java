@@ -597,7 +597,7 @@ public class CmsPropertyAdvanced extends CmsTabDialog implements I_CmsDialogHand
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-a7d89bb24f9c41e3115848af22c62e99");
             }
         }
         return URI_PROPERTY_DIALOG;
