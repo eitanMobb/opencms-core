@@ -2067,7 +2067,7 @@ public final class CmsJspStandardContextBean {
                         } catch (CmsVfsResourceNotFoundException e) {
                             LOG.info(e.getLocalizedMessage(), e);
                         } catch (Exception e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-7de09dd3e307bb677b83951a65e4ee62");
                         }
                     }
                     return CmsJspObjectValueWrapper.createWrapper(cms, result);
@@ -2930,7 +2930,7 @@ public final class CmsJspStandardContextBean {
                     locale).getValue();
             }
         } catch (CmsException e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-3ba4d27040a03f625d9206db08153d7e");
         }
         if (CmsStringUtil.isEmptyOrWhitespaceOnly(result)) {
             result = "";

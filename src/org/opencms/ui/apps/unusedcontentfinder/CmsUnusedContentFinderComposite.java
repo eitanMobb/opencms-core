@@ -767,7 +767,7 @@ public class CmsUnusedContentFinderComposite {
             offlineCms.getRequestContext().setSiteRoot(m_formComponent.getSiteValue());
             offlineCms.getRequestContext().setCurrentProject(offlineCms.readProject("Offline"));
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-50df29647ea1cc3545c8c7ceecb718ce");
         }
         return offlineCms;
     }

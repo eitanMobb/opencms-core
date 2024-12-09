@@ -783,7 +783,7 @@ public class CmsDefaultResourceStatusProvider {
                     additionalAttributes.put(label, schema);
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d0451b893a7e8ec954f2b7f295cf3fae", e);
             }
 
             String elementId = context.get(CmsGwtConstants.ATTR_ELEMENT_ID);
@@ -833,7 +833,7 @@ public class CmsDefaultResourceStatusProvider {
                     } catch (CmsVfsResourceNotFoundException e) {
                         // ignore
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-3e6672bde6ac31263b3be6ef9ff67144", e);
                     }
                 }
             }

@@ -548,7 +548,7 @@ public class CmsExtendedWorkflowManager extends CmsDefaultWorkflowManager {
             List<CmsUser> users = cms.getUsersOfGroup(group);
             return users;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-46c03007a23e3fc19dd9c278abed41f8");
             return new ArrayList<CmsUser>();
         }
     }

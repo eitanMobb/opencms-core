@@ -1734,7 +1734,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
                                 m_galleries.put(galleryType.getTypeName(), galleryInstance);
                             }
                         } catch (ClassNotFoundException e) {
-                            LOG.error(e.getLocalizedMessage());
+                            LOG.error("Unexpected error: mobb-a69dcb2a90a8eff4332ee142cdae7687");
                         } catch (InstantiationException e) {
                             LOG.error(e.getLocalizedMessage());
                         } catch (IllegalAccessException e) {

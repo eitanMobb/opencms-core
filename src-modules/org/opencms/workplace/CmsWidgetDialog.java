@@ -1500,7 +1500,7 @@ public abstract class CmsWidgetDialog extends CmsDialog implements I_CmsWidgetDi
             validateParamaters();
         } catch (Exception e) {
             if (LOG.isInfoEnabled()) {
-                LOG.info(Messages.get().container(Messages.ERR_WORKPLACE_DIALOG_PARAMS_1, getCurrentToolPath()), e);
+                LOG.info(Messages.get().container(Messages.ERR_WORKPLACE_DIALOG_PARAMS_1, getCurrentToolPath()), "Unexpected error: mobb-41be005b65979e7e4adbc1fe8af6e660");
             }
             // close if parameters not available
             setAction(ACTION_CANCEL);

@@ -185,7 +185,7 @@ public class CmsMappingResolutionContext {
                     urlnameReplace = Boolean.parseBoolean(prop.getValue());
                 }
             } catch (CmsException e) {
-                LOG.error("Error while trying to read urlname.replace: " + e.getLocalizedMessage(), e);
+                LOG.error("Error while trying to read urlname.replace: " + e.getLocalizedMessage(), "Unexpected error: mobb-a2114cb5a346758b09701e92c6144bbe");
             }
 
         }

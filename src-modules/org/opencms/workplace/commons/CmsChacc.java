@@ -750,7 +750,7 @@ public class CmsChacc extends CmsDialog {
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-d4b1ed7e0ff6789de3a418fef0c3d9a5");
             }
         }
         Iterator<CmsResource> k = parentResources.iterator();
@@ -776,7 +776,7 @@ public class CmsChacc extends CmsDialog {
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-1d7bc41b83e8a5f25f8cfcb14f3509db");
             }
         }
 
@@ -1406,7 +1406,7 @@ public class CmsChacc extends CmsDialog {
             internal = resource.isInternal();
         } catch (CmsException e) {
             // an error occurred reading the resource
-            LOG.error(e.getLocalizedMessage());
+            LOG.error("Unexpected error: mobb-6dd205d79935353195ab03918ef93dc4");
         }
 
         if ((resource != null) && (resource.isFile())) {

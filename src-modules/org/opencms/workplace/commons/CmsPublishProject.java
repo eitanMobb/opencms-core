@@ -890,7 +890,7 @@ public class CmsPublishProject extends CmsMultiDialog {
             try {
                 setParamProjectname(getCms().readProject(id).getName());
             } catch (CmsException e) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_SET_PROJECT_NAME_FAILED_0), e);
+                LOG.error(Messages.get().getBundle().key(Messages.LOG_SET_PROJECT_NAME_FAILED_0), "Unexpected error: mobb-367aa36dbb5d05996c3ddfa4895a2d58");
             }
         }
     }

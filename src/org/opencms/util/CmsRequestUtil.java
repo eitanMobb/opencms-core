@@ -867,7 +867,7 @@ public final class CmsRequestUtil {
                 try {
                     value = item.getString(encoding);
                 } catch (UnsupportedEncodingException e) {
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_ENC_MULTIPART_REQ_ERROR_0), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.LOG_ENC_MULTIPART_REQ_ERROR_0), "Unexpected error: mobb-d47ce0093b4bd0b918f7d779460592d1");
                     value = item.getString();
                 }
                 if (parameterMap.containsKey(name)) {

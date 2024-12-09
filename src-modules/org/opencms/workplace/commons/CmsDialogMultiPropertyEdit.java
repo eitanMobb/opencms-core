@@ -229,7 +229,7 @@ public class CmsDialogMultiPropertyEdit extends CmsDialog {
         } catch (CmsException e) {
             // log, should never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(getLocale()));
+                LOG.error("Unexpected error: mobb-7015102165474db2a92028dc4433464c");
             }
         }
         return result;

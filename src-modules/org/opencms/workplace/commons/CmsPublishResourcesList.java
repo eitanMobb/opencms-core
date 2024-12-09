@@ -184,7 +184,7 @@ public class CmsPublishResourcesList extends A_CmsListExplorerDialog {
                             m_publishList = mergedPL;
                         } catch (CmsException e) {
                             if (LOG.isErrorEnabled()) {
-                                LOG.error(e.getLocalizedMessage(getLocale()), e);
+                                LOG.error("Unexpected error: mobb-824da21bb9a63b7a9547e982ea5d2a0c", e);
                             }
                         }
                     } else {

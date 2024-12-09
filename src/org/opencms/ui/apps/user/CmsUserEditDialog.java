@@ -1263,7 +1263,7 @@ public class CmsUserEditDialog extends CmsBasicDialog implements I_CmsPasswordFe
                 }
                 return roleNames.contains(app.getRequiredRole().getRoleName());
             } catch (CmsException e) {
-                LOG.error("Unable to read group", e);
+                LOG.error("Unable to read group", "Unexpected error: mobb-feec2068cb8994133aa48e2bd3a10dd2");
             }
         }
         return true;

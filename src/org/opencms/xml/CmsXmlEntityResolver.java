@@ -387,7 +387,7 @@ public class CmsXmlEntityResolver implements EntityResolver, I_CmsEventListener 
             } catch (Throwable t) {
                 LOG.error(
                     Messages.get().getBundle().key(Messages.LOG_XMLPAGE_DTD_NOT_FOUND_1, XMLPAGE_OLD_DTD_LOCATION),
-                    t);
+                    "Unexpected error: mobb-e430ea448dd1ba1caebff5d855fc25da");
             }
         } else if ((m_cms != null) && systemId.startsWith(OPENCMS_SCHEME)) {
 

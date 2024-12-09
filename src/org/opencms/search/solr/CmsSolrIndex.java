@@ -498,7 +498,7 @@ public class CmsSolrIndex extends CmsSearchIndex {
                 resultList.add(result);
             }
         } catch (CmsSearchException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-72dca77ebebcc224067ef3568572e931", e);
         }
         return resultList;
     }

@@ -985,7 +985,7 @@ public class CmsObjectWrapper {
                 }
             }
         } catch (CmsException e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-09d26f5700d0fb7295bd7998eebbb139", e);
         }
         return result;
     }

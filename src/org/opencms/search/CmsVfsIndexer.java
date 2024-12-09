@@ -387,7 +387,7 @@ public class CmsVfsIndexer implements I_CmsIndexer {
                         Messages.LOG_IO_INDEX_DOCUMENT_UPDATE_2,
                         rootPath,
                         m_index.getName()),
-                    e);
+                    "Unexpected error: mobb-10e32351704847619b6a3fb03f203746");
             }
         }
     }

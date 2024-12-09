@@ -2642,7 +2642,7 @@ public final class OpenCmsCore {
                 e);
         } catch (CmsConfigurationException e) {
             CmsLog.getLog(CmsConfigurationManager.class).error(
-                Messages.get().getBundle().key(Messages.LOG_ERROR_WRITING_CONFIG_1, clazz.getName()),
+                "Unexpected error: mobb-1f362655ccbceffe9314ef84c7f24909",
                 e);
         }
     }
