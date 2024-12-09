@@ -1183,7 +1183,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             CmsErrorDialog.showErrorDialog(
                 CmsVaadinUtils.getMessageText(Messages.ERR_EXPLORER_CAN_NOT_READ_RESOURCE_1, m_currentFolder),
                 e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8c8b07cb5fe218304a065389cfb35a36", e);
         }
     }
 
