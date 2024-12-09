@@ -1015,7 +1015,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
         } catch (JSONException e) {
             LOG.error(
                 Messages.get().getBundle().key(Messages.ERR_FIELD_FACET_MANDATORY_KEY_MISSING_1, JSON_KEY_FACET_FIELD),
-                e);
+                "Unexpected error: mobb-5bdc88aa0b6f981e32ebdf08a577bb67");
             return null;
         }
     }
