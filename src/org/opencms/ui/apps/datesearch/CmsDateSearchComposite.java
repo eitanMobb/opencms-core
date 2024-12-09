@@ -850,7 +850,7 @@ public class CmsDateSearchComposite implements I_ResourcePropertyProvider, I_Cms
             return index.search(getCmsObject(), query, true, null, true, CmsResourceFilter.ALL, MAX_RESULTS);
         } catch (CmsSearchException e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-7568354260916b960f18a50b467f83aa");
             return null;
         }
     }
