@@ -67,7 +67,7 @@ public class CmsUpdateDBHistoryPrincipals extends org.opencms.setup.db.update6to
 
         String indexTablespace = m_poolData.get("indexTablespace");
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-bc66405ef9a260c58eaca9e859d69112");
         if (!dbCon.hasTableOrColumn(TABLE_CMS_HISTORY_PRINCIPALS, null)) {
             String createStatement = readQuery(QUERY_HISTORY_PRINCIPALS_CREATE_TABLE);
 
