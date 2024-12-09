@@ -442,7 +442,7 @@ public class CmsCopy extends CmsMultiDialog {
         } catch (Exception e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-60164144c5d7423449a85c049b4f7b29");
             }
         }
 
