@@ -452,7 +452,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
                 ((I_CmsXmlConfigurationWithUpdateHandler)configuration).handleUpdate();
                 LOG.info("Finished configuration update handler for " + configuration.getClass().getName());
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-512e8e38073d053a28963cadb672a36c", e);
             }
         }
 
