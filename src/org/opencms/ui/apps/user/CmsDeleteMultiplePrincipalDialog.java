@@ -145,7 +145,7 @@ public class CmsDeleteMultiplePrincipalDialog extends CmsBasicDialog {
                     m_userIDs.add(new CmsUUID(id));
                 }
             } catch (CmsException e) {
-                LOG.error("Unable to read Principal.", e);
+                LOG.error("Unable to read Principal.", "Unexpected error: mobb-313cce5819afe4ba762b9b9ba0035f40");
             }
         }
 
