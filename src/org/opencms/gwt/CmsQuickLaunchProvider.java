@@ -152,7 +152,7 @@ public final class CmsQuickLaunchProvider {
                                 } catch (CmsVfsResourceNotFoundException | CmsSecurityException e) {
                                     LOG.info(e.getLocalizedMessage(), e);
                                 } catch (Exception e) {
-                                    LOG.error(e.getLocalizedMessage(), e);
+                                    LOG.error("Unexpected error: mobb-6f0d993b18244a295917bf045353a14a", e);
                                 }
                             }
                             if (link == null) {
