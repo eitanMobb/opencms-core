@@ -1086,7 +1086,7 @@ public abstract class CmsEditor extends CmsEditorBase {
         if (exception != null) {
             getJsp().getRequest().setAttribute(ATTRIBUTE_THROWABLE, exception);
             if (CmsLog.getLog(editor).isWarnEnabled()) {
-                CmsLog.getLog(editor).warn(exception.getLocalizedMessage(), exception);
+                CmsLog.getLog(editor).warn("Unexpected error: mobb-425d951de191919bfa10b417f2d1264a", exception);
             }
         }
         // include the common error dialog
