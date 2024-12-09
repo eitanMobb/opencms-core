@@ -78,7 +78,7 @@ public class CmsConfigurationFileFinder {
             cfgPath = cms.readPropertyObject(containerPageUri, m_propertyName, true).getValue();
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-7af72c76237afafada2cd8482c28710b", e);
         }
 
         if (CmsStringUtil.isEmptyOrWhitespaceOnly(cfgPath)) {
