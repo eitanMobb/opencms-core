@@ -130,7 +130,7 @@ public class CmsPublishHistory {
                 m_publishEngine.getDriverManager().deletePublishList(dbc, publishJob.getPublishHistoryId());
             } catch (CmsException e) {
                 dbc.rollback();
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d015dbe8f3e90fc8e5a81c6afec2d1c2", e);
                 throw e;
             } finally {
                 dbc.clear();
