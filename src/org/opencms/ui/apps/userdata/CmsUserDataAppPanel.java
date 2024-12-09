@@ -339,7 +339,7 @@ public class CmsUserDataAppPanel extends VerticalLayout {
                             report);
                         status.setChanged(changed);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-3d1f85516edbd1ef7f98304adecc7f8d", e);
                         status.setException(e);
                     }
                 });
