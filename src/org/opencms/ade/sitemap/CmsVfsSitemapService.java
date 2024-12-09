@@ -1523,7 +1523,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                     cms.unlockResource(lockedRes);
                 } catch (CmsException e) {
                     // we catch this because we still want to unlock the other resources
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-eea8838da39a4dcbbe7f073e7ad56f2e", e);
                 }
             }
         }
