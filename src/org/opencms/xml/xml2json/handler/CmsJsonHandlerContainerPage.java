@@ -78,7 +78,7 @@ public class CmsJsonHandlerContainerPage implements I_CmsJsonHandler {
                 context.getContent());
             return new CmsJsonResult(jsonDocument.getJson(), HttpServletResponse.SC_OK);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-aeb5d7982feaf9d0fbf2ce7b29a44a15");
             return new CmsJsonResult(
                 JSONObject.quote(e.getLocalizedMessage()),
                 HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
