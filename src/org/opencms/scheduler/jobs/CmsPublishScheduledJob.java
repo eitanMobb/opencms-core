@@ -140,7 +140,7 @@ public class CmsPublishScheduledJob implements I_CmsScheduledJob {
                             cms.unlockResource(resource);
                         }
                     } catch (Exception e) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-cda4c7f8afba7addbf6d94b0d9ef2630", e);
                     }
                 }
             }
