@@ -275,7 +275,7 @@ public class CmsSendEmailGroupsDialog extends CmsWidgetDialog {
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-1821d07cf9408ae846f10fa9fd0bcd09", e);
             }
         }
         if (!excluded.isEmpty()) {
