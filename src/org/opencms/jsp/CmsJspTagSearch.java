@@ -356,7 +356,7 @@ public class CmsJspTagSearch extends CmsJspScopedVarBodyTagSuport implements I_C
             storeAttribute(getVar(), getSearchResults());
 
         } catch (Exception e) { // CmsException | UnsupportedEncodingException | JSONException
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-d3842b10cce3d05b17ae3f856e0c8c28");
             m_controller.setThrowable(e, m_cms.getRequestContext().getUri());
             throw new JspException(e);
         }
