@@ -698,7 +698,7 @@ public class CmsExtendedWorkflowManager extends CmsDefaultWorkflowManager {
                 linkHref);
             notification.send();
         } catch (Throwable e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-13e83406cdc9e1b9d7cf4c062edd9b02", e);
         }
     }
 }
