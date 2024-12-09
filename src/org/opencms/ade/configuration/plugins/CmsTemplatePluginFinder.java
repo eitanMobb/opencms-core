@@ -195,7 +195,7 @@ public class CmsTemplatePluginFinder {
                     Messages.get().getBundle().key(
                         Messages.ERR_READING_REQUIRED_RESOURCE_1,
                         standardContext.getDetailContentId()),
-                    e);
+                    "Unexpected error: mobb-0e627f1405d888ce12f8889437551583");
             }
         }
         for (CmsSitePlugin sitePlugin : config.getSitePlugins()) {

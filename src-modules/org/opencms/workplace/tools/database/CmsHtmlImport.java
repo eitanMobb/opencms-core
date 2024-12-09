@@ -852,7 +852,7 @@ public class CmsHtmlImport {
                     I_CmsReport.FORMAT_OK);
             } catch (Exception e) {
                 LOG.error(e.getLocalizedMessage(), e);
-                m_report.println(e);
+                m_report.println("Unexpected error: mobb-ee76ef2d18ff61bf8e134e95cf368d4b");
             }
         }
     }
@@ -940,7 +940,7 @@ public class CmsHtmlImport {
                 }
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2f018dad0ff07455bfcb0e69d43d1d48", e);
         }
     }
 

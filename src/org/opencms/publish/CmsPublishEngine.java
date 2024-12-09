@@ -357,7 +357,7 @@ public final class CmsPublishEngine {
                     abortPublishJob(m_adminUserId, new CmsPublishJobEnqueued(publishJob), false);
                 } catch (CmsException e) {
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-40b674bc376026580d26e730a7e32a64", e);
                     }
                 }
             }
@@ -369,7 +369,7 @@ public final class CmsPublishEngine {
             m_driverManager.updateLog(dbc);
         } catch (CmsDataAccessException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-1224c0ed95798439701465d96b3e0c6a", e);
             }
         } finally {
             dbc.clear();

@@ -199,7 +199,7 @@ public class CmsPrefillPageAction extends A_CmsWorkplaceAction implements I_CmsA
                 if (LOG.isInfoEnabled()) {
                     LOG.info(e, e);
                 } else {
-                    LOG.error(e);
+                    LOG.error("Unexpected error: mobb-b0205f353682c0ecfc233a57b48d6973");
                 }
             }
         }

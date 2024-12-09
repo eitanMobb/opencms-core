@@ -257,7 +257,7 @@ public class CmsProjectsTable extends Table {
                     ? CmsMenuItemVisibilityMode.VISIBILITY_ACTIVE
                     : CmsMenuItemVisibilityMode.VISIBILITY_INACTIVE;
                 } catch (CmsException e) {
-                    LOG.error("Error reading locked resources on project " + projectId, e);
+                    LOG.error("Error reading locked resources on project " + projectId, "Unexpected error: mobb-2f978bc0f86aed026e436d0b069e8a76");
                 }
             }
             return CmsMenuItemVisibilityMode.VISIBILITY_INVISIBLE;

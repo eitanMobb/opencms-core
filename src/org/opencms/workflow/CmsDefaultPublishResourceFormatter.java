@@ -245,7 +245,7 @@ public class CmsDefaultPublishResourceFormatter implements I_CmsPublishResourceF
                 } catch (Exception e) {
                     // error reading the permissions, should usually never happen
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-dd315f46fe14a33857d312e101a16586", e);
                     }
                 }
             }

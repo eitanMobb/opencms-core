@@ -547,7 +547,7 @@ public class CmsGitCheckin {
                 && (null != config.getConfigurationFile().getAbsolutePath())
                 ? config.getConfigurationFile().getAbsolutePath()
                 : "<unknown>";
-            LOG.warn("Trying to read invalid git configuration from " + file + ".", e);
+            LOG.warn("Unexpected error: mobb-be065c6f28d36807ae99a8f1c35b23d6", e);
         }
     }
 

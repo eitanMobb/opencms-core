@@ -375,7 +375,7 @@ public class CmsJspTagImage extends CmsJspImageScalerTagSupport implements I_Cms
 
             } catch (Exception ex) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(Messages.get().getBundle().key(Messages.ERR_PROCESS_TAG_1, "image"), ex);
+                    LOG.error(Messages.get().getBundle().key(Messages.ERR_PROCESS_TAG_1, "image"), "Unexpected error: mobb-6d45444dec5c1b3aaf2883cedd411c92");
                 }
                 throw new javax.servlet.jsp.JspException(ex);
             }

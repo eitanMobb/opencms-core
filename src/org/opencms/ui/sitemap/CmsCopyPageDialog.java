@@ -110,7 +110,7 @@ public class CmsCopyPageDialog extends CmsBasicDialog {
                     return;
                 }
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-164b679f0abc37118797051174823ff2", e);
             }
         }
 

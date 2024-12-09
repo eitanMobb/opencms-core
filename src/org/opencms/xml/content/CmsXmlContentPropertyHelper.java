@@ -445,7 +445,7 @@ public final class CmsXmlContentPropertyHelper implements Cloneable {
                 }
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-f662ca638c1c258bb35272ad22ca0b63", e);
             }
         }
         return mergeDefaults(cms, propertyConfig, properties);

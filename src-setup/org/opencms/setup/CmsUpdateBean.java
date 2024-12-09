@@ -295,12 +295,12 @@ public class CmsUpdateBean extends CmsSetupBean {
             try {
                 m_cms.lockResourceTemporary("/shared");
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-51c7f2d7faa57189664c69fbd575487c", e);
             }
             try {
                 m_cms.chacc("/shared", "group", "Users", "+v+w+r+i");
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ab8c397398921e0f4053abbfa227c386", e);
             }
             CmsResource shared = m_cms.readResource("/shared");
             try {
@@ -311,7 +311,7 @@ public class CmsUpdateBean extends CmsSetupBean {
                     false);
                 OpenCms.getPublishManager().waitWhileRunning();
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-34dbeecd1cece49ac06da293c3ebbf0c", e);
             }
         } finally {
             m_cms.getRequestContext().setSiteRoot(originalSiteRoot);

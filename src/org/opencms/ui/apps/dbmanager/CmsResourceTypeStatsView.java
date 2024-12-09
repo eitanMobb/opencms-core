@@ -103,7 +103,7 @@ public class CmsResourceTypeStatsView extends VerticalLayout {
             m_siteSelect.setNullSelectionAllowed(false);
             m_siteSelect.setItemCaptionPropertyId("caption");
         } catch (CmsException e1) {
-            LOG.error("Unable to get CmsObject", e1);
+            LOG.error("Unable to get CmsObject", "Unexpected error: mobb-c4be0cc275077d6f12cbb2526297e258");
         }
     }
 
@@ -151,7 +151,7 @@ public class CmsResourceTypeStatsView extends VerticalLayout {
                     m_results.setVisible(true);
                     results.setVerticalLayout(m_resLayout, false);
                 } catch (CmsException e) {
-                    LOG.error("Unable to read resource tree", e);
+                    LOG.error("Unable to read resource tree", "Unexpected error: mobb-54fbf3f37ef05f786e0489a0eeba0c8d");
                 }
             }
         });

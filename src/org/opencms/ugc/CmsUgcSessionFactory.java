@@ -129,7 +129,7 @@ public class CmsUgcSessionFactory {
             CmsFile configFile = cms.readFile(sitePath);
             config = reader.readConfiguration(configFile);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-c8e2cd678a443d4d5a5148d208a7ee94");
             throw new CmsUgcException(e, CmsUgcConstants.ErrorCode.errConfiguration, e.getLocalizedMessage());
         }
         return createSession(cms, request, config);

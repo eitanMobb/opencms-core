@@ -1738,7 +1738,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
                         } catch (InstantiationException e) {
                             LOG.error(e.getLocalizedMessage());
                         } catch (IllegalAccessException e) {
-                            LOG.error(e.getLocalizedMessage());
+                            LOG.error("Unexpected error: mobb-73c28fbd93ec22fa8e46a02ce2b4ed8b");
                         }
                     }
                 }

@@ -76,7 +76,7 @@ public class CmsLoginTargetOpener extends AbstractExtension {
                 encryptedTarget = OpenCms.getDefaultTextEncryption().encrypt(target);
                 getRpcProxy(I_CmsLoginTargetRpc.class).openTargetForPrivatePc(encryptedTarget);
             } catch (CmsEncryptionException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-0e6a0535821c08d50c1103ce391b4d9e", e);
                 getRpcProxy(I_CmsLoginTargetRpc.class).openTargetForPublicPc(target);
             }
         }

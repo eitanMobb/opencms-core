@@ -402,7 +402,7 @@ public class CmsJsonResourceHandler implements I_CmsResourceInit, I_CmsNeedsAdmi
                 return policy;
             } catch (Exception e) {
                 // If access policy is configured, but can't be read, disable everything
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-e578a5ad7be71644e57ce228be06c777", e);
                 return new CmsJsonAccessPolicy(false);
             }
         });

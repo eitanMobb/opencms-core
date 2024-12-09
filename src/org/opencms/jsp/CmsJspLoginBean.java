@@ -183,7 +183,7 @@ public class CmsJspLoginBean extends CmsJspActionElement {
                     userName,
                     requestContext.addSiteRoot(requestContext.getUri()),
                     requestContext.getRemoteAddress()),
-                currentLoginException);
+                "Unexpected error: mobb-9868f37af562fae7b954f57d35c0e8b5");
         }
     }
 

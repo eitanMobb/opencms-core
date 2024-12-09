@@ -150,7 +150,7 @@ public class CmsXsltContext {
             newW3cDoc = new DOMWriter().write(dom4jDoc);
             result.add(newW3cDoc.getDocumentElement().getFirstChild());
         } catch (DocumentException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-94c04b5fa5bb07a5e7a78be606a44d53");
         }
         return new NodeList() {
 

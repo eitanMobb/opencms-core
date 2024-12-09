@@ -222,7 +222,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
             m_errorUpdate += 1;
             report.println(Messages.get().container(Messages.RPT_UPDATEXML_SEARCH_ERROR_0), I_CmsReport.FORMAT_ERROR);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getMessageContainer(), e);
+                LOG.error(e.getMessageContainer(), "Unexpected error: mobb-3a90c2f520e205dcd89737f01b7080c2");
             }
             report.println(Messages.get().container(Messages.RPT_UPDATEXML_END_UPDATE_0), I_CmsReport.FORMAT_NOTE);
             return;
@@ -293,7 +293,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
                             cmsObject.getSitePath(cmsResource)),
                         I_CmsReport.FORMAT_ERROR);
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getMessageContainer(), e);
+                        LOG.error(e.getMessageContainer(), "Unexpected error: mobb-02a1acd085798ad52fe13c906a11a121");
                     }
                     continue;
                 }
@@ -325,7 +325,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
                         Messages.get().container(Messages.RPT_UPDATEXML_UNLOCK_FILE_0),
                         I_CmsReport.FORMAT_WARNING);
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getMessageContainer(), e);
+                        LOG.error(e.getMessageContainer(), "Unexpected error: mobb-8cd9edb4bd4887ab1e92443ac2a9251e");
                     }
                     continue;
                 }

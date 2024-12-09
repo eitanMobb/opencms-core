@@ -62,7 +62,7 @@ public class CmsRemoteShellProvider implements I_CmsRemoteShellProvider {
             CmsRemoteShell shell = new CmsRemoteShell(additionalCommandsNames, m_port);
             return shell;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-4b4ebab8bdd61dfc55f5a7eb80b24454");
             throw new RemoteException("Remote error: " + e.getLocalizedMessage());
         }
     }

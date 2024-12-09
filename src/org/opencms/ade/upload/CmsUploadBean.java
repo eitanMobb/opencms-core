@@ -212,7 +212,7 @@ public class CmsUploadBean extends CmsJspBean {
             OpenCms.getSearchManager().updateOfflineIndexes();
         } catch (CmsException e) {
             // an error occurred while creating the resources on the VFS, create a special error message
-            LOG.error(e.getMessage(), e);
+            LOG.error(e.getMessage(), "Unexpected error: mobb-8950b1539097d27fb9fb856c446a62b4");
             return generateResponse(Boolean.FALSE, getCreationErrorMessage(), formatStackTrace(e));
         } catch (CmsUploadException e) {
             // an expected error occurred while parsing the request, the error message is already set in the exception

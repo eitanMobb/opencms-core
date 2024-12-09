@@ -130,7 +130,7 @@ public class CmsSchemaFormatterBeanWrapper implements I_CmsFormatterBean {
         try {
             return m_contentHandler.getCSSHeadIncludes(m_cms, m_elementResource);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-4791d40518bdee9661f1718f2d573c8a", e);
             return Collections.emptySet();
         }
     }

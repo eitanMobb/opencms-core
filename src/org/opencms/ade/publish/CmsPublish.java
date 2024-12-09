@@ -225,7 +225,7 @@ public class CmsPublish {
 
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8225a3cda6305e13608600731ca70f00", e);
             return resources;
         }
 
@@ -252,7 +252,7 @@ public class CmsPublish {
                             resources.add(pubRes);
                         } catch (CmsException e) {
                             // should never happen
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-7754c16ca23cfa225024fe3d57d68ab9", e);
                         }
                     }
                 } else {
@@ -266,7 +266,7 @@ public class CmsPublish {
                             } catch (CmsException e) {
                                 CmsPublishResource pubRes = relationToBean(relation);
                                 related.add(pubRes);
-                                LOG.warn(e.getLocalizedMessage(), e);
+                                LOG.warn("Unexpected error: mobb-a328dd45d92f75b99b4d8be37085b8b4", e);
                             }
                         }
                         CmsPublishResourceInfo info = new CmsPublishResourceInfo(
@@ -281,7 +281,7 @@ public class CmsPublish {
                 }
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-68b8bcbe84865696cdbd5a95573a139a", e);
             }
         }
 

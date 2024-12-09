@@ -360,7 +360,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                 }
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-06d2dd47b3f7707a4f1389003d852f25", e);
             }
         }
         CmsLog.INIT.info(
@@ -458,7 +458,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                 || CmsFormatterConfigurationCache.TYPE_FLEX_FORMATTER.equals(resType.getTypeName()))
                 && CmsResource.getParentFolder(rootPath).endsWith("/.content/.formatters");
         } catch (Exception e) {
-            LOG.debug(e.getMessage(), e);
+            LOG.debug("Unexpected error: mobb-46b98f766922953f18ffaff01ade3702", e);
         }
         return result;
     }

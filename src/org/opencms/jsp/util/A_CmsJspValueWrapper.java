@@ -405,7 +405,7 @@ abstract class A_CmsJspValueWrapper extends AbstractCollection<String> {
             m_containerPageWrapper = new CmsJspContainerPageWrapper(page.getContainerPage(m_cms));
             return m_containerPageWrapper;
         } catch (Exception e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-3f9f90f3b1d10c240d624fe294ef2631", e);
             return null;
         }
     }
