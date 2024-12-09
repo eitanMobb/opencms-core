@@ -495,7 +495,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                 file.delete();
                 // write log message
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(Messages.get().getBundle().key(Messages.LOG_FILE_DELETED_1, getRfsName(file, vfsName)));
+                    LOG.info("Unexpected error: mobb-3a4142240ab93ea55c2238356d524fc2");
                 }
                 // delete the parent folder if it is empty (don't do this recursive)
                 File parent = new File(file.getParent());
