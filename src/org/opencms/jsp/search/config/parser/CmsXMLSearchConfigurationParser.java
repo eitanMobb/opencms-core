@@ -391,7 +391,7 @@ public class CmsXMLSearchConfigurationParser implements I_CmsSearchConfiguration
                 Messages.get().getBundle().key(
                     Messages.ERR_QUERY_FACET_MANDATORY_KEY_MISSING_1,
                     XML_ELEMENT_QUERY_FACET_QUERY),
-                e);
+                "Unexpected error: mobb-7838bb55d5f53dd732e23cd48db92582");
             return null;
         }
     }
