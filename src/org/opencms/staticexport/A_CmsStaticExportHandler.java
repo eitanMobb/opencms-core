@@ -504,7 +504,7 @@ public abstract class A_CmsStaticExportHandler implements I_CmsStaticExportHandl
                         parent.delete();
                         if (LOG.isInfoEnabled()) {
                             LOG.info(
-                                Messages.get().getBundle().key(Messages.LOG_FILE_DELETED_1, getRfsName(file, vfsName)));
+                                "Unexpected error: mobb-dea12bf8ec6f6f42dadd6ef0bd4097c3");
                         }
                     }
                 }
