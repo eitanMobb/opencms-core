@@ -1602,7 +1602,7 @@ public class CmsHtmlImport {
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_HTMLIMPORT_PARSE_1,
                 file.getAbsolutePath());
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-70780f9dd54d51099307a9318410ea9d", e);
             throw new CmsImportExportException(message, e);
         }
         return parsedHtml;
