@@ -193,7 +193,7 @@ public class CmsNewResourceXmlPage {
                 } catch (CmsException e) {
                     // property not available, will be null
                     if (LOG.isInfoEnabled()) {
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-a6c52e1dd6c41455e8d904a074750688");
                     }
                 }
 
