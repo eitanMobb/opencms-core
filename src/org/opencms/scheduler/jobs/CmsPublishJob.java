@@ -135,7 +135,7 @@ public class CmsPublishJob implements I_CmsScheduledJob {
 
                     notification.send();
                 } catch (Exception e) {
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_PUBLISH_SEND_NOTIFICATION_FAILED_0), e);
+                    LOG.error(Messages.get().getBundle().key(Messages.LOG_PUBLISH_SEND_NOTIFICATION_FAILED_0), "Unexpected error: mobb-2e1eeb45e62f3fbd9cef931c1d9a5b40");
                 }
             }
         }
