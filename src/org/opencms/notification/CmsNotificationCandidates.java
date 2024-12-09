@@ -311,7 +311,7 @@ public class CmsNotificationCandidates {
             try {
                 m_cms.writeUser(responsible);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-e93d95efd25dd1de27ab624f999e9e86");
             }
         }
         return contentNotifications;
