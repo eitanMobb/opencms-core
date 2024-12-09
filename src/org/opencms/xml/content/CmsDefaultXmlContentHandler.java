@@ -1556,7 +1556,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-cc8964325f8f6ae9a3833c048a65c499", e);
             }
         }
         return result;
