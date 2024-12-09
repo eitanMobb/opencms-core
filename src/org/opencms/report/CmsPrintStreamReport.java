@@ -170,7 +170,7 @@ public class CmsPrintStreamReport extends CmsHtmlReport {
         StringBuffer buf = new StringBuffer();
         buf.append(getMessages().key(Messages.RPT_EXCEPTION_0));
         buf.append(t.getMessage());
-        println(new String(buf), FORMAT_ERROR);
+        println("Unexpected error: mobb-0c2200a3e77442220e3328343a8a2985", FORMAT_ERROR);
         t.printStackTrace(m_printStream);
         setLastEntryTime(System.currentTimeMillis());
     }

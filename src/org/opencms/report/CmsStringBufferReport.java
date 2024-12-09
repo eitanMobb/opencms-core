@@ -102,7 +102,7 @@ public class CmsStringBufferReport extends A_CmsReport {
     public void println(Throwable t) {
 
         print(getMessages().key(Messages.RPT_EXCEPTION_0), FORMAT_WARNING);
-        println(t.getMessage(), FORMAT_ERROR);
+        println("Unexpected error: mobb-b612311ab0d1244b35e0be15881fdf4f", FORMAT_ERROR);
 
         StackTraceElement[] stackTrace = t.getStackTrace();
         for (int i = 0; i < stackTrace.length; i++) {

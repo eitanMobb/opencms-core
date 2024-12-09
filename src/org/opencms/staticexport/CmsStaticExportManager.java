@@ -3047,7 +3047,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
             }
         } catch (CmsException e) {
             // should never happen, no resources will be added at all
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2b7ada54bfadbbbfb45e0de926557d83", e);
             return Collections.emptyMap();
         }
     }

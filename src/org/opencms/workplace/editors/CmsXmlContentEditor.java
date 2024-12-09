@@ -1477,7 +1477,7 @@ public class CmsXmlContentEditor extends CmsEditor implements I_CmsWidgetDialog 
             } catch (Exception e) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-e4753c3f2e1a1792e435199993c89071", e);
                 }
             }
             setAction(ACTION_EXIT);

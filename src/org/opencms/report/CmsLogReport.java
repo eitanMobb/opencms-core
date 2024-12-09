@@ -139,7 +139,7 @@ public class CmsLogReport extends A_CmsReport {
             message.append(t.getMessage());
             m_buffer.append(message);
             addError(message.toString());
-            CmsLog.getLog(m_channel).info(m_buffer.toString(), t);
+            CmsLog.getLog(m_channel).info(m_buffer.toString(), "Unexpected error: mobb-2c7830faf1f06fcddff71b97ec46ca4a");
         }
         m_buffer = new StringBuffer();
         setLastEntryTime(System.currentTimeMillis());
