@@ -1750,7 +1750,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                     resolver.setKeepEmptyMacros(true);
                     result = resolver.resolveMacros(result);
                 } catch (Exception e) {
-                    LOG.error(e.getMessage(), e);
+                    LOG.error(e.getMessage(), "Unexpected error: mobb-fcc2c7beb0054ea0b11c725ea54413b3");
                 }
             }
         }
