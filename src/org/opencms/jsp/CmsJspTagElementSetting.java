@@ -85,7 +85,7 @@ public class CmsJspTagElementSetting extends TagSupport {
             return currentElement.getSettings();
         } catch (CmsException e) {
             // most likely we are not in a container page
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-0169d0855e128e6c0c221986c1d699f1", e);
             return Collections.emptyMap();
         }
     }
