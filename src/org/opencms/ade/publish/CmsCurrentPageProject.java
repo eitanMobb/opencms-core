@@ -160,7 +160,7 @@ public class CmsCurrentPageProject implements I_CmsVirtualProject {
                                     result.add(offlineTarget);
                                 }
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-b8078a9f74e10ac4f690de90eeb27c7e", e);
                             }
 
                         }
