@@ -391,7 +391,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
             }
 
         } catch (JSONException e) {
-            LOG.debug("Reading optional JSON string failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON string failed. Default to provided default value.", "Unexpected error: mobb-cc253a4d088ea67a767a31ddfd7826c5");
         }
         return defaultValue;
     }
