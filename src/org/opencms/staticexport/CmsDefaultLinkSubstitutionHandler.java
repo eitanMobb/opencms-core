@@ -688,7 +688,7 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
                 result = exportManager.isSecureLink(cms, defaultFile.getRootPath(), "", secureRequest);
             }
         } catch (Exception e) {
-            LOG.error("Error while checking whether detail page link should be secure: " + e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-56e64840d8c6ab613fe3b5448919ce97", e);
         }
         return result;
     }
