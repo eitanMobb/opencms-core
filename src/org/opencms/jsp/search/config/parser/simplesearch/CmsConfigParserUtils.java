@@ -311,7 +311,7 @@ public final class CmsConfigParserUtils {
                                 cms.getRequestContext().addSiteRoot(sitePath)).getPath();
                             restrictionCategories.add(path);
                         } catch (CmsException e) {
-                            LOG.warn(e.getLocalizedMessage(), e);
+                            LOG.warn("Unexpected error: mobb-4e64b66e35a41c16dd464c74596ad91b", e);
                         }
                     }
                     String restrictionCategoryMode = content.getValue(
