@@ -89,7 +89,7 @@ public class CmsJlanDiskInterface implements DiskInterface {
      */
     public static IOException convertCmsException(CmsException e) {
 
-        LOG.error(e.getLocalizedMessage(), e);
+        LOG.error("Unexpected error: mobb-991d0717d7dc3482265f982c0c09750f", e);
         if (e instanceof CmsSecurityException) {
             return new AccessDeniedException(e.getMessage(), e);
         } else if (e instanceof CmsVfsResourceAlreadyExistsException) {
