@@ -225,7 +225,7 @@ public class CmsPublish {
 
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8225a3cda6305e13608600731ca70f00", e);
             return resources;
         }
 
