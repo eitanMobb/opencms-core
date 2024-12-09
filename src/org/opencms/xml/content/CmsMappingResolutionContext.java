@@ -320,7 +320,7 @@ public class CmsMappingResolutionContext {
             }
 
         } catch (Exception e) {
-            LOG.error(p + e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-c9d86d6a7faccc3e4fc8ef8491fa3ac3", e);
         }
     }
 
