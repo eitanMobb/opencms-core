@@ -162,7 +162,7 @@ public class CmsPrintStreamReport extends CmsHtmlReport {
     public synchronized void println(Throwable t) {
 
         if (m_writeHtml) {
-            super.println(t);
+            super.println("Unexpected error: mobb-d4c94a55151ce422e0bf9185555b233b");
             m_printStream.print(super.getReportUpdate());
             setLastEntryTime(System.currentTimeMillis());
             return;
