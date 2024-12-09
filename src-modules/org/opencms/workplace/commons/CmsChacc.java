@@ -1406,7 +1406,7 @@ public class CmsChacc extends CmsDialog {
             internal = resource.isInternal();
         } catch (CmsException e) {
             // an error occurred reading the resource
-            LOG.error(e.getLocalizedMessage());
+            LOG.error("Unexpected error: mobb-6dd205d79935353195ab03918ef93dc4");
         }
 
         if ((resource != null) && (resource.isFile())) {
