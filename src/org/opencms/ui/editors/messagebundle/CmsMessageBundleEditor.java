@@ -532,7 +532,7 @@ I_OptionListener, I_CmsHasShortcutActions {
             disableSaveButtons();
 
         } catch (CmsException e) {
-            LOG.error(m_messages.key(Messages.ERR_SAVING_CHANGES_0), e);
+            LOG.error(m_messages.key(Messages.ERR_SAVING_CHANGES_0), "Unexpected error: mobb-652b36dae09215acb7b2efc8b80df573");
             CmsErrorDialog.showErrorDialog(m_messages.key(Messages.ERR_SAVING_CHANGES_0), e);
         }
 
