@@ -470,7 +470,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                                     rootCms,
                                     rootCms.readResource(page.getStructureId(), CmsResourceFilter.ALL));
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-95827da9fd14bfe7a72870ef8495e552", e);
                             }
                         }
                     }
