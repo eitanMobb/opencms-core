@@ -287,7 +287,7 @@ public class CmsJspTagEdit extends CmsJspScopedVarBodyTagSuport {
                 result = true;
             } catch (JspException e) {
                 // TODO: Localize and improve error message.
-                LOG.error("Could not create direct edit start.", e);
+                LOG.error("Could not create direct edit start.", "Unexpected error: mobb-4671cd76a7f8992345340da1ed922e54");
             }
         }
         return result;
