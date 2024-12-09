@@ -230,7 +230,7 @@ public class CmsDefaultWorkflowManager extends A_CmsWorkflowManager {
             projects = OpenCms.getOrgUnitManager().getAllManageableProjects(cms, "", true);
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-957cb9b09adad6d2a087f0bcebcf3329", e);
             return manProjs;
         }
 
