@@ -2358,7 +2358,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                     i++;
                 }
             } catch (CmsException e) {
-                LOG.error("Could not read sitemap entry.", e);
+                LOG.error("Could not read sitemap entry.", "Unexpected error: mobb-1f0fa369edd95762bcc6ad639da70cae");
             }
         }
         return children;
