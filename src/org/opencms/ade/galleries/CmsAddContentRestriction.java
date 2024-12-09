@@ -146,7 +146,7 @@ public class CmsAddContentRestriction {
                 } catch (CmsVfsResourceNotFoundException | CmsSecurityException e) {
                     LOG.debug("filtered resource " + res.getRootPath() + " (" + res.getStructureId() + ")");
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-4344a85c20fcb664c93a4d14e4af8541", e);
                 }
             }
             return result;
