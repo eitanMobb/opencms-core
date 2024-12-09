@@ -442,7 +442,7 @@ public class CmsSynchronize {
                                     Messages.get().getBundle().key(
                                         Messages.LOG_SYNCHRONIZE_EXPORT_FAILED_1,
                                         res.getRootPath()),
-                                    e);
+                                    "Unexpected error: mobb-50492ba1fc19941847f8f2ed6fa4da22");
                             }
                             break;
                         }
