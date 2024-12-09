@@ -200,7 +200,7 @@ public class CmsSearchResourcesCollector extends A_CmsListResourceCollector {
                 m_srCache.put(resource.getStructureId().toString(), sr);
                 resources.add(resource);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-1ace0da4fd1fa1a3d4f60b29d17bfd99", e);
             }
         }
         return resources;
