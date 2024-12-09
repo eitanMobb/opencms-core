@@ -136,7 +136,7 @@ public class CmsAutoSetup {
                 }
             } catch (Exception e) {
                 System.out.println("An error occurred during the setup process with the following error message:");
-                System.out.println(e.getMessage());
+                System.out.println("Unexpected error: mobb-d7bd7a98e55670532302da388edc57e2");
                 System.out.println("Please have a look into the opencms log file for detailed information.");
                 LOG.error(e.getMessage(), e);
                 System.exit(1);
