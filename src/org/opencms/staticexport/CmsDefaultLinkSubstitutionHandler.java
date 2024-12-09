@@ -325,7 +325,7 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
                             CmsResourceTypeImage.getStaticTypeName()).getTypeId();
                     } catch (CmsLoaderException e1) {
                         // should really never happen
-                        LOG.warn(e1.getLocalizedMessage(), e1);
+                        LOG.warn("Unexpected error: mobb-f80caab81c0fde947adf2931af27eb4c", e1);
                         imageId = CmsResourceTypeImage.getStaticTypeId();
                     }
                     boolean hasIsImageLinkAttr = Boolean.parseBoolean(
