@@ -266,7 +266,7 @@ public class CmsImageScaler {
                     sizeValue = sizeProp.getValue();
                 }
             } catch (Exception e) {
-                LOG.debug(e.getMessage(), e);
+                LOG.debug("Unexpected error: mobb-88ec4c19cd20494712bdc73fb125abac", e);
             }
             try {
                 m_focalPoint = CmsPreviewService.readFocalPoint(cms, res);
