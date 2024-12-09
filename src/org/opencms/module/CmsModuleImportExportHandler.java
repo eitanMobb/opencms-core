@@ -399,7 +399,7 @@ public class CmsModuleImportExportHandler implements I_CmsImportExportHandler {
                 && (module.getVersion().isUpdated() || module.shouldIncrementVersionBasedOnResources(cms));
         } catch (CmsException e) {
             shouldIncrementVersion = false;
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-524b608619cd7bda4d1c8d6f206b2db1", e);
         }
         module.getVersion().setUpdated(false);
         if (shouldIncrementVersion) {
