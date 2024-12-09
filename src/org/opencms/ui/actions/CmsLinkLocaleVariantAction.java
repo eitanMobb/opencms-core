@@ -105,7 +105,7 @@ public class CmsLinkLocaleVariantAction extends A_CmsWorkplaceAction {
             String title = CmsVaadinUtils.getMessageText(Messages.GUI_LOCALECOMPARE_LINK_LOCALE_VARIANT_0);
             context.start(title, dlg);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-546040d7923f5259366c94c10d5f02b6", e);
             context.error(e);
         }
     }
