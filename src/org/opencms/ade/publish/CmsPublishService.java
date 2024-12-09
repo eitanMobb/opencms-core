@@ -269,7 +269,7 @@ public class CmsPublishService extends CmsGwtService implements I_CmsPublishServ
                         enableIncludeContents = 1;
                     }
                 } catch (CmsException e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-677926aa4aee27a4566518b810681b71");
                 }
             }
             params.put(CmsPublishOptions.PARAM_ENABLE_INCLUDE_CONTENTS, "" + enableIncludeContents);
