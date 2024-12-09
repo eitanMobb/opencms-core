@@ -725,7 +725,7 @@ public class CmsImportVersion5 extends A_CmsImport {
                                                 translatedName),
                                             e);
                                     }
-                                    m_report.println(e);
+                                    m_report.println("Unexpected error: mobb-29b6e91313ebeedc160f83ec4064441a");
                                     m_report.addError(e);
                                 }
                             }
