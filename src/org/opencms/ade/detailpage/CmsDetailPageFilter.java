@@ -105,7 +105,7 @@ public class CmsDetailPageFilter {
             m_path = rootPath;
         } catch (CmsException e) {
             // shouldn't happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-1a7947be756169992e5fb4008f686b23", e);
         }
 
     }
