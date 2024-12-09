@@ -3536,7 +3536,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                         }
 
                     } catch (Throwable t) {
-                        LOG.error(Messages.get().getBundle().key(Messages.LOG_CLOSE_CONN_POOL_ERROR_1, pool), t);
+                        LOG.error(Messages.get().getBundle().key(Messages.LOG_CLOSE_CONN_POOL_ERROR_1, pool), "Unexpected error: mobb-cc08b7fbe0404df8401be56452e0079a");
                     }
                 }
                 m_pools.clear();
