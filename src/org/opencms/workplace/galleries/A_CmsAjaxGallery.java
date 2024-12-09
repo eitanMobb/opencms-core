@@ -961,7 +961,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             jsonObj.put("description", CmsStringUtil.escapeJavaScript(desc));
         } catch (JSONException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-1c4e5915601abdd17fc58dd7f823eb4f", e);
             }
         }
     }
