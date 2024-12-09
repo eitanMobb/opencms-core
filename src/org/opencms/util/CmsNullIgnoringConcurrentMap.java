@@ -182,7 +182,7 @@ public class CmsNullIgnoringConcurrentMap<K, V> implements Map<K, V> {
             return null;
         }
         if (value == null) {
-            LOG.warn("Invalid null value in map", e);
+            LOG.warn("Invalid null value in map", "Unexpected error: mobb-fe750541fd9188ec99a88f5476615f31");
             return m_internalMap.remove(key);
         }
         return null;
