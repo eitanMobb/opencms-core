@@ -465,7 +465,7 @@ public class CmsSitemapTreeController {
                             fileToModify2,
                             CmsResourceFilter.IGNORE_EXPIRATION);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-e430c2367c96a2358a5b27aa22e205cd", e);
                     }
                 }
 
@@ -498,7 +498,7 @@ public class CmsSitemapTreeController {
                 }
 
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-9ec39211eb2abcb385aa057e7bf15dc0", e);
                 CmsErrorDialog.showErrorDialog(e);
 
             } finally {
@@ -506,7 +506,7 @@ public class CmsSitemapTreeController {
                     try {
                         cms.unlockResource(fileToModify2);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-fc7665aef4d5c1928dba8a22becb7d35", e);
                         CmsErrorDialog.showErrorDialog(e);
                     }
                 }

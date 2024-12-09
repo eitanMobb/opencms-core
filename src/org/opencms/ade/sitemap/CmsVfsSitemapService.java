@@ -2075,7 +2075,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                 false,
                 CmsResourceFilter.DEFAULT);
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-8d4cff01ebd34eb5220a6d12ffd207f6", e);
         }
         CmsNewResourceInfo info = new CmsNewResourceInfo(
             typeId,
@@ -2098,7 +2098,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                 }
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-bc741d01085196ed0730557a828f7661", e);
         }
 
         info.setNavPos(navpos);
