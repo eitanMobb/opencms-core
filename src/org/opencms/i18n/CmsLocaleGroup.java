@@ -298,7 +298,7 @@ public class CmsLocaleGroup {
                 false);
             m_noTranslation = noTranslationProp.getValue();
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e2cf813bab96efe42c49491992082467", e);
 
         }
     }
