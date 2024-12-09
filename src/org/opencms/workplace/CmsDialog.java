@@ -1348,7 +1348,7 @@ public class CmsDialog extends CmsToolDialog {
         try {
             return getCms().readResource(getParamResource(), CmsResourceFilter.ALL).getSiblingCount() > 1;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(getLocale()), e);
+            LOG.error(e.getLocalizedMessage(getLocale()), "Unexpected error: mobb-d3927fffab16ba00ef42fbc2aad9833a");
             return false;
         }
 
