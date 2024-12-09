@@ -552,7 +552,7 @@ public class CmsJlanDiskInterface implements DiskInterface {
         try {
             cms.unlockResource(path);
         } catch (Throwable e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-6c4fdb4cfd5ed8f079c6ea75bd946c65", e);
         }
 
     }
