@@ -216,7 +216,7 @@ public class CmsFlexBucketConfiguration {
             props.load(new InputStreamReader(new ByteArrayInputStream(configFile.getContents()), encoding));
             return loadFromProperties(props);
         } catch (IOException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-6adbc29482a1a9f6a9bcf811f1f3ef8e");
         }
         return null;
     }
