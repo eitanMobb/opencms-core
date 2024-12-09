@@ -360,7 +360,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                 }
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-06d2dd47b3f7707a4f1389003d852f25", e);
             }
         }
         CmsLog.INIT.info(
