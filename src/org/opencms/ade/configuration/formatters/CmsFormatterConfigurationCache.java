@@ -249,7 +249,7 @@ public class CmsFormatterConfigurationCache implements I_CmsGlobalConfigurationC
             CmsResourceFilter filter = CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(type);
             settingConfigResources.addAll(m_cms.readResources("/", filter));
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-2f95585dbdb08ce8dadcd2c73b8013cc", e);
         }
 
         Map<CmsUUID, Map<CmsSharedSettingKey, CmsXmlContentProperty>> sharedSettingsByStructureId = new HashMap<>();
