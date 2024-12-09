@@ -199,7 +199,7 @@ public class CmsValueDiff implements I_CmsDiffProvider {
         } catch (CmsException e) {
             String rootPath = file1.getRootPath();
             LOG.error(
-                "Could not unmarshal file " + rootPath + " for determining encoding: " + e.getLocalizedMessage(),
+                "Unexpected error: mobb-e1e2b1945c966e8f28b875376e48321b",
                 e);
         }
         String text1 = decode(file1.getContents(), encoding);
