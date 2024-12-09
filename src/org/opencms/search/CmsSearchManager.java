@@ -2725,7 +2725,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             containerPageTypeId = CmsResourceTypeXmlContainerPage.getContainerPageTypeId();
         } catch (CmsLoaderException e) {
             // will happen during setup, when container page type is not available yet
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-e0e20e5734dc09ff2002871802c96fc0", e);
         }
         if (containerPageTypeId != -1) {
             for (CmsPublishedResource pubRes : updateResourcesToCheck) {
