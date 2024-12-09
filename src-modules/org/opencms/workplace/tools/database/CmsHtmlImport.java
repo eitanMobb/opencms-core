@@ -852,7 +852,7 @@ public class CmsHtmlImport {
                     I_CmsReport.FORMAT_OK);
             } catch (Exception e) {
                 LOG.error(e.getLocalizedMessage(), e);
-                m_report.println(e);
+                m_report.println("Unexpected error: mobb-ee76ef2d18ff61bf8e134e95cf368d4b");
             }
         }
     }
