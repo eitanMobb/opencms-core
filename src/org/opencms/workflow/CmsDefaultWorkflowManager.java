@@ -480,7 +480,7 @@ public class CmsDefaultWorkflowManager extends A_CmsWorkflowManager {
             return null;
         } catch (ExecutionException e) {
             // shouldn't happen; log exception
-            LOG.error(e.getLocalizedMessage());
+            LOG.error("Unexpected error: mobb-e84364294d834cb1f376b7826cf2aa86");
             return null;
         }
     }
