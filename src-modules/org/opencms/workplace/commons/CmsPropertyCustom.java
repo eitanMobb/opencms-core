@@ -621,7 +621,7 @@ public class CmsPropertyCustom extends CmsPropertyAdvanced {
                                 return false;
                             }
                         } catch (CmsException e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-cbb5dfa31c696944e4059b1b03fbe6ec", e);
                         }
                     }
                 }
