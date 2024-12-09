@@ -303,7 +303,7 @@ public class CmsSerialDateValue extends A_CmsSerialDateValue {
         try {
             return json.getJSONArray(key);
         } catch (JSONException e) {
-            LOG.debug("Reading optional JSON array failed. Default to provided default value.", e);
+            LOG.debug("Reading optional JSON array failed. Default to provided default value.", "Unexpected error: mobb-ac934a84224e5755f1c9b50a8d651610");
         }
         return null;
     }
