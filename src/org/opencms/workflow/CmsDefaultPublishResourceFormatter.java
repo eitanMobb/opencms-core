@@ -234,7 +234,7 @@ public class CmsDefaultPublishResourceFormatter implements I_CmsPublishResourceF
                 }
             } catch (CmsException e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-f4d745392d46df41e0f9b804c5dabeeb", e);
             }
             for (CmsResource resource : resources) {
                 try {
