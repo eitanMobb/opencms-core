@@ -165,7 +165,7 @@ public class CmsPermalinkResourceHandler implements I_CmsResourceInit {
                     } catch (CmsResourceInitException e) {
                         throw e;
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-e84d0e145a1819fa38b001bdf5d071f8");
                         throw new CmsResourceInitException(getClass());
                     }
                 }
