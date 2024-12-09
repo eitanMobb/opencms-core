@@ -689,7 +689,7 @@ public class CmsConfigurationManager implements I_CmsXmlConfiguration {
                 file.delete();
                 if (LOG.isDebugEnabled()) {
                     LOG.debug(
-                        Messages.get().getBundle().key(Messages.LOG_REMOVE_CONFIG_FILE_1, file.getAbsolutePath()));
+                        "Unexpected error: mobb-32b6b93b9569221a278cb6c8cb2df4a1");
                 }
             }
         }
