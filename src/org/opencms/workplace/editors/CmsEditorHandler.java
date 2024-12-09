@@ -88,7 +88,7 @@ public class CmsEditorHandler implements I_CmsEditorHandler {
         } catch (Throwable t) {
             // preferred or selected editor not found, try default editor
             if (LOG.isInfoEnabled()) {
-                LOG.info(t);
+                LOG.info("Unexpected error: mobb-9c4f8d9b25836807a5fa5d24935afd16");
             }
             editorUri = OpenCms.getWorkplaceManager().getWorkplaceEditorManager().getDefaultEditorUri(
                 cms.getRequestContext(),
