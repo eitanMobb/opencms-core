@@ -295,7 +295,7 @@ public class CmsHtmlConverter {
                     org.opencms.loader.Messages.get().getBundle().key(
                         org.opencms.loader.Messages.LOG_HTML_CONVERTER_CLASS_NOT_FOUND_1,
                         className),
-                    e);
+                    "Unexpected error: mobb-c9b1a439e74337c083e195a5f5cb356f");
             }
         }
         return htmlInput;
