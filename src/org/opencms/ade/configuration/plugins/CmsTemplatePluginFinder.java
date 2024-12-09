@@ -301,7 +301,7 @@ public class CmsTemplatePluginFinder {
         try {
             return getActivePlugins(collectPluginsForCurrentPage(m_standardContextBean));
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-21fc7962a5008549b7145f3eb44d8c1a", e);
             return ArrayListMultimap.create();
         }
     }
