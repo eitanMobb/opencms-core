@@ -113,7 +113,7 @@ public class CmsLockAction extends A_CmsWorkplaceAction {
                     if (storedException == null) {
                         storedException = e;
                     }
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-15c54d52d87cb680036b57f6f2a9b042", e);
                 }
 
             }
