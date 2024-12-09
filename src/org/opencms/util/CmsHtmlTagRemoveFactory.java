@@ -634,7 +634,7 @@ public final class CmsHtmlTagRemoveFactory extends PrototypicalNodeFactory {
             if (LOG.isErrorEnabled()) {
                 // log here, as htmlparser 1.5 did swallow exceptions from here and threw NPEs from
                 // other places
-                LOG.error(rte);
+                LOG.error("Unexpected error: mobb-7883cdd2c3cb29fc10cd02ad44de6e14");
             }
             throw rte;
         }
