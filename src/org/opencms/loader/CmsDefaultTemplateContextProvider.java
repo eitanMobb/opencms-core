@@ -204,7 +204,7 @@ public class CmsDefaultTemplateContextProvider implements I_CmsTemplateContextPr
                 m_cache.putCachedObject(m_cms, getConfigurationPropertyPath(), map);
                 return map;
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-a2d08a8b249870898770efa7068f4cac", e);
                 return Collections.emptyMap();
             }
         }
