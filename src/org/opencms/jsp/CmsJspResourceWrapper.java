@@ -670,7 +670,7 @@ public class CmsJspResourceWrapper extends CmsResource {
                 m_propertiesSearch = CmsProperty.toMap(properties);
             } catch (CmsException e) {
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getMessage(), e);
+                    LOG.debug(e.getMessage(), "Unexpected error: mobb-dde5a1b28b8adb450921fc429c9e94fa");
                 }
             }
         }
