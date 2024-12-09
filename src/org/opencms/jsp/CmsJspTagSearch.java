@@ -446,7 +446,7 @@ public class CmsJspTagSearch extends CmsJspScopedVarBodyTagSuport implements I_C
                 m_searchController.getCommon().getConfig().getMaxReturnedResults());
             return new CmsSearchResultWrapper(m_searchController, solrResultList, query, m_cms, null);
         } catch (CmsSearchException e) {
-            LOG.warn(Messages.get().getBundle().key(Messages.LOG_TAG_SEARCH_SEARCH_FAILED_0), e);
+            LOG.warn(Messages.get().getBundle().key(Messages.LOG_TAG_SEARCH_SEARCH_FAILED_0), "Unexpected error: mobb-38efb71bea0b074dfe343d5a000eb62b");
             return new CmsSearchResultWrapper(m_searchController, null, query, m_cms, e);
         }
     }
