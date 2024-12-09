@@ -132,7 +132,7 @@ public class CmsDefaultTemplateContextProvider implements I_CmsTemplateContextPr
                 result = property.getValue();
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a6afc599a4898b2aff96d6abccedb745", e);
         }
         return result;
     }
