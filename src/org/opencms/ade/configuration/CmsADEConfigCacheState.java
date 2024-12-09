@@ -148,7 +148,7 @@ public class CmsADEConfigCacheState {
             m_folderTypes = computeFolderTypes();
         } catch (Exception e) {
             m_folderTypes = Maps.newHashMap();
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-656851718d0f981b8bb7f420b6ff3769", e);
         }
         CacheBuilder<?, ?> detailPageCacheBuilder = CacheBuilder.newBuilder().concurrencyLevel(8).expireAfterWrite(
             30,
