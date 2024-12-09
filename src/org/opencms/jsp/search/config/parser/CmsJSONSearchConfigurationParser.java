@@ -461,7 +461,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
         } catch (JSONException e) {
             if (null == m_baseConfig) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_GEOFILTER_CONFIG_0), e);
+                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_GEOFILTER_CONFIG_0), "Unexpected error: mobb-e8d21262779aa09f3ffd4f80bab3c8da");
                 }
                 return null;
             } else {

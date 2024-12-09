@@ -2350,7 +2350,7 @@ public class CmsSetupBean implements I_CmsShellCommands {
             configuration = getComponentsProperties(fileName);
         } catch (FileNotFoundException e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-b700bfe22eb5f92da38ebb2aca4e4ccd");
             }
             return;
         }
