@@ -417,7 +417,7 @@ public class CmsAvailabilityDialog extends CmsBasicDialog {
         try {
             parentResources = cms.readPath(res, CmsResourceFilter.IGNORE_EXPIRATION);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-f9f41a44991cb12b5b7c2a82d90e2448", e);
         }
 
         for (CmsResource resource : parentResources) {
