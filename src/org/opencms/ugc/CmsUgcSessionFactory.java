@@ -190,7 +190,7 @@ public class CmsUgcSessionFactory {
             try {
                 return new CmsUgcSession(m_adminCms, cms, config);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d425921cf21cf18a5b86eea8c61627a0", e);
                 throw new CmsUgcException(e);
             }
         } else {
