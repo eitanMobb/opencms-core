@@ -644,7 +644,7 @@ public class CmsSolrIndex extends CmsSearchIndex {
         try {
             OpenCms.getSearchManager().registerSolrIndex(this);
         } catch (CmsConfigurationException ex) {
-            LOG.error(ex.getMessage(), ex);
+            LOG.error(ex.getMessage(), "Unexpected error: mobb-ef73d7de0691b5f76bf1b3951c03359c");
             setEnabled(false);
         }
     }
