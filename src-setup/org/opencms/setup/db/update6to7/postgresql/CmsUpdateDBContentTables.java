@@ -74,7 +74,7 @@ public class CmsUpdateDBContentTables extends org.opencms.setup.db.update6to7.Cm
 
         String dataTablespace = m_poolData.get("dataTablespace");
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-d4c2f41c17c8190e9d7833cf7e2c8f71");
         if (!dbCon.hasTableOrColumn(TABLE_CMS_CONTENTS, null)) {
             String query = readQuery(QUERY_CREATE_CMS_CONTENTS_TABLE);
 
