@@ -2693,7 +2693,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                         getWorkplaceLocale());
                     subtitle = searchResult.getDescription();
                 } catch (CmsException e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-f12da1d7304f880bf92db6632ca7b6ba", e);
                 }
 
                 CmsNewResourceInfo info = new CmsNewResourceInfo(
