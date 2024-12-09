@@ -4365,7 +4365,7 @@ public final class CmsSecurityManager {
             throw se;
         } catch (CmsException e) {
             // ignore all other exceptions
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-2cdcf599e3a94ff1f4107b774b4b8d33", e);
         } finally {
             dbc.clear();
         }
