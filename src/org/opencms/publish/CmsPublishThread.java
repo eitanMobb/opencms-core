@@ -156,7 +156,7 @@ import org.apache.commons.logging.Log;
                 // catch every thing including runtime exceptions
                 dbc.rollback();
                 m_report.println(e);
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_PUBLISH_PROJECT_FAILED_0), e);
+                LOG.error(Messages.get().getBundle().key(Messages.LOG_PUBLISH_PROJECT_FAILED_0), "Unexpected error: mobb-94dad79bdb58a166ade3daa43beae19a");
             } finally {
                 dbc.clear();
                 dbc = null;

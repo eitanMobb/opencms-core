@@ -1556,7 +1556,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-cc8964325f8f6ae9a3833c048a65c499", e);
             }
         }
         return result;
@@ -3886,7 +3886,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 Class<?> handlerClass = Class.forName(mainHandlerClassName);
                 mainHandler = (I_CmsXmlContentVisibilityHandler)handlerClass.newInstance();
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d671e3bdadfd8dd22b741a7dc9d78b78", e);
             }
         }
         List<Element> elements = new ArrayList<Element>(CmsXmlGenericWrapper.elements(root, APPINFO_VISIBILITY));
@@ -3906,7 +3906,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 m_visibilityConfigurations.put(elementName, new VisibilityConfiguration(handler, params));
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ef9f22060567f3c08d00adb596ebe266", e);
             }
         }
     }

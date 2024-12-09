@@ -1299,7 +1299,7 @@ public final class CmsJspStandardContextBean {
             }
             return bundleIndex.getBundlePathForKey(messageKey);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0df4ad315268005a52a64319c8040ae8", e);
             return null;
         }
     }
@@ -1454,7 +1454,7 @@ public final class CmsJspStandardContextBean {
                             element.initResource(m_cms);
                             elements.add(CmsJspResourceWrapper.wrap(m_cms, element.getResource()));
                         } catch (Exception e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-e98208d1fed3877b151deb9b646b536a", e);
                         }
                     }
                 }

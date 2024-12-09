@@ -1073,7 +1073,7 @@ public class CmsFileTable extends CmsResourceTable {
                             } catch (CmsVfsResourceNotFoundException e) {
                                 LOG.info(e.getLocalizedMessage(), e);
                             } catch (CmsException e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-765caa9f15c0cde716090e063257fad8", e);
                             }
                         }
                     } else {
