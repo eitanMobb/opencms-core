@@ -252,7 +252,7 @@ public class CmsPublish {
                             resources.add(pubRes);
                         } catch (CmsException e) {
                             // should never happen
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-7754c16ca23cfa225024fe3d57d68ab9", e);
                         }
                     }
                 } else {
