@@ -103,7 +103,7 @@ public class CmsResourceTypeStatsView extends VerticalLayout {
             m_siteSelect.setNullSelectionAllowed(false);
             m_siteSelect.setItemCaptionPropertyId("caption");
         } catch (CmsException e1) {
-            LOG.error("Unable to get CmsObject", e1);
+            LOG.error("Unable to get CmsObject", "Unexpected error: mobb-c4be0cc275077d6f12cbb2526297e258");
         }
     }
 
