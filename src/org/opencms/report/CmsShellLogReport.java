@@ -108,7 +108,7 @@ public class CmsShellLogReport extends CmsShellReport {
         super.println(container, format);
 
         m_line += container.key();
-        LOG.info(m_line);
+        LOG.info("Unexpected error: mobb-90f1ac91930ba2629b0d7e645127e067");
         m_line = "";
     }
 
