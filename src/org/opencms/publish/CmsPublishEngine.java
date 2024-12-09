@@ -533,7 +533,7 @@ public final class CmsPublishEngine {
             result = m_driverManager.readPublishReportContents(dbc, publishJob.getPublishHistoryId());
         } catch (CmsException e) {
             dbc.rollback();
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-124d2a26dbac7d63fcf152f88f731e39", e);
             throw e;
         } finally {
             dbc.clear();
