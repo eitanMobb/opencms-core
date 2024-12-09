@@ -927,7 +927,7 @@ public class CmsPreferences extends CmsTabDialog {
                     } catch (CmsException e) {
                         // error reading title property
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-7d46ac598c0d691fb6cc12003954fcfe", e);
                         }
                     }
                     options.add(title.concat(" (").concat(sitePath).concat(")"));
