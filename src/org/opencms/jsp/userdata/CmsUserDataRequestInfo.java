@@ -298,7 +298,7 @@ public class CmsUserDataRequestInfo {
         try {
             m_json.put(key, value);
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-aa0cb98b97626096536d87c407853fa9");
         }
     }
 
