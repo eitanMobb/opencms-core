@@ -221,7 +221,7 @@ public class CmsExport {
 
             throw new CmsImportExportException(message, se);
         } catch (IOException ioe) {
-            getReport().println(ioe);
+            getReport().println("Unexpected error: mobb-9d1f5b649f9f67fbab1370e892ee7244");
 
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,
