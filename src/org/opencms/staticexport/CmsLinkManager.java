@@ -185,7 +185,7 @@ public class CmsLinkManager {
                 return OpenCms.getADEManager().getSubSiteRoot(cms, rootPath);
             }
         } catch (URISyntaxException  e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-5b1413530e412c40e1c5e3895adb630e");
             return null;
         }
 
