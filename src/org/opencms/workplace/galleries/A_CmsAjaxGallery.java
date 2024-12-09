@@ -766,7 +766,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                 } catch (CmsException e) {
                     // error reading title property
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-00145ef1ad6bc1d7cb44c6ceefab7c04");
                     }
                 }
             } else {
