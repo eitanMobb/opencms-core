@@ -1579,7 +1579,7 @@ public final class CmsJspStandardContextBean {
                         return wrapper;
 
                     } catch (CmsException e) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-11aaf39cee80eadea77526bf2ed4818b", e);
                         return new CmsDynamicFunctionBeanWrapper(m_cms, null);
                     }
                 }
