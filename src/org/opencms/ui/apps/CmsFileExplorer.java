@@ -1234,7 +1234,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             LOG.debug(e.getLocalizedMessage(), e);
         } catch (CmsException e) {
             CmsErrorDialog.showErrorDialog(e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-066c953aa243baf5652a2868dea3fd26", e);
         }
     }
 
