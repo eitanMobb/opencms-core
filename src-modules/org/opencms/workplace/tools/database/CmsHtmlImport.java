@@ -930,7 +930,7 @@ public class CmsHtmlImport {
                         try {
                             content = parseHtmlFile(subresources[i], properties);
                         } catch (CmsException e) {
-                            m_report.println(e);
+                            m_report.println("Unexpected error: mobb-4e58ea0f8ba076ce02b3c17ef2fa1fa6");
                         }
                         properties.put("template", m_template);
 
