@@ -291,7 +291,7 @@ public class CmsHtmlWidget extends A_CmsHtmlWidget implements I_CmsADEWidget {
         try {
             addEmbeddedGalleryOptions(result, cms, schemaType, messages, resource, contentLocale);
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-f6e2d1712a3a615c6492eea26c24141e");
         }
         return result.toString();
     }
