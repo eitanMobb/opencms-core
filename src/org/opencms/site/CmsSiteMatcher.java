@@ -288,7 +288,7 @@ public final class CmsSiteMatcher implements Cloneable, Serializable {
             res.m_redirect = m_redirect;
             return res;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-eef27446d0c6c00c78a7bb2c26be2fe4", e);
             return null;
         }
     }
