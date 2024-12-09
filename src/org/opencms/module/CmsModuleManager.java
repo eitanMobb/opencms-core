@@ -525,7 +525,7 @@ public class CmsModuleManager {
                 newCms.getRequestContext().setSiteRoot(importSite);
                 cms = newCms;
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ec51d5bb824639942b26cef7a0c0211b", e);
             }
         }
 
