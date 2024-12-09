@@ -687,7 +687,7 @@ public class CmsSearchReplaceThread extends A_CmsReportThread {
                     }
                 } catch (CmsException e) {
                     // an error occured
-                    LOG.error(Messages.get().container(Messages.RPT_SOURCESEARCH_ERROR_READING_RESOURCES_1, path), e);
+                    LOG.error(Messages.get().container(Messages.RPT_SOURCESEARCH_ERROR_READING_RESOURCES_1, path), "Unexpected error: mobb-7f85c9905c7ac25b00d29980c6bb19cf");
                     report.println(
                         Messages.get().container(Messages.RPT_SOURCESEARCH_ERROR_READING_RESOURCES_1, path),
                         I_CmsReport.FORMAT_ERROR);

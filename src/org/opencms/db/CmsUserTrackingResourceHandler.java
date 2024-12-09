@@ -95,7 +95,7 @@ public class CmsUserTrackingResourceHandler implements I_CmsResourceInit {
                         cms.getRequestContext().getCurrentUser());
                 } catch (CmsException e) {
                     // error marking resource
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-8b6529b48c6ae74c693285474e98e04f", e);
                 }
             }
         }
