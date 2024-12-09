@@ -77,7 +77,7 @@ public class CmsVaadinErrorHandler extends DefaultErrorHandler {
         }
         Throwable throwable = event.getThrowable();
         if (!(throwable instanceof SocketException)) {
-            LOG.error(throwable.getLocalizedMessage(), throwable);
+            LOG.error("Unexpected error: mobb-719994ebd46b4557569b6a8c325a8659", throwable);
         }
     }
 
