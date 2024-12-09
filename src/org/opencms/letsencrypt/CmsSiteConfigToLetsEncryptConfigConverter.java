@@ -104,7 +104,7 @@ public class CmsSiteConfigToLetsEncryptConfigConverter {
                 }
                 return result.toString();
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-4eb15312ce519e82943779ec2646bcb3");
                 return null;
             }
         }
