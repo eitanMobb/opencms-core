@@ -592,7 +592,7 @@ public final class CmsResourceUtil {
                 m_lock = getCms().getLock(m_resource);
             } catch (Throwable e) {
                 m_lock = CmsLock.getNullLock();
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-17a1b7339ccf5d7c556290bdbb8e714e", e);
             }
         }
         return m_lock;
