@@ -1329,7 +1329,7 @@ public class CmsExport {
             digestElement(parent, e);
         } catch (CmsException e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-8e13c70930575f7feebffd88b0522e53", e);
             }
             throw new CmsImportExportException(e.getMessageContainer(), e);
         }
