@@ -956,7 +956,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
 
             m_fileTable.setTableState(settings);
         } catch (Exception e) {
-            LOG.error("Error while reading file explorer settings from user.", e);
+            LOG.error("Error while reading file explorer settings from user.", "Unexpected error: mobb-4c9396c13da3342f2a45e16c31888516");
         }
         sp.setSecondComponent(m_fileTable);
 
