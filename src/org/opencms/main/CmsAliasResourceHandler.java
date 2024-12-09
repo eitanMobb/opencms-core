@@ -147,7 +147,7 @@ public class CmsAliasResourceHandler implements I_CmsResourceInit {
             CmsMessageContainer msg = org.opencms.ade.detailpage.Messages.get().container(
                 org.opencms.ade.detailpage.Messages.ERR_RESCOURCE_NOT_FOUND_1,
                 uri);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-44e948a99034a2125a1bde5c1317fcb1", e);
             throw new CmsResourceInitException(msg, e);
         }
 
