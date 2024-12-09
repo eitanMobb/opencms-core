@@ -3418,7 +3418,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             // set site root and project for this index
             cms.getRequestContext().setSiteRoot("/");
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-a18de81074de7a0efd6405e072af112f");
         }
 
         Iterator<I_CmsSearchIndex> j = m_offlineIndexes.iterator();
