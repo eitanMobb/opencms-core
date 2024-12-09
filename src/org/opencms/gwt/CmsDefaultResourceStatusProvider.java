@@ -216,7 +216,7 @@ public class CmsDefaultResourceStatusProvider {
                         return result;
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-3f37ab6033b08aedf6b8d2e5d99cefd5", e);
                 }
             }
         }
