@@ -509,7 +509,7 @@ public class CmsLinkManager {
             // if something wrong
             permalink = e.getLocalizedMessage();
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-74896250934017d3bb4bf053b3dc217c");
             }
         }
         return permalink;
