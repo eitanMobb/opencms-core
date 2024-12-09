@@ -1641,7 +1641,7 @@ public class CmsProjectDriver implements I_CmsDriver, I_CmsProjectDriver {
                         Messages.get().getBundle().key(
                             Messages.LOG_PUBLISHING_PROPERTIES_1,
                             offlineFolder.getRootPath()),
-                        e);
+                        "Unexpected error: mobb-fc2102ccbd75f95aa504a3ceb27c3f0e");
                 }
                 throw e;
             }
