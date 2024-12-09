@@ -355,7 +355,7 @@ public class CmsJspLoginBean extends CmsJspActionElement {
                     return;
                 }
             } catch (Exception e) {
-                LOG.warn("Invalid redirect URI " + redirectUri + " in login bean: " + e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-0572795b37f8423a7dbba67ff4994346", e);
                 return;
             }
             if (redirectUri != null) {
