@@ -566,7 +566,7 @@ public abstract class A_CmsToolHandler implements I_CmsToolHandler {
         } catch (CmsException e) {
             // should never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-685a27ff5ad5b010d161fb04dadf83a7", e);
             }
         }
     }
