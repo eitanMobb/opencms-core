@@ -604,7 +604,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                 CmsMappingResolutionContext.AttributeType.expiration,
                 dateExpired);
         } catch (Exception e) {
-            LOG.error("Reverse availability mapping failed: " + e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0b909145f19586639beafd28f1fe70eb", e);
         }
         super.setDateExpired(cms, securityManager, resource, dateExpired, recursive);
     }
