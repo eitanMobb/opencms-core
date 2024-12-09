@@ -1102,7 +1102,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
         } catch (JSONException e) {
             LOG.error(
                 Messages.get().getBundle().key(Messages.ERR_SORT_OPTION_NOT_PARSABLE_1, JSON_KEY_SORTOPTION_SOLRVALUE),
-                e);
+                "Unexpected error: mobb-aa15eee34f3ae6e76dbac7ad44e5a382");
             return null;
         }
     }
