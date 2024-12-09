@@ -168,7 +168,7 @@ public class CmsQueuedTable extends Table {
                     try {
                         m_resourceList = A_CmsUI.getCmsObject().readPublishedResources(m_job.getPublishHistoryId());
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-0711d75cd5eb27b3bafeedd8de0252d7", e);
                     }
                 } else if (m_job instanceof CmsPublishJobEnqueued) {
                     m_resourceList = ((CmsPublishJobEnqueued)m_job).getOriginalPublishList().getAllResources();
