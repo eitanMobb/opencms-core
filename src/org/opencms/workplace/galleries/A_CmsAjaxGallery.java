@@ -305,7 +305,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             galleries = cms.readResources("/", CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(galleryTypeId));
         } catch (CmsException e) {
             // error reading resources with filter
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2a9ecf69753bbce862583591fe8b6d1a", e);
         }
 
         // if the current site is NOT the root site - add all other galleries from the system path
