@@ -640,7 +640,7 @@ public final class CmsPublishEngine {
             unlockPublishList(publishJob);
         } catch (Throwable t) {
             // log failure, most likely a database problem
-            LOG.error(t.getLocalizedMessage(), t);
+            LOG.error("Unexpected error: mobb-15891f28d4a26d2fa262cad7a3adf190", t);
         }
 
         // trigger the old event mechanism
