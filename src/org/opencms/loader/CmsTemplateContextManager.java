@@ -378,7 +378,7 @@ public class CmsTemplateContextManager {
                 return cms.readPropertyObject(templatePath, propertyName, false).getValue(fallbackValue);
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-5a7cf133ade8dbee51b962df55f5b3fc");
             return fallbackValue;
         }
     }
