@@ -254,7 +254,7 @@ public class CmsDetailPageDuplicateEliminatingSitemapGenerator extends CmsXmlSit
                 List<CmsResource> sharedFiles = m_guestCms.readResources(shared, filter, true);
                 result.addAll(sharedFiles);
             } catch (CmsException e) {
-                LOG.error("XML sitemap generator error: " + e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-aa54d4c3f1a596ae526e2340d791e521", e);
             }
         }
         CmsPathMap<CmsResource> resultMap = new CmsPathMap<CmsResource>();
