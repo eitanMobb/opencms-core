@@ -675,7 +675,7 @@ public class CmsFileTable extends CmsResourceTable {
             byte[] result = baos.toByteArray();
             return result;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-9b48fcffc9e942267bf49a26c643927e", e);
             return null;
         }
     }
