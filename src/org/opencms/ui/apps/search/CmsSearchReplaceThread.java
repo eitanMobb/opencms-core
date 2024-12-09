@@ -507,7 +507,7 @@ public class CmsSearchReplaceThread extends A_CmsReportThread {
                 contents = content.getBytes(encoding);
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8aa9a1b6b648ccd05e2a101dbde2a393", e);
             throw e;
         }
         return contents;
