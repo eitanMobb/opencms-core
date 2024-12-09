@@ -311,7 +311,7 @@ public class CmsUpdateBean extends CmsSetupBean {
                     false);
                 OpenCms.getPublishManager().waitWhileRunning();
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-34dbeecd1cece49ac06da293c3ebbf0c", e);
             }
         } finally {
             m_cms.getRequestContext().setSiteRoot(originalSiteRoot);
