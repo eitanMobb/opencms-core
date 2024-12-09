@@ -1277,7 +1277,7 @@ public final class CmsSiteManagerImpl implements I_CmsEventListener {
                 cms_offline.getRequestContext().setCurrentProject(tempProject);
 
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-6afe1668138650628dea202ba86b05e1");
             }
 
             m_siteUUIDs = new HashMap<CmsUUID, CmsSite>();
