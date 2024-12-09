@@ -88,7 +88,7 @@ public class CmsUpdateXmlSitemapCacheJob implements I_CmsScheduledJob {
                     LOG.info("Ignoring file " + res.getRootPath());
                 }
             } catch (Exception e) {
-                LOG.error("Error processing file " + res.getRootPath() + ": " + e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-cecce45035506835213e518e9626d715", e);
             }
         }
         long end = System.currentTimeMillis();
