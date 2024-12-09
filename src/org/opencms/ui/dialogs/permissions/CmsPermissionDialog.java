@@ -410,7 +410,7 @@ public class CmsPermissionDialog extends CmsBasicDialog implements PermissionCha
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-4ca57c0174888f584121324ba8df1835");
             }
         }
         addEntryTableToLayout(inheritedEntries, m_inheritedPermissions, false, true);
