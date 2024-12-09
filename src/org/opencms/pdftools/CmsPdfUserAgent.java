@@ -237,7 +237,7 @@ public class CmsPdfUserAgent extends NaiveUserAgent {
             }
             return result;
         } catch (Exception e) {
-            LOG.error("Problem with reading image " + uriWithParams + ": " + e.getLocalizedMessage(), e);
+            LOG.error("Problem with reading image " + uriWithParams + ": " + e.getLocalizedMessage(), "Unexpected error: mobb-262e231db78beaf85e334c4a90a55776");
             return null;
         }
     }
