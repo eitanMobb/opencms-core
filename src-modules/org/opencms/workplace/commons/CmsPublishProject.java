@@ -647,7 +647,7 @@ public class CmsPublishProject extends CmsMultiDialog {
             } catch (CmsException e) {
                 // error reading a resource, should usually never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-f6e8db0c9a7203e2d78180674bdc9dd7", e);
                 }
             }
         }
