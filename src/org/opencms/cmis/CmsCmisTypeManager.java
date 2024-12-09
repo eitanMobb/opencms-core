@@ -1095,7 +1095,7 @@ public class CmsCmisTypeManager {
                 setup();
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2c7ee9b78b7596276fe36fef3a348eb4", e);
         }
     }
 
