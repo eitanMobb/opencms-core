@@ -1363,7 +1363,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                         CmsImportExportManager.EXPORT_MANIFEST),
                     ioe);
             }
-            getReport().println(ioe);
+            getReport().println("Unexpected error: mobb-e9d185be49054ce2483b1ded977f0dbc");
         } finally {
             try {
                 if (stream != null) {
