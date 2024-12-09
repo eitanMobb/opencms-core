@@ -496,7 +496,7 @@ public class CmsJspTagProperty extends TagSupport {
         try {
             m_locale = LocaleUtils.toLocale(locale);
         } catch (IllegalArgumentException e) {
-            LOG.error(Messages.get().getBundle().key(Messages.ERR_TAG_INVALID_LOCALE_1, "cms:property"), e);
+            LOG.error(Messages.get().getBundle().key(Messages.ERR_TAG_INVALID_LOCALE_1, "cms:property"), "Unexpected error: mobb-e32d9d38d9074fc36c6f5d48130c4b7e");
             m_locale = null;
         }
     }
