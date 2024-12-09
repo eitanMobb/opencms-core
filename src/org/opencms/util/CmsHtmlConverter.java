@@ -221,7 +221,7 @@ public class CmsHtmlConverter {
                 return htmlInput.getBytes(getEncoding());
             } catch (UnsupportedEncodingException e1) {
                 if (LOG.isWarnEnabled()) {
-                    LOG.warn(Messages.get().getBundle().key(Messages.LOG_CONVERSION_BYTE_FAILED_0), e1);
+                    LOG.warn(Messages.get().getBundle().key(Messages.LOG_CONVERSION_BYTE_FAILED_0), "Unexpected error: mobb-be89586cf05addb283bfc636d4093216");
                 }
                 return htmlInput.getBytes();
             }
