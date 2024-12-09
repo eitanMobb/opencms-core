@@ -2930,7 +2930,7 @@ public final class CmsJspStandardContextBean {
                     locale).getValue();
             }
         } catch (CmsException e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-3ba4d27040a03f625d9206db08153d7e");
         }
         if (CmsStringUtil.isEmptyOrWhitespaceOnly(result)) {
             result = "";
