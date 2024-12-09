@@ -171,7 +171,7 @@ public class CmsSolrFieldConfiguration extends CmsSearchFieldConfiguration {
                 }
             }
         } catch (CmsException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-99eeeb568e9af5c0cf0e339d274dab0b", e);
         }
 
         List<String> searchExcludeOptions = document.getMultivaluedFieldAsStringList(
