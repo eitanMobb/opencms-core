@@ -101,7 +101,7 @@ public class CmsExtendedPublishResourceFormatter extends CmsDefaultPublishResour
                     CmsProject project = m_cms.readProject(projectId);
                     return Boolean.valueOf(project.isWorkflowProject());
                 } catch (CmsException e) {
-                    getLog().warn(e.getLocalizedMessage(), e);
+                    getLog().warn("Unexpected error: mobb-515367f04cae9a37feb034d517290ab3", e);
                     return Boolean.FALSE;
                 }
             }
