@@ -399,7 +399,7 @@ public class CmsImportVersion4 extends A_CmsImport {
             }
         } catch (Exception exc) {
             // an error while importing the file
-            m_report.println(exc);
+            m_report.println("Unexpected error: mobb-466d9cc479dbc6c4b8cbff57a60e9c79");
             try {
                 // Sleep some time after an error so that the report output has a chance to keep up
                 Thread.sleep(1000);
