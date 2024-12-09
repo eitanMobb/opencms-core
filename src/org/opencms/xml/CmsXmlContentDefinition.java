@@ -281,7 +281,7 @@ public class CmsXmlContentDefinition implements Cloneable {
                 if (!LOG.isDebugEnabled()) {
                     LOG.warn(e.getLocalizedMessage(), e);
                 }
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-08d0089c0cb7e7356aaf106a8dba059f", e);
             }
         }
         if (contentDef == null) {
