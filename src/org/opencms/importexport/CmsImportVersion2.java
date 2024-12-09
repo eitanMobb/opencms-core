@@ -1164,7 +1164,7 @@ public class CmsImportVersion2 extends A_CmsImport {
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_REMOVING_FOLDERS_OF_IMPORTED_BODY_FILES_0);
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(message.key(), "Unexpected error: mobb-711f2ac117184a8930f9d127989bad10");
             }
 
             throw new CmsImportExportException(message, e);
