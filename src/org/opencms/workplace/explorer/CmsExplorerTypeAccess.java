@@ -150,7 +150,7 @@ public class CmsExplorerTypeAccess implements Serializable {
                         principalId = cms.readGroup(principal).getId();
                     } catch (CmsException e) {
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-0245799a9a59d6fcd6063360d7873455", e);
                         }
                     }
                 } else if (key.startsWith(I_CmsPrincipal.PRINCIPAL_USER)) {
