@@ -301,7 +301,7 @@ public class CmsPermissionBean {
                         id = cms.readUser(m_principalName).getId();
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-799f518bdaacfef3c1ac3be8aad7c153", e);
                 }
             }
         } else {
