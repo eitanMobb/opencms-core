@@ -400,7 +400,7 @@ public class CmsUserIconHelper {
             try {
                 m_cache.saveCacheFile(rfsName, getImageBytes(icon));
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-b4f4b541479b84da4a42161050156796");
             }
         }
         return path;
