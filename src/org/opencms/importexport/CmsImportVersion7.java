@@ -2108,7 +2108,7 @@ public class CmsImportVersion7 implements I_CmsImport {
             m_userInfos.put(infoName, CmsDataTypeUtil.dataImport(infoValue, infoType));
         } catch (Throwable e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-db832b7885be5884edb26bd77913af0c", e);
             }
         }
     }
