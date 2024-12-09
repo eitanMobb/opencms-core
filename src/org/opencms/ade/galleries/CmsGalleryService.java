@@ -3299,7 +3299,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
             user.setAdditionalInfo(FOLDER_FILTER_ADD_INFO_KEY, storedFilters.toString());
             getCmsObject().writeUser(user);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-46426623e0819f5dd0609e2c12f0e9f6");
         }
     }
 
