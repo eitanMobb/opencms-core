@@ -357,7 +357,7 @@ public final class CmsPublishEngine {
                     abortPublishJob(m_adminUserId, new CmsPublishJobEnqueued(publishJob), false);
                 } catch (CmsException e) {
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-40b674bc376026580d26e730a7e32a64", e);
                     }
                 }
             }
