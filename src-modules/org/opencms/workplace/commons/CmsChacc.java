@@ -750,7 +750,7 @@ public class CmsChacc extends CmsDialog {
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-d4b1ed7e0ff6789de3a418fef0c3d9a5");
             }
         }
         Iterator<CmsResource> k = parentResources.iterator();
