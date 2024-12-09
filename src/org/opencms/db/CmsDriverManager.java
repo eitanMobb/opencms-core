@@ -11496,7 +11496,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                 result.add(res);
             } catch (Exception e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d4c286cf4be38cc3bc50370a5448efff", e);
             }
         }
         return result;
