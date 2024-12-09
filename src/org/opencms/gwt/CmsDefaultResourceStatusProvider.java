@@ -783,7 +783,7 @@ public class CmsDefaultResourceStatusProvider {
                     additionalAttributes.put(label, schema);
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d0451b893a7e8ec954f2b7f295cf3fae", e);
             }
 
             String elementId = context.get(CmsGwtConstants.ATTR_ELEMENT_ID);
