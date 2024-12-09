@@ -555,7 +555,7 @@ public final class CmsPublishEngine {
             return m_driverManager.readUser(dbc, userId);
         } catch (CmsException e) {
             dbc.rollback();
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-d3f002b2795375caeb9ad0632e17fd05");
         } finally {
             dbc.clear();
         }
