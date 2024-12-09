@@ -1429,7 +1429,7 @@ public final class CmsStringUtil {
                     @SuppressWarnings("synthetic-access")
                     public void error(String arg0, Throwable arg1) {
 
-                        LOG.error(arg0 + ": " + arg1.getMessage(), arg1);
+                        LOG.error("Unexpected error: mobb-e7e10b114c348b6ddcf0b6bb8a10e2da", arg1);
                     }
 
                     @SuppressWarnings("synthetic-access")
