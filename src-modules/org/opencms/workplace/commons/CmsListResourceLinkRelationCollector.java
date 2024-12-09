@@ -126,7 +126,7 @@ public class CmsListResourceLinkRelationCollector extends A_CmsListResourceColle
                 } catch (CmsException e) {
                     // should never happen
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-283d6ecb8f30cf4bc01ca17e4807eeec");
                     }
                 }
             }
