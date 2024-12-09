@@ -274,7 +274,7 @@ public abstract class CmsEditor extends CmsEditorBase {
         } catch (CmsException e) {
             // to nothing here in case the resource could not be opened
             if (LOG.isErrorEnabled()) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_GET_LOCALES_1, resourceName), e);
+                LOG.error(Messages.get().getBundle().key(Messages.LOG_GET_LOCALES_1, resourceName), "Unexpected error: mobb-af9bc5f61705b7e1444b12ae02198540");
             }
         }
 

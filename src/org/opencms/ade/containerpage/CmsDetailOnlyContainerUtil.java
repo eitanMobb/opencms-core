@@ -423,7 +423,7 @@ public final class CmsDetailOnlyContainerUtil {
                 }
             }
         } catch (CmsException e) {
-            CmsContainerpageService.LOG.error(e.getLocalizedMessage(), e);
+            CmsContainerpageService.LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-2137dc7850f7ec7be341e9ef70e10647");
         }
         return containerpage;
     }

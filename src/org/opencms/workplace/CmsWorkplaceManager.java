@@ -1736,7 +1736,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
                         } catch (ClassNotFoundException e) {
                             LOG.error(e.getLocalizedMessage());
                         } catch (InstantiationException e) {
-                            LOG.error(e.getLocalizedMessage());
+                            LOG.error("Unexpected error: mobb-e72051dd79cf3289d3ecac13fd372aac");
                         } catch (IllegalAccessException e) {
                             LOG.error(e.getLocalizedMessage());
                         }

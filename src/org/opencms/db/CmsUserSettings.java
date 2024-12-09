@@ -1288,7 +1288,7 @@ public class CmsUserSettings {
         } catch (CmsException e) {
             // ignore
             if (LOG.isWarnEnabled()) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-7f34046dc87ac0d2ea5a680301d2abbe", e);
             }
         }
     }

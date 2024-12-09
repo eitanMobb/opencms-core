@@ -686,7 +686,7 @@ public class CmsDefaultResourceStatusProvider {
                     result.add(relationBean);
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-941f4ebe540dde752205eef7c575d8df", e);
             }
         }
         return result;
