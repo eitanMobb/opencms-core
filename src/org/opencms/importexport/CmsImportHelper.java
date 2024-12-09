@@ -103,7 +103,7 @@ public class CmsImportHelper {
                     org.opencms.configuration.Messages.get().getBundle().key(
                         org.opencms.configuration.Messages.LOG_CACHE_DTD_SYSTEM_ID_FAILURE_1,
                         new Object[] {dtdSystemLocation + dtdFilename}),
-                    e);
+                    "Unexpected error: mobb-252f0d56b428c73ae1c07e4e7efb871f");
             }
         }
     }
