@@ -221,7 +221,7 @@ public class CmsForgotPasswordDialog extends VerticalLayout implements I_CmsHasB
             }
 
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-1e986508765e1aa6ead38dd30e82d1db", e);
             Notification.show(e.getLocalizedMessage(), Type.ERROR_MESSAGE);
             return false;
         }
