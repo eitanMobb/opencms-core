@@ -195,7 +195,7 @@ public class CmsSiteManager extends A_CmsWorkplaceApp implements I_CmsCRUDApp<Cm
         try {
             OpenCms.getSiteManager().addSite(getRootCmsObject(), element);
         } catch (CmsException e) {
-            LOG.error("unable to save site", e);
+            LOG.error("unable to save site", "Unexpected error: mobb-fab10e15c40759bdc7cefc287b4c8d52");
         }
 
     }
