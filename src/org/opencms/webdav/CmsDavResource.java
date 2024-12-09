@@ -192,7 +192,7 @@ public class CmsDavResource implements DavResource {
         try {
             getRepositorySession().updateProperties(getCmsPath(), propMap);
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-e32408bd0e5e5ecd7b525e9c003da945", e);
             if (e instanceof CmsPermissionViolationException) {
                 status = HttpServletResponse.SC_FORBIDDEN;
             }
