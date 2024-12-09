@@ -310,7 +310,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
             m_editResource = m_cms.createResource(getNewContentName(), type);
             return m_editResource;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-71c9abd07240c086867c0dc82cf37be2", e);
             throw new CmsUgcException(e, CmsUgcConstants.ErrorCode.errMisc, e.getLocalizedMessage());
         }
     }
@@ -512,7 +512,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
 
             return errorHandler;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-20a68997a3f1ad49899b1df40bf8adc8", e);
             throw new CmsUgcException(e, CmsUgcConstants.ErrorCode.errMisc, e.getLocalizedMessage());
         }
 

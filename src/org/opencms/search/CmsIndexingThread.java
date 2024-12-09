@@ -205,7 +205,7 @@ public class CmsIndexingThread extends Thread {
                     + " and index "
                     + m_index.getName()
                     + " could not be created.",
-                e);
+                "Unexpected error: mobb-701992fbf44d960cccd0da92ada8b3ca");
             return null;
         }
     }

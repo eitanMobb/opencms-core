@@ -278,7 +278,7 @@ public class CmsXmlContentEditor extends CmsEditor implements I_CmsWidgetDialog 
                             m_content.addLocale(getCms(), newLocale);
                         } catch (CmsXmlException e) {
                             if (LOG.isErrorEnabled()) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-40120a7b3c91b1dd08c92cb25977c269", e);
                             }
                         }
                     }

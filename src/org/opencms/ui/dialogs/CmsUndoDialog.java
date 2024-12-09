@@ -140,7 +140,7 @@ public class CmsUndoDialog extends CmsBasicDialog {
                     CmsResource onlineres = cms.readResource(resource.getStructureId());
                     hasMoved |= !onlineres.getRootPath().equals(resource.getRootPath());
                 } catch (CmsException e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-dbf91c8c89c0ed750a806d7cf2b69d90", e);
                 }
             }
         }

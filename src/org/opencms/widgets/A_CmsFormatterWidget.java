@@ -298,7 +298,7 @@ public abstract class A_CmsFormatterWidget extends CmsSelectWidget {
                                     options.add(option);
                                 }
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-12a44a8be259a3d5d3f1ae3cab541b9e", e);
                             }
                         }
                     }

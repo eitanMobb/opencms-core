@@ -113,7 +113,7 @@ public class CmsLockAction extends A_CmsWorkplaceAction {
                     if (storedException == null) {
                         storedException = e;
                     }
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-15c54d52d87cb680036b57f6f2a9b042", e);
                 }
 
             }
@@ -137,7 +137,7 @@ public class CmsLockAction extends A_CmsWorkplaceAction {
                     List<CmsResource> blockingLockedForCurrentResource = cms.getBlockingLockedResources(res);
                     blockingLocked.addAll(blockingLockedForCurrentResource);
                 } catch (CmsException e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-3a8d41e781280bdb2b3af443c22b9e55", e);
                 }
             }
             if (blockingLocked.isEmpty()) {

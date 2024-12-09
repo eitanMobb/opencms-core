@@ -139,7 +139,7 @@ public class CmsGallerySearchResult implements Comparable<CmsGallerySearchResult
             }
             m_description = props.get(CmsPropertyDefinition.PROPERTY_DESCRIPTION);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8adcf9fe61d45c97c0ea6b2269ee291a", e);
         }
         if (m_description == null) {
             m_description = "";

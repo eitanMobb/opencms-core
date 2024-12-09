@@ -352,7 +352,7 @@ public class CmsStaticResourceHandler implements I_CmsRequestHandler {
                     // set gzip headers
                     response.setHeader("Content-Encoding", "gzip");
                 } catch (Exception e) {
-                    LOG.debug("Unexpected exception looking for gzipped version of resource " + urlStr, e);
+                    LOG.debug("Unexpected error: mobb-a330ca8bbfdb5621bea2f34149e5b74e", e);
                 }
             }
             if (is == null) {

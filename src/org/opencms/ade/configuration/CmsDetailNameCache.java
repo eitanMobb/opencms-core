@@ -239,7 +239,7 @@ public class CmsDetailNameCache implements I_CmsGlobalConfigurationCache {
                 Collectors.toSet());
             return result;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-33f466c0a005a59f44579e41e6036146", e);
             return Collections.emptySet();
         }
     }

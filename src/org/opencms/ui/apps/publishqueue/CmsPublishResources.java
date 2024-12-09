@@ -85,7 +85,7 @@ public class CmsPublishResources extends VerticalLayout {
         try {
             resourcesHTML = getResourcesHTML(job);
         } catch (NumberFormatException | CmsException e) {
-            LOG.error("Error reading publish resources", e);
+            LOG.error("Error reading publish resources", "Unexpected error: mobb-096f57211dc923f41f6dca1487df6651");
         }
 
         Label label = new Label();

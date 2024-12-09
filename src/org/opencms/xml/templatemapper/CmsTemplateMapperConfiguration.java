@@ -124,7 +124,7 @@ public class CmsTemplateMapperConfiguration {
                     CmsResource newFormatter = cms.readResource(newPath, CmsResourceFilter.IGNORE_EXPIRATION);
                     m_formatterConfigMap.put(oldFormatter.getStructureId(), newFormatter.getStructureId());
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-1a63ff185e67faeb8d26d1e7c6d7f364");
                 }
             }
             for (Node node : root.selectNodes("//" + N_FORMATTER_JSP)) {
@@ -136,7 +136,7 @@ public class CmsTemplateMapperConfiguration {
                     CmsResource newFormatter = cms.readResource(newPath, CmsResourceFilter.IGNORE_EXPIRATION);
                     m_formatterJspMap.put(oldFormatter.getStructureId(), newFormatter.getStructureId());
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-aa08ea10b30875d40338ded9794edd5a");
                 }
             }
 

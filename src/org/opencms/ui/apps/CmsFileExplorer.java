@@ -1183,7 +1183,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             CmsErrorDialog.showErrorDialog(
                 CmsVaadinUtils.getMessageText(Messages.ERR_EXPLORER_CAN_NOT_READ_RESOURCE_1, m_currentFolder),
                 e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8c8b07cb5fe218304a065389cfb35a36", e);
         }
     }
 
@@ -1557,7 +1557,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
             CmsErrorDialog.showErrorDialog(
                 CmsVaadinUtils.getMessageText(Messages.ERR_EXPLORER_CAN_NOT_OPEN_PATH_1, path),
                 e);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-934734befcc785344cf4ac610f62bad8", e);
             return;
         }
     }

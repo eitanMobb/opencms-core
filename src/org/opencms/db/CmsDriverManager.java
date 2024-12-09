@@ -1307,7 +1307,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                             try {
                                 userId = new CmsUUID(userIdObj.toString());
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-140bb598d8ff977caeec7c572d249aaa", e);
                             }
                         }
                         if (userId != null) {
@@ -11496,7 +11496,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                 result.add(res);
             } catch (Exception e) {
                 // should never happen
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d4c286cf4be38cc3bc50370a5448efff", e);
             }
         }
         return result;

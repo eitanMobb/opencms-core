@@ -357,7 +357,7 @@ public class CmsDialogElements extends CmsDialog {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-5e3a596a8f391fc75c5791cc6e7b9925", e);
             }
         }
 

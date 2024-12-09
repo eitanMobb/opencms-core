@@ -680,7 +680,7 @@ public class CmsContainerPageCopier {
             try {
                 localeGroupService.attachLocaleGroupIndirect(m_originalPage, copiedPage);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-8f377563975c1d2cf7e2452584eae496", e);
             }
         }
     }

@@ -588,7 +588,7 @@ public class OpenCmsServlet extends HttpServlet implements I_CmsRequestHandler {
             }
         } catch (Throwable e) {
             // something went wrong log the exception and return false
-            LOG.error(e.getMessage(), e);
+            LOG.error("Unexpected error: mobb-486be2f90836622d9582871ba46353e9", e);
             return false;
         }
     }

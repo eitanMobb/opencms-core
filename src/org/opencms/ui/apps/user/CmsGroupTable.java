@@ -628,7 +628,7 @@ public class CmsGroupTable extends Table implements I_CmsFilterableTable, I_CmsT
             CmsGroup group = m_cms.readGroup(new CmsUUID(uuid));
             m_app.update(group.getOuFqn(), m_type, group.getId(), "");
         } catch (CmsException e) {
-            LOG.error("unable to read group.", e);
+            LOG.error("unable to read group.", "Unexpected error: mobb-67444a11c676cad1024672882b111763");
         }
     }
 

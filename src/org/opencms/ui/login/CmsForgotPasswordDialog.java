@@ -216,12 +216,12 @@ public class CmsForgotPasswordDialog extends VerticalLayout implements I_CmsHasB
                 Notification.show(
                     Messages.get().getBundle(A_CmsUI.get().getLocale()).key(Messages.GUI_PWCHANGE_MAIL_SEND_ERROR_0),
                     Type.ERROR_MESSAGE);
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d2f0e27dbea76a45b5c9ae9ad914ee7a", e);
                 return false;
             }
 
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-1e986508765e1aa6ead38dd30e82d1db", e);
             Notification.show(e.getLocalizedMessage(), Type.ERROR_MESSAGE);
             return false;
         }

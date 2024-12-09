@@ -1602,7 +1602,7 @@ public class CmsHtmlImport {
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_HTMLIMPORT_PARSE_1,
                 file.getAbsolutePath());
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-70780f9dd54d51099307a9318410ea9d", e);
             throw new CmsImportExportException(message, e);
         }
         return parsedHtml;
@@ -1672,7 +1672,7 @@ public class CmsHtmlImport {
                 } catch (Exception ex) {
                     String name = (entry != null ? entry.getName() : "");
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(Messages.get().getBundle().key(Messages.ERR_ZIPFILE_UNZIP_1, name), ex);
+                        LOG.error(Messages.get().getBundle().key(Messages.ERR_ZIPFILE_UNZIP_1, name), "Unexpected error: mobb-097c78c73b1cd22d9ecbd69345e17e2f");
                     }
                     m_report.println(
                         Messages.get().container(Messages.ERR_ZIPFILE_UNZIP_1, name),

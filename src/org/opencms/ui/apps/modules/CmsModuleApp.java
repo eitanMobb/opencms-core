@@ -207,7 +207,7 @@ public class CmsModuleApp extends A_CmsAttributeAwareApp implements I_CmsCachabl
                     CmsVaadinUtils.getMessageText(Messages.GUI_MODULES_DELETE_CONFIRMATION_0),
                     okAction);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-8c154d363eb6cf5a6f8e24cec00578e5", e);
             }
 
         }

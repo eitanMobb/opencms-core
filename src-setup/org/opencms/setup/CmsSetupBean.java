@@ -1634,7 +1634,7 @@ public class CmsSetupBean implements I_CmsShellCommands {
                 getXmlHelper().writeAll();
             } catch (Exception e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-58f225b9c47a61cedda4afbd631dfe31");
                 }
             }
         }

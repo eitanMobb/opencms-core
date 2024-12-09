@@ -259,7 +259,7 @@ public class CmsDisplayTypeSelectWidget extends CmsSelectWidget {
                 result.add(new CmsSelectWidgetOption(option.m_key, false, option.m_label));
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-4e78dcbecd99414db1a2dc0ca015a98f", e);
         }
         return result;
     }

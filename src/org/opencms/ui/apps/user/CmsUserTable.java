@@ -922,7 +922,7 @@ public class CmsUserTable extends Table implements I_CmsFilterableTable, I_CmsTo
             }
             init(showAll);
         } catch (CmsException e) {
-            LOG.error("Unable to read user.", e);
+            LOG.error("Unable to read user.", "Unexpected error: mobb-a92e1302255e22b0be683a741e8fe937");
         }
     }
 

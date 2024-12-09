@@ -343,7 +343,7 @@ public class CmsPreferences extends CmsTabDialog {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-a24f690bd8d2bda2cdbba9c76e666813");
             }
             allProjects = Collections.emptyList();
         }

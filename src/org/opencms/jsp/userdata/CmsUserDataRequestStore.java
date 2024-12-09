@@ -135,7 +135,7 @@ public class CmsUserDataRequestStore {
                 byte[] data = CmsFileUtil.readFully(stream, false);
                 return Optional.of(new CmsUserDataRequestInfo(new String(data, "UTF-8")));
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-c1134f945f0739a10bf041509452fb03", e);
                 return Optional.empty();
             }
         } else {

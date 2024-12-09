@@ -2484,7 +2484,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     Messages.LOG_PARSE_MAXCOMMIT_FAILED_2,
                     value,
                     Integer.valueOf(DEFAULT_MAX_MODIFICATIONS_BEFORE_COMMIT)),
-                e);
+                "Unexpected error: mobb-1ee9aff248ea9a7e0c1d97b565b2b8f5");
             setMaxModificationsBeforeCommit(DEFAULT_MAX_MODIFICATIONS_BEFORE_COMMIT);
         }
     }
@@ -3210,7 +3210,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                         Thread.sleep(500);
                     } catch (InterruptedException e) {
                         // just continue with the loop after interruption
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-9d8f2c1deb8620f21ee73e82da32120a", e);
                     }
                 }
 
@@ -3418,7 +3418,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             // set site root and project for this index
             cms.getRequestContext().setSiteRoot("/");
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-a18de81074de7a0efd6405e072af112f");
         }
 
         Iterator<I_CmsSearchIndex> j = m_offlineIndexes.iterator();

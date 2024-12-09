@@ -390,7 +390,7 @@ public class CmsPublishRelationFinder {
             }
         } catch (CmsException e) {
             LOG.error(
-                "Error processing parent folder for " + currentResource.getRootPath() + ": " + e.getLocalizedMessage(),
+                "Unexpected error: mobb-0f6e8df23aa2a3b4f35dada963a3f55d",
                 e);
         }
 

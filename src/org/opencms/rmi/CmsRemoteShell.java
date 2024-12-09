@@ -99,7 +99,7 @@ public class CmsRemoteShell extends UnicastRemoteObject implements I_CmsRemoteSh
                 try {
                     UnicastRemoteObject.unexportObject(shell, true);
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-42b442411b106d585cbdacc357f76dd0");
                 }
             }
             m_instances.clear();

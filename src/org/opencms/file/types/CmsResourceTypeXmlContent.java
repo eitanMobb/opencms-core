@@ -462,7 +462,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                         lockRecord = CmsLockUtil.ensureLock(cms, page);
                         rootCms.moveResource(page.getRootPath(), newPath);
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-3ff92ed964c24abf3a6249ad84a25c30", e);
                     } finally {
                         if ((lockRecord != null) && (lockRecord.getChange() == LockChange.locked)) {
                             try {
@@ -470,7 +470,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                                     rootCms,
                                     rootCms.readResource(page.getStructureId(), CmsResourceFilter.ALL));
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-95827da9fd14bfe7a72870ef8495e552", e);
                             }
                         }
                     }

@@ -386,7 +386,7 @@ public class CmsVfsBundleManager implements I_CmsEventListener {
                             }
                         }
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-eca6fed3a397e19dd07da99ced3959a2", e);
                     }
                 }
                 break;

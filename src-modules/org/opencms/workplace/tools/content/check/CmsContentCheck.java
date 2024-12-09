@@ -397,7 +397,7 @@ public class CmsContentCheck {
                         LOG.warn(Messages.get().getBundle().key(Messages.LOG_CANNOT_CREATE_PLUGIN_1, classname));
                     }
                 } catch (Throwable t) {
-                    LOG.error(Messages.get().getBundle().key(Messages.LOG_CANNOT_CREATE_PLUGIN_2, classname, t));
+                    LOG.error("Unexpected error: mobb-0fb65df0b9b915c365b6f8a2ce8eb62b");
                 }
             }
         }

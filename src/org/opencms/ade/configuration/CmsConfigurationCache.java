@@ -305,7 +305,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
             }
             return result;
         } catch (ExecutionException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-f2e1437f00feb445a964be7aa8549af7", e);
             return true;
         }
     }
@@ -353,7 +353,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                                     + candidate.getRootPath()
                                     + ": "
                                     + e.getLocalizedMessage(),
-                                e);
+                                "Unexpected error: mobb-5e5d43fa855e959b5a4318b70da8aeb5");
                         }
 
                     }

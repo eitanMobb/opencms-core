@@ -2394,7 +2394,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                     "/",
                     CmsResourceFilter.ONLY_VISIBLE_NO_DELETED.addRequireType(galleryTypeId)));
         } catch (Exception e) {
-            LOG.error("Could not read site galleries: " + e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-7112732157220942b4d0b38bdb32720c", e);
         }
 
         String siteRoot = getCmsObject().getRequestContext().getSiteRoot();

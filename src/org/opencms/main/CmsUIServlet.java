@@ -382,7 +382,7 @@ public class CmsUIServlet extends VaadinServlet implements SystemMessagesProvide
                 response.sendError(status, t.toString());
             } catch (IOException e) {
                 // can be ignored
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-89361f9a03ee76b0f1fdc171a82c29d9", e);
             }
         } finally {
             // remove the thread local cms context

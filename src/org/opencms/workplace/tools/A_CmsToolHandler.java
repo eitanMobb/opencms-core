@@ -395,7 +395,7 @@ public abstract class A_CmsToolHandler implements I_CmsToolHandler {
         } catch (CmsException e) {
             // should not happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-6254bdb38671e39706e473af247a57ee");
             }
         }
         CmsJspNavElement navElem = new CmsJspNavBuilder(cms).getNavigationForResource(resourcePath);

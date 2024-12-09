@@ -157,7 +157,7 @@ public class CmsResourceComparison {
             String type2 = OpenCms.getResourceManager().getResourceType(resource2.getTypeId()).getTypeName();
             comparedAttributes.add(new CmsAttributeComparison(Messages.GUI_HISTORY_COLS_FILE_TYPE_0, type1, type2));
         } catch (CmsLoaderException e) {
-            LOG.debug(e.getMessage(), e);
+            LOG.debug("Unexpected error: mobb-6d171fd26ed3f4b7f45c46a8e2a66b6d", e);
         }
         String dateCreated1 = CmsDateUtil.getDateTime(
             new Date(resource1.getDateCreated()),

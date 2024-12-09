@@ -285,7 +285,7 @@ implements I_CmsWorkplaceApp, ViewChangeListener, I_CmsWindowCloseListener, I_Cm
             }
 
         } catch (Exception e) {
-            LOG.error("Error initializing the editor.", e);
+            LOG.error("Error initializing the editor.", "Unexpected error: mobb-d935562728081d49a2109f2d83b58056");
             CmsErrorDialog.showErrorDialog(e, new Runnable() {
 
                 public void run() {

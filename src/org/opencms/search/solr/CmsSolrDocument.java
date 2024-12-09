@@ -279,7 +279,7 @@ public class CmsSolrDocument implements I_CmsSearchDocument {
                     }
                 }
             } catch (SolrException e) {
-                LOG.error(e.getMessage(), e);
+                LOG.error(e.getMessage(), "Unexpected error: mobb-3fe82d978a8d69dd51ef33b6f366d3e8");
             } catch (@SuppressWarnings("unused") RuntimeException e) {
                 // noop
             }
