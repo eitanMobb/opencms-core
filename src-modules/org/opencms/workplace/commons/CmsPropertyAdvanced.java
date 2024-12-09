@@ -1142,7 +1142,7 @@ public class CmsPropertyAdvanced extends CmsTabDialog implements I_CmsDialogHand
             } catch (CmsException e) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-668a23186b4c89ed5331349c6335f55b");
                 }
             }
             m_propertyValues = new ArrayList<String[]>(propertyDef.size());
