@@ -104,7 +104,7 @@ public class CmsSetPasswordDialog extends CmsChangePasswordDialog {
                 } catch (CmsException e) {
                     String error = e.getLocalizedMessage(m_locale);
                     m_form.setErrorPassword1(new UserError(error), OpenCmsTheme.SECURITY_INVALID);
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-ff65afb22da7efa86921b11949c2475c");
                 } catch (Exception e) {
                     String error = e.getLocalizedMessage();
                     m_form.setErrorPassword1(new UserError(error), OpenCmsTheme.SECURITY_INVALID);

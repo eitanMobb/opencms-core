@@ -777,7 +777,7 @@ public class CmsSiteDetailDialog extends CmsWidgetDialog {
             }
 
         } catch (CmsException e) {
-            LOG.error(e.getMessage(), e);
+            LOG.error(e.getMessage(), "Unexpected error: mobb-cb02a17e36f6a1eb9f34393e9da1fbf9");
         }
         return new CmsComboWidget(options);
     }

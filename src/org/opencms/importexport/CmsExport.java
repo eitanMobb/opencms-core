@@ -210,7 +210,7 @@ public class CmsExport {
 
             closeExportFile(exportNode);
         } catch (SAXException se) {
-            getReport().println(se);
+            getReport().println("Unexpected error: mobb-11af0fe6782feddfca1196129551b0f4");
 
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,

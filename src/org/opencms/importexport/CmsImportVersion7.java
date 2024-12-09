@@ -772,7 +772,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                     } catch (CmsException e) {
                         getReport().addWarning(e);
                         if (LOG.isWarnEnabled()) {
-                            LOG.warn(e.getLocalizedMessage());
+                            LOG.warn("Unexpected error: mobb-a43c91f00c9bd81baa7161f6470e99ff");
                         }
                         if (LOG.isDebugEnabled()) {
                             LOG.debug(e.getLocalizedMessage(), e);
@@ -3338,7 +3338,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                 return true;
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-40c3d45838ab629fe808ea4373b85e43", e);
         }
         return false;
 

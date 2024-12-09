@@ -616,7 +616,7 @@ public class CmsXmlSitemapGenerator {
                 result.add(rootDefaultFile);
             }
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-f37cb1922030565fbb18ad9acc1f28a2");
         }
         List<CmsJspNavElement> navElements = navBuilder.getSiteNavigation(
             m_baseFolderSitePath,

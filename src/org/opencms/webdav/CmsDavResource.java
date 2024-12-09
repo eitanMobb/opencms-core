@@ -667,7 +667,7 @@ public class CmsDavResource implements DavResource {
 
             } catch (Exception e) {
                 if (!(e instanceof CmsVfsResourceNotFoundException)) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-613b10e2c7acaf5511dc83252eb3298f", e);
                 } else {
                     LOG.info(e.getLocalizedMessage(), e);
                 }

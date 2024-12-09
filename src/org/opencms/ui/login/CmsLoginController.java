@@ -853,7 +853,7 @@ public class CmsLoginController {
             CmsJspLoginBean.logLoginException(currentCms.getRequestContext(), user, (CmsException)e);
             CmsUserLog.logLoginFailure(currentCms, user);
         } else {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-b0d8301e1f732451578d9d3e40bbfa49", e);
         }
         displayError(message.key(m_params.getLocale()), false, false);
     }

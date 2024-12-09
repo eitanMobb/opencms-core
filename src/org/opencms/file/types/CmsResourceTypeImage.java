@@ -145,7 +145,7 @@ public class CmsResourceTypeImage extends A_CmsResourceType {
                         orientation = ifd0.getInt(ExifDirectoryBase.TAG_ORIENTATION);
                     }
                 } catch (Exception e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-9fefe3f6516c1d36f546df39c5989975", e);
                 }
 
                 if (orientation != DEFAULT_ORIENTATION) {

@@ -251,7 +251,7 @@ public class CmsAdvancedDirectEditProvider extends A_CmsDirectEditProvider {
                     org.opencms.workplace.editors.Messages.get().getBundle().key(
                         org.opencms.workplace.editors.Messages.LOG_CALC_EDIT_MODE_FAILED_1,
                         resourceName),
-                    e);
+                    "Unexpected error: mobb-0d7851621f53586d9b0e9d8488fb2621");
             }
         }
         // otherwise the resource is not direct editable

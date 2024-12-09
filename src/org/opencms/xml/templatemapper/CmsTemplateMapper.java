@@ -367,7 +367,7 @@ public final class CmsTemplateMapper {
                             return config;
                         }
                     } catch (Exception e) {
-                        LOG.warn(e.getLocalizedMessage(), e);
+                        LOG.warn("Unexpected error: mobb-f445407ff0c9d046db252e44855f2903", e);
                         return new CmsTemplateMapperConfiguration(); // empty configuration, does not do anything
                     }
 

@@ -7693,7 +7693,7 @@ public final class CmsSecurityManager {
         } catch (Exception e) {
             // could happen with with shared locks on single files
             if (LOG.isWarnEnabled()) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-86dd6208c547182cd9d1d91c5ea6c592", e);
             }
         }
 

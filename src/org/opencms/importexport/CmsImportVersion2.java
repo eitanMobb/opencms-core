@@ -799,7 +799,7 @@ public class CmsImportVersion2 extends A_CmsImport {
                 LOG.debug(message.key(), exc);
             }
             // an error while importing the file
-            m_report.println(exc);
+            m_report.println("Unexpected error: mobb-da441165731d50231a916ca29a6473f0");
             try {
                 // Sleep some time after an error so that the report output has a chance to keep up
                 Thread.sleep(1000);
@@ -1019,7 +1019,7 @@ public class CmsImportVersion2 extends A_CmsImport {
             throw e;
         } catch (CmsException e) {
 
-            m_report.println(e);
+            m_report.println("Unexpected error: mobb-d8b4727a97f8fce728fd84cc0ecd85a2");
 
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_MERGING_PAGE_FILE_1,

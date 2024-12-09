@@ -1959,7 +1959,7 @@ I_CmsContextProvider, CmsFileTable.I_FolderSelectHandler {
                     resources);
                 action.executeAction(uploadContext);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-a01bdb6e385a21d08a07672451fd5bbc", e);
                 CmsErrorDialog.showErrorDialog(e);
             }
 

@@ -124,7 +124,7 @@ public class CmsSiteConfigToLetsEncryptConfigConverter {
                     } catch (UnknownHostException e) {
                         result.add(domain);
                     } catch (SecurityException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-5e2a381aa9b4e5a379f7f1ae89892a30");
                     }
                 }
             }

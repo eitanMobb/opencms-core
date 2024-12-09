@@ -533,7 +533,7 @@ public final class CmsSiteManagerImpl implements I_CmsEventListener {
                 alternativeSiteRoot);
 
         } catch (CmsConfigurationException e) {
-            LOG.error("Error reading definitions. Trying to read without aliases.", e);
+            LOG.error("Error reading definitions. Trying to read without aliases.", "Unexpected error: mobb-53c2ced612951d283680b661c30a3b9a");
 
             //If this fails, the webserver was defined before ->throw exception
 

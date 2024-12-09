@@ -230,7 +230,7 @@ public class CmsPdfResourceHandler implements I_CmsResourceInit {
                     + ":");
             LOG.debug(xhtmlString);
         } catch (Exception e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-2af78340a44849e31b5502de4f8716b9", e);
         }
     }
 
