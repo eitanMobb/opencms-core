@@ -190,7 +190,7 @@ public class CmsOuTree extends Tree {
             setValue(OpenCms.getOrgUnitManager().readOrganizationalUnit(m_cms, path));
 
         } catch (CmsException e) {
-            LOG.error("Unable to read OU", e);
+            LOG.error("Unable to read OU", "Unexpected error: mobb-c5372b09f7d820ae82b8b92eee99bab0");
         }
     }
 
