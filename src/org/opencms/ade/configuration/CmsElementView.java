@@ -319,7 +319,7 @@ public class CmsElementView {
             try {
                 m_order = Integer.parseInt(orderVal.getStringValue(cms));
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-680d7223c77005c2b8c082f2bbb57733", e);
                 m_order = DEFAULT_ORDER;
             }
         } else {
