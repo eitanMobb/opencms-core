@@ -710,7 +710,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                     m_workQueue.add(config.getStructureId());
                 }
             } catch (Exception e) {
-                LOG.warn(e.getMessage(), e);
+                LOG.warn(e.getMessage(), "Unexpected error: mobb-903fdf6acb6357a621f675c2846761db");
             }
         }
     }
