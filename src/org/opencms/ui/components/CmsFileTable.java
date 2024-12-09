@@ -558,7 +558,7 @@ public class CmsFileTable extends CmsResourceTable {
 
             setTableState(settings);
         } catch (Exception e) {
-            LOG.error("Error while reading file explorer settings from user.", e);
+            LOG.error("Error while reading file explorer settings from user.", "Unexpected error: mobb-038fa23b51843c10d4e75310319c2988");
         }
         m_fileTable.setSortContainerPropertyId(CmsResourceTableProperty.PROPERTY_SITE_PATH);
         setActionColumnProperty(CmsResourceTableProperty.PROPERTY_SITE_PATH);
