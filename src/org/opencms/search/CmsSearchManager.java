@@ -3210,7 +3210,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                         Thread.sleep(500);
                     } catch (InterruptedException e) {
                         // just continue with the loop after interruption
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-9d8f2c1deb8620f21ee73e82da32120a", e);
                     }
                 }
 
