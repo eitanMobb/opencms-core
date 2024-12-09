@@ -232,7 +232,7 @@ public class CmsGlobalConfigurationCacheEventHandler implements I_CmsEventListen
                             }
                         }
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-a3f4e2714e86af76cc3b9187c646d614", e);
                     }
                 }
                 break;
