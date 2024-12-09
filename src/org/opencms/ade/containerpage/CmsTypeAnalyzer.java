@@ -823,7 +823,7 @@ public class CmsTypeAnalyzer {
                     }
                     addEntry(element.getTypeName(), pageResource.getStructureId(), formatterId);
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-f933a0e6c40e45524b60f5740cacb0e1", e);
                 }
             }
         }
