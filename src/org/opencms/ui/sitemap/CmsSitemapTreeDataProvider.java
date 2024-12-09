@@ -195,7 +195,7 @@ public class CmsSitemapTreeDataProvider {
             data.initialize(cms);
             return data;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-f219df9770ff39a5b5cafb63541fb461");
             return null;
         }
 
