@@ -512,7 +512,7 @@ public class CmsUgcSession implements I_CmsSessionDestroyHandler {
 
             return errorHandler;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-20a68997a3f1ad49899b1df40bf8adc8", e);
             throw new CmsUgcException(e, CmsUgcConstants.ErrorCode.errMisc, e.getLocalizedMessage());
         }
 
