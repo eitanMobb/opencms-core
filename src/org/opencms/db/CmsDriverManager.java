@@ -7222,7 +7222,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
             } catch (Exception e) {
                 // resource does not exists
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-6bc76f052538150bafef2b7b0bdd31ab", e);
                 }
             }
         }
