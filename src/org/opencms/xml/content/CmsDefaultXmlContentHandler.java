@@ -1163,7 +1163,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                     return (I_CmsComplexWidget)(cls.newInstance());
                 }
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-60a37e61df20ca63c3a365cda8e3e983", e);
                 return null;
             }
         }
