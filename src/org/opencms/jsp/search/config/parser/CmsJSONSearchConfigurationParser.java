@@ -684,7 +684,7 @@ public class CmsJSONSearchConfigurationParser implements I_CmsSearchConfiguratio
         } catch (JSONException e) {
             if (null == m_baseConfig) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_EXTRA_PARAMETERS_0), e);
+                    LOG.info(Messages.get().getBundle().key(Messages.LOG_NO_EXTRA_PARAMETERS_0), "Unexpected error: mobb-ab90116fa960066c96ae7a39a8edc836");
                 }
                 return "";
             } else {
