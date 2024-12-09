@@ -334,7 +334,7 @@ public class CmsChangePasswordDialog extends CmsBasicDialog {
                         m_form.setErrorOldPassword(
                             new UserError(e.getLocalizedMessage(m_locale)),
                             OpenCmsTheme.SECURITY_INVALID);
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-13c8454b3aa393a28e557b43c98d3d53");
                     }
                 });
             }
