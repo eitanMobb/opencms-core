@@ -3338,7 +3338,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                 return true;
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-40c3d45838ab629fe808ea4373b85e43", e);
         }
         return false;
 
