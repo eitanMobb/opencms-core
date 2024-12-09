@@ -135,7 +135,7 @@ public class CmsUserDataResourceHandler implements I_CmsResourceInit {
         } catch (CmsResourceInitException e) {
             throw e;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-482c6b4ddca61f9861989ab83df9f8ac", e);
         }
         return null;
 
