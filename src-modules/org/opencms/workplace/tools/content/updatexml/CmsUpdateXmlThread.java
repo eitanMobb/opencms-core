@@ -325,7 +325,7 @@ public class CmsUpdateXmlThread extends A_CmsReportThread {
                         Messages.get().container(Messages.RPT_UPDATEXML_UNLOCK_FILE_0),
                         I_CmsReport.FORMAT_WARNING);
                     if (LOG.isErrorEnabled()) {
-                        LOG.error(e.getMessageContainer(), e);
+                        LOG.error(e.getMessageContainer(), "Unexpected error: mobb-8cd9edb4bd4887ab1e92443ac2a9251e");
                     }
                     continue;
                 }
