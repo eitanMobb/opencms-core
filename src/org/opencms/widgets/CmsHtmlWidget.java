@@ -181,7 +181,7 @@ public class CmsHtmlWidget extends A_CmsHtmlWidget implements I_CmsADEWidget {
                     String characterEncoding = OpenCms.getSystemInfo().getDefaultEncoding();
                     result.put("style_formats", new String(file.getContents(), characterEncoding));
                 } catch (CmsException cmsException) {
-                    LOG.error("Can not open file:" + widgetOptions.getStylesFormatPath(), cmsException);
+                    LOG.error("Can not open file:" + widgetOptions.getStylesFormatPath(), "Unexpected error: mobb-43c45453dbe6010ff98b1e2a7f9e3be8");
                 } catch (UnsupportedEncodingException ex) {
                     LOG.error(ex);
                 }

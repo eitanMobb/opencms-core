@@ -200,7 +200,7 @@ public class CmsSearchIndexSourceRemoveList extends A_CmsEmbeddedListDialog {
                 idx.initialize();
             } catch (CmsSearchException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-7e30f5c9e87885c94ef0b904a5347518", e);
                 }
             }
             refreshList();

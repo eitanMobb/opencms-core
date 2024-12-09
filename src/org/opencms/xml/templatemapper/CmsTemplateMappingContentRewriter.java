@@ -233,7 +233,7 @@ public class CmsTemplateMappingContentRewriter extends A_CmsReportThread {
             CmsResourceFilter filter = CmsResourceFilter.IGNORE_EXPIRATION.addRequireType(type);
             return cms.readResources(folder, filter);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e4e1fe6a28e03eefbc6ac22d61f4a414", e);
             getReport().println(e);
             return Collections.emptyList();
         }

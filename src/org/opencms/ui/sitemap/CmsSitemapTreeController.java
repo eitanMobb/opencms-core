@@ -1162,7 +1162,7 @@ public class CmsSitemapTreeController {
             ComponentContainer parent = (ComponentContainer)(node.getParent());
             parent.replaceComponent(node, changedNode);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-c3750d45871e0bcb0ff84f12fe949b4e", e);
         }
     }
 

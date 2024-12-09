@@ -161,7 +161,7 @@ public class CmsJspContentAttachmentsBean {
             try {
                 return new CmsJspContentAttachmentsBean(cms, detailOnly.get());
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-012ac1a4011e59ba0cbd819fb82ceff9", e);
                 return new CmsJspContentAttachmentsBean();
             }
         } else {

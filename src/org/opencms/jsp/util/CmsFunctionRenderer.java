@@ -270,7 +270,7 @@ public class CmsFunctionRenderer {
             CmsDynamicFunctionParser parser = new CmsDynamicFunctionParser();
             functionBean = parser.parseFunctionBean(m_cms, content);
         } catch (CmsException e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-8aee8384a6289143df198a588d307625", e);
             return null;
         }
         CmsJspStandardContextBean contextBean = CmsJspStandardContextBean.getInstance(m_request);

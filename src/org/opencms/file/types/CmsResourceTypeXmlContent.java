@@ -292,7 +292,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                     CmsLockUtil.ensureLock(cms, page);
                     cms.deleteResource(page, CmsResource.DELETE_PRESERVE_SIBLINGS);
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-86bd250d4f3d1b1028a0d3325401a78b");
                 }
             }
         }
@@ -712,7 +712,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                 true);
             return xsdLink;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0d677d0b6580c2d3044f1fad65dca368", e);
         }
         return null;
     }

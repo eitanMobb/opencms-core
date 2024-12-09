@@ -89,7 +89,7 @@ public class CmsJlanDiskInterface implements DiskInterface {
      */
     public static IOException convertCmsException(CmsException e) {
 
-        LOG.error(e.getLocalizedMessage(), e);
+        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-335b3f3540c9b46196d0cd9440add2e3");
         if (e instanceof CmsSecurityException) {
             return new AccessDeniedException(e.getMessage(), e);
         } else if (e instanceof CmsVfsResourceAlreadyExistsException) {
@@ -552,7 +552,7 @@ public class CmsJlanDiskInterface implements DiskInterface {
         try {
             cms.unlockResource(path);
         } catch (Throwable e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-6c4fdb4cfd5ed8f079c6ea75bd946c65", e);
         }
 
     }
