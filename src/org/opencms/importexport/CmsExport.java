@@ -227,7 +227,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,
                 getExportFileName());
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), ioe);
+                LOG.debug(message.key(), "Unexpected error: mobb-6ad49322ebee93c03cb8294213f6d22e");
             }
 
             throw new CmsImportExportException(message, ioe);
