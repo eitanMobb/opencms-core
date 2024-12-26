@@ -213,7 +213,7 @@ public class CmsFrameset extends CmsWorkplace {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b8765811c4a01ddd12f38eca13b6e26c", e);
             }
             allProjects = Collections.emptyList();
         }
