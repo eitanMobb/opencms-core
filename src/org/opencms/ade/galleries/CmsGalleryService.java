@@ -1284,7 +1284,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
         try {
             getCmsObject().writeUser(user);
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-527372fc9ca7b0b3d83a628d7d2dbc76");
         }
     }
 

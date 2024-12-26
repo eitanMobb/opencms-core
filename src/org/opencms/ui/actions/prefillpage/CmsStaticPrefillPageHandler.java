@@ -160,7 +160,7 @@ public class CmsStaticPrefillPageHandler implements I_CmsPrefillPageHandler {
             prefillTemplateStr = resolver.resolveMacros(prefillTemplateStr).replace("//", "/");
             return cms.readResource(prefillTemplateStr, CmsResourceFilter.IGNORE_EXPIRATION);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-2cb6da7ec2d7cec259d8c722ac6a03a4", e);
             return null;
         }
 

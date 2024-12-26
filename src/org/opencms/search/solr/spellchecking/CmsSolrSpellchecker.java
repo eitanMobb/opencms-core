@@ -477,7 +477,7 @@ public final class CmsSolrSpellchecker {
             QueryResponse qres = m_solrClient.query(query);
             return qres.getSpellCheckResponse();
         } catch (Exception e) {
-            LOG.debug("Exception while performing spellcheck query...", e);
+            LOG.debug("Exception while performing spellcheck query...", "Unexpected error: mobb-05edfe873d79a9a038100fc0aeb1bfba");
         }
 
         return null;

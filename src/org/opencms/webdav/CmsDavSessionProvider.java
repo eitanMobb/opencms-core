@@ -80,7 +80,7 @@ public class CmsDavSessionProvider implements DavSessionProvider {
             try {
                 repoSession = m_repository.login(username, password);
             } catch (CmsException e) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-f87b458de8e50580e64780e2a0fe8e5c");
             }
         }
         if (repoSession == null) {
