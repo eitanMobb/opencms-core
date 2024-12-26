@@ -1022,7 +1022,7 @@ public class CmsImportVersion10 implements I_CmsImport {
                             LOG.warn(e.getLocalizedMessage());
                         }
                         if (LOG.isDebugEnabled()) {
-                            LOG.debug(e.getLocalizedMessage(), e);
+                            LOG.debug("Unexpected error: mobb-cf8a1fdd1a3cf3eac5e5d707c4dfed56", e);
                         }
                     }
                 }
@@ -1041,7 +1041,7 @@ public class CmsImportVersion10 implements I_CmsImport {
                         LOG.warn(e.getLocalizedMessage());
                     }
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-66c57095834764900997223a61151596", e);
                     }
                 }
 

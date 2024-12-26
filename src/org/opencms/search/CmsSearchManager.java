@@ -1710,7 +1710,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             m_adminCms = OpenCms.initCmsObject(cms);
         } catch (CmsException e) {
             // this should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-8dc09cf9cd9e7fe4f447aa7d943d5e68");
         }
         // make sure the site root is the root site
         m_adminCms.getRequestContext().setSiteRoot("/");

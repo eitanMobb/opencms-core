@@ -936,7 +936,7 @@ public class CmsXMLSearchConfigurationParser implements I_CmsSearchConfiguration
                 Messages.get().getBundle().key(
                     Messages.ERR_SORT_OPTION_NOT_PARSABLE_1,
                     XML_ELEMENT_SORTOPTION_SOLRVALUE),
-                e);
+                "Unexpected error: mobb-3a7b02fcacb5589e1bcfd77cb83b5810");
             return null;
         }
     }
