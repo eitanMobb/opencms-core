@@ -772,7 +772,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                     } catch (CmsException e) {
                         getReport().addWarning(e);
                         if (LOG.isWarnEnabled()) {
-                            LOG.warn(e.getLocalizedMessage());
+                            LOG.warn("Unexpected error: mobb-a43c91f00c9bd81baa7161f6470e99ff");
                         }
                         if (LOG.isDebugEnabled()) {
                             LOG.debug(e.getLocalizedMessage(), e);
