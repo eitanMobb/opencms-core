@@ -438,7 +438,7 @@ public class CmsPublishService extends CmsGwtService implements I_CmsPublishServ
                         CmsResourceFilter.ALL_MODIFIED);
                     toAdd.addAll(changedSiblings);
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-dc34fe6b7d6eb53e987f9004194bb400", e);
                 }
             }
         }
