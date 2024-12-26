@@ -142,7 +142,7 @@ public class CmsUpdateDBProjectId extends org.opencms.setup.db.update6to7.CmsUpd
     @Override
     protected void createTempTable(CmsSetupDb dbCon) throws SQLException {
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-1f71d12c579bc164ded4f4d12299b4e7");
         if (!dbCon.hasTableOrColumn(TEMPORARY_TABLE_NAME, null)) {
             String createStatement = readQuery(QUERY_CREATE_TEMP_TABLE_UUIDS);
 
