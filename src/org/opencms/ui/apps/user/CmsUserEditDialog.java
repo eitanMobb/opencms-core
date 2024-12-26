@@ -1337,7 +1337,7 @@ public class CmsUserEditDialog extends CmsBasicDialog implements I_CmsPasswordFe
                 }
             }
         } catch (CmsException e) {
-            LOG.error("Unable to read projects", e);
+            LOG.error("Unable to read projects", "Unexpected error: mobb-6a21fa3b9d148b7d840b3739fff629cb");
         }
     }
 
