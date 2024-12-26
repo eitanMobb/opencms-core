@@ -217,7 +217,7 @@ public class CmsMoveUserToOU extends CmsBasicDialog {
                         m_cms.removeUserFromGroup(m_user.getName(), group.getName());
                     } catch (CmsIllegalArgumentException e) {
                         //Group not there.. happens if the Admin group gets removed
-                        LOG.error("User cannot be removed from group", e);
+                        LOG.error("User cannot be removed from group", "Unexpected error: mobb-36d24799814cbedd38a32ad91748a04f");
                     }
                 }
                 OpenCms.getOrgUnitManager().setUsersOrganizationalUnit(
