@@ -382,7 +382,7 @@ public final class CmsStandardVisibilityCheck extends A_CmsSimpleVisibilityCheck
                         return VISIBILITY_INVISIBLE;
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-de5f29b3e8ffc47eda88e2984d7e82c0", e);
                     return VISIBILITY_INVISIBLE;
                 }
             }
