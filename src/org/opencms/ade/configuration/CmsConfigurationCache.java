@@ -784,7 +784,7 @@ class CmsConfigurationCache implements I_CmsGlobalConfigurationCache {
                             result.put(res.getStructureId(), config);
                         }
                     } catch (Exception e) {
-                        LOG.error(e.getMessage(), e);
+                        LOG.error("Unexpected error: mobb-b16a18b30264dbec64b13d6254dcc09b", e);
                     }
                 }
             } catch (CmsException e) {
