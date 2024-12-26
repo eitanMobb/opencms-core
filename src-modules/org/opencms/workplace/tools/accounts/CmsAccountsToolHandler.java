@@ -394,7 +394,7 @@ public class CmsAccountsToolHandler extends CmsDefaultToolHandler {
             } catch (Exception e) {
                 // ignore
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-06ef7a4b4994cd87e84c20dcd11d6293", e);
                 }
             }
         } else if (getLink().equals(getPath(ACCMAN_FILE))) {
