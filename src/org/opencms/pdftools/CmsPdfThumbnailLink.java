@@ -158,7 +158,7 @@ public class CmsPdfThumbnailLink {
             String widthStr = optionMap.get("w");
             m_width = Integer.parseInt(widthStr);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-85f3933ef91ff34ff295fc6c3f822038", e);
         }
 
         try {
