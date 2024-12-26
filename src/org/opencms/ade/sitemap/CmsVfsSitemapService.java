@@ -2423,7 +2423,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                 }
             } catch (Throwable e) {
                 // should never happen, catches json parsing
-                LOG.warn(e.getLocalizedMessage());
+                LOG.warn("Unexpected error: mobb-2816b4bbfa1f023e4c1ea1dfff33fe10");
             }
         }
         return result;
