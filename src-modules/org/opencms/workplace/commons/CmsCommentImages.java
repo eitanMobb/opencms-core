@@ -262,7 +262,7 @@ public class CmsCommentImages extends CmsDialog {
         } catch (CmsException e) {
             // log, should never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(getLocale()));
+                LOG.error("Unexpected error: mobb-c32c18f79ca989afd79555a3de1589fa");
             }
             return Collections.emptyList();
         }
