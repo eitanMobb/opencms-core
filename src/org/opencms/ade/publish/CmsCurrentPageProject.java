@@ -244,7 +244,7 @@ public class CmsCurrentPageProject implements I_CmsVirtualProject {
                         resources.add(parent);
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-5d2c0a0602ab0e7637901fe0a14ba566");
                 }
 
             }
