@@ -283,7 +283,7 @@ public class CmsJspUserDataRequestBean {
                         cloneCms.loginUser(info.getUserName(), password);
                         return State.viewOk.toString();
                     } catch (CmsException e) {
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-2f8b400bbd7fd4db684484448c8206bb", e);
                         m_errorHtml = "login error";
                         return State.view.toString();
                     }
