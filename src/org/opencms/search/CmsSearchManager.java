@@ -1294,7 +1294,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
             resourceType = OpenCms.getResourceManager().getResourceType(resource.getTypeId()).getTypeName();
         } catch (CmsLoaderException e) {
             // ignore, unknown resource type, resource can not be indexed
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-2530ca0305d8b422675aa9d3bb41cb55", e);
         }
         return getDocumentTypeKeys(resourceType, mimeType);
     }
