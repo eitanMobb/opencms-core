@@ -427,7 +427,7 @@ public class CmsTransformerTemplateProvider implements I_CmsTemplateContextProvi
                 false);
             return prop.getValue();
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-42021d7bbb151b077ef6def784be165d", e);
             return null;
         }
     }
