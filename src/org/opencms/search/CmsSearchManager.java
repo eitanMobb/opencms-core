@@ -937,7 +937,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     searchIndex.initialize();
                 } catch (CmsException e) {
                     // should never happen
-                    LOG.error(e.getMessage(), e);
+                    LOG.error("Unexpected error: mobb-901e58cd815752f4ac48a71001f52b56", e);
                 }
             }
         }
