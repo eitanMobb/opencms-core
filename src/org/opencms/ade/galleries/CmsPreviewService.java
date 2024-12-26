@@ -177,7 +177,7 @@ public class CmsPreviewService extends CmsGwtService implements I_CmsPreviewServ
                 }
             }
         } catch (Exception e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-133c79a0412ff1acb956b2c259e91172", e);
         }
         return null;
     }

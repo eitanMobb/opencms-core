@@ -543,7 +543,7 @@ public class CmsSessionsTable extends Table {
             });
 
         } catch (CmsException e) {
-            LOG.error("Unable to read sessions", e);
+            LOG.error("Unable to read sessions", "Unexpected error: mobb-0754edd6cde069e56dd50d6461500b7e");
         }
 
     }

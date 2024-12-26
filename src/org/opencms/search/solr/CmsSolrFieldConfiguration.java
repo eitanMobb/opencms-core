@@ -413,7 +413,7 @@ public class CmsSolrFieldConfiguration extends CmsSearchFieldConfiguration {
                                             elemResource.getRootPath(),
                                             field.getName(),
                                             resource.getRootPath()),
-                                        e);
+                                        "Unexpected error: mobb-da2982b085fb4658e4107643c4a42cf3");
                                 }
                             } else {
                                 LOG.error(

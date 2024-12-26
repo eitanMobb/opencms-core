@@ -145,7 +145,7 @@ public class CmsResourceTypeImage extends A_CmsResourceType {
                         orientation = ifd0.getInt(ExifDirectoryBase.TAG_ORIENTATION);
                     }
                 } catch (Exception e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-9fefe3f6516c1d36f546df39c5989975", e);
                 }
 
                 if (orientation != DEFAULT_ORIENTATION) {
@@ -786,7 +786,7 @@ public class CmsResourceTypeImage extends A_CmsResourceType {
 
             }
         } catch (Exception e) {
-            LOG.error("Error while trying to determine size of SVG: " + e.getLocalizedMessage(), e);
+            LOG.error("Error while trying to determine size of SVG: " + e.getLocalizedMessage(), "Unexpected error: mobb-2b63316120738c72b96fbf7b05337c83");
         }
         return newProps;
     }

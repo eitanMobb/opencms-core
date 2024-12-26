@@ -159,7 +159,7 @@ public class CmsPersistentLoginTokenHandler {
             try {
                 return new String(Hex.decodeHex(nameHex.toCharArray()), "UTF-8");
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-c6e667125799799e60a2bfb7bd6c95c4", e);
                 return null;
             }
         }

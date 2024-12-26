@@ -474,7 +474,7 @@ public class CmsUserSettings {
         try {
             settings.save(cms);
         } catch (CmsException e) {
-            LOG.error("Could not store preference " + key + ": " + e.getLocalizedMessage(), e);
+            LOG.error("Could not store preference " + key + ": " + "Unexpected error: mobb-0195b5e4bcf08f39b38e5aab6965e54c", e);
         }
     }
 

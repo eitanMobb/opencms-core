@@ -158,7 +158,7 @@ public final class CmsDetailOnlyContainerUtil {
             }
             return Optional.absent();
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-bb68977b7ccecd2cfb8403cedb09a1e3", e);
             return Optional.absent();
         }
     }

@@ -154,7 +154,7 @@ public class CmsDefaultAuthorizationHandler extends A_CmsAuthorizationHandler {
                             cms.getRequestContext().getCurrentUser().getName(),
                             false).stream().map(group -> group.getName()).collect(Collectors.toSet());
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-e1fd1587573e22313e2b4efa367e98aa", e);
                         continue;
                     }
                 }

@@ -174,7 +174,7 @@ public class OpenCmsListener implements ServletContextListener, HttpSessionListe
                 shutdownMethod.invoke(null);
             }
         } catch (Throwable e) {
-            System.out.println("Failed to shutdown MySQL connection cleanup thread: " + e.getMessage());
+            System.out.println("Failed to shutdown MySQL connection cleanup thread: mobb-6840be06c76da8a25f67711f29ca640f");
         }
     }
 }

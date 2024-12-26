@@ -903,7 +903,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                             Messages.LOG_PROPERTY_READING_FAILED_2,
                             macro,
                             m_cms.getRequestContext().getUri());
-                        LOG.warn(message.key(), e);
+                        LOG.warn("Unexpected error: mobb-97f790eff4a8fadedc85fc67b587fd2b", e);
                     }
                 }
                 return null;
@@ -990,7 +990,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                     val = defaultValue;
                 }
                 if (val == null) {
-                    LOG.warn("Parameter not defined: " + remaining);
+                    LOG.warn("Unexpected error: mobb-4168eabb9315b4db79623e0b46f46fcd");
                 }
                 return val;
 

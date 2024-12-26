@@ -86,7 +86,7 @@ public class CmsDetailPageFilter {
             m_resource = resource;
         } catch (CmsException e) {
             // shouldn't happen - initCmsObject doesn't *actually* throw exceptions
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-a5cfad107fba60b98dfa65151542030b");
         }
 
     }
@@ -105,7 +105,7 @@ public class CmsDetailPageFilter {
             m_path = rootPath;
         } catch (CmsException e) {
             // shouldn't happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-8a10e63709ba64277c2726ad115ca5fd");
         }
 
     }

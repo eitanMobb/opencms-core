@@ -602,7 +602,7 @@ public class CmsLock extends CmsMultiDialog implements I_CmsDialogHandler {
             } catch (CmsException e) {
                 // error reading a resource, should usually never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-09cbda43039ccd7e2bda231ec0390073", e);
                 }
             }
             if (Boolean.valueOf(getParamIncluderelated()).booleanValue()) {
@@ -1024,7 +1024,7 @@ public class CmsLock extends CmsMultiDialog implements I_CmsDialogHandler {
                 } catch (CmsException e) {
                     // error reading a resource, should usually never happen
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getLocalizedMessage(getLocale()), e);
+                        LOG.debug("Unexpected error: mobb-b6fee2d56730f6249df9481179c4f645", e);
                     }
                     continue;
                 }

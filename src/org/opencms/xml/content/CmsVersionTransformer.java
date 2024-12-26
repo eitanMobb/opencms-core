@@ -179,12 +179,12 @@ public class CmsVersionTransformer {
                             + "\n----------------------------\n"
                             + CmsXmlUtils.marshal(result, "UTF-8"));
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-23281dc90a8c7ac06b26d1f6121e8e0f", e);
                 }
             }
             return result;
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a3ebb82a73c2f0536866f91f0797bff6", e);
             throw new CmsRuntimeException(
                 Messages.get().container(Messages.ERR_XMLCONTENT_VERSION_TRANSFORMATION_ERROR_1, transformation),
                 e);

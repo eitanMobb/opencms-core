@@ -128,7 +128,7 @@ public class CmsResourceSelectDialog extends CustomComponent {
                     cms.getRequestContext().setSiteRoot(m_siteRoot);
                     path = cms.getRequestContext().removeSiteRoot(path);
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-49d29e16a550068e17ef9b69cb70408a");
 
                 }
             }

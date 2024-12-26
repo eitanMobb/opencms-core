@@ -259,7 +259,7 @@ public class CmsExtendedSiteSelector extends ComboBox<SiteSelectorOption> {
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-89542d5a4dbe1baad61ba1753e6168ba", e);
             }
         }
         List<SiteSelectorOption> result = new ArrayList<>();

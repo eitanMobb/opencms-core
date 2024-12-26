@@ -310,7 +310,7 @@ public final class CmsPublishEngine {
             m_adminUserId = m_driverManager.readUser(dbc, OpenCms.getDefaultUsers().getUserAdmin()).getId();
         } catch (CmsException e) {
             dbc.rollback();
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a30c69d9817777fce29641672a62c20c", e);
         } finally {
             dbc.clear();
         }

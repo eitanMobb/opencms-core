@@ -210,7 +210,7 @@ public class CmsExport {
 
             closeExportFile(exportNode);
         } catch (SAXException se) {
-            getReport().println(se);
+            getReport().println("Unexpected error: mobb-11af0fe6782feddfca1196129551b0f4");
 
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_EXPORTING_TO_FILE_1,
@@ -1329,7 +1329,7 @@ public class CmsExport {
             digestElement(parent, e);
         } catch (CmsException e) {
             if (LOG.isDebugEnabled()) {
-                LOG.debug(e.getLocalizedMessage(), e);
+                LOG.debug("Unexpected error: mobb-8e13c70930575f7feebffd88b0522e53", e);
             }
             throw new CmsImportExportException(e.getMessageContainer(), e);
         }

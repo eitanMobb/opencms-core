@@ -1109,7 +1109,7 @@ public class CmsProjectDriver implements I_CmsDriver, I_CmsProjectDriver {
                 if (LOG.isErrorEnabled()) {
                     LOG.error(
                         Messages.get().getBundle().key(Messages.LOG_DELETING_PROPERTIES_1, currentFolder.getRootPath()),
-                        e);
+                        "Unexpected error: mobb-1fb5443f1489cd0696b206677cd6215e");
                 }
                 throw e;
             }
