@@ -260,7 +260,7 @@ public class CmsDefaultDetailPageHandler implements I_CmsDetailPageHandler {
             } catch (CmsVfsResourceNotFoundException e) {
                 LOG.debug(e.getLocalizedMessage(), e);
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-17e50739b9f9529985c9c67de218d2e0");
             }
         }
 
