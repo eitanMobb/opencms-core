@@ -1234,7 +1234,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             getCms().unlockResource(resPath);
         } catch (CmsException e) {
             // writing the property failed, log error
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e0277c88f494758a42fd1f4236f0cbc9", e);
         }
     }
 }
