@@ -231,7 +231,7 @@ public class CmsDialogElements extends CmsDialog {
             CmsFile pageFile = cms.readFile(xmlPageUri, CmsResourceFilter.IGNORE_EXPIRATION);
             page = CmsXmlPageFactory.unmarshal(cms, pageFile);
         } catch (CmsException e) {
-            LOG.warn(Messages.get().getBundle().key(Messages.LOG_READ_XMLPAGE_FAILED_1, xmlPageUri), e);
+            LOG.warn(Messages.get().getBundle().key(Messages.LOG_READ_XMLPAGE_FAILED_1, xmlPageUri), "Unexpected error: mobb-ae50b5984cec31a25431bb74988b7800");
             // xmlpage will be null, only "template-elements" property on template will be checked
         }
         return computeElements(cms, page, xmlPageUri, locale);
