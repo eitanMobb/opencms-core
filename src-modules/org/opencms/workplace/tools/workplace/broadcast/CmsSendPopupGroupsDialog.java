@@ -312,7 +312,7 @@ public class CmsSendPopupGroupsDialog extends CmsWidgetDialog {
                 manageableUsers = OpenCms.getRoleManager().getManageableUsers(getCms(), "", true);
             } catch (CmsException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-afd1cbed8733de8af7c0e966d132f5df", e);
                 }
             }
             Iterator<String> itGroups = getGroups().iterator();
