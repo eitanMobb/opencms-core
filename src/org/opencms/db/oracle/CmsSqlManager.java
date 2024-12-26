@@ -91,7 +91,7 @@ public class CmsSqlManager extends org.opencms.db.generic.CmsSqlManager {
             } catch (SQLException exc) {
                 // ignore
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(exc.getLocalizedMessage(), exc);
+                    LOG.debug("Unexpected error: mobb-f0dea2b0de633ecdab699d74b41c749a", exc);
                 }
             }
         }
