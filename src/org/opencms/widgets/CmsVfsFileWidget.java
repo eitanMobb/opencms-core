@@ -648,7 +648,7 @@ public class CmsVfsFileWidget extends A_CmsWidget implements I_CmsADEWidget {
             }
 
         } catch (JSONException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-74c55f706f031124d3647d0781c945de");
         }
         return config;
     }
