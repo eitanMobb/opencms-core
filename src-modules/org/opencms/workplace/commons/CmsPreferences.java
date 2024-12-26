@@ -575,7 +575,7 @@ public class CmsPreferences extends CmsTabDialog {
         } catch (ServletException e) {
             // error during forward, do nothing
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-30187a2e399693b2f0319f8b8f5dfb6d");
             }
         }
     }
