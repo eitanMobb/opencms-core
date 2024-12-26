@@ -352,7 +352,7 @@ public abstract class CmsMultiDialog extends CmsDialog {
             } catch (CmsException e) {
                 // can usually be ignored
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-871b67d15a6fb7e70f94f3793802abba");
                 }
             }
         }
