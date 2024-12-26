@@ -616,7 +616,7 @@ public final class CmsJspVfsAccessBean {
                     CmsJspResourceWrapper wrapper = CmsJspResourceWrapper.wrap(m_cms, res);
                     return wrapper.getLocaleResource();
                 } catch (Exception e) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-f818636023e4c43fe57e677fa9e2cadd", e);
                     return new HashMap<String, CmsJspResourceWrapper>();
                 }
             }
