@@ -1338,7 +1338,7 @@ public class CmsUpdateBean extends CmsSetupBean {
                                 return true;
                             }
                         } catch (Exception e) {
-                            LOG.warn(e.getMessage(), e);
+                            LOG.warn("Unexpected error: mobb-138651bb58d9e16020d6d3a3e74f5150", e);
                         } finally {
                             if (jarStream != null) {
                                 try {
