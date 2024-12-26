@@ -475,9 +475,9 @@ public class CmsXmlSitemapGenerator {
             } catch (CmsException e) {
                 LOG.warn(
                     "Could not get relation target for relation "
-                        + relation.toString()
+                        + "<REDACTED>"
                         + " | "
-                        + e.getLocalizedMessage(),
+                        + "Unexpected error: mobb-2dc969226d4b52bacf8538c3a64ce3bb",
                     e);
             }
         }
