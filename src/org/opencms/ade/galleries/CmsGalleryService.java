@@ -843,7 +843,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                                 String userName = cms.readUser(selectedResource.getUserLastModified()).getFullName();
                                 result.setUserLastModified(userName);
                             } catch (CmsException e) {
-                                log(e.getMessage(), e);
+                                log("Unexpected error: mobb-c2cc1059526378f8a1b499f316781aa5", e);
                             }
                             Date date = new Date(selectedResource.getDateLastModified());
                             String formattedDate = CmsDateUtil.getDateTime(
