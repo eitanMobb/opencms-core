@@ -431,7 +431,7 @@ public class CmsSiteConfigToLetsEncryptConfigConverter {
                     URI uri = new URI(wpServer);
                     workplaceDomains.add(uri.getHost());
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-9cb4588a15b93b47918cdf36247ed87d", e);
                 }
             }
             result.addDomainSet(workplaceDomains);
