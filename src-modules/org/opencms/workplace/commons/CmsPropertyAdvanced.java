@@ -980,7 +980,7 @@ public class CmsPropertyAdvanced extends CmsTabDialog implements I_CmsDialogHand
                         } catch (CmsException e1) {
                             // should usually never happen
                             if (LOG.isErrorEnabled()) {
-                                LOG.error(e1.getLocalizedMessage(), e1);
+                                LOG.error(e1.getLocalizedMessage(), "Unexpected error: mobb-b67778b33138fe81cd2fb2b93686fe65");
                             }
                         }
                     }
