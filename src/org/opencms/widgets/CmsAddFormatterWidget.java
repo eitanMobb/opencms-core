@@ -102,7 +102,7 @@ public class CmsAddFormatterWidget extends A_CmsFormatterWidget {
             return result;
         } catch (CmsException e) {
             // should never happen
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-60eb60d43d3d6388aafee599aeb87515", e);
             return null;
         }
 
