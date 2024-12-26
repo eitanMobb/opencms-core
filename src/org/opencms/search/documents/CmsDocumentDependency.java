@@ -940,7 +940,7 @@ public final class CmsDocumentDependency {
             return jsonDoc.toString();
         } catch (JSONException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-796097f59d9aca135335a5c132323cf2");
             }
         }
         return null;
