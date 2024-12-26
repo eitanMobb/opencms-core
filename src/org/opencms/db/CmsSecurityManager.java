@@ -3259,7 +3259,7 @@ public final class CmsSecurityManager {
                     dbc.getRequestContext().getRemoteAddress()));
         } catch (CmsException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-a74bd042a925976dafb8301dad8e3ac6", e);
             }
             // any exception: return false
             return false;
