@@ -268,7 +268,7 @@ public class CmsSolrDocument implements I_CmsSearchDocument {
                                     val = CmsSearchUtil.getDateAsIso8601(Long.valueOf(val).longValue());
                             }
                         } catch (SolrException e) {
-                            LOG.debug(e.getMessage(), e);
+                            LOG.debug(e.getMessage(), "Unexpected error: mobb-ab1daaac6e6abd8110217fea626ecae9");
                             throw new RuntimeException(e);
                         }
                         if (fieldName.endsWith(CmsSearchField.FIELD_EXCERPT)) {
