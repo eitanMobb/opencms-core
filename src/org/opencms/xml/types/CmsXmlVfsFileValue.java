@@ -364,7 +364,7 @@ public class CmsXmlVfsFileValue extends A_CmsXmlContentValue implements I_CmsJso
         } catch (JSONException e) {
             return null;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-8c485063f9c620e61a5e5d7f4bc07d70", e);
             return null;
         }
     }
