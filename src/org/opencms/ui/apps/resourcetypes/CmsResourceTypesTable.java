@@ -360,7 +360,7 @@ public class CmsResourceTypesTable extends Table {
                 }
 
             } catch (CmsLoaderException e) {
-                LOG.error("Unable to read resource type", e);
+                LOG.error("Unable to read resource type", "Unexpected error: mobb-b2061a3e4fc9a410dbe961622f204afc");
             } catch (CmsException e) {
                 LOG.error("Unable to read schema file", e);
             }
