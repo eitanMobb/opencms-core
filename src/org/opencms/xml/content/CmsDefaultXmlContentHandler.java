@@ -3906,7 +3906,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 m_visibilityConfigurations.put(elementName, new VisibilityConfiguration(handler, params));
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ef9f22060567f3c08d00adb596ebe266", e);
             }
         }
     }
