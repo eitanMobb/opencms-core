@@ -120,7 +120,7 @@ public class CmsExportSiteForm extends CmsBasicDialog {
         try {
             cms = OpenCms.initCmsObject(m_cms);
         } catch (CmsException e1) {
-            LOG.error(e1.getLocalizedMessage(), e1);
+            LOG.error("Unexpected error: mobb-8ec5e192eb0f54698bc825d75e811d24", e1);
         }
         cms.getRequestContext().setSiteRoot(m_siteRoot);
         CmsExportParameters m_exportParams = new CmsExportParameters();
