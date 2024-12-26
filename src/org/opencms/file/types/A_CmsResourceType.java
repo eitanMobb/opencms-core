@@ -1204,7 +1204,7 @@ public abstract class A_CmsResourceType implements I_CmsResourceType {
                 cms.adjustLinks(copiedResources, realAdjustFolderPath);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0d4f4b50ea13c4b5ce7b82ce39ba606b", e);
         } catch (CmsIllegalArgumentException e) {
             LOG.error(e.getLocalizedMessage(), e);
         }
