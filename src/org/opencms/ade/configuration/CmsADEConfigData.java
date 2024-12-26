@@ -2050,7 +2050,7 @@ public class CmsADEConfigData {
                     iconClasses);
                 result.add(page.isInherited() ? correctedPage.copyAsInherited() : correctedPage);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-133a725d19816e394722a40a9f0df57b", e);
             }
         }
         return result;
