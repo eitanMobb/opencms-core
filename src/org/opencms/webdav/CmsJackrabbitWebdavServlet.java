@@ -229,7 +229,7 @@ public class CmsJackrabbitWebdavServlet extends AbstractWebdavServlet {
         try {
             super.service(request, response);
         } catch (ServletException | IOException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-1c4eead02de80faaf8abfa5b61fe6ead", e);
             throw e;
         } catch (Exception e) {
             LOG.error(e.getLocalizedMessage(), e);
