@@ -200,7 +200,7 @@ public class CmsResourceTypeXmlContainerPage extends CmsResourceTypeXmlContent {
                     result = true;
                 }
             } catch (CmsException e) {
-                LOG.warn(e.getMessage(), e);
+                LOG.warn(e.getMessage(), "Unexpected error: mobb-f10bfd7e9a92abe9ade0f98a149fc944");
             }
 
         }
