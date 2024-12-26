@@ -3710,7 +3710,7 @@ public class CmsProjectDriver implements I_CmsDriver, I_CmsProjectDriver {
                 if (LOG.isErrorEnabled()) {
                     LOG.error(
                         Messages.get().getBundle().key(Messages.LOG_REMOVING_VISITEDLOG_1, offlineResource.toString()),
-                        e);
+                        "Unexpected error: mobb-ee95bde78a1eda4618525590726e26fb");
                 }
                 throw e;
             }

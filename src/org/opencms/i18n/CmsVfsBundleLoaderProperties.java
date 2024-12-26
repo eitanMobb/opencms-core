@@ -90,7 +90,7 @@ public class CmsVfsBundleLoaderProperties implements CmsVfsResourceBundle.I_Load
             String encoding = encProp.getValue(defaultEncoding);
             return encoding;
         } catch (Exception e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-71027d24da5632100e0c4a7f66c7dcab", e);
             return defaultEncoding;
         }
     }

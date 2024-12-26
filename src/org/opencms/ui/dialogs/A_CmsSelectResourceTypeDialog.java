@@ -185,7 +185,7 @@ public abstract class A_CmsSelectResourceTypeDialog extends CmsBasicDialog {
                     initViewId = new CmsUUID(viewSettingStr);
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-901dc651b6dca7b1e0655f0dfc06e32b");
             }
         }
         if (initViewId == null) {

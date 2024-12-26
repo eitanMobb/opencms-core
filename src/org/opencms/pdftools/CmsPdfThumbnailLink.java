@@ -158,21 +158,21 @@ public class CmsPdfThumbnailLink {
             String widthStr = optionMap.get("w");
             m_width = Integer.parseInt(widthStr);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-85f3933ef91ff34ff295fc6c3f822038", e);
         }
 
         try {
             String heightStr = optionMap.get("h");
             m_height = Integer.parseInt(heightStr);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-444e935c29d0a644bb3016c527a55fd3", e);
         }
 
         try {
             String pageStr = optionMap.get("page");
             m_page = Integer.parseInt(pageStr);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-3fefe71dabd8b6b901364608e51e420a", e);
         }
     }
 
