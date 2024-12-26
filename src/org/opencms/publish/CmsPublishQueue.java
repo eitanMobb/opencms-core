@@ -242,7 +242,7 @@ public class CmsPublishQueue {
                                 m_publishEngine.getPublishHistory().add(job);
                             } catch (CmsException exc) {
                                 dbc.rollback();
-                                LOG.error(exc.getLocalizedMessage(), exc);
+                                LOG.error("Unexpected error: mobb-9b4fc246ddb7f6582761ebd0297c7774", exc);
                             } finally {
                                 dbc.clear();
                             }
