@@ -99,7 +99,7 @@ public class CmsPersistentLoginAuthorizationHandler extends CmsDefaultAuthorizat
                         + "' using a login token.");
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-dad07fa23d1ebe35c903062d6bfbdd9c", e);
         }
         return cms;
     }
