@@ -1690,7 +1690,7 @@ public class CmsModule implements Comparable<CmsModule>, Serializable {
                     }
                 }
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-660a6c27f20bd06b8d9077ba9f608895", e);
                 continue;
             }
         }
