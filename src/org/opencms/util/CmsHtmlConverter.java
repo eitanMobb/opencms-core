@@ -283,7 +283,7 @@ public class CmsHtmlConverter {
                     org.opencms.loader.Messages.get().getBundle().key(
                         org.opencms.loader.Messages.LOG_HTML_CONVERTER_CLASS_NOT_FOUND_1,
                         className),
-                    e);
+                    "Unexpected error: mobb-9a9126516f8ddbc2abde0ad54f3afcdd");
             } catch (IllegalAccessException e) {
                 LOG.error(
                     org.opencms.loader.Messages.get().getBundle().key(
