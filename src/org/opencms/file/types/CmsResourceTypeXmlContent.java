@@ -712,7 +712,7 @@ public class CmsResourceTypeXmlContent extends A_CmsResourceTypeLinkParseable {
                 true);
             return xsdLink;
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-0d677d0b6580c2d3044f1fad65dca368", e);
         }
         return null;
     }
