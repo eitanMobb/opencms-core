@@ -164,7 +164,7 @@ public class CmsSearchReplaceThread extends A_CmsReportThread {
                 try {
                     result.add(getCms().readResource(resource.getStructureId()));
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-ee104a2b699963bea10c24c99c806145", e);
                 }
             }
             return result;

@@ -135,7 +135,7 @@ public class CmsProjectPreference extends CmsBuiltinPreference {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-66186ed0532f95102141196796afdcfe", e);
             }
             allProjects = Collections.emptyList();
         }

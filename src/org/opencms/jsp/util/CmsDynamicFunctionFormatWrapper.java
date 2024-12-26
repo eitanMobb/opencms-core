@@ -71,7 +71,7 @@ public class CmsDynamicFunctionFormatWrapper {
             try {
                 m_jspResource = cms.readResource(format.getJspStructureId());
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-a8e9a7975eab503044394a872f631566", e);
             }
         }
     }

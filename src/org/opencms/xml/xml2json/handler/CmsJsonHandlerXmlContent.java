@@ -131,7 +131,7 @@ public class CmsJsonHandlerXmlContent implements I_CmsJsonHandler {
             CmsJsonDocumentXmlContent jsonDocument = new CmsJsonDocumentXmlContent(jsonRequest, context.getContent());
             return new CmsJsonResult(jsonDocument.getJson(), HttpServletResponse.SC_OK);
         } catch (JSONException | PathNotFoundException e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-12b64123e839a257b4b4ba3149098a02");
             return new CmsJsonResult(e.getLocalizedMessage(), HttpServletResponse.SC_NOT_FOUND);
         } catch (CmsJsonHandlerException e) {
             LOG.debug(e.getLocalizedMessage(), e);

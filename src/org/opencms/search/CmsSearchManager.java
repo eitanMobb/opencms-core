@@ -2515,7 +2515,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     Messages.LOG_PARSE_OFFLINE_UPDATE_FAILED_2,
                     offlineUpdateFrequency,
                     Long.valueOf(DEFAULT_OFFLINE_UPDATE_FREQNENCY)),
-                e);
+                "Unexpected error: mobb-eb2b1dda8baa20648829c0034612d092");
             setOfflineUpdateFrequency(DEFAULT_OFFLINE_UPDATE_FREQNENCY);
         }
     }
@@ -2755,7 +2755,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             adminCms.getRequestContext().removeSiteRoot(pubRes.getRootPath()));
                     }
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-48c1e213d9b32d78c53d3a16f969ee7a", e);
                 }
             }
             // add all found container pages as published resource objects to the list
