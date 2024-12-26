@@ -800,7 +800,7 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
             }
             return detailResource.getRootPath() + getSuffix(uri);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-c70a3c7535dc64b9c8e34f64960457c2", e);
             return null;
         }
     }
