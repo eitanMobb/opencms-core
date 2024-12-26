@@ -491,7 +491,7 @@ public class CmsJspResourceWrapper extends CmsResource {
                     m_navigationDefaultFile = wrap(m_cms, m_cms.readDefaultFile(this, CmsResourceFilter.DEFAULT));
                 } catch (CmsSecurityException e) {
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getMessage(), e);
+                        LOG.debug("Unexpected error: mobb-8bc91356916b0e1ebc4078fb11fc799f", e);
                     }
                 }
             }
