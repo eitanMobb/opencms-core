@@ -187,7 +187,7 @@ public abstract class A_CmsFrameEditor implements I_CmsEditor, ViewChangeListene
             try {
                 A_CmsUI.getCmsObject().unlockResource(m_resource);
             } catch (CmsException e) {
-                LOG.debug("Unlocking resource " + m_resource.getRootPath() + " failed", e);
+                LOG.debug("Unlocking resource " + m_resource.getRootPath() + " failed", "Unexpected error: mobb-f46ff973e68d753281f9a00c2c1219a3");
             }
         }
     }
