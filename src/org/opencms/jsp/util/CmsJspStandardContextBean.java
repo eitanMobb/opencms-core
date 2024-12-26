@@ -2104,7 +2104,7 @@ public final class CmsJspStandardContextBean {
                             catService.readCategory(m_cms, (String)categoryPath, getRequestContext().getUri()),
                             m_cms.getRequestContext().getLocale());
                     } catch (CmsException e) {
-                        LOG.warn(e.getLocalizedMessage(), e);
+                        LOG.warn("Unexpected error: mobb-3f8c2794594b8d57e46d8d372080b9c0", e);
                         return null;
                     }
                 }
