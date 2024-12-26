@@ -375,7 +375,7 @@ public class CmsUIServlet extends VaadinServlet implements SystemMessagesProvide
                 // can be ignored
             }
         } catch (Throwable t) {
-            LOG.error(t.getLocalizedMessage(), t);
+            LOG.error("Unexpected error: mobb-ef091cb56a949ba49cb2229e07a06f41", t);
             int status = HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
             response.setStatus(status);
             try {
