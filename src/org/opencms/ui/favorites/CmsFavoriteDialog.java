@@ -352,7 +352,7 @@ public class CmsFavoriteDialog extends CmsBasicDialog implements CmsEditableGrou
                 favInfo = createFavInfo(favEntry);
                 m_group.addRow(favInfo);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-53c5e840551a07325d2ca90745608ad6", e);
             }
 
         }

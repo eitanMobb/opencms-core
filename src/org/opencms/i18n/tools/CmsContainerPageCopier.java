@@ -427,7 +427,7 @@ public class CmsContainerPageCopier {
                     }
                 }
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-8adad785f800d5c99d43f50010051393", e);
             } catch (IOException e) {
                 LOG.warn(e.getLocalizedMessage(), e);
             }

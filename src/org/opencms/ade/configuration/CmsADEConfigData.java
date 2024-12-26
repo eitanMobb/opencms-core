@@ -1574,7 +1574,7 @@ public class CmsADEConfigData {
                 }
             }
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-62f7d8b9c226256f02676916c26db949", e);
 
         }
         return false;

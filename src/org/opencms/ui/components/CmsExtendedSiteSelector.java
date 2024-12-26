@@ -252,7 +252,7 @@ public class CmsExtendedSiteSelector extends ComboBox<SiteSelectorOption> {
                                 } catch (CmsPermissionViolationException | CmsVfsResourceNotFoundException e) {
                                     LOG.info(e.getLocalizedMessage(), e);
                                 } catch (CmsException e) {
-                                    LOG.warn(e.getLocalizedMessage(), e);
+                                    LOG.warn("Unexpected error: mobb-9bf809358606ea52e2b15b20f6f7ba9f", e);
                                 }
                             }
                         }

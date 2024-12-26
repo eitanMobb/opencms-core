@@ -101,7 +101,7 @@ public class CmsFavInfo extends CustomLayout implements I_CmsEditableGroupRow {
             addComponent(m_siteLabel, "siteLabel");
 
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-f7477d5783c19ca2fda8cfdad9debc9d");
         }
         m_entry = entry;
         addStyleName("o-pointer");

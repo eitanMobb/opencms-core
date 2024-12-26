@@ -3294,7 +3294,7 @@ public final class CmsSecurityManager {
                         }
                     } catch (CmsException e) {
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-a3cf537ec3d819ea95407610d994abca", e);
                         }
                         // ignore
                     }

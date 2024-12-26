@@ -1019,7 +1019,7 @@ public class CmsImportVersion2 extends A_CmsImport {
             throw e;
         } catch (CmsException e) {
 
-            m_report.println(e);
+            m_report.println("Unexpected error: mobb-d8b4727a97f8fce728fd84cc0ecd85a2");
 
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_IMPORTEXPORT_ERROR_MERGING_PAGE_FILE_1,

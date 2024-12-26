@@ -1454,7 +1454,7 @@ public final class CmsJspStandardContextBean {
                             element.initResource(m_cms);
                             elements.add(CmsJspResourceWrapper.wrap(m_cms, element.getResource()));
                         } catch (Exception e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-e98208d1fed3877b151deb9b646b536a", e);
                         }
                     }
                 }
@@ -1488,7 +1488,7 @@ public final class CmsJspStandardContextBean {
                                 element.initResource(m_cms);
                                 elements.add(CmsJspResourceWrapper.wrap(m_cms, element.getResource()));
                             } catch (Exception e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-3acbb36b06193d9df28d2992a5b5db8b", e);
                             }
                         }
                     }
@@ -2067,7 +2067,7 @@ public final class CmsJspStandardContextBean {
                         } catch (CmsVfsResourceNotFoundException e) {
                             LOG.info(e.getLocalizedMessage(), e);
                         } catch (Exception e) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-297351c0e4f02df42e4c9642e0690351", e);
                         }
                     }
                     return CmsJspObjectValueWrapper.createWrapper(cms, result);

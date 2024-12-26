@@ -174,7 +174,7 @@ public class CmsLogFileApp extends A_CmsWorkplaceApp implements I_CmsCRUDApp<Log
             result = getFileNameMethod != null;
 
         } catch (Exception e) {
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug("Unexpected error: mobb-0d31dc61ea0d3a591a90e2556dbd0336", e);
         }
         return result;
     }

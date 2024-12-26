@@ -616,7 +616,7 @@ public class CmsUpdateDBProjectId extends A_CmsUpdateDBPart {
      */
     private void generateUUIDs(CmsSetupDb dbCon) throws SQLException {
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-fdb1627cbf0ef3a3e874ef059df4e662");
         String query = readQuery(QUERY_GET_PROJECT_IDS);
 
         CmsSetupDBWrapper db = null;

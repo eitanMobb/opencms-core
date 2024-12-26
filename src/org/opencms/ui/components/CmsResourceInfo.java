@@ -192,7 +192,7 @@ public class CmsResourceInfo extends CustomLayout {
                 title = titleProp.getValue();
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-ee990b7b5e09ddfe74933026331d68b2", e);
         }
         info.getTopLine().setValue(title);
         if (baseSite != null) {

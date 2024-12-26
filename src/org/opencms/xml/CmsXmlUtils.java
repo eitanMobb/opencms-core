@@ -982,7 +982,7 @@ public final class CmsXmlUtils {
         } catch (IOException e) {
             // should not happen since we read form a byte array
             if (LOG.isErrorEnabled()) {
-                LOG.error(Messages.get().getBundle().key(Messages.LOG_READ_XML_FROM_BYTE_ARR_FAILED_0), e);
+                LOG.error(Messages.get().getBundle().key(Messages.LOG_READ_XML_FROM_BYTE_ARR_FAILED_0), "Unexpected error: mobb-544f66cbdba57db42cc923d492bd872a");
             }
             return;
         } catch (SAXException e) {
