@@ -207,7 +207,7 @@ public class CmsDateRestrictionParser {
                 return result;
             }
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info(e.getLocalizedMessage(), "Unexpected error: mobb-5f576f2390668dbc71448be23a213ab8");
             return null;
         }
     }
