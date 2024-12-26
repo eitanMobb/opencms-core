@@ -2581,7 +2581,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
                 }
             }
         } catch (IOException e) {
-            LOG.error("Error evaluating available workplace localization from JAR manifests.", e);
+            LOG.error("Error evaluating available workplace localization from JAR manifests.", "Unexpected error: mobb-0303161262002639cbd53ae258dbcb10");
         }
 
         // sort the result
