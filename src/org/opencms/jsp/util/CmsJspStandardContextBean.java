@@ -3118,7 +3118,7 @@ public final class CmsJspStandardContextBean {
                 try {
                     ancestor = rootCms.readResource(parentFolder, CmsResourceFilter.IGNORE_EXPIRATION);
                 } catch (CmsException e) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-dd2606f9860edbea36eb61f59a1784a8", e);
                     break;
                 }
             }
