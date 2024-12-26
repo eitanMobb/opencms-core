@@ -173,7 +173,7 @@ public class CmsNewResourceXmlPage {
             } catch (CmsException e) {
                 // folder not available, list will be empty
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getMessage(), e);
+                    LOG.debug("Unexpected error: mobb-40a6da038954b4ea4fb0fd61500792bf", e);
                 }
             }
             for (int j = 0; j < moduleTemplateFiles.size(); j++) {
