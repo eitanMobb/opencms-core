@@ -78,7 +78,7 @@ public class CmsUnlinkLocaleVariantAction extends A_CmsWorkplaceAction {
                     openDialog(unlinkDialog, context);
                     break;
                 } catch (CmsException e) {
-                    LOG.info("No target found for: " + relation, e);
+                    LOG.info("No target found for: " + relation, "Unexpected error: mobb-3c1263bf35cc7904795ba7e5dfbd5d06");
                 }
             }
         } catch (Exception e) {
