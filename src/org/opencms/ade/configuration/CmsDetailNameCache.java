@@ -221,7 +221,7 @@ public class CmsDetailNameCache implements I_CmsGlobalConfigurationCache {
             }
         } catch (CmsLoaderException e) {
             // resource type not found, just log an error
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-24aac583dd9d9713bb1dd0b8624e041e", e);
         }
     }
 
