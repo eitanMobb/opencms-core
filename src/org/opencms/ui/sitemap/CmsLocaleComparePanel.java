@@ -283,7 +283,7 @@ public class CmsLocaleComparePanel extends VerticalLayout implements I_CmsLocale
                         }
 
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-53e2b48dcdf5022ea5591ef41e23d062", e);
                         CmsErrorDialog.showErrorDialog(e);
                     } finally {
                         m_handlingLocaleChange = false;
