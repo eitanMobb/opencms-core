@@ -112,7 +112,7 @@ public class CmsSitemapExtension extends AbstractExtension implements I_CmsSitem
         public void error(Throwable error) {
 
             closeWindow();
-            LOG.error(error.getLocalizedMessage(), error);
+            LOG.error(error.getLocalizedMessage(), "Unexpected error: mobb-f00a563243f172809625a5031f9532ff");
             CmsErrorDialog.showErrorDialog(error, new Runnable() {
 
                 public void run() {
