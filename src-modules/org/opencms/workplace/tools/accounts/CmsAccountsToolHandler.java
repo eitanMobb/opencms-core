@@ -280,7 +280,7 @@ public class CmsAccountsToolHandler extends CmsDefaultToolHandler {
         } catch (CmsException e) {
             // ignore
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-f569a8629260fab4bd0c2f344ec4a69c", e);
             }
         }
 
