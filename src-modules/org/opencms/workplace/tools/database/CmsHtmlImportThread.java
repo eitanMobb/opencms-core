@@ -80,7 +80,7 @@ public class CmsHtmlImportThread extends A_CmsReportThread {
         } catch (Exception e) {
             getReport().println(e);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage());
+                LOG.error("Unexpected error: mobb-22f53f37f7ba8077f829d67f78fcfbc4");
             }
         }
     }
