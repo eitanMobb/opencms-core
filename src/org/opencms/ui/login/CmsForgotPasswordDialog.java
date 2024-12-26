@@ -185,7 +185,7 @@ public class CmsForgotPasswordDialog extends VerticalLayout implements I_CmsHasB
             try {
                 foundUser = cms.readUser(fullUserName);
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-fe411621c54fbd578020c1f4ab8bfd8e", e);
             }
             if ((foundUser == null)
                 || CmsStringUtil.isEmptyOrWhitespaceOnly(email)
