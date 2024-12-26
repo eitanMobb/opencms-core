@@ -201,7 +201,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     public void logError(Throwable t) {
 
-        LOG.error(t.getLocalizedMessage(), t);
+        LOG.error("Unexpected error: mobb-9f5d3978ae4d85e4bfd2e557a56d5a50", t);
     }
 
     /**
