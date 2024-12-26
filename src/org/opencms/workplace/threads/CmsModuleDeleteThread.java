@@ -117,7 +117,7 @@ public class CmsModuleDeleteThread extends A_CmsReportThread {
             }
         } catch (Throwable e) {
             report.println(e);
-            LOG.error(Messages.get().getBundle().key(Messages.LOG_MODULE_DELETE_FAILED_1, m_moduleNames), e);
+            LOG.error(Messages.get().getBundle().key(Messages.LOG_MODULE_DELETE_FAILED_1, m_moduleNames), "Unexpected error: mobb-00c8c248162d5be6b9ee23e1af2d681a");
         } finally {
             OpenCms.getSearchManager().resumeOfflineIndexing(pauseId);
         }
