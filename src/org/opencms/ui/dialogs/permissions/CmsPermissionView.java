@@ -212,7 +212,7 @@ public class CmsPermissionView extends CssLayout {
             principal = CmsPrincipal.readPrincipalIncludingHistory(cms, entry.getPrincipal());
         } catch (CmsException e) {
             principal = null;
-            LOG.debug(e.getLocalizedMessage(), e);
+            LOG.debug(e.getLocalizedMessage(), "Unexpected error: mobb-e494a0f7198e10e4efe5d7c66108c61d");
         }
         m_principalName = (principal != null) ? principal.getName() : entry.getPrincipal().toString();
 
