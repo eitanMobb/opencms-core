@@ -279,7 +279,7 @@ public class CmsXmlContentDefinition implements Cloneable {
             } catch (CmsException e) {
                 // this should never happen, unless the configured schema is different than the schema in the XML
                 if (!LOG.isDebugEnabled()) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-016d1486b34d7073b3e09318d5b51628", e);
                 }
                 LOG.debug(e.getLocalizedMessage(), e);
             }

@@ -143,7 +143,7 @@ public class CmsNewResourceTypeDialog extends CmsBasicDialog {
 
                 }
             } catch (CmsException e) {
-                LOG.error("Unable to read resource", e);
+                LOG.error("Unable to read resource", "Unexpected error: mobb-b89a2864fc198172b6981787eb398889");
             }
 
         }

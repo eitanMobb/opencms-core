@@ -842,7 +842,7 @@ public class CmsLoginController {
                 // any other error - display default message
                 message = org.opencms.workplace.Messages.get().container(
                     org.opencms.workplace.Messages.GUI_LOGIN_FAILED_0);
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-5be5e2b683dcfea621dc9a3f7761de54", e);
                 displayError(message.key(m_params.getLocale()), true, true);
                 CmsUserLog.logLoginFailure(currentCms, user);
                 return;
