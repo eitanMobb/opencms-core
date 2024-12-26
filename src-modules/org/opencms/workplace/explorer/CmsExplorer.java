@@ -719,7 +719,7 @@ public class CmsExplorer extends CmsWorkplace {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-7ed77b74cb98a90aaf555cb48759608c", e);
             }
             return "/";
         }
