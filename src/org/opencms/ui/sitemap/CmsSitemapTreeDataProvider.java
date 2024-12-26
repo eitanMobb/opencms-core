@@ -146,7 +146,7 @@ public class CmsSitemapTreeDataProvider {
                             continue;
                         }
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-a6d64d5fc0b719421c825a189cd77db7");
                     }
 
                     CmsSitemapTreeNodeData data = new CmsSitemapTreeNodeData(
