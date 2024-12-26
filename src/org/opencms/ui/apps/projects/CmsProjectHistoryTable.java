@@ -195,7 +195,7 @@ public class CmsProjectHistoryTable extends Table {
             }
             m_container.sort(new Object[] {PROP_PUBLISH_DATE}, new boolean[] {false});
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e272cacf4085fea330e871e8878691f1", e);
         }
     }
 
