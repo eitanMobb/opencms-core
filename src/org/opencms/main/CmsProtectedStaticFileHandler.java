@@ -224,7 +224,7 @@ implements I_CmsResourceInit, I_CmsConfigurationParameterHandler, I_CmsNeedsAdmi
             }
             return null;
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-adef087e57bfdf1290000da7726acd1c", e);
             return null;
         }
     }
