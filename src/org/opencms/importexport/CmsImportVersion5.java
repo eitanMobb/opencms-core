@@ -271,7 +271,7 @@ public class CmsImportVersion5 extends A_CmsImport {
                         LOG.warn(e.getLocalizedMessage());
                     }
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-3ea572d7297c1d5d6b279c5905f5b037", e);
                     }
                 }
             }
