@@ -172,7 +172,7 @@ public class CmsPdfThumbnailLink {
             String pageStr = optionMap.get("page");
             m_page = Integer.parseInt(pageStr);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-3fefe71dabd8b6b901364608e51e420a", e);
         }
     }
 
