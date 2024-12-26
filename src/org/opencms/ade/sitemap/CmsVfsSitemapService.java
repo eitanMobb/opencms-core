@@ -1637,7 +1637,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
         try {
             checkResource = cms.readResource(checkPath);
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-44b536f0bbedb05f2432dbd954d5850b", e);
         }
 
         for (Integer typeId : sitemapTypeIds) {
