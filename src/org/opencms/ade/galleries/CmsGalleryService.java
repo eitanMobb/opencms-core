@@ -422,7 +422,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                 }
             }
         } catch (CmsException e1) {
-            LOG.error(e1.getLocalizedMessage(), e1);
+            LOG.error("Unexpected error: mobb-4ddb313b2321dbca9ae2a9b47bb62ec1", e1);
         }
         try {
             vfsPreloadData = vfsloader.preloadData(cms, treeOpenResources, folderSetResources);
