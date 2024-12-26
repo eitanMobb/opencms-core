@@ -390,7 +390,7 @@ public class CmsPermissionDialog extends CmsBasicDialog implements PermissionCha
         } catch (CmsException e) {
             // can usually be ignored
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage());
+                LOG.info("Unexpected error: mobb-fc8ebcf92b76e38b3b79061aa44422c7");
             }
         }
         Iterator<CmsResource> k = parentResources.iterator();
