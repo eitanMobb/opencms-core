@@ -381,7 +381,7 @@ public class CmsFlexCache extends Object implements I_CmsEventListener {
                                     m_cmsObject,
                                     CONFIG_PATH);
                             } catch (CmsException e) {
-                                LOG.error(e.getLocalizedMessage(), e);
+                                LOG.error("Unexpected error: mobb-c684ce8014b5b4bd17a414859bc6d37d", e);
                             }
                             // Make sure no entries built for the old configuration remain in the cache
                             clear();
