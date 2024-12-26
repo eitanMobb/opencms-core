@@ -719,7 +719,7 @@ public class CmsJspTagHeadIncludes extends BodyTagSupport implements I_CmsJspTag
                     resource);
                 return contentDefinition.getContentHandler().getCSSHeadIncludes(cms, resource);
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-5956b3d71c9503bad9fcb781b3eab7c0", e);
                 // NOOP, use the empty set
             }
         }
