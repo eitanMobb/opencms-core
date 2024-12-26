@@ -7193,7 +7193,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
             } catch (CmsDataAccessException e) {
                 // should never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-9055625efdd8dd69c048af5412d658fa");
                 }
             }
         }
