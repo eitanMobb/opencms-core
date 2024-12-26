@@ -269,7 +269,7 @@ public class CmsSendEmailDialog extends A_CmsMessageDialog {
                         emails.add(emailAddress);
                     }
                 } catch (Exception e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-a4bc1c186895cada5f2a0faaac5b230a", e);
                 }
             }
         }
