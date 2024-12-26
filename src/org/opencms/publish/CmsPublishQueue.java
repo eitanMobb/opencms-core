@@ -307,7 +307,7 @@ public class CmsPublishQueue {
                 m_publishEngine.getDriverManager().deletePublishJob(dbc, publishJob.getPublishHistoryId());
             } catch (CmsException e) {
                 dbc.rollback();
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-4e69ba6bf104845363a0d8e41f81a01d", e);
                 throw e;
             } finally {
                 dbc.clear();
