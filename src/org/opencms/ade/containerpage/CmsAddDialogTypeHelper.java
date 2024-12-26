@@ -284,7 +284,7 @@ public class CmsAddDialogTypeHelper {
                     }
                 }
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-fd44aec1aa2048310b7f072ab9ab1624", e);
             }
         }
         Set<String> creatableTypes = new HashSet<String>();
