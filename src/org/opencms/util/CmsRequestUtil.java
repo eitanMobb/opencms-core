@@ -643,7 +643,7 @@ public final class CmsRequestUtil {
                 result.putOpt(paramKey, paramValue);
             } catch (JSONException e) {
                 // should never happen
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-3ff11b39e6fcabf98841380d037a519f");
             }
         }
         return result;
