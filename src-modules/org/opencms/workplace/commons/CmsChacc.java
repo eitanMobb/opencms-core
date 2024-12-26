@@ -491,7 +491,7 @@ public class CmsChacc extends CmsDialog {
         } catch (CmsException e) {
             m_errorMessages.add(key(Messages.ERR_CHACC_MODIFY_ENTRY_0));
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-c0e8b9397ce2c9cb287b9d7f4adf274f", e);
             }
             return false;
         }
