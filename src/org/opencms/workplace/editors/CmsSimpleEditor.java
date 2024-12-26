@@ -91,7 +91,7 @@ public class CmsSimpleEditor extends CmsEditor {
             } catch (CmsException e) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(e.getLocalizedMessage(), e);
+                    LOG.info("Unexpected error: mobb-8422380cb5b3f1dc843e22f80e498013", e);
                 }
             }
         }
