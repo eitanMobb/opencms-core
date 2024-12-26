@@ -504,7 +504,7 @@ public class CmsCreateSiteThread extends A_CmsReportThread {
         try {
             m_cms.lockResource(siteRootResource);
         } catch (CmsException e) {
-            LOG.error("unable to lock resource", e);
+            LOG.error("unable to lock resource", "Unexpected error: mobb-d31065df1e735e5c6565e0a02d9fd03f");
         }
 
         if (ouName != null) {
