@@ -155,7 +155,7 @@ public class CmsAddFormatterWidget extends A_CmsFormatterWidget {
                 CmsSelectWidgetOption option = getWidgetOptionForFormatter(cms, formatterBean);
                 result.add(option);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-e7ef51e2f61e3fb74ead965a257bdf0f");
             }
         }
         return result;
