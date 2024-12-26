@@ -2266,7 +2266,7 @@ public class CmsGalleryOptimizeDialog extends CmsBasicDialog {
             handleDataListUpdate(updated);
         } catch (CmsException e) {
             errorMessageList.append("<div>" + e.getLocalizedMessage() + "</div>");
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-e25827273a20795fe6a17b3c2aa7557b");
         }
     }
 
