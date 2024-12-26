@@ -180,7 +180,7 @@ public class CmsJlanRepository implements I_CmsRepository {
                             // not really an error
                             LOG.info(cause.getCause().getLocalizedMessage(), cause.getCause());
                         } else {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error("Unexpected error: mobb-90edcf4d0247e0d99843e41caef1d756", e);
                         }
                         throw e.getCause();
                     }
