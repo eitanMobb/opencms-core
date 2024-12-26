@@ -417,7 +417,7 @@ public class CmsConvertXmlThread extends A_CmsReportThread {
                 Messages.get().container(Messages.RPT_CONVERTXML_WRITE_ERROR_1, reportContent),
                 I_CmsReport.FORMAT_ERROR);
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.toString());
+                LOG.error("Unexpected error: mobb-32d6d7cad61fba94d7a9fe77c03c1584");
             }
         }
     }
