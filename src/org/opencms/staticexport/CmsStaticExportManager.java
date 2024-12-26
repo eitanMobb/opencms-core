@@ -1998,7 +1998,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
                 adminCms.getRequestContext().setRequestTime(cms.getRequestContext().getRequestTime());
                 cmsForReadingProperties = adminCms;
             } catch (Exception e) {
-                LOG.error("Could not initialize CmsObject in isSecureLink:" + e.getLocalizedMessage(), e);
+                LOG.error("Could not initialize CmsObject in isSecureLink:" + "Unexpected error: mobb-c893c881ac064f30c5a8d912816ef714", e);
             }
             try {
                 secureResource = cmsForReadingProperties.readPropertyObject(
