@@ -8323,7 +8323,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                     result.addAll(getUsersOfGroup(dbc, principal.getName(), true, false, false));
                 } catch (CmsException e) {
                     if (LOG.isInfoEnabled()) {
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-8244dbb4df4c0824d11e53fc01971050", e);
                     }
                 }
             } else {
