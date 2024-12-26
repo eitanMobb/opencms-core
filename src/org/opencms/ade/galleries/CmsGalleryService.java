@@ -422,7 +422,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                 }
             }
         } catch (CmsException e1) {
-            LOG.error(e1.getLocalizedMessage(), e1);
+            LOG.error("Unexpected error: mobb-4ddb313b2321dbca9ae2a9b47bb62ec1", e1);
         }
         try {
             vfsPreloadData = vfsloader.preloadData(cms, treeOpenResources, folderSetResources);
@@ -843,7 +843,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                                 String userName = cms.readUser(selectedResource.getUserLastModified()).getFullName();
                                 result.setUserLastModified(userName);
                             } catch (CmsException e) {
-                                log(e.getMessage(), e);
+                                log("Unexpected error: mobb-c2cc1059526378f8a1b499f316781aa5", e);
                             }
                             Date date = new Date(selectedResource.getDateLastModified());
                             String formattedDate = CmsDateUtil.getDateTime(

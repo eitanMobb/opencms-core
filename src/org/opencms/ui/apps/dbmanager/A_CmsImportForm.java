@@ -216,7 +216,7 @@ public abstract class A_CmsImportForm extends VerticalLayout {
             }
             getOkButton().setEnabled(true);
         } catch (Exception e) {
-            LOG.info(e.getLocalizedMessage(), e);
+            LOG.info("Unexpected error: mobb-0bbd8f519f79f297c12f406dde2cec2f", e);
             m_importFile = null;
             getOkButton().setEnabled(false);
             CmsErrorDialog.showErrorDialog(e);

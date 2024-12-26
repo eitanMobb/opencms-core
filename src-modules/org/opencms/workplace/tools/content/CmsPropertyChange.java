@@ -137,7 +137,7 @@ public class CmsPropertyChange extends CmsDialog {
         } catch (CmsException e) {
             // should usually never happen
             if (LOG.isInfoEnabled()) {
-                LOG.info(e.getLocalizedMessage(), e);
+                LOG.info("Unexpected error: mobb-bf58a10b84a660ec60a507fab555165e", e);
             }
         }
 

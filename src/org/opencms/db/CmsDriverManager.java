@@ -4870,7 +4870,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                 return m_monitor.getResourceOuCache().get(new ResourceOUCacheKey(this, dbc)).getResourceOrgUnits(
                     resource.getRootPath());
             } catch (ExecutionException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-b2b785d33942b45d9009b7e5d556f030", e);
             }
         }
         List<CmsOrganizationalUnit> result = getVfsDriver(dbc).getResourceOus(
@@ -7193,7 +7193,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
             } catch (CmsDataAccessException e) {
                 // should never happen
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-9055625efdd8dd69c048af5412d658fa");
                 }
             }
         }
@@ -8323,7 +8323,7 @@ public final class CmsDriverManager implements I_CmsEventListener {
                     result.addAll(getUsersOfGroup(dbc, principal.getName(), true, false, false));
                 } catch (CmsException e) {
                     if (LOG.isInfoEnabled()) {
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-8244dbb4df4c0824d11e53fc01971050", e);
                     }
                 }
             } else {

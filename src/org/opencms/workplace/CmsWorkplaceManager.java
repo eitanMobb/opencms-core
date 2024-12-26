@@ -1756,7 +1756,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
             OpenCms.addCmsEventListener(this, new int[] {I_CmsEventListener.EVENT_CLEAR_CACHES});
         } catch (CmsException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ecb774a3f11c8e8289b3c4d34d324215", e);
             }
             throw new CmsException(Messages.get().container(Messages.ERR_INITIALIZE_WORKPLACE_0));
         }
@@ -2581,7 +2581,7 @@ public final class CmsWorkplaceManager implements I_CmsLocaleHandler, I_CmsEvent
                 }
             }
         } catch (IOException e) {
-            LOG.error("Error evaluating available workplace localization from JAR manifests.", e);
+            LOG.error("Error evaluating available workplace localization from JAR manifests.", "Unexpected error: mobb-0303161262002639cbd53ae258dbcb10");
         }
 
         // sort the result

@@ -2178,7 +2178,7 @@ public final class CmsJspStandardContextBean {
                             getRequestContext().removeSiteRoot((String)resourceName));
                         return new CmsJspCategoryAccessBean(m_cms, resource);
                     } catch (CmsException e) {
-                        LOG.warn(e.getLocalizedMessage(), e);
+                        LOG.warn("Unexpected error: mobb-a566ebbcc72d25ac4e50d4ca89782c6a", e);
                         return null;
                     }
                 }

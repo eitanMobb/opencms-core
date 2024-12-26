@@ -109,7 +109,7 @@ public class CmsModuleResourceSelectField extends CmsPathSelectField {
             cloneCms.getRequestContext().setSiteRoot(siteRoot);
             m_cms = cloneCms;
         } catch (CmsException e1) {
-            LOG.error(e1.getLocalizedMessage(), e1);
+            LOG.error("Unexpected error: mobb-6bc5233be9658b4961a8141136928e67", e1);
         }
         updateValidation();
     }

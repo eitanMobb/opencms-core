@@ -1844,7 +1844,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                     return (I_CmsWidget)(cls.newInstance());
                 }
             } catch (Exception e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-138ac1743acfcdf9a558d25280942127", e);
                 return null;
             }
         }
@@ -3906,7 +3906,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 m_visibilityConfigurations.put(elementName, new VisibilityConfiguration(handler, params));
 
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-ef9f22060567f3c08d00adb596ebe266", e);
             }
         }
     }

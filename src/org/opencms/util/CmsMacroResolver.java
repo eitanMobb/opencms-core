@@ -1220,11 +1220,7 @@ public class CmsMacroResolver implements I_CmsMacroResolver {
                 count++;
                 if ((count >= 1000) && LOG.isErrorEnabled()) {
                     LOG.error(
-                        "Terminated macro resolution after 1000 iterations. Last substitution is \""
-                            + lastResult
-                            + "\" to \""
-                            + result
-                            + "\".");
+                        "Unexpected error: mobb-aee0ab5d55c3623bd900df40c0fef0cc");
                 }
             } while (!result.equals(lastResult) && (count < 1000));
         }

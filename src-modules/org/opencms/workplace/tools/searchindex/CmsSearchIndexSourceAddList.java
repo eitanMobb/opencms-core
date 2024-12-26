@@ -197,7 +197,7 @@ public class CmsSearchIndexSourceAddList extends A_CmsEmbeddedListDialog {
                 idx.initialize();
             } catch (CmsSearchException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-7ee500ca1c0f5cae60ab4d2ea83f746b", e);
                 }
             }
             writeConfiguration(false);

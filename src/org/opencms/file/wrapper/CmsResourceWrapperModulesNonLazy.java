@@ -480,7 +480,7 @@ public class CmsResourceWrapperModulesNonLazy extends A_CmsResourceWrapper {
                 CmsResource res = readResource(cms, path, CmsResourceFilter.ALL);
                 virtualResources.add(res);
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-c97c289611c8de5b648162dfda34225c", e);
             }
         }
         return virtualResources;

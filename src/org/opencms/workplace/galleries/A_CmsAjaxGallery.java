@@ -424,7 +424,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                     m_galleryItems = getCms().readResources(getParamGalleryPath(), filter, false);
                 } catch (CmsException e) {
                     // error reading resources
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-8662caee0b522251c0b0ea5b7187fdd7", e);
                 } catch (NullPointerException e) {
                     // ignore this exception
                 }
@@ -760,7 +760,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                         out.print(jsonObj);
                     } catch (JSONException e) {
                         if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getLocalizedMessage(), e);
+                            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-95c10804d52d9cb89a3ea833de7b2515");
                         }
                     }
                 } catch (CmsException e) {
@@ -774,7 +774,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             }
         } catch (IOException e) {
             if (LOG.isErrorEnabled()) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-97ad3a694192067d991788f56aebe8a2");
             }
         }
     }

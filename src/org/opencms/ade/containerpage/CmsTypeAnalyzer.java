@@ -743,7 +743,7 @@ public class CmsTypeAnalyzer {
             }
             return m_templatePattern.matcher(templateValue).matches();
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-a5c4c7c70b7f2c381897b8de1cee7e9d", e);
             return false;
         }
     }

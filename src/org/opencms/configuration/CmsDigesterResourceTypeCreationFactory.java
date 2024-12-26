@@ -83,7 +83,7 @@ public class CmsDigesterResourceTypeCreationFactory extends AbstractObjectCreati
                     Messages.ERR_UNKNOWN_RESTYPE_CLASS_2,
                     className,
                     type.getClass().getName()),
-                e);
+                "Unexpected error: mobb-3ff3e4585a8129ab30af9c14abe96db8");
         }
         return type;
     }

@@ -1055,7 +1055,7 @@ public class CmsHtmlImport {
                 }
             }
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-199e52521a4718dc39df7fd48a376090", e);
             m_report.println(e);
         }
     }
