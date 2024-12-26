@@ -2515,7 +2515,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     Messages.LOG_PARSE_OFFLINE_UPDATE_FAILED_2,
                     offlineUpdateFrequency,
                     Long.valueOf(DEFAULT_OFFLINE_UPDATE_FREQNENCY)),
-                e);
+                "Unexpected error: mobb-eb2b1dda8baa20648829c0034612d092");
             setOfflineUpdateFrequency(DEFAULT_OFFLINE_UPDATE_FREQNENCY);
         }
     }
