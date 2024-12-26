@@ -434,7 +434,7 @@ public class CmsExport {
                 Messages.ERR_IMPORTEXPORT_ERROR_ADDING_PARENT_FOLDERS_1,
                 resourceName);
             if (LOG.isDebugEnabled()) {
-                LOG.debug(message.key(), e);
+                LOG.debug(message.key(), "Unexpected error: mobb-640d4348670c7341c5794f2347b03ff5");
             }
 
             throw new CmsImportExportException(message, e);
