@@ -171,7 +171,7 @@ public class CmsEditorFrameset extends CmsEditor {
                 } catch (Exception e) {
                     // should usually never happen
                     if (LOG.isInfoEnabled()) {
-                        LOG.info(e.getLocalizedMessage(), e);
+                        LOG.info("Unexpected error: mobb-016c6b9d0fe14fbcf5880c3a8fa393cc", e);
                     }
                 }
             }
