@@ -215,7 +215,7 @@ public class CmsJsonAccessPolicy {
                     return false;
                 }
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-842ad80868e69681d34a02feff331b1c", e);
                 return false;
             }
         }

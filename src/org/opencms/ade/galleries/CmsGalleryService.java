@@ -1712,7 +1712,7 @@ public class CmsGalleryService extends CmsGwtService implements I_CmsGalleryServ
                             }
                         }
                     } catch (Exception e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-1a2d8e1b7bf5dddc94f124f419f3f0d1", e);
                     }
                     groupLabel = Messages.get().getBundle(wpLocale).key(
                         Messages.GUI_GALLERIES_GROUP_SUBSITE_1,

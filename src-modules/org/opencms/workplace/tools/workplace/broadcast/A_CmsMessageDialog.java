@@ -168,7 +168,7 @@ public abstract class A_CmsMessageDialog extends CmsWidgetDialog {
                 user = getCms().readUser(sessionInfo.getUserId());
             } catch (CmsException e) {
                 if (LOG.isWarnEnabled()) {
-                    LOG.warn(e.getLocalizedMessage(), e);
+                    LOG.warn("Unexpected error: mobb-ab47e7e90f4157f2fe7bd5dd78ed37ab", e);
                 }
                 continue;
             }

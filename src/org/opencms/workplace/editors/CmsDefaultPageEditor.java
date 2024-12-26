@@ -159,7 +159,7 @@ public abstract class CmsDefaultPageEditor extends CmsEditor {
             } catch (JspException exc) {
                 // should usually never happen
                 if (LOG.isInfoEnabled()) {
-                    LOG.info(exc);
+                    LOG.info("Unexpected error: mobb-8a3598ef34c328b355af9cb1b2235c04");
                 }
             }
         }

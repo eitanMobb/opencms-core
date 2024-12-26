@@ -96,7 +96,7 @@ public class CmsJspTagJsonPart extends TagSupport implements TryCatchFinally {
             try {
                 pageContext.getOut().write(CmsJsonPart.END);
             } catch (IOException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-33b385527c0d548fa5852f4eca77faf5", e);
             }
         }
     }

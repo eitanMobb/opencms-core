@@ -1637,7 +1637,7 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
         try {
             checkResource = cms.readResource(checkPath);
         } catch (CmsException e) {
-            LOG.warn(e.getLocalizedMessage(), e);
+            LOG.warn("Unexpected error: mobb-44b536f0bbedb05f2432dbd954d5850b", e);
         }
 
         for (Integer typeId : sitemapTypeIds) {
@@ -2418,12 +2418,12 @@ public class CmsVfsSitemapService extends CmsGwtService implements I_CmsSitemapS
                         }
                     } catch (Throwable e) {
                         // should never happen, catches wrong or no longer existing values
-                        LOG.warn(e.getLocalizedMessage());
+                        LOG.warn("Unexpected error: mobb-8867157444225426e0596a220bd4f0d0");
                     }
                 }
             } catch (Throwable e) {
                 // should never happen, catches json parsing
-                LOG.warn(e.getLocalizedMessage());
+                LOG.warn("Unexpected error: mobb-2816b4bbfa1f023e4c1ea1dfff33fe10");
             }
         }
         return result;

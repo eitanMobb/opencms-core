@@ -950,7 +950,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
                 }
             } catch (CmsException e) {
                 if (LOG.isErrorEnabled()) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-a0e3ff2f966134ab8144b207e1c10db4", e);
                 }
             }
             jsonObj.put("editable", editable);
@@ -1234,7 +1234,7 @@ public abstract class A_CmsAjaxGallery extends CmsDialog {
             getCms().unlockResource(resPath);
         } catch (CmsException e) {
             // writing the property failed, log error
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-e0277c88f494758a42fd1f4236f0cbc9", e);
         }
     }
 }

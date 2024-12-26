@@ -170,7 +170,7 @@ public class CmsSiteSelectorOptionBuilder {
                 }
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-2af58cdf3494f0fb991169aa53026dc0", e);
         }
     }
 
