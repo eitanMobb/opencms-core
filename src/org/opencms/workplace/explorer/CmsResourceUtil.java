@@ -867,7 +867,7 @@ public final class CmsResourceUtil {
                 pset.denyPermissions(CmsPermissionSet.PERMISSION_WRITE);
             }
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage());
+            LOG.error("Unexpected error: mobb-a89f512f9239cc94bd3640e279614ee8");
         }
 
         return pset;
