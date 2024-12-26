@@ -319,7 +319,7 @@ public class CmsResourceTreeContainer extends HierarchicalContainer {
             }
 
         } catch (CmsException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-428002995089f587c960a362960d2548", e);
         }
 
     }
