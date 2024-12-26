@@ -3886,7 +3886,7 @@ public class CmsDefaultXmlContentHandler implements I_CmsXmlContentHandler, I_Cm
                 Class<?> handlerClass = Class.forName(mainHandlerClassName);
                 mainHandler = (I_CmsXmlContentVisibilityHandler)handlerClass.newInstance();
             } catch (Exception e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-d671e3bdadfd8dd22b741a7dc9d78b78", e);
             }
         }
         List<Element> elements = new ArrayList<Element>(CmsXmlGenericWrapper.elements(root, APPINFO_VISIBILITY));
