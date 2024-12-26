@@ -233,7 +233,7 @@ public final class CmsJspElFunctions {
                 try {
                     result = Double.valueOf(str);
                 } catch (NumberFormatException e) {
-                    LOG.info(e.getLocalizedMessage());
+                    LOG.info("Unexpected error: mobb-458b92100e2f812ef7c44604cf03a8a4");
                 }
             }
         }
