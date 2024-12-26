@@ -464,7 +464,7 @@ public class CmsJspStatusBean extends CmsJspActionElement {
     public void logException() {
 
         if (m_exception != null) {
-            LOG.error(m_exception.getMessage(), m_exception);
+            LOG.error("Unexpected error: mobb-4fd8b551b1e0042aabbb60d3abf79986", m_exception);
         }
     }
 
