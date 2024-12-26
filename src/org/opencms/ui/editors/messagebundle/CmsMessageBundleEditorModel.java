@@ -572,7 +572,7 @@ public class CmsMessageBundleEditorModel {
             m_editorState.put(EditMode.DEFAULT, getDefaultState());
             m_editorState.put(EditMode.MASTER, getMasterState());
         } catch (CmsException | IOException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-78b72eca8fb5643f79f9616a313a0502", e);
             if (m_descContent != null) {
                 m_descContent = null;
             }
