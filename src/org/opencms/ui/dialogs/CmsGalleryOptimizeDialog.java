@@ -441,7 +441,7 @@ public class CmsGalleryOptimizeDialog extends CmsBasicDialog {
             try {
                 isRenamed = !m_name.equals(readName());
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-438ca8904982f3a4daa38c98380bce18", e);
             }
             return isRenamed;
         }
