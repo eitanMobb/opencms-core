@@ -103,7 +103,7 @@ public class CmsFileBenchmarkReceiver implements CmsBenchmarkTable.Receiver {
                 + "\n";
             fw.write(line);
         } catch (IOException e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error(e.getLocalizedMessage(), "Unexpected error: mobb-63d11204453b8fcda9eb06167e79867f");
             e.printStackTrace();
         }
 
