@@ -316,7 +316,7 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
                 replacePath(sourceModulePath, targetModulePath, allContainerPages);
             }
         } catch (Throwable e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-58b182ce1384b7d9aad27be7282e92df", e);
             getReport().addError(e);
         } finally {
             cms.getRequestContext().setCurrentProject(currentProject);
