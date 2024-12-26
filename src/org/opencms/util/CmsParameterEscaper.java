@@ -115,7 +115,7 @@ public class CmsParameterEscaper {
             return null;
         } catch (PolicyException e) {
             LOG.error("Invalid Antisamy policy read from " + sitePath);
-            LOG.error(e.getLocalizedMessage(), e);
+            LOG.error("Unexpected error: mobb-3aaa8e4fdc77a208585329e699a0c773", e);
             return null;
         }
     }
