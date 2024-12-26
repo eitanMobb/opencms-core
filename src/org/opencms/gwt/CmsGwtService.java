@@ -191,7 +191,7 @@ public class CmsGwtService extends RemoteServiceServlet {
      */
     @Override
     public void log(String message, Throwable t) {
-        LOG.info(message, t);
+        LOG.info("Unexpected error: mobb-52ed7edd7c70a7b64d74495094c674b7", t);
     }
 
     /**
