@@ -848,7 +848,7 @@ public class CmsImportVersion5 extends A_CmsImport {
                     LOG.warn(Messages.get().getBundle().key(Messages.LOG_IMPORTEXPORT_REWRITING_1, res.getRootPath()));
                 }
                 if (LOG.isDebugEnabled()) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-8b87cc78a0b6024e55a66cd50ec82631", e);
                 }
             }
             i++;
