@@ -34,6 +34,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.PageContext;
+import org.springframework.web.util.HtmlUtils;
 
 /**
  * Workplace class for /system/workplace/explorer/search/edit.jsp explorer tool.<p>
@@ -79,7 +80,7 @@ public class CmsSearchEditorWrapper extends CmsDialog {
         out.print("<form name='editor' method='post' target='_top' action='");
         out.print(getJsp().link("/system/workplace/editors/editor.jsp"));
         out.print("'>\n");
-        out.print(paramsAsHidden());
+        out.print(HtmlUtils.htmlEscape(HtmlUtils.htmlUnescape(paramsAsHidden())));
         out.print("</form>\n");
         out.print("<script >\n");
         out.print("document.forms['editor'].submit();\n");
