@@ -379,7 +379,7 @@ public class CmsCmisRepository extends A_CmsCmisRepository {
                         String value = (String)(properties.get(key).getFirstValue());
                         provider.setPropertyValue(cms, targetResource, value);
                     } catch (CmsException e) {
-                        LOG.error(e.getLocalizedMessage(), e);
+                        LOG.error("Unexpected error: mobb-31400bd62301c6cdc7c051383c38c8c5", e);
                     }
                 }
             }
