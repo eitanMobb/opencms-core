@@ -1729,7 +1729,7 @@ public class CmsImportVersion7 implements I_CmsImport {
                         LOG.warn(e.getLocalizedMessage());
                     }
                     if (LOG.isDebugEnabled()) {
-                        LOG.debug(e.getLocalizedMessage(), e);
+                        LOG.debug("Unexpected error: mobb-e5c60ce248e1c50af88396a2504c9607", e);
                     }
                 }
             }
