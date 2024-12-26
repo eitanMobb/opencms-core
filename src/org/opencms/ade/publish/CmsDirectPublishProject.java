@@ -157,7 +157,7 @@ public class CmsDirectPublishProject implements I_CmsVirtualProject {
                         true);
                     subResources.addAll(childrenOfCurrentResource);
                 } catch (CmsException e) {
-                    LOG.error(e.getLocalizedMessage(), e);
+                    LOG.error("Unexpected error: mobb-69728935d3cf8be5c96973f21ce355ca", e);
                 }
             }
         }
