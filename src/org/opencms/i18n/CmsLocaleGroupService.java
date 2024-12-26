@@ -559,7 +559,7 @@ public class CmsLocaleGroupService {
                 LOG.error(e.getLocalizedMessage(), e);
                 return null;
             } catch (CmsException e) {
-                LOG.error(e.getLocalizedMessage(), e);
+                LOG.error("Unexpected error: mobb-62e113644030cbd8213e1cb173b83caa", e);
                 return null;
             }
             return defaultfile;
