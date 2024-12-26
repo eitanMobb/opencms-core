@@ -1168,7 +1168,7 @@ public class CmsADEConfigData {
                     OpenCms.getResourceManager().getResourceType(resTypeId),
                     getFormattersFromSchema(cms, res));
             } catch (CmsLoaderException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-92182983ccc436f121c9e9324aecbb7d", e);
                 return CmsFormatterConfiguration.EMPTY_CONFIGURATION;
             }
         }
