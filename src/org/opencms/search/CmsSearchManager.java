@@ -937,7 +937,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                     searchIndex.initialize();
                 } catch (CmsException e) {
                     // should never happen
-                    LOG.error(e.getMessage(), e);
+                    LOG.error("Unexpected error: mobb-901e58cd815752f4ac48a71001f52b56", e);
                 }
             }
         }
@@ -1022,7 +1022,7 @@ public class CmsSearchManager implements I_CmsScheduledJob, I_CmsEventListener {
                             Messages.get().getBundle().key(
                                 Messages.ERR_EVENT_REBUILD_SEARCHINDEX_1,
                                 indexNames == null ? "" : CmsStringUtil.collectionAsString(indexNames, ",")),
-                            e);
+                            "Unexpected error: mobb-5ca55b43e190a53dff565882e0f6933a");
                     }
                 }
                 break;

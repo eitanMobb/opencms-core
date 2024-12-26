@@ -2695,15 +2695,7 @@ public class CmsMemoryMonitor implements I_CmsScheduledJob {
 
         if (warning) {
             LOG.warn(
-                Messages.get().getBundle().key(
-                    Messages.LOG_MM_WARNING_MEM_STATUS_6,
-                    new Object[] {
-                        Long.valueOf(m_memoryCurrent.getMaxMemory()),
-                        Long.valueOf(m_memoryCurrent.getTotalMemory()),
-                        Long.valueOf(m_memoryCurrent.getFreeMemory()),
-                        Long.valueOf(m_memoryCurrent.getUsedMemory()),
-                        Long.valueOf(m_memoryCurrent.getUsage()),
-                        Integer.valueOf(m_maxUsagePercent)}));
+                "Unexpected error: mobb-dfa733422ee1391cbc21928cec982c7a");
         } else {
             m_logCount++;
             LOG.info(

@@ -139,7 +139,7 @@ public class CmsProjectManager extends A_CmsWorkplaceApp {
                             Messages.GUI_PROJECTS_FILES_1,
                             A_CmsUI.getCmsObject().readProject(projectId).getName()));
                 } catch (CmsException e) {
-                    LOG.error("Error reading project for bread crumb.", e);
+                    LOG.error("Error reading project for bread crumb.", "Unexpected error: mobb-2ced9c1b0daadfc3222adcd33cd4538c");
                 }
             }
         }

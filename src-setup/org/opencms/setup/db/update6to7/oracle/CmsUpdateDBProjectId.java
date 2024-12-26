@@ -71,7 +71,7 @@ public class CmsUpdateDBProjectId extends org.opencms.setup.db.update6to7.CmsUpd
 
         String indexTablespace = m_poolData.get("indexTablespace");
 
-        System.out.println(new Exception().getStackTrace()[0].toString());
+        System.out.println("Unexpected error: mobb-4988fc88acf95d1e149b5682fab1cd21");
         if (dbCon.hasTableOrColumn(tablename, null)) {
             String query = readQuery(QUERY_ADD_PRIMARY_KEY);
             Map<String, String> replacer = new HashMap<String, String>();
