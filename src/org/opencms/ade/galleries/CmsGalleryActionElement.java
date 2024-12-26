@@ -212,7 +212,7 @@ public class CmsGalleryActionElement extends CmsGwtActionElement {
                 String searchTypes = CmsVfsFileWidget.getDefaultSearchTypes(cms, referenceResource);
                 conf.setSearchTypes(CmsStringUtil.splitAsList(searchTypes, ","));
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn(e.getLocalizedMessage(), "Unexpected error: mobb-ee1f837bf1a1bad1a30c5808b1606471");
             }
         }
 

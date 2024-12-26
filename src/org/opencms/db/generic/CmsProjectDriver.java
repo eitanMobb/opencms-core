@@ -3584,7 +3584,7 @@ public class CmsProjectDriver implements I_CmsDriver, I_CmsProjectDriver {
                 if (LOG.isErrorEnabled()) {
                     LOG.error(
                         Messages.get().getBundle().key(Messages.LOG_READING_RESOURCE_1, offlineResource.getRootPath()),
-                        e);
+                        "Unexpected error: mobb-ba4fc74bebbc7d1cadb4413729fe6b1e");
                 }
                 throw e;
             }

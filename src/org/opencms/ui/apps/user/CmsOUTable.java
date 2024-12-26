@@ -633,7 +633,7 @@ public class CmsOUTable extends Table implements I_CmsFilterableTable {
                 addOuToTable(ou);
             }
         } catch (CmsException e) {
-            LOG.error("Unable to read ous", e);
+            LOG.error("Unable to read ous", "Unexpected error: mobb-29c42270134af6b1bd0b421f263e3fab");
         }
 
         addItemClickListener(new ItemClickListener() {
