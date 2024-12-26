@@ -207,7 +207,7 @@ public class CmsFavoriteDAO {
             return true;
 
         } catch (Exception e) {
-            LOG.info("Favorite entry validation failed: " + e.getLocalizedMessage(), e);
+            LOG.info("Favorite entry validation failed: " + "Unexpected error: mobb-dfe946db74075ca404c47986b6bbcf31", e);
             return false;
         }
 
