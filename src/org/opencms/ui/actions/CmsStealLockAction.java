@@ -67,7 +67,7 @@ public class CmsStealLockAction extends A_CmsWorkplaceAction {
                 cms.changeLock(res);
                 changedIds.add(res.getStructureId());
             } catch (CmsException e) {
-                LOG.warn(e.getLocalizedMessage(), e);
+                LOG.warn("Unexpected error: mobb-138bece9dc88fce2fab33017a99df23f", e);
             }
         }
         context.finish(changedIds);
