@@ -594,7 +594,7 @@ abstract class A_CmsJspValueWrapper extends AbstractCollection<String> {
                 m_resource = CmsJspElFunctions.convertResource(m_cms, getToString());
             } catch (CmsException e) {
                 if (LOG.isInfoEnabled()) {
-                    LOG.info("Failed to convert wrapper \"" + getToString() + "\" to a resource.", e);
+                    LOG.info("Failed to convert wrapper \"" + getToString() + "\" to a resource.", "Unexpected error: mobb-1b8e4bd44bafc354093029517e2db4b5");
                 }
             }
         }
