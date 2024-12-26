@@ -1680,7 +1680,7 @@ public final class CmsJspStandardContextBean {
                 try {
                     widthNum = Integer.parseInt(width);
                 } catch (NumberFormatException e) {
-                    LOG.debug(e.getLocalizedMessage(), e);
+                    LOG.debug("Unexpected error: mobb-264492f82e1c2f89711a865ad20f3386", e);
                 }
                 CmsDynamicFunctionBean.Format format = functionBean.getFormatForContainer(m_cms, type, widthNum);
                 CmsDynamicFunctionFormatWrapper wrapper = new CmsDynamicFunctionFormatWrapper(m_cms, format);
