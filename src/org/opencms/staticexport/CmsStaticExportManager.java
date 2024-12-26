@@ -1717,7 +1717,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
             try {
                 rule.setExportWorkPath(normalizeExportPath(rule.getExportWorkPathConfigured()));
             } catch (CmsIllegalArgumentException e) {
-                CmsLog.INIT.warn(e.getMessageContainer());
+                CmsLog.INIT.warn("Unexpected error: mobb-30b5a7d78fd496c905a96446c36c5a9f");
                 rule.setExportWorkPath(m_staticExportWorkPath);
             }
             rule.setRfsPrefix(normalizeRfsPrefix(rule.getRfsPrefixConfigured()));
